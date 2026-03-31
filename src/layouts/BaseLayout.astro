@@ -1,0 +1,99 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "OIO Racing - Grassroots racing that's real, raw, and worth following." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body class="min-h-screen bg-zinc-950 text-zinc-50">
+    <!-- Navigation -->
+    <nav class="border-b border-zinc-800 bg-zinc-900/50 backdrop-blur-sm sticky top-0 z-50">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="text-xl font-bold text-white hover:text-zinc-300 transition">
+            OIO Racing
+          </a>
+          <div class="flex gap-6">
+            <a href="/videos" class="text-zinc-300 hover:text-white transition">Videos</a>
+            <a href="/schedule" class="text-zinc-300 hover:text-white transition">Schedule</a>
+            <a href="/sponsors" class="text-zinc-300 hover:text-white transition">Sponsors</a>
+            <a href="/merch" class="text-zinc-300 hover:text-white transition">Merch</a>
+            <a href="/contact" class="text-zinc-300 hover:text-white transition">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-800 bg-zinc-900 mt-20">
+      <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <!-- About -->
+          <div>
+            <h3 class="text-lg font-bold mb-3">OIO Racing</h3>
+            <p class="text-zinc-400 text-sm">
+              Grassroots racing that's real, raw, and worth following.
+            </p>
+          </div>
+
+          <!-- Links -->
+          <div>
+            <h3 class="text-lg font-bold mb-3">Quick Links</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="/videos" class="text-zinc-400 hover:text-white transition">Videos</a></li>
+              <li><a href="/schedule" class="text-zinc-400 hover:text-white transition">Schedule</a></li>
+              <li><a href="/sponsors" class="text-zinc-400 hover:text-white transition">Sponsors</a></li>
+              <li><a href="/merch" class="text-zinc-400 hover:text-white transition">Merch</a></li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+          <div>
+            <h3 class="text-lg font-bold mb-3">Follow Us</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="https://youtube.com/@oioracing" target="_blank" rel="noopener" class="text-zinc-400 hover:text-white transition">YouTube</a></li>
+              <li><a href="https://instagram.com/oioracing" target="_blank" rel="noopener" class="text-zinc-400 hover:text-white transition">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-zinc-800 pt-8 text-center text-sm text-zinc-500">
+          <p>&copy; {new Date().getFullYear()} OIO Racing. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

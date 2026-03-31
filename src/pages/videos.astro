@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getLatestVideos } from '../lib/youtube';
+
+const videos = await getLatestVideos(12);
+---
+
+<BaseLayout
+  title="Videos - OIO Racing"
+  description="Watch our latest racing videos, builds, and track day content on YouTube."
+>
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Videos</h1>
+      <p class="text-xl text-zinc-400 mb-12">All our latest racing content from YouTube</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {videos.map((video) => (
+          <a href={video.url} target="_blank" rel="noopener" class="bg-zinc-900 rounded-lg overflow-hidden hover:ring-2 hover:ring-zinc-700 transition block">
+            <div class="aspect-video bg-zinc-800 overflow-hidden">
+              {video.thumbnail && video.thumbnail !== '/placeholder-video.jpg' ? (
+                <img src={video.thumbnail} alt={video.title} class="w-full h-full object-cover" />
+              ) : (
+                <div class="w-full h-full flex items-center justify-center">
+                  <p class="text-zinc-600">Video thumbnail</p>
+                </div>
+              )}
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold mb-2 line-clamp-2">{video.title}</h3>
+              <p class="text-sm text-zinc-400 line-clamp-3">{video.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

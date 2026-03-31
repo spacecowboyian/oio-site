@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Schedule - OIO Racing"
+  description="Upcoming races, track days, and events for OIO Racing."
+>
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Schedule</h1>
+      <p class="text-xl text-zinc-400 mb-12">Upcoming races and track events</p>
+
+      <div class="max-w-3xl mx-auto space-y-6">
+        {[...Array(5)].map((_, i) => (
+          <div class="bg-zinc-900 rounded-lg p-6 border border-zinc-800">
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Event Name {i + 1}</h3>
+                <p class="text-zinc-400 mb-1">Track Name</p>
+                <p class="text-sm text-zinc-500">Date: TBD</p>
+              </div>
+              <span class="px-3 py-1 bg-zinc-800 text-sm rounded-full">Upcoming</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
