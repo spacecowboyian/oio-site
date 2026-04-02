@@ -238,7 +238,9 @@ const upcomingEvents2026 = events2026List.filter((e: any) => !e.oio_results || e
                                           <p class="text-zinc-400 text-sm">{result.car} • #{result.car_number}</p>
                                         </div>
                                         <div class="text-right">
-                                          <p class="text-zinc-400 text-sm">Best: {result.best_time ? result.best_time.toFixed(3) : 'N/A'}s</p>
+                                          <p class="text-zinc-400 text-sm">
+                                            {result.total_time ? `Total: ${result.total_time.toFixed(3)}s` : `Best: ${result.best_time ? result.best_time.toFixed(3) : 'N/A'}s`}
+                                          </p>
                                         </div>
                                       </div>
                                     </div>
