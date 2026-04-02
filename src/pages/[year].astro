@@ -1,0 +1,261 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import events2026 from '../data/events.json';
+import racingResults from '../data/racing-results.json';
+
+export async function getStaticPaths() {
+  const rallycrossYears = Object.keys(racingResults.rallycross)
+    .filter(y => !isNaN(Number(y)))
+    .map(Number);
+  const ksrallycrossYears = Object.keys(racingResults.ksrallycross || {})
+    .filter(y => !isNaN(Number(y)))
+    .map(Number);
+  const autocrossYears = Object.keys(racingResults.autocross || {})
+    .filter(y => !isNaN(Number(y)))
+    .map(Number);
+  const allYears = Array.from(new Set([...rallycrossYears, ...ksrallycrossYears, ...autocrossYears, 2026]))
+    .sort((a, b) => b - a);
+
+  return allYears.map(year => ({
+    params: { year: year.toString() }
+  }));
+}
+
+const { year } = Astro.params;
+
+// Get all years for navigation
+const rallycrossYears = Object.keys(racingResults.rallycross)
+  .filter(y => !isNaN(Number(y)))
+  .map(Number);
+const ksrallycrossYears = Object.keys(racingResults.ksrallycross || {})
+  .filter(y => !isNaN(Number(y)))
+  .map(Number);
+const autocrossYears = Object.keys(racingResults.autocross || {})
+  .filter(y => !isNaN(Number(y)))
+  .map(Number);
+const allYears = Array.from(new Set([...rallycrossYears, ...ksrallycrossYears, ...autocrossYears, 2026]))
+  .sort((a, b) => b - a);
+
+interface Trophy {
+  driver: string;
+  position: number;
+  class: string;
+  eventNumber: number;
+  eventName: string;
+  car: string;
+  carNumber: string;
+  year: number;
+  series: 'KCR RallyCross' | 'KSRX' | 'Autocross';
+}
+
+const yearNum = Number(year);
+
+// Get trophies for this year (position 1, 2, 3)
+function getTrophiesForYear(yearNumber: number): Trophy[] {
+  const trophies: Trophy[] = [];
+
+  // Check KCR RallyCross
+  if (racingResults.rallycross[yearNumber]?.events) {
+    racingResults.rallycross[yearNumber].events.forEach((event: any) => {
+      if (event.results) {
+        event.results
+          .filter((r: any) => r.position <= 3 && r.trophy_eligible)
+          .forEach((result: any) => {
+            trophies.push({
+              driver: result.driver,
+              position: result.position,
+              class: result.class,
+              eventNumber: event.event_number,
+              eventName: event.title || `Event ${event.event_number}`,
+              car: result.car,
+              carNumber: result.car_number,
+              year: yearNumber,
+              series: 'KCR RallyCross'
+            });
+          });
+      }
+    });
+  }
+
+  // Check KSRX
+  if (racingResults.ksrallycross?.[yearNumber]?.events) {
+    racingResults.ksrallycross[yearNumber].events.forEach((event: any) => {
+      if (event.oio_drivers) {
+        event.oio_drivers
+          .filter((d: any) => d.position <= 3 && d.first_in_class)
+          .forEach((driver: any) => {
+            trophies.push({
+              driver: driver.name,
+              position: driver.position,
+              class: driver.class,
+              eventNumber: event.event_number,
+              eventName: event.event_name,
+              car: driver.car,
+              carNumber: driver.car_number,
+              year: yearNumber,
+              series: 'KSRX'
+            });
+          });
+      }
+    });
+  }
+
+  // Check Autocross
+  if (racingResults.autocross?.[yearNumber]?.events) {
+    racingResults.autocross[yearNumber].events.forEach((event: any) => {
+      if (event.results) {
+        event.results
+          .filter((r: any) => r.position <= 3 && r.trophy_eligible)
+          .forEach((result: any) => {
+            trophies.push({
+              driver: result.driver,
+              position: result.position,
+              class: result.class,
+              eventNumber: event.event_number,
+              eventName: event.title || `Event ${event.event_number}`,
+              car: result.car,
+              carNumber: result.car_number,
+              year: yearNumber,
+              series: 'Autocross'
+            });
+          });
+      }
+    });
+  }
+
+  return trophies;
+}
+
+const trophies = getTrophiesForYear(yearNum);
+
+// Get unique drivers with trophy count
+const driverTrophyCounts = trophies.reduce((acc: { [key: string]: number }, trophy) => {
+  acc[trophy.driver] = (acc[trophy.driver] || 0) + 1;
+  return acc;
+}, {});
+
+const driversTrophies = Object.entries(driverTrophyCounts)
+  .map(([driver, count]) => ({ driver, count }))
+  .sort((a, b) => b.count - a.count);
+---
+
+<BaseLayout title={`${yearNum} - OIO Racing`}>
+  <section class="py-16 md:py-20">
+    <div class="container">
+      {/* Year Header */}
+      <div class="mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-2">{yearNum} Season</h1>
+        <p class="text-zinc-400 text-lg">OIO Racing results and achievements</p>
+      </div>
+
+      {/* Trophy Summary */}
+      {trophies.length > 0 && (
+        <div class="mb-16 bg-gradient-to-br from-yellow-500/20 to-amber-600/10 rounded-lg p-8 border border-yellow-600/30">
+          <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+            <span class="text-4xl">🏆</span>
+            {yearNum} Season Trophies
+          </h2>
+
+          {/* Trophy Leaders */}
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-4 text-yellow-200">Trophy Leaders</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {driversTrophies.map((item) => (
+                <div class="bg-zinc-900 rounded-lg p-4 border border-yellow-600/30">
+                  <p class="text-2xl font-bold text-yellow-300">{item.driver}</p>
+                  <p class="text-zinc-400">{item.count} {item.count === 1 ? 'trophy' : 'trophies'}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Trophy Details */}
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-yellow-200">Trophy Details</h3>
+            <div class="space-y-3 max-h-96 overflow-y-auto">
+              {trophies
+                .sort((a, b) => a.position - b.position || a.eventNumber - b.eventNumber)
+                .map((trophy) => (
+                  <div class={`flex items-center justify-between p-3 rounded-lg ${
+                    trophy.position === 1
+                      ? 'bg-yellow-500/10 border border-yellow-600/30'
+                      : trophy.position === 2
+                      ? 'bg-gray-400/10 border border-gray-500/30'
+                      : 'bg-orange-600/10 border border-orange-700/30'
+                  }`}>
+                    <div class="flex items-center gap-3 flex-1">
+                      <span class="text-2xl">
+                        {trophy.position === 1 ? '🥇' : trophy.position === 2 ? '🥈' : '🥉'}
+                      </span>
+                      <div>
+                        <p class="font-semibold">{trophy.driver}</p>
+                        <p class="text-sm text-zinc-400">{trophy.eventName} • {trophy.class} • {trophy.series}</p>
+                      </div>
+                    </div>
+                    <span class="text-sm text-zinc-400">{trophy.car} #{trophy.carNumber}</span>
+                  </div>
+                ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Link back to full schedule */}
+      <div class="mb-12">
+        <a href="/oio-site/schedule" class="inline-flex items-center gap-2 text-zinc-400 hover:text-zinc-200 transition">
+          <span>←</span>
+          <span>Back to full schedule</span>
+        </a>
+      </div>
+
+      {/* Season Summary Stats */}
+      {(racingResults.rallycross[yearNum] || racingResults.ksrallycross[yearNum] || racingResults.autocross[yearNum]) && (
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {racingResults.rallycross[yearNum] && (
+            <div class="bg-zinc-900 rounded-lg p-6 border border-zinc-800">
+              <p class="text-zinc-400 text-sm mb-2">KCR RallyCross Events</p>
+              <p class="text-3xl font-bold">{racingResults.rallycross[yearNum].events?.length || 0}</p>
+            </div>
+          )}
+          {racingResults.ksrallycross?.[yearNum] && (
+            <div class="bg-zinc-900 rounded-lg p-6 border border-zinc-800">
+              <p class="text-zinc-400 text-sm mb-2">KSRX Events</p>
+              <p class="text-3xl font-bold">{racingResults.ksrallycross[yearNum].events?.length || 0}</p>
+            </div>
+          )}
+          {racingResults.autocross?.[yearNum] && (
+            <div class="bg-zinc-900 rounded-lg p-6 border border-zinc-800">
+              <p class="text-zinc-400 text-sm mb-2">Autocross Events</p>
+              <p class="text-3xl font-bold">{racingResults.autocross[yearNum].events?.length || 0}</p>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Other Years Navigation */}
+      <div class="border-t border-zinc-800 pt-8">
+        <h3 class="text-lg font-semibold mb-4">Other Seasons</h3>
+        <div class="flex flex-wrap gap-2">
+          {allYears
+            .filter(y => y !== yearNum)
+            .map(y => (
+              <a
+                href={`/oio-site/${y}`}
+                class="px-4 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 transition text-sm font-medium"
+              >
+                {y}
+              </a>
+            ))}
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+</style>

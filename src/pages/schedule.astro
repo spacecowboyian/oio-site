@@ -3,10 +3,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import events2026 from '../data/events.json';
 import racingResults from '../data/racing-results.json';
 
-// Get available years from racing results (rallycross data)
-const availableYears = Object.keys(racingResults.rallycross)
+// Get available years from racing results (rallycross and ksrallycross data)
+const rallycrossYears = Object.keys(racingResults.rallycross)
   .filter(y => !isNaN(Number(y)))
-  .map(Number)
+  .map(Number);
+const ksrallycrossYears = Object.keys(racingResults.ksrallycross || {})
+  .filter(y => !isNaN(Number(y)))
+  .map(Number);
+const availableYears = Array.from(new Set([...rallycrossYears, ...ksrallycrossYears]))
   .sort((a, b) => b - a);
 
 function getTotalTime(result: any): string {
@@ -201,9 +205,10 @@ const upcomingEvents2026 = events2026List.filter((e: any) => !e.oio_results || e
         {/* Historical Years Content */}
         {availableYears.filter(y => y !== 2026).map((year) => (
           <div id={`year-${year}`} class="hidden">
+            {/* KCR RallyCross Events */}
             {racingResults.rallycross[year]?.events && racingResults.rallycross[year].events.length > 0 ? (
               <div>
-                <h2 class="text-2xl font-bold mb-6 text-zinc-100">{year} Events</h2>
+                <h2 class="text-2xl font-bold mb-6 text-zinc-100">{year} KCR RallyCross Events</h2>
                 <div class="space-y-8">
                   {racingResults.rallycross[year].events.map((event: any) => (
                     <div class="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800">
@@ -272,9 +277,99 @@ const upcomingEvents2026 = events2026List.filter((e: any) => !e.oio_results || e
                   ))}
                 </div>
               </div>
-            ) : (
+            ) : null}
+
+            {/* KSRX (Kansas SCCA RallyCross) Events */}
+            {racingResults.ksrallycross[year]?.events && racingResults.ksrallycross[year].events.length > 0 ? (
+              <div>
+                {racingResults.rallycross[year]?.events && racingResults.rallycross[year].events.length > 0 ? (
+                  <h2 class="text-2xl font-bold mb-6 text-zinc-100 mt-12">KSRX Events</h2>
+                ) : (
+                  <h2 class="text-2xl font-bold mb-6 text-zinc-100">{year} KSRX Events</h2>
+                )}
+                <div class="space-y-8">
+                  {racingResults.ksrallycross[year].events.map((event: any) => (
+                    <div class="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800">
+                      {/* Event Header */}
+                      <div class="bg-gradient-to-r from-zinc-800 to-zinc-900 p-6 border-b border-zinc-800">
+                        <div class="flex items-start justify-between mb-3">
+                          <div>
+                            <h3 class="text-2xl font-bold mb-2">Event {event.event_number}: {event.event_name}</h3>
+                            <p class="text-zinc-400">KSRX</p>
+                          </div>
+                          <div class="text-right">
+                            <p class="text-lg font-semibold">{new Date(event.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Results by Class */}
+                      <div class="p-6">
+                        <h3 class="text-lg font-bold mb-6 text-zinc-200">OIO Driver Results</h3>
+                        {event.oio_drivers && event.oio_drivers.length > 0 ? (
+                          <>
+                            {groupAndSortByClass(event.oio_drivers.map((driver: any) => ({
+                              driver: driver.name,
+                              car_number: driver.car_number,
+                              class: driver.class,
+                              class_full: driver.class,
+                              position: driver.position,
+                              total_time: driver.total_time,
+                              best_time: driver.fastest_run,
+                              car: driver.car,
+                              trophy_eligible: driver.first_in_class
+                            }))).map((classGroup: any) => (
+                              <div class="mb-8 last:mb-0">
+                                <div class="mb-3 pb-2 border-b border-zinc-700">
+                                  <h4 class="text-base font-semibold text-zinc-300">{classGroup.class_full}</h4>
+                                </div>
+                                <div class="space-y-3">
+                                  {classGroup.drivers.map((result: any) => (
+                                    <div class={`rounded-lg p-4 border transition ${
+                                      result.position === 1
+                                        ? 'bg-yellow-500/10 border-yellow-600/50'
+                                        : result.position === 2
+                                        ? 'bg-gray-400/10 border-gray-500/50'
+                                        : result.position === 3
+                                        ? 'bg-orange-600/10 border-orange-700/50'
+                                        : 'bg-zinc-800/50 border-zinc-700'
+                                    } hover:border-zinc-600`}>
+                                      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 md:gap-0">
+                                        <div class="flex-1">
+                                          <div class="flex flex-wrap items-center gap-2 mb-2 md:gap-3 md:mb-1">
+                                            {result.trophy_eligible && (
+                                              <span class="text-lg md:text-xl">🏆</span>
+                                            )}
+                                            <span class="text-xl md:text-2xl font-bold text-zinc-300">#{result.position}</span>
+                                            <h4 class="text-base md:text-lg font-semibold text-white">{result.driver}</h4>
+                                          </div>
+                                          <p class="text-zinc-400 text-xs md:text-sm">{result.car} • #{result.car_number}</p>
+                                        </div>
+                                        <div class="text-left md:text-right">
+                                          <p class="text-zinc-400 text-xs md:text-sm">
+                                            {result.total_time ? `Total: ${result.total_time.toFixed(3)}s` : `Best: ${result.best_time ? result.best_time.toFixed(3) : 'N/A'}s`}
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                          </>
+                        ) : (
+                          <p class="text-zinc-400">No OIO results for this event</p>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
+            {!racingResults.rallycross[year]?.events?.length && !racingResults.ksrallycross[year]?.events?.length ? (
               <p class="text-zinc-400 text-center py-8">No race data available for {year}</p>
-            )}
+            ) : null}
           </div>
         ))}
       </div>
