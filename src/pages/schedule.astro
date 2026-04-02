@@ -1,29 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import events from '../data/events.json';
+import events2026 from '../data/events.json';
+import racingResults from '../data/racing-results.json';
 
-interface EventData {
-  event_id: string;
-  circuit: string;
-  series: string;
-  year: number;
-  date: string;
-  venue: string;
-  total_registered: number;
-  oio_results: Array<{
-    driver: string;
-    car: string;
-    number: number;
-    class: string;
-    class_full: string;
-    position: number;
-    trophy: boolean;
-    total_time?: number | string;
-    total_time_corrected?: number;
-    total_time_official?: number;
-    best_run: number;
-  }>;
-}
+// Get available years from racing results (rallycross data)
+const availableYears = Object.keys(racingResults.rallycross)
+  .filter(y => !isNaN(Number(y)))
+  .map(Number)
+  .sort((a, b) => b - a);
 
 function getTotalTime(result: any): string {
   const time = result.total_time_corrected ?? result.total_time_official ?? result.total_time;
@@ -37,13 +21,14 @@ function groupAndSortByClass(results: any[]) {
   const grouped: { [key: string]: { class_full: string; drivers: any[] } } = {};
 
   results.forEach((result) => {
-    if (!grouped[result.class]) {
-      grouped[result.class] = {
-        class_full: result.class_full,
+    const classKey = result.class || 'Unknown';
+    if (!grouped[classKey]) {
+      grouped[classKey] = {
+        class_full: result.class_full || result.class || 'Unknown',
         drivers: []
       };
     }
-    grouped[result.class].drivers.push(result);
+    grouped[classKey].drivers.push(result);
   });
 
   // Sort drivers within each class by position
@@ -54,11 +39,10 @@ function groupAndSortByClass(results: any[]) {
   return grouped;
 }
 
-const eventList: EventData[] = events.events;
-
-// Separate past events (with results) from upcoming events
-const pastEvents = eventList.filter((e: any) => e.oio_results && e.oio_results.length > 0);
-const upcomingEvents = eventList.filter((e: any) => !e.oio_results || e.oio_results.length === 0);
+// Get 2026 data
+const events2026List = events2026.events;
+const pastEvents2026 = events2026List.filter((e: any) => e.oio_results && e.oio_results.length > 0);
+const upcomingEvents2026 = events2026List.filter((e: any) => !e.oio_results || e.oio_results.length === 0);
 ---
 
 <BaseLayout
@@ -68,120 +52,237 @@ const upcomingEvents = eventList.filter((e: any) => !e.oio_results || e.oio_resu
   <section class="py-16">
     <div class="container mx-auto px-4">
       <h1 class="text-4xl md:text-5xl font-bold mb-4">Race Schedule & Results</h1>
-      <p class="text-xl text-zinc-400 mb-12">OIO Racing events with driver results and achievements</p>
+      <p class="text-xl text-zinc-400 mb-8">OIO Racing events with driver results and achievements</p>
 
-      <div class="max-w-4xl mx-auto space-y-12">
-        {/* Past Results Section */}
-        {pastEvents.length > 0 && (
-          <div>
-            <h2 class="text-2xl font-bold mb-6 text-zinc-100">Completed Races</h2>
-            <div class="space-y-8">
-              {pastEvents.map((event: EventData) => (
-          <div class="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800">
-            {/* Event Header */}
-            <div class="bg-gradient-to-r from-zinc-800 to-zinc-900 p-6 border-b border-zinc-800">
-              <div class="flex items-start justify-between mb-3">
-                <div>
-                  <h2 class="text-2xl font-bold mb-2">{event.series}</h2>
-                  <p class="text-zinc-400">{event.circuit}</p>
-                </div>
-                <div class="text-right">
-                  <p class="text-sm text-zinc-400">Event {event.event_number}</p>
-                  <p class="text-lg font-semibold">{new Date(event.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
-                </div>
-              </div>
-              <p class="text-zinc-300 text-sm">{event.venue}</p>
-            </div>
+      {/* Year Selector */}
+      <div class="max-w-4xl mx-auto mb-12">
+        <div class="flex items-center gap-4">
+          <label for="yearSelect" class="font-semibold text-zinc-200">Select Year:</label>
+          <select id="yearSelect" class="px-4 py-2 rounded-lg bg-zinc-800 border border-zinc-700 text-white hover:border-zinc-600 cursor-pointer transition">
+            {availableYears.map((year) => (
+              <option value={year} selected={year === 2026}>
+                {year}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
 
-            {/* OIO Drivers Results by Class */}
-            <div class="p-6">
-              <h3 class="text-lg font-bold mb-6 text-zinc-200">OIO Driver Results</h3>
-              {event.oio_results && event.oio_results.length > 0 ? (
-                <>
-                  {Object.entries(groupAndSortByClass(event.oio_results)).map(([classCode, classGroup]) => (
-                    <div class="mb-8 last:mb-0">
-                      <div class="mb-3 pb-2 border-b border-zinc-700">
-                        <h4 class="text-base font-semibold text-zinc-300">{classGroup.class_full} ({classCode})</h4>
+      <div id="content" class="max-w-4xl mx-auto space-y-12">
+        {/* 2026 Content - Default View */}
+        <div id="year-2026" class="block">
+          {/* Past Results Section */}
+          {pastEvents2026.length > 0 && (
+            <div>
+              <h2 class="text-2xl font-bold mb-6 text-zinc-100">Completed Races</h2>
+              <div class="space-y-8">
+                {pastEvents2026.map((event: any) => (
+                  <div class="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800">
+                    {/* Event Header */}
+                    <div class="bg-gradient-to-r from-zinc-800 to-zinc-900 p-6 border-b border-zinc-800">
+                      <div class="flex items-start justify-between mb-3">
+                        <div>
+                          <h2 class="text-2xl font-bold mb-2">{event.series}</h2>
+                          <p class="text-zinc-400">{event.circuit}</p>
+                        </div>
+                        <div class="text-right">
+                          <p class="text-sm text-zinc-400">Event {event.event_number}</p>
+                          <p class="text-lg font-semibold">{new Date(event.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
+                        </div>
                       </div>
-                      <div class="space-y-3">
-                        {classGroup.drivers.map((result, index) => (
-                          <div class={`rounded-lg p-4 border transition ${
-                            result.position === 1
-                              ? 'bg-yellow-500/10 border-yellow-600/50'
-                              : result.position === 2
-                              ? 'bg-gray-400/10 border-gray-500/50'
-                              : result.position === 3
-                              ? 'bg-orange-600/10 border-orange-700/50'
-                              : 'bg-zinc-800/50 border-zinc-700'
-                          } hover:border-zinc-600`}>
-                            <div class="flex items-start justify-between">
-                              <div class="flex-1">
-                                <div class="flex items-center gap-3 mb-1">
-                                  {result.trophy && (
-                                    <span class="text-xl">🏆</span>
-                                  )}
-                                  <span class="text-2xl font-bold text-zinc-300">#{result.position}</span>
-                                  <h4 class="text-lg font-semibold text-white">{result.driver}</h4>
-                                </div>
-                                <p class="text-zinc-400 text-sm">{result.car} • #{result.number}</p>
+                      <p class="text-zinc-300 text-sm">{event.venue}</p>
+                    </div>
+
+                    {/* Results by Class */}
+                    <div class="p-6">
+                      <h3 class="text-lg font-bold mb-6 text-zinc-200">OIO Driver Results</h3>
+                      {event.oio_results && event.oio_results.length > 0 ? (
+                        <>
+                          {Object.entries(groupAndSortByClass(event.oio_results)).map(([classCode, classGroup]: any) => (
+                            <div class="mb-8 last:mb-0">
+                              <div class="mb-3 pb-2 border-b border-zinc-700">
+                                <h4 class="text-base font-semibold text-zinc-300">{classGroup.class_full} ({classCode})</h4>
                               </div>
-                              <div class="text-right">
-                                <p class="text-zinc-400 text-sm">Best: {result.best_run.toFixed(3)}s</p>
-                                <p class="text-zinc-500 text-xs mt-1">Total: {getTotalTime(result)}s</p>
+                              <div class="space-y-3">
+                                {classGroup.drivers.map((result: any) => (
+                                  <div class={`rounded-lg p-4 border transition ${
+                                    result.position === 1
+                                      ? 'bg-yellow-500/10 border-yellow-600/50'
+                                      : result.position === 2
+                                      ? 'bg-gray-400/10 border-gray-500/50'
+                                      : result.position === 3
+                                      ? 'bg-orange-600/10 border-orange-700/50'
+                                      : 'bg-zinc-800/50 border-zinc-700'
+                                  } hover:border-zinc-600`}>
+                                    <div class="flex items-start justify-between">
+                                      <div class="flex-1">
+                                        <div class="flex items-center gap-3 mb-1">
+                                          {result.trophy && (
+                                            <span class="text-xl">🏆</span>
+                                          )}
+                                          <span class="text-2xl font-bold text-zinc-300">#{result.position}</span>
+                                          <h4 class="text-lg font-semibold text-white">{result.driver}</h4>
+                                        </div>
+                                        <p class="text-zinc-400 text-sm">{result.car} • #{result.number}</p>
+                                      </div>
+                                      <div class="text-right">
+                                        <p class="text-zinc-400 text-sm">Best: {result.best_run.toFixed(3)}s</p>
+                                        <p class="text-zinc-500 text-xs mt-1">Total: {getTotalTime(result)}s</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                ))}
                               </div>
                             </div>
+                          ))}
+                        </>
+                      ) : (
+                        <p class="text-zinc-400">No OIO results for this event</p>
+                      )}
+                    </div>
+
+                    {/* Event Stats Footer */}
+                    <div class="bg-zinc-800/30 px-6 py-3 border-t border-zinc-800 text-sm text-zinc-400">
+                      <p>{event.total_registered} registered competitors • {event.status === 'unofficial' ? 'Unofficial' : 'Official'}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Upcoming Events Section */}
+          {upcomingEvents2026.length > 0 && (
+            <div>
+              <h2 class="text-2xl font-bold mb-6 text-zinc-100">Upcoming Events</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {upcomingEvents2026.map((event: any) => (
+                  <div class="bg-zinc-900 rounded-lg p-5 border border-zinc-800 hover:border-zinc-700 transition">
+                    <div class="mb-3">
+                      <p class="text-sm text-zinc-500 mb-1">Event {event.event_number}</p>
+                      <h3 class="text-lg font-semibold text-white">{event.series}</h3>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                      <div>
+                        <p class="text-zinc-400">{event.venue}</p>
+                        <p class="text-zinc-500">{new Date(event.date).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric', year: 'numeric' })}</p>
+                      </div>
+                      {event.note && (
+                        <p class="text-xs text-zinc-600 italic mt-2">{event.note}</p>
+                      )}
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-zinc-800">
+                      <span class="inline-block px-2 py-1 bg-blue-900/30 text-blue-300 text-xs rounded border border-blue-700/50">
+                        Upcoming
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Historical Years Content */}
+        {availableYears.filter(y => y !== 2026).map((year) => (
+          <div id={`year-${year}`} class="hidden">
+            {racingResults.rallycross[year]?.events && racingResults.rallycross[year].events.length > 0 ? (
+              <div>
+                <h2 class="text-2xl font-bold mb-6 text-zinc-100">{year} Season Results</h2>
+                <div class="space-y-8">
+                  {racingResults.rallycross[year].events.map((event: any) => (
+                    <div class="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800">
+                      {/* Event Header */}
+                      <div class="bg-gradient-to-r from-zinc-800 to-zinc-900 p-6 border-b border-zinc-800">
+                        <div class="flex items-start justify-between mb-3">
+                          <div>
+                            <h3 class="text-2xl font-bold mb-2">Event {event.event_number}</h3>
+                            <p class="text-zinc-400">KCR RallyCross</p>
                           </div>
-                        ))}
+                          <div class="text-right">
+                            <p class="text-lg font-semibold">{new Date(event.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Results by Class */}
+                      <div class="p-6">
+                        <h3 class="text-lg font-bold mb-6 text-zinc-200">OIO Driver Results</h3>
+                        {event.results && event.results.length > 0 ? (
+                          <>
+                            {Object.entries(groupAndSortByClass(event.results)).map(([classCode, classGroup]: any) => (
+                              <div class="mb-8 last:mb-0">
+                                <div class="mb-3 pb-2 border-b border-zinc-700">
+                                  <h4 class="text-base font-semibold text-zinc-300">{classGroup.class_full} ({classCode})</h4>
+                                </div>
+                                <div class="space-y-3">
+                                  {classGroup.drivers.map((result: any) => (
+                                    <div class={`rounded-lg p-4 border transition ${
+                                      result.position === 1
+                                        ? 'bg-yellow-500/10 border-yellow-600/50'
+                                        : result.position === 2
+                                        ? 'bg-gray-400/10 border-gray-500/50'
+                                        : result.position === 3
+                                        ? 'bg-orange-600/10 border-orange-700/50'
+                                        : 'bg-zinc-800/50 border-zinc-700'
+                                    } hover:border-zinc-600`}>
+                                      <div class="flex items-start justify-between">
+                                        <div class="flex-1">
+                                          <div class="flex items-center gap-3 mb-1">
+                                            {result.trophy_eligible && (
+                                              <span class="text-xl">🏆</span>
+                                            )}
+                                            <span class="text-2xl font-bold text-zinc-300">#{result.position}</span>
+                                            <h4 class="text-lg font-semibold text-white">{result.driver}</h4>
+                                          </div>
+                                          <p class="text-zinc-400 text-sm">{result.car} • #{result.car_number}</p>
+                                        </div>
+                                        <div class="text-right">
+                                          <p class="text-zinc-400 text-sm">Best: {result.best_time ? result.best_time.toFixed(3) : 'N/A'}s</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                          </>
+                        ) : (
+                          <p class="text-zinc-400">No OIO results for this event</p>
+                        )}
                       </div>
                     </div>
                   ))}
-                </>
-              ) : (
-                <p class="text-zinc-400">No OIO results for this event</p>
-              )}
-            </div>
-
-            {/* Event Stats Footer */}
-            <div class="bg-zinc-800/30 px-6 py-3 border-t border-zinc-800 text-sm text-zinc-400">
-              <p>{event.total_registered} registered competitors • {event.status === 'unofficial' ? 'Unofficial' : 'Official'}</p>
-            </div>
+                </div>
+              </div>
+            ) : (
+              <p class="text-zinc-400 text-center py-8">No race data available for {year}</p>
+            )}
           </div>
         ))}
-            </div>
-          </div>
-        )}
-
-        {/* Upcoming Events Section */}
-        {upcomingEvents.length > 0 && (
-          <div>
-            <h2 class="text-2xl font-bold mb-6 text-zinc-100">Upcoming Events</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {upcomingEvents.map((event: any) => (
-                <div class="bg-zinc-900 rounded-lg p-5 border border-zinc-800 hover:border-zinc-700 transition">
-                  <div class="mb-3">
-                    <p class="text-sm text-zinc-500 mb-1">Event {event.event_number}</p>
-                    <h3 class="text-lg font-semibold text-white">{event.series}</h3>
-                  </div>
-                  <div class="space-y-2 text-sm">
-                    <div>
-                      <p class="text-zinc-400">{event.venue}</p>
-                      <p class="text-zinc-500">{new Date(event.date).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric', year: 'numeric' })}</p>
-                    </div>
-                    {event.note && (
-                      <p class="text-xs text-zinc-600 italic mt-2">{event.note}</p>
-                    )}
-                  </div>
-                  <div class="mt-4 pt-3 border-t border-zinc-800">
-                    <span class="inline-block px-2 py-1 bg-blue-900/30 text-blue-300 text-xs rounded border border-blue-700/50">
-                      Upcoming
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
     </div>
   </section>
+
+  <script>
+    const yearSelect = document.getElementById('yearSelect') as HTMLSelectElement;
+    const contentDiv = document.getElementById('content') as HTMLElement;
+
+    function showYear(year: string) {
+      // Hide all year sections
+      contentDiv.querySelectorAll('[id^="year-"]').forEach(el => {
+        (el as HTMLElement).classList.add('hidden');
+      });
+      // Show selected year
+      const selectedElement = document.getElementById(`year-${year}`) as HTMLElement;
+      if (selectedElement) {
+        selectedElement.classList.remove('hidden');
+      }
+    }
+
+    yearSelect?.addEventListener('change', (e) => {
+      const selectedYear = (e.target as HTMLSelectElement).value;
+      showYear(selectedYear);
+    });
+  </script>
 </BaseLayout>
