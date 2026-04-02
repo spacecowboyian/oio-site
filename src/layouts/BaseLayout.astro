@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 interface Props {
   title: string;
   description?: string;
@@ -29,9 +31,6 @@ const { title, description = "OIO Racing - Grassroots racing that's real, raw, a
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-
-    <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
   <body class="min-h-screen bg-zinc-950 text-zinc-50">
     <!-- Navigation -->
