@@ -128,6 +128,89 @@
           "notes": "Novice class win. Second KCRX start (debut was 2025 E8)."
         }
       ]
+    },
+    {
+      "event_id": "KCRX-2026-E2",
+      "circuit": "KCRSCCA",
+      "series": "KCR RallyCross",
+      "year": 2026,
+      "event_number": 2,
+      "date": "2026-04-19",
+      "venue": "Holsworth Farm",
+      "status": "upcoming",
+      "note": "Joint event with KSRX E1"
+    },
+    {
+      "event_id": "KCRX-2026-E3",
+      "circuit": "KCRSCCA",
+      "series": "KCR RallyCross",
+      "year": 2026,
+      "event_number": 3,
+      "date": "2026-05-25",
+      "venue": "Thunder Valley",
+      "status": "upcoming"
+    },
+    {
+      "event_id": "KCRX-2026-E4",
+      "circuit": "KCRSCCA",
+      "series": "KCR RallyCross",
+      "year": 2026,
+      "event_number": 4,
+      "date": "2026-06-28",
+      "venue": "I-35 Speedway",
+      "status": "upcoming"
+    },
+    {
+      "event_id": "KCRX-2026-E5",
+      "circuit": "KCRSCCA",
+      "series": "KCR RallyCross",
+      "year": 2026,
+      "event_number": 5,
+      "date": "2026-07-19",
+      "venue": "I-35 Speedway",
+      "status": "upcoming"
+    },
+    {
+      "event_id": "KCRX-2026-E6",
+      "circuit": "KCRSCCA",
+      "series": "KCR RallyCross",
+      "year": 2026,
+      "event_number": 6,
+      "date": "2026-08-02",
+      "venue": "RayRocks Offroad Resort",
+      "status": "upcoming"
+    },
+    {
+      "event_id": "KCRX-2026-E7",
+      "circuit": "KCRSCCA",
+      "series": "KCR RallyCross",
+      "year": 2026,
+      "event_number": 7,
+      "date": "2026-09-20",
+      "venue": "Thunder Valley",
+      "status": "upcoming"
+    },
+    {
+      "event_id": "KCRX-2026-E8",
+      "circuit": "KCRSCCA",
+      "series": "KCR RallyCross",
+      "year": 2026,
+      "event_number": 8,
+      "date": "2026-10-04",
+      "venue": "Holsworth Farm",
+      "status": "upcoming",
+      "note": "Joint event with KSRX E8"
+    },
+    {
+      "event_id": "KCRX-2026-E9",
+      "circuit": "KCRSCCA",
+      "series": "KCR RallyCross",
+      "year": 2026,
+      "event_number": 9,
+      "date": "2026-11-15",
+      "venue": "I-35 Speedway",
+      "status": "upcoming",
+      "note": "EnduroX Season Finale"
     }
   ]
 }

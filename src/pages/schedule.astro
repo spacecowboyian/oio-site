@@ -33,7 +33,32 @@ function getTotalTime(result: any): string {
   return time ?? 'N/A';
 }
 
+function groupAndSortByClass(results: any[]) {
+  const grouped: { [key: string]: { class_full: string; drivers: any[] } } = {};
+
+  results.forEach((result) => {
+    if (!grouped[result.class]) {
+      grouped[result.class] = {
+        class_full: result.class_full,
+        drivers: []
+      };
+    }
+    grouped[result.class].drivers.push(result);
+  });
+
+  // Sort drivers within each class by position
+  Object.values(grouped).forEach((classGroup) => {
+    classGroup.drivers.sort((a, b) => a.position - b.position);
+  });
+
+  return grouped;
+}
+
 const eventList: EventData[] = events.events;
+
+// Separate past events (with results) from upcoming events
+const pastEvents = eventList.filter((e: any) => e.oio_results && e.oio_results.length > 0);
+const upcomingEvents = eventList.filter((e: any) => !e.oio_results || e.oio_results.length === 0);
 ---
 
 <BaseLayout
@@ -45,8 +70,13 @@ const eventList: EventData[] = events.events;
       <h1 class="text-4xl md:text-5xl font-bold mb-4">Race Schedule & Results</h1>
       <p class="text-xl text-zinc-400 mb-12">OIO Racing events with driver results and achievements</p>
 
-      <div class="max-w-4xl mx-auto space-y-8">
-        {eventList.map((event: EventData) => (
+      <div class="max-w-4xl mx-auto space-y-12">
+        {/* Past Results Section */}
+        {pastEvents.length > 0 && (
+          <div>
+            <h2 class="text-2xl font-bold mb-6 text-zinc-100">Completed Races</h2>
+            <div class="space-y-8">
+              {pastEvents.map((event: EventData) => (
           <div class="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800">
             {/* Event Header */}
             <div class="bg-gradient-to-r from-zinc-800 to-zinc-900 p-6 border-b border-zinc-800">
@@ -63,41 +93,52 @@ const eventList: EventData[] = events.events;
               <p class="text-zinc-300 text-sm">{event.venue}</p>
             </div>
 
-            {/* OIO Drivers Results */}
+            {/* OIO Drivers Results by Class */}
             <div class="p-6">
-              <h3 class="text-lg font-bold mb-4 text-zinc-200">OIO Driver Results</h3>
-              <div class="space-y-4">
-                {event.oio_results && event.oio_results.length > 0 ? (
-                  event.oio_results.map((result) => (
-                    <div class="bg-zinc-800/50 rounded-lg p-4 border border-zinc-700 hover:border-zinc-600 transition">
-                      <div class="flex items-start justify-between mb-3">
-                        <div class="flex-1">
-                          <h4 class="text-lg font-semibold text-white">{result.driver}</h4>
-                          <p class="text-zinc-400 text-sm">{result.car} • #{result.number}</p>
-                          <p class="text-zinc-500 text-xs mt-1">{result.class_full}</p>
-                        </div>
-                        <div class="text-right">
-                          <div class="flex items-center gap-2 justify-end">
-                            <span class="text-3xl font-bold text-zinc-200">#{result.position}</span>
-                            {result.trophy && (
-                              <span class="text-2xl">🏆</span>
-                            )}
-                          </div>
-                          <p class="text-zinc-400 text-sm mt-1">Best: {result.best_run.toFixed(3)}s</p>
-                        </div>
+              <h3 class="text-lg font-bold mb-6 text-zinc-200">OIO Driver Results</h3>
+              {event.oio_results && event.oio_results.length > 0 ? (
+                <>
+                  {Object.entries(groupAndSortByClass(event.oio_results)).map(([classCode, classGroup]) => (
+                    <div class="mb-8 last:mb-0">
+                      <div class="mb-3 pb-2 border-b border-zinc-700">
+                        <h4 class="text-base font-semibold text-zinc-300">{classGroup.class_full} ({classCode})</h4>
                       </div>
-                      <div class="flex justify-between text-sm text-zinc-400">
-                        <span>Total Time: {getTotalTime(result)}s</span>
-                        {result.trophy && (
-                          <span class="text-zinc-300 font-medium">Trophy Winner</span>
-                        )}
+                      <div class="space-y-3">
+                        {classGroup.drivers.map((result, index) => (
+                          <div class={`rounded-lg p-4 border transition ${
+                            result.position === 1
+                              ? 'bg-yellow-500/10 border-yellow-600/50'
+                              : result.position === 2
+                              ? 'bg-gray-400/10 border-gray-500/50'
+                              : result.position === 3
+                              ? 'bg-orange-600/10 border-orange-700/50'
+                              : 'bg-zinc-800/50 border-zinc-700'
+                          } hover:border-zinc-600`}>
+                            <div class="flex items-start justify-between">
+                              <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-1">
+                                  <span class="text-2xl font-bold text-zinc-300">#{result.position}</span>
+                                  <h4 class="text-lg font-semibold text-white">{result.driver}</h4>
+                                  {result.trophy && (
+                                    <span class="text-xl">🏆</span>
+                                  )}
+                                </div>
+                                <p class="text-zinc-400 text-sm">{result.car} • #{result.number}</p>
+                              </div>
+                              <div class="text-right">
+                                <p class="text-zinc-400 text-sm">Best: {result.best_run.toFixed(3)}s</p>
+                                <p class="text-zinc-500 text-xs mt-1">Total: {getTotalTime(result)}s</p>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
-                  ))
-                ) : (
-                  <p class="text-zinc-400">No OIO results for this event</p>
-                )}
-              </div>
+                  ))}
+                </>
+              ) : (
+                <p class="text-zinc-400">No OIO results for this event</p>
+              )}
             </div>
 
             {/* Event Stats Footer */}
@@ -106,6 +147,40 @@ const eventList: EventData[] = events.events;
             </div>
           </div>
         ))}
+            </div>
+          </div>
+        )}
+
+        {/* Upcoming Events Section */}
+        {upcomingEvents.length > 0 && (
+          <div>
+            <h2 class="text-2xl font-bold mb-6 text-zinc-100">Upcoming Events</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {upcomingEvents.map((event: any) => (
+                <div class="bg-zinc-900 rounded-lg p-5 border border-zinc-800 hover:border-zinc-700 transition">
+                  <div class="mb-3">
+                    <p class="text-sm text-zinc-500 mb-1">Event {event.event_number}</p>
+                    <h3 class="text-lg font-semibold text-white">{event.series}</h3>
+                  </div>
+                  <div class="space-y-2 text-sm">
+                    <div>
+                      <p class="text-zinc-400">{event.venue}</p>
+                      <p class="text-zinc-500">{new Date(event.date).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric', year: 'numeric' })}</p>
+                    </div>
+                    {event.note && (
+                      <p class="text-xs text-zinc-600 italic mt-2">{event.note}</p>
+                    )}
+                  </div>
+                  <div class="mt-4 pt-3 border-t border-zinc-800">
+                    <span class="inline-block px-2 py-1 bg-blue-900/30 text-blue-300 text-xs rounded border border-blue-700/50">
+                      Upcoming
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   </section>
