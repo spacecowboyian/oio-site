@@ -117,11 +117,11 @@ const upcomingEvents = eventList.filter((e: any) => !e.oio_results || e.oio_resu
                             <div class="flex items-start justify-between">
                               <div class="flex-1">
                                 <div class="flex items-center gap-3 mb-1">
-                                  <span class="text-2xl font-bold text-zinc-300">#{result.position}</span>
-                                  <h4 class="text-lg font-semibold text-white">{result.driver}</h4>
                                   {result.trophy && (
                                     <span class="text-xl">🏆</span>
                                   )}
+                                  <span class="text-2xl font-bold text-zinc-300">#{result.position}</span>
+                                  <h4 class="text-lg font-semibold text-white">{result.driver}</h4>
                                 </div>
                                 <p class="text-zinc-400 text-sm">{result.car} • #{result.number}</p>
                               </div>
