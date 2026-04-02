@@ -50,78 +50,84 @@ interface Trophy {
 
 const yearNum = Number(year);
 
+// Get combined and sorted events for a year
+function getCombinedEventsForYear(yearNumber: number): any[] {
+  const events: any[] = [];
+
+  // Get KCR RallyCross events
+  if (racingResults.rallycross[yearNumber]?.events) {
+    racingResults.rallycross[yearNumber].events.forEach((event: any) => {
+      events.push({
+        ...event,
+        series: 'KCR RallyCross',
+        date: event.date,
+        results: event.results || []
+      });
+    });
+  }
+
+  // Get KSRX events
+  if (racingResults.ksrallycross[yearNumber]?.events) {
+    racingResults.ksrallycross[yearNumber].events.forEach((event: any) => {
+      events.push({
+        ...event,
+        series: 'KSRX',
+        date: event.date,
+        oio_drivers: event.oio_drivers || [],
+        results: (event.oio_drivers || []).map((driver: any) => ({
+          driver: driver.name,
+          car_number: driver.car_number,
+          class: driver.class,
+          class_full: driver.class,
+          position: driver.position,
+          total_time: driver.total_time,
+          best_time: driver.fastest_run,
+          car: driver.car,
+          trophy_eligible: driver.first_in_class
+        }))
+      });
+    });
+  }
+
+  // Get Autocross events
+  if (racingResults.autocross[yearNumber]?.events) {
+    racingResults.autocross[yearNumber].events.forEach((event: any) => {
+      events.push({
+        ...event,
+        series: 'Autocross',
+        date: event.date,
+        results: event.results || []
+      });
+    });
+  }
+
+  // Sort by date (Jan-Dec)
+  return events.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+}
+
 // Get trophies for this year (position 1, 2, 3)
 function getTrophiesForYear(yearNumber: number): Trophy[] {
   const trophies: Trophy[] = [];
+  const combinedEvents = getCombinedEventsForYear(yearNumber);
 
-  // Check KCR RallyCross
-  if (racingResults.rallycross[yearNumber]?.events) {
-    racingResults.rallycross[yearNumber].events.forEach((event: any) => {
-      if (event.results) {
-        event.results
-          .filter((r: any) => r.position <= 3 && r.trophy_eligible)
-          .forEach((result: any) => {
-            trophies.push({
-              driver: result.driver,
-              position: result.position,
-              class: result.class,
-              eventNumber: event.event_number,
-              eventName: event.title || `Event ${event.event_number}`,
-              car: result.car,
-              carNumber: result.car_number,
-              year: yearNumber,
-              series: 'KCR RallyCross'
-            });
-          });
-      }
-    });
-  }
-
-  // Check KSRX
-  if (racingResults.ksrallycross?.[yearNumber]?.events) {
-    racingResults.ksrallycross[yearNumber].events.forEach((event: any) => {
-      if (event.oio_drivers) {
-        event.oio_drivers
-          .filter((d: any) => d.position <= 3 && d.first_in_class)
-          .forEach((driver: any) => {
-            trophies.push({
-              driver: driver.name,
-              position: driver.position,
-              class: driver.class,
-              eventNumber: event.event_number,
-              eventName: event.event_name,
-              car: driver.car,
-              carNumber: driver.car_number,
-              year: yearNumber,
-              series: 'KSRX'
-            });
-          });
-      }
-    });
-  }
-
-  // Check Autocross
-  if (racingResults.autocross?.[yearNumber]?.events) {
-    racingResults.autocross[yearNumber].events.forEach((event: any) => {
-      if (event.results) {
-        event.results
-          .filter((r: any) => r.position <= 3 && r.trophy_eligible)
-          .forEach((result: any) => {
-            trophies.push({
-              driver: result.driver,
-              position: result.position,
-              class: result.class,
-              eventNumber: event.event_number,
-              eventName: event.title || `Event ${event.event_number}`,
-              car: result.car,
-              carNumber: result.car_number,
-              year: yearNumber,
-              series: 'Autocross'
-            });
-          });
-      }
-    });
-  }
+  combinedEvents.forEach((event: any) => {
+    const results = event.results || [];
+    results
+      .filter((r: any) => r.position <= 3 && r.trophy_eligible)
+      .forEach((result: any) => {
+        trophies.push({
+          driver: result.driver,
+          position: result.position,
+          class: result.class,
+          eventNumber: event.event_number,
+          eventName: event.event_name || event.title || `Event ${event.event_number}`,
+          car: result.car,
+          carNumber: result.car_number,
+          year: yearNumber,
+          series: event.series
+        });
+      });
+  });
 
   return trophies;
 }
