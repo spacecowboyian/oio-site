@@ -1,26 +1,108 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import events from '../data/events.json';
+
+interface EventData {
+  event_id: string;
+  circuit: string;
+  series: string;
+  year: number;
+  date: string;
+  venue: string;
+  total_registered: number;
+  oio_results: Array<{
+    driver: string;
+    car: string;
+    number: number;
+    class: string;
+    class_full: string;
+    position: number;
+    trophy: boolean;
+    total_time?: number | string;
+    total_time_corrected?: number;
+    total_time_official?: number;
+    best_run: number;
+  }>;
+}
+
+function getTotalTime(result: any): string {
+  const time = result.total_time_corrected ?? result.total_time_official ?? result.total_time;
+  if (typeof time === 'number') {
+    return time.toFixed(3);
+  }
+  return time ?? 'N/A';
+}
+
+const eventList: EventData[] = events.events;
 ---
 
 <BaseLayout
   title="Schedule - OIO Racing"
-  description="Upcoming races, track days, and events for OIO Racing."
+  description="Race schedule and results for OIO Racing drivers and teams."
 >
   <section class="py-16">
     <div class="container mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Schedule</h1>
-      <p class="text-xl text-zinc-400 mb-12">Upcoming races and track events</p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Race Schedule & Results</h1>
+      <p class="text-xl text-zinc-400 mb-12">OIO Racing events with driver results and achievements</p>
 
-      <div class="max-w-3xl mx-auto space-y-6">
-        {[...Array(5)].map((_, i) => (
-          <div class="bg-zinc-900 rounded-lg p-6 border border-zinc-800">
-            <div class="flex items-start justify-between">
-              <div>
-                <h3 class="text-xl font-semibold mb-2">Event Name {i + 1}</h3>
-                <p class="text-zinc-400 mb-1">Track Name</p>
-                <p class="text-sm text-zinc-500">Date: TBD</p>
+      <div class="max-w-4xl mx-auto space-y-8">
+        {eventList.map((event: EventData) => (
+          <div class="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800">
+            {/* Event Header */}
+            <div class="bg-gradient-to-r from-zinc-800 to-zinc-900 p-6 border-b border-zinc-800">
+              <div class="flex items-start justify-between mb-3">
+                <div>
+                  <h2 class="text-2xl font-bold mb-2">{event.series}</h2>
+                  <p class="text-zinc-400">{event.circuit}</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-sm text-zinc-400">Event {event.event_number}</p>
+                  <p class="text-lg font-semibold">{new Date(event.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
+                </div>
               </div>
-              <span class="px-3 py-1 bg-zinc-800 text-sm rounded-full">Upcoming</span>
+              <p class="text-zinc-300 text-sm">{event.venue}</p>
+            </div>
+
+            {/* OIO Drivers Results */}
+            <div class="p-6">
+              <h3 class="text-lg font-bold mb-4 text-zinc-200">OIO Driver Results</h3>
+              <div class="space-y-4">
+                {event.oio_results && event.oio_results.length > 0 ? (
+                  event.oio_results.map((result) => (
+                    <div class="bg-zinc-800/50 rounded-lg p-4 border border-zinc-700 hover:border-zinc-600 transition">
+                      <div class="flex items-start justify-between mb-3">
+                        <div class="flex-1">
+                          <h4 class="text-lg font-semibold text-white">{result.driver}</h4>
+                          <p class="text-zinc-400 text-sm">{result.car} • #{result.number}</p>
+                          <p class="text-zinc-500 text-xs mt-1">{result.class_full}</p>
+                        </div>
+                        <div class="text-right">
+                          <div class="flex items-center gap-2 justify-end">
+                            <span class="text-3xl font-bold text-zinc-200">#{result.position}</span>
+                            {result.trophy && (
+                              <span class="text-2xl">🏆</span>
+                            )}
+                          </div>
+                          <p class="text-zinc-400 text-sm mt-1">Best: {result.best_run.toFixed(3)}s</p>
+                        </div>
+                      </div>
+                      <div class="flex justify-between text-sm text-zinc-400">
+                        <span>Total Time: {getTotalTime(result)}s</span>
+                        {result.trophy && (
+                          <span class="text-zinc-300 font-medium">Trophy Winner</span>
+                        )}
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <p class="text-zinc-400">No OIO results for this event</p>
+                )}
+              </div>
+            </div>
+
+            {/* Event Stats Footer */}
+            <div class="bg-zinc-800/30 px-6 py-3 border-t border-zinc-800 text-sm text-zinc-400">
+              <p>{event.total_registered} registered competitors • {event.status === 'unofficial' ? 'Unofficial' : 'Official'}</p>
             </div>
           </div>
         ))}

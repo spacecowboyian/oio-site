@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "description": "OIO Racing competition results — structured event data for all OIO-tracked drivers",
+    "oio_drivers": [
+      "Ian Jennings",
+      "Ryan Redenbaugh",
+      "Miles Smith",
+      "Hudson Smith",
+      "Richard Thompson",
+      "Keegan Wilhelm"
+    ],
+    "updated": "2026-03-29",
+    "note": "Per-run times use format: raw seconds. Cone penalties noted separately in 'cones' field. SCCA RallyCross: total = sum of all completed runs. Cone penalty = 2s per cone. DNF run penalty = slowest competitor time for that run + 10 seconds, added to driver's cumulative total."
+  },
+  "events": [
+    {
+      "event_id": "KCRX-2026-E1",
+      "circuit": "KCRSCCA",
+      "series": "KCR RallyCross",
+      "year": 2026,
+      "event_number": 1,
+      "date": "2026-03-22",
+      "venue": "Ray Rocks Offroad Resort",
+      "total_registered": 40,
+      "total_with_times": 40,
+      "source": "kcrscca.org (Pronto Timing System) — extracted from web results page 3/26/26",
+      "status": "unofficial",
+      "top_times_of_day": {
+        "raw": { "time": 236.154, "class": "PR", "number": 14, "driver": "Steven Allison" },
+        "index": { "time": 236.154, "class": "PR", "number": 14, "driver": "Steven Allison" },
+        "prepared": { "time": 236.154, "class": "PR", "number": 14, "driver": "Steven Allison" },
+        "modified": { "time": 318.321, "class": "MR", "number": 2, "driver": "Ian Jennings", "note": "Based on official 6-run display only. Ian DNF'd run 7 — corrected result is 7th place per DNF penalty rule." }
+      },
+      "oio_results": [
+        {
+          "driver": "Ian Jennings",
+          "car": "1985 Toyota MR2",
+          "number": 2,
+          "class": "MR",
+          "class_full": "Modified - Rear Wheel Drive",
+          "class_entries": 8,
+          "class_trophies": 3,
+          "position": 7,
+          "trophy": false,
+          "total_time_official": 318.321,
+          "total_time_corrected": 393.784,
+          "best_run": 50.443,
+          "dnf_run": 7,
+          "dnf_penalty_basis": "Slowest MR run 7 time (Andrew Moll, 65.463) + 10s = 75.463 added to 6-run total of 318.321",
+          "runs": [
+            { "run": 1, "time": 54.154, "cones": 0 },
+            { "run": 2, "time": 52.790, "cones": 0 },
+            { "run": 3, "time": 56.534, "cones": 1 },
+            { "run": 4, "time": 53.179, "cones": 0 },
+            { "run": 5, "time": 50.443, "cones": 0 },
+            { "run": 6, "time": 51.221, "cones": 0 },
+            { "run": 7, "time": null, "dnf": true, "penalty_applied": 75.463 }
+          ],
+          "notes": "DNF on run 7 — did not take last run. Official Pronto results display shows 318.321 (6 runs) and lists Ian 1st, but that total is incomplete. Corrected total with DNF penalty = 393.784. Per Ian's calculation: 7th place, no trophy. The Modified Best Time of Day shown in official results (318.321) is based on the incomplete 6-run total and does not reflect the corrected standing."
+        },
+        {
+          "driver": "Ryan Redenbaugh",
+          "car": "1990 Mazda Miata",
+          "number": 86,
+          "class": "MR",
+          "class_full": "Modified - Rear Wheel Drive",
+          "class_entries": 8,
+          "class_trophies": 3,
+          "position": 3,
+          "trophy": true,
+          "total_time": 375.674,
+          "best_run": 50.095,
+          "runs": [
+            { "run": 1, "time": 54.931, "cones": 0 },
+            { "run": 2, "time": 56.850, "cones": 0 },
+            { "run": 3, "time": 52.339, "cones": 0 },
+            { "run": 4, "time": 56.116, "cones": 1 },
+            { "run": 5, "time": 53.658, "cones": 1 },
+            { "run": 6, "time": 51.685, "cones": 0 },
+            { "run": 7, "time": 50.095, "cones": 0 }
+          ],
+          "notes": "3rd place, trophy. Ryan running 1990 Mazda Miata — new car for 2026 season opener (MGB GT not yet returned from paint)."
+        },
+        {
+          "driver": "Miles Smith",
+          "car": "1985 Toyota MR2",
+          "number": 12,
+          "class": "MR",
+          "class_full": "Modified - Rear Wheel Drive",
+          "class_entries": 8,
+          "class_trophies": 3,
+          "position": 4,
+          "trophy": false,
+          "total_time": 388.813,
+          "best_run": 52.081,
+          "runs": [
+            { "run": 1, "time": 56.036, "cones": 0 },
+            { "run": 2, "time": 56.987, "cones": 0 },
+            { "run": 3, "time": 54.796, "cones": 0 },
+            { "run": 4, "time": 55.985, "cones": 0 },
+            { "run": 5, "time": 53.201, "cones": 0 },
+            { "run": 6, "time": 52.081, "cones": 0 },
+            { "run": 7, "time": 59.727, "cones": 0 }
+          ],
+          "notes": "4th place, missed trophy by 0.174s (Jake Cobb 5th at 388.987)."
+        },
+        {
+          "driver": "Hudson Smith",
+          "car": "2009 Honda Fit Sport",
+          "number": 6,
+          "class": "N",
+          "class_full": "Novice",
+          "class_entries": 8,
+          "class_trophies": 3,
+          "position": 1,
+          "trophy": true,
+          "total_time": 368.484,
+          "best_run": 46.785,
+          "runs": [
+            { "run": 1, "time": 57.312, "cones": 0 },
+            { "run": 2, "time": 54.738, "cones": 0 },
+            { "run": 3, "time": 57.856, "cones": 1 },
+            { "run": 4, "time": 56.538, "cones": 0 },
+            { "run": 5, "time": 47.363, "cones": 0 },
+            { "run": 6, "time": 46.785, "cones": 0 },
+            { "run": 7, "time": 47.892, "cones": 0 }
+          ],
+          "notes": "Novice class win. Second KCRX start (debut was 2025 E8)."
+        }
+      ]
+    }
+  ]
+}
