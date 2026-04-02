@@ -6,7 +6,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://outsideinsideoutside.com',
+  site: 'https://spacecowboyian.github.io/oio-site/',
+  base: '/oio-site/',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]
