@@ -74,7 +74,7 @@ const upcomingEvents2026 = events2026List.filter((e: any) => !e.oio_results || e
           {/* Past Results Section */}
           {pastEvents2026.length > 0 && (
             <div>
-              <h2 class="text-2xl font-bold mb-6 text-zinc-100">Completed Races</h2>
+              <h2 class="text-2xl font-bold mb-6 text-zinc-100">Events</h2>
               <div class="space-y-8">
                 {pastEvents2026.map((event: any) => (
                   <div class="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800">
@@ -154,7 +154,7 @@ const upcomingEvents2026 = events2026List.filter((e: any) => !e.oio_results || e
           {/* Upcoming Events Section */}
           {upcomingEvents2026.length > 0 && (
             <div>
-              <h2 class="text-2xl font-bold mb-6 text-zinc-100">Upcoming Events</h2>
+              <h2 class="text-2xl font-bold mb-6 text-zinc-100">Upcoming</h2>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {upcomingEvents2026.map((event: any) => (
                   <div class="bg-zinc-900 rounded-lg p-5 border border-zinc-800 hover:border-zinc-700 transition">
@@ -188,7 +188,7 @@ const upcomingEvents2026 = events2026List.filter((e: any) => !e.oio_results || e
           <div id={`year-${year}`} class="hidden">
             {racingResults.rallycross[year]?.events && racingResults.rallycross[year].events.length > 0 ? (
               <div>
-                <h2 class="text-2xl font-bold mb-6 text-zinc-100">{year} Season Results</h2>
+                <h2 class="text-2xl font-bold mb-6 text-zinc-100">{year} Events</h2>
                 <div class="space-y-8">
                   {racingResults.rallycross[year].events.map((event: any) => (
                     <div class="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800">
