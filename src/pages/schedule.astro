@@ -18,17 +18,24 @@ function getTotalTime(result: any): string {
 }
 
 function groupAndSortByClass(results: any[]) {
-  const grouped: { [key: string]: { class_full: string; drivers: any[] } } = {};
+  const grouped: { [key: string]: { class_full: string; drivers: any[]; fastestTime: number } } = {};
 
   results.forEach((result) => {
     const classKey = result.class || 'Unknown';
     if (!grouped[classKey]) {
       grouped[classKey] = {
         class_full: result.class_full || result.class || 'Unknown',
-        drivers: []
+        drivers: [],
+        fastestTime: Infinity
       };
     }
     grouped[classKey].drivers.push(result);
+
+    // Track fastest time for sorting classes
+    const time = result.total_time_corrected ?? result.total_time_official ?? result.total_time ?? result.best_time ?? result.best_run ?? Infinity;
+    if (typeof time === 'number' && time < grouped[classKey].fastestTime) {
+      grouped[classKey].fastestTime = time;
+    }
   });
 
   // Sort drivers within each class by position
@@ -36,7 +43,15 @@ function groupAndSortByClass(results: any[]) {
     classGroup.drivers.sort((a, b) => a.position - b.position);
   });
 
-  return grouped;
+  // Convert to array and sort classes by fastest time
+  const sorted = Object.entries(grouped)
+    .map(([classCode, classGroup]) => ({
+      classCode,
+      ...classGroup
+    }))
+    .sort((a, b) => a.fastestTime - b.fastestTime);
+
+  return sorted;
 }
 
 // Get 2026 data
@@ -98,10 +113,10 @@ const upcomingEvents2026 = events2026List.filter((e: any) => !e.oio_results || e
                       <h3 class="text-lg font-bold mb-6 text-zinc-200">OIO Driver Results</h3>
                       {event.oio_results && event.oio_results.length > 0 ? (
                         <>
-                          {Object.entries(groupAndSortByClass(event.oio_results)).map(([classCode, classGroup]: any) => (
+                          {groupAndSortByClass(event.oio_results).map((classGroup: any) => (
                             <div class="mb-8 last:mb-0">
                               <div class="mb-3 pb-2 border-b border-zinc-700">
-                                <h4 class="text-base font-semibold text-zinc-300">{classGroup.class_full} ({classCode})</h4>
+                                <h4 class="text-base font-semibold text-zinc-300">{classGroup.class_full} ({classGroup.classCode})</h4>
                               </div>
                               <div class="space-y-3">
                                 {classGroup.drivers.map((result: any) => (
@@ -210,10 +225,10 @@ const upcomingEvents2026 = events2026List.filter((e: any) => !e.oio_results || e
                         <h3 class="text-lg font-bold mb-6 text-zinc-200">OIO Driver Results</h3>
                         {event.results && event.results.length > 0 ? (
                           <>
-                            {Object.entries(groupAndSortByClass(event.results)).map(([classCode, classGroup]: any) => (
+                            {groupAndSortByClass(event.results).map((classGroup: any) => (
                               <div class="mb-8 last:mb-0">
                                 <div class="mb-3 pb-2 border-b border-zinc-700">
-                                  <h4 class="text-base font-semibold text-zinc-300">{classGroup.class_full} ({classCode})</h4>
+                                  <h4 class="text-base font-semibold text-zinc-300">{classGroup.class_full} ({classGroup.classCode})</h4>
                                 </div>
                                 <div class="space-y-3">
                                   {classGroup.drivers.map((result: any) => (
