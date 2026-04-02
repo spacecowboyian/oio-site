@@ -159,7 +159,7 @@ const driversTrophies = Object.entries(driverTrophyCounts)
         <div class="mb-16 bg-gradient-to-br from-yellow-500/20 to-amber-600/10 rounded-lg p-8 border border-yellow-600/30">
           <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
             <span class="text-4xl">🏆</span>
-            {yearNum} Season Trophies
+            {yearNum} Season Championship
           </h2>
 
           {/* Trophy Leaders */}
@@ -177,7 +177,7 @@ const driversTrophies = Object.entries(driverTrophyCounts)
 
           {/* Trophy Details */}
           <div>
-            <h3 class="text-xl font-semibold mb-4 text-yellow-200">Trophy Details</h3>
+            <h3 class="text-xl font-semibold mb-4 text-yellow-200">Trophy Wins</h3>
             <div class="space-y-3 max-h-96 overflow-y-auto">
               {trophies
                 .sort((a, b) => a.position - b.position || a.eventNumber - b.eventNumber)
@@ -206,11 +206,11 @@ const driversTrophies = Object.entries(driverTrophyCounts)
         </div>
       )}
 
-      {/* Link back to full schedule */}
+      {/* Link back to schedule */}
       <div class="mb-12">
-        <a href="/oio-site/schedule" class="inline-flex items-center gap-2 text-zinc-400 hover:text-zinc-200 transition">
+        <a href="/schedule" class="inline-flex items-center gap-2 text-zinc-400 hover:text-zinc-200 transition">
           <span>←</span>
-          <span>Back to full schedule</span>
+          <span>Back to schedule</span>
         </a>
       </div>
 
