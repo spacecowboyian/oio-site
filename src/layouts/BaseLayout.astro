@@ -32,7 +32,7 @@ const { title, description = "OIO Racing - Grassroots racing that's real, raw, a
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
   </head>
-  <body class="min-h-screen bg-zinc-950 text-zinc-50">
+  <body class="min-h-screen bg-zinc-950 text-zinc-50 overflow-x-hidden">
     <!-- Navigation -->
     <nav class="border-b border-zinc-800 bg-zinc-900/50 backdrop-blur-sm sticky top-0 z-50">
       <div class="container mx-auto px-4 py-4">
@@ -41,7 +41,7 @@ const { title, description = "OIO Racing - Grassroots racing that's real, raw, a
             <span class="hidden md:inline">OIO Racing</span>
             <span class="md:hidden">OIO</span>
           </a>
-          <div class="flex gap-6">
+          <div class="flex gap-3 md:gap-6 text-sm md:text-base">
             <a href={`${import.meta.env.BASE_URL}videos`} class="text-zinc-300 hover:text-white transition">Videos</a>
             <a href={`${import.meta.env.BASE_URL}schedule`} class="text-zinc-300 hover:text-white transition">Schedule</a>
             <a href={`${import.meta.env.BASE_URL}sponsors`} class="text-zinc-300 hover:text-white transition">Sponsors</a>
