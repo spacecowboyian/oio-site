@@ -1,0 +1,315 @@
+#!/usr/bin/env node
+// Pulls the Spreadshop catalog for shop 477761 and writes
+// src/data/merch/catalog.json, which merch.astro imports at build time.
+//
+// Runs at build time, never in the browser: the API key must not ship.
+// Usage:  node scripts/sync-catalog.mjs [--details]
+//   --details  also fetch per-sellable size lists (slow, one call per published
+//              sellable). Skip it while iterating on layout.
+
+import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const SHOP_ID = "477761";
+const API = "https://api.spreadshirt.com/api/v1";
+const PAGE_SIZE = 48; // fixed by the API, not a preference
+
+const KEY = process.env.SPREADSHIRT_API_KEY ?? (await readEnvKey());
+if (!KEY) {
+  console.error("SPREADSHIRT_API_KEY missing. Add it to .env or the environment.");
+  process.exit(1);
+}
+
+async function readEnvKey() {
+  try {
+    const text = await readFile(join(ROOT, ".env"), "utf8");
+    return text.match(/^SPREADSHIRT_API_KEY=(.*)$/m)?.[1].trim();
+  } catch {
+    return undefined;
+  }
+}
+
+async function api(path) {
+  const url = `${API}/${path}${path.includes("?") ? "&" : "?"}mediaType=json`;
+  const res = await fetch(url, {
+    headers: {
+      Authorization: `SprdAuth apiKey="${KEY}"`,
+      "User-Agent": "OIOMerch/0.1 (https://oioracing.com; ratsmee@gmail.com)",
+      Accept: "application/json",
+    },
+  });
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText} on ${path}`);
+  return res.json();
+}
+
+// The sellables endpoint ignores offset/limit and only honours `page`. Paging
+// with offset silently re-returns page 0, which looks like a successful sync.
+async function fetchSellables() {
+  const first = await api(`shops/${SHOP_ID}/sellables?page=0`);
+  const pages = Math.ceil(first.count / PAGE_SIZE);
+  const rest = await Promise.all(
+    Array.from({ length: pages - 1 }, (_, i) =>
+      api(`shops/${SHOP_ID}/sellables?page=${i + 1}`).then((d) => d.sellables)
+    )
+  );
+  const all = [first.sellables, ...rest].flat();
+
+  const seen = new Set();
+  const unique = all.filter((s) => !seen.has(s.sellableId) && seen.add(s.sellableId));
+  if (unique.length !== first.count) {
+    console.warn(`expected ${first.count} sellables, kept ${unique.length} unique`);
+  }
+  return unique;
+}
+
+async function fetchProductTypes(ids) {
+  const entries = await Promise.all(
+    ids.map(async (id) => {
+      const pt = await api(`shops/${SHOP_ID}/productTypes/${id}`);
+      return [
+        id,
+        {
+          id,
+          name: pt.name,
+          category: pt.categoryName,
+          brand: pt.brand,
+          sizes: Object.fromEntries((pt.sizes ?? []).map((s) => [s.id, s.name])),
+          appearances: Object.fromEntries(
+            (pt.appearances ?? []).map((a) => [
+              a.id,
+              { name: a.name, color: a.colors?.[0]?.value ?? null },
+            ])
+          ),
+        },
+      ];
+    })
+  );
+  return Object.fromEntries(entries);
+}
+
+// Sellable detail needs ideaId AND appearanceId as query params, or it 422s.
+function fetchSellableDetail(s, appearanceId) {
+  return api(
+    `shops/${SHOP_ID}/sellables/${s.sellableId}?ideaId=${s.ideaId}&appearanceId=${appearanceId}`
+  );
+}
+
+// Size availability is per colourway, not per product: the same Bella + Canvas
+// tee stocks S/M/L/XL/2XL/3XL in white but skips L in one heather and M in
+// another. One lookup on the default colour would offer sizes that cannot be
+// bought, so every published colour gets its own lookup.
+async function fetchSizeMatrix(product) {
+  const sizesByAppearance = {};
+  for (const appearanceId of product.appearanceIds) {
+    const detail = await fetchSellableDetail(product, appearanceId);
+    sizesByAppearance[appearanceId] = detail.sizeIds ?? [];
+    product.images ??= (detail.images ?? []).map((i) => i.url);
+  }
+  return sizesByAppearance;
+}
+
+// Spreadshirt's own categoryName is unusable here: 96 of the 177 product types
+// in this shop have it blank and the rest are inconsistent ("hoodie" vs
+// "Hoodie" vs "Contrast Hoodie"). Group off the product name instead.
+// Order matters: "Men's Premium Long Sleeve T-Shirt" and "Racerback Tank" both
+// match the generic tee rule, so the specific cuts are tested first.
+const GROUPS = [
+  ["Jackets", /jacket|windbreaker|pullover|zip|soft shell/i],
+  ["Hoodies", /hoodie|sweatshirt/i],
+  ["Long Sleeve", /long sleeve/i],
+  ["Tanks", /tank|sleeveless|racerback/i],
+  // Before Tees: a "Jersey Beanie" is a hat, not a jersey.
+  ["Hats", /cap|beanie|hat/i],
+  ["Tees", /t-shirt|tee|jersey|polo/i],
+  ["Drinkware", /mug|bottle/i],
+  ["Bags", /bag|pouch|fanny|backpack/i],
+  ["Small Goods", /button|sticker|mouse pad|pillow|bandana|apron|teddy/i],
+];
+
+const groupFor = (name) => GROUPS.find(([, re]) => re.test(name))?.[0] ?? "Other";
+
+// Drives both the drawer's tab order and the hero pick: a design's thumbnail
+// should be the tee, not whichever button pack happens to be cheapest. This is
+// merchandising order, deliberately not the matching order above.
+const GROUP_ORDER = [
+  "Tees",
+  "Hoodies",
+  "Long Sleeve",
+  "Tanks",
+  "Hats",
+  "Bags",
+  "Drinkware",
+  "Small Goods",
+  "Other",
+];
+
+// The grid thumbnail is the design's audition, so lead with the best-selling
+// form it comes in — cheapest tee if there is one, else the earliest group that
+// exists. Falling back to plain cheapest would put a 5-pack of buttons on the
+// card and print "from $7.99" under a design that mostly sells as a shirt.
+function pickHero(variants) {
+  const group = GROUP_ORDER.find((g) => variants.some((v) => v.group === g));
+  const pool = variants.filter((v) => v.group === group);
+  return pool.reduce((a, b) => (b.price < a.price ? b : a));
+}
+
+async function loadOverrides() {
+  try {
+    return JSON.parse(await readFile(join(ROOT, "src/data/merch/overrides.json"), "utf8"));
+  } catch {
+    return {};
+  }
+}
+
+// Product names, blurbs and collections are OIO's, not Spreadshop's. Overrides
+// are keyed by ideaId so a rename in the Partner Area can't silently reshuffle
+// the storefront. Unknown designs default to hidden — nothing goes live by
+// accident, and every design is an explicit yes.
+function applyOverrides(design, overrides) {
+  const o = overrides[design.ideaId] ?? {};
+  return {
+    ...design,
+    name: o.name ?? design.sourceName,
+    blurb: o.blurb ?? design.sourceDescription,
+    collection: o.collection ?? "Uncategorized",
+    published: o.published === true,
+    featured: o.featured === true,
+  };
+}
+
+const sellables = await fetchSellables();
+console.log(`fetched ${sellables.length} sellables`);
+
+const productTypeIds = [...new Set(sellables.map((s) => s.productTypeId))];
+const productTypes = await fetchProductTypes(productTypeIds);
+console.log(`fetched ${productTypeIds.length} product types`);
+
+const overrides = await loadOverrides();
+
+const byIdea = new Map();
+for (const s of sellables) {
+  if (!byIdea.has(s.ideaId)) {
+    byIdea.set(s.ideaId, {
+      ideaId: s.ideaId,
+      sourceName: s.name,
+      sourceDescription: s.description ?? "",
+      tags: s.tags ?? [],
+      mainDesignId: s.mainDesignId,
+      variants: [],
+    });
+  }
+  const productType = productTypes[s.productTypeId]?.name ?? s.productTypeId;
+  byIdea.get(s.ideaId).variants.push({
+    sellableId: s.sellableId,
+    productTypeId: s.productTypeId,
+    productType,
+    group: groupFor(productType),
+    // Ink color is fixed per sellable (the CxRRGGBB token in vpKey), NOT
+    // selectable like garment color. A design printed in black simply has no
+    // black-shirt version; that needs a different sellable, which is why the
+    // lineup can pin `print`.
+    print: s.vpKey?.match(/Cx([0-9A-Fa-f]{6})/)?.[1] ?? null,
+    price: s.price.amount,
+    image: s.previewImage?.url ?? null,
+    appearanceIds: s.appearanceIds ?? [],
+    defaultAppearanceId: s.defaultAppearanceId,
+  });
+}
+
+const designs = [...byIdea.values()]
+  .map((d) =>
+    applyOverrides({ ...d, catalogSize: d.variants.length, hero: pickHero(d.variants) }, overrides)
+  )
+  .sort((a, b) => b.catalogSize - a.catalogSize);
+
+// Spreadshop lists every blank it can print on — 120+ per design. That is a
+// catalogue dump, not a shop. The lineup is the short list OIO actually sells;
+// everything else stays available on Spreadshop but is not merchandised here.
+const lineup = JSON.parse(await readFile(join(ROOT, "src/data/merch/lineup.json"), "utf8"));
+
+const products = [];
+const missing = [];
+for (const design of designs.filter((d) => d.published)) {
+  const rules = lineup.byDesign?.[design.ideaId] ?? {};
+  const entries = [...lineup.default, ...(rules.add ?? [])]
+    .filter((e) => !(rules.remove ?? []).includes(e.productTypeId))
+    // A design whose art only reads on a particular blank swaps that lineup
+    // slot out by label, keeping its position in the shelf.
+    .map((e) => ({ ...e, ...(rules.swap?.[e.label] ?? {}) }));
+
+  for (const entry of entries) {
+    const variant = design.variants.find(
+      (v) =>
+        v.productTypeId === entry.productTypeId &&
+        (!entry.print || v.print === entry.print)
+    );
+    if (!variant) {
+      missing.push(
+        `${design.name} — ${entry.label}` +
+          (entry.print ? ` (no ${entry.print} print on type ${entry.productTypeId})` : "")
+      );
+      continue;
+    }
+    const defaultAppearanceId = entry.appearanceId ?? variant.defaultAppearanceId;
+    products.push({
+      id: `${design.ideaId}-${entry.productTypeId}`,
+      ideaId: design.ideaId,
+      designName: design.name,
+      collection: design.collection,
+      featured: design.featured,
+      blurb: design.blurb,
+      label: entry.label,
+      category: entry.category,
+      primary: entry.primary === true,
+      productType: variant.productType,
+      productTypeId: variant.productTypeId,
+      brand: productTypes[variant.productTypeId]?.brand ?? null,
+      group: variant.group,
+      price: variant.price,
+      print: variant.print,
+      // Card art must show the colourway the lineup picked, not whatever
+      // Spreadshop defaults to. Appearance is encoded in the image path.
+      image: variant.image?.replace(/appearanceId=\d+/, `appearanceId=${defaultAppearanceId}`),
+      appearanceIds: variant.appearanceIds,
+      defaultAppearanceId,
+      sellableId: variant.sellableId,
+    });
+  }
+}
+
+if (process.argv.includes("--details")) {
+  const calls = products.reduce((n, p) => n + p.appearanceIds.length, 0);
+  console.log(`fetching size matrix for ${products.length} products (${calls} lookups)...`);
+  for (const p of products) {
+    p.sizesByAppearance = await fetchSizeMatrix(p);
+  }
+}
+
+const catalog = {
+  shopId: SHOP_ID,
+  syncedAt: new Date().toISOString(),
+  hasDetails: process.argv.includes("--details"),
+  groupOrder: GROUP_ORDER,
+  productTypes,
+  products,
+  // Kept for curation: which designs exist, how big their raw catalogue is, and
+  // what is or is not published. The storefront only reads `products`.
+  designs: designs.map(({ variants, ...rest }) => rest),
+};
+
+await mkdir(join(ROOT, "src/data/merch"), { recursive: true });
+await writeFile(join(ROOT, "src/data/merch/catalog.json"), JSON.stringify(catalog, null, 2));
+
+const live = designs.filter((d) => d.published).length;
+console.log(
+  `wrote src/data/merch/catalog.json — ${products.length} products from ${live} published ` +
+    `designs (${designs.length} designs, ${sellables.length} blanks in Spreadshop)`
+);
+if (live === 0) {
+  console.log('nothing published yet: set "published": true in src/data/merch/overrides.json');
+}
+// Never silently drop a product: a lineup entry that a design cannot print on
+// is a curation decision, not a no-op.
+for (const m of missing) console.warn(`  not available, skipped: ${m}`);

@@ -1,0 +1,45 @@
+---
+/**
+ * Apex corner label — the system's signature device and the grammar every other
+ * piece of furniture extends.
+ *
+ * Two flush parts, no gap: left boxed and contrasting with its own ground,
+ * right plain. Left is the fact, right the sub-fact. If the sub-fact is
+ * unknown, the right side is omitted rather than guessed.
+ */
+interface Props {
+  fact: string;
+  subFact?: string | null;
+  class?: string;
+}
+
+const { fact, subFact, class: className } = Astro.props;
+---
+
+<p class:list={["corner-label", className]}>
+  <span class="corner-label__box">{fact}</span>
+  {subFact && <span class="corner-label__plain">{subFact}</span>}
+</p>
+
+<style>
+  .corner-label {
+    display: flex;
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* Padding is per part, from the token file. */
+  .corner-label__box {
+    padding: 0.32em 0.55em;
+    background: var(--apex-white);
+    color: var(--apex-black);
+  }
+
+  .corner-label__plain {
+    padding: 0.32em 0.55em;
+    color: var(--apex-steel-light);
+  }
+</style>

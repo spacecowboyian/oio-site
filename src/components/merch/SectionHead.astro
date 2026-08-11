@@ -1,0 +1,72 @@
+---
+/**
+ * Apex section heading: a mono sequence marker in a corner-label box, the
+ * title, then optional right-aligned meta over a hairline. Reuses the
+ * corner-label grammar so numbered sections read as part of the system rather
+ * than a new device.
+ *
+ * The marker is a *box*, not an accent chip — sequence numbers are not a payoff.
+ */
+interface Props {
+  seq: number;
+  title: string;
+  meta?: string;
+}
+
+const { seq, title, meta } = Astro.props;
+---
+
+<div class="section-head">
+  <span class="section-head__marker">{String(seq).padStart(2, "0")}</span>
+  <h2>{title}</h2>
+  {meta && <span class="section-head__meta">{meta}</span>}
+</div>
+
+<style>
+  .section-head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 3rem 1.5rem 0.75rem;
+    border-bottom: 1px solid var(--apex-steel-dark);
+  }
+
+  .section-head__marker {
+    padding: 0.32em 0.55em;
+    background: var(--apex-white);
+    color: var(--apex-black);
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  .section-head h2 {
+    font-family: var(--apex-font-lead);
+    font-size: var(--apex-h6);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+  }
+
+  .section-head__meta {
+    margin-left: auto;
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--apex-steel-light);
+  }
+
+  /* Meta drops to its own line rather than escaping a narrow viewport. */
+  @media (max-width: 34rem) {
+    .section-head {
+      flex-wrap: wrap;
+    }
+
+    .section-head__meta {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+</style>

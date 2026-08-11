@@ -1,0 +1,51 @@
+{
+  "_comment": "The products OIO actually sells. A design is artwork; a product is that artwork on one blank we chose. `primary` is the one card that represents a design inside its category \u2014 the rest surface through 'Also on' on the product page. Every productTypeId in `default` is verified available on every published design; `byDesign.swap` replaces a slot for designs whose art needs a different blank (ink color is fixed per sellable, so a light print means a different blank, not a different color choice).",
+  "default": [
+    {
+      "productTypeId": "175",
+      "label": "Unisex Tee",
+      "category": "Tees",
+      "primary": true
+    },
+    {
+      "productTypeId": "347",
+      "label": "Women's Tee",
+      "category": "Tees"
+    },
+    {
+      "productTypeId": "1359",
+      "label": "Hoodie",
+      "category": "Hoodies",
+      "primary": true
+    },
+    {
+      "productTypeId": "875",
+      "label": "Long Sleeve",
+      "category": "Long Sleeve",
+      "primary": true
+    }
+  ],
+  "byDesign": {
+    "5d89f20f13615160bf833e7d": {
+      "_why": "Art is a black print on the Bella + Canvas blank, which has no light-ink version. Gildan Heavyweight Unisex carries an E5E5E5 print, so the design can run white on black.",
+      "swap": {
+        "Unisex Tee": {
+          "productTypeId": "1361",
+          "print": "E5E5E5",
+          "appearanceId": "2"
+        }
+      }
+    },
+    "5d89f19b162c5f464e875bc1": {
+      "_why": "Bella + Canvas has no yellow garment. Men's Premium T-Shirt stocks sun yellow and carries the black print. Relabelled because that blank is a men's cut, not a unisex one.",
+      "swap": {
+        "Unisex Tee": {
+          "productTypeId": "812",
+          "print": "000000",
+          "appearanceId": "1275",
+          "label": "Premium Tee"
+        }
+      }
+    }
+  }
+}

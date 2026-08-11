@@ -1,0 +1,120 @@
+---
+import CornerLabel from "./CornerLabel.astro";
+
+interface Props {
+  product: {
+    id: string;
+    designName: string;
+    label: string;
+    brand: string | null;
+    price: number;
+    image: string;
+    colorCount: number;
+  };
+}
+
+const { product } = Astro.props;
+
+// Cards crop into the chest print, so ask the image server for more pixels than
+// the card is wide — a 500px render scaled 1.9x is visibly soft.
+const highRes = product.image?.replace(/width=\d+,height=\d+/, "width=1000,height=1000");
+---
+
+<button class="card" data-product-id={product.id} type="button">
+  <span class="card__frame">
+    <img src={highRes} alt={`${product.designName} ${product.label}`} loading="lazy" />
+  </span>
+  <span class="card__name">{product.designName}</span>
+  <CornerLabel fact={product.label} subFact={product.brand} />
+  <span class="card__meta">
+    <span>{product.colorCount} colors</span>
+    <span class="card__price">${product.price.toFixed(2)}</span>
+  </span>
+</button>
+
+<style>
+  /* A raised panel on the ground: Surface 2 with a Steel Dark hairline, square
+     corners, no shadow — depth is surface steps, not elevation tricks. */
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--apex-surface-2);
+    color: var(--apex-white);
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  .card:hover {
+    background: var(--apex-surface);
+  }
+
+  /* Black is the full-bleed frame ground per the elevation rules. */
+  .card__frame {
+    position: relative;
+    display: block;
+    aspect-ratio: 1;
+    background: var(--apex-black);
+    overflow: hidden;
+  }
+
+  /* Crop into the shoulder-and-chest of the blank rather than showing the whole
+     folded shirt. A full product shot at card size is mostly empty fabric; the
+     print is the thing being sold. Origin sits left of centre and high so the
+     left shoulder seam stays in frame and anchors the garment. */
+  .card__frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.9) translateY(10%);
+    transform-origin: 40% 42%;
+    transition: transform 0.4s ease;
+  }
+
+  .card:hover .card__frame img {
+    transform: scale(2) translateY(10%);
+  }
+
+  .card__name {
+    font-family: var(--apex-font-lead);
+    font-size: var(--apex-h6);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+  }
+
+  .card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+    /* Pinned to the bottom so price rules line up across a row of cards whose
+       titles wrap to different heights. */
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--apex-steel-dark);
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    color: var(--apex-steel-light);
+  }
+
+  /* Data is mono and tabular so digits line up down the column. The accent
+     lands here and on the buy button — the price is the payoff. */
+  .card__price {
+    color: var(--apex-spark);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card,
+    .card__frame img {
+      transition: none;
+    }
+  }
+</style>
