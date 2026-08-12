@@ -313,9 +313,11 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
   const drawer = document.getElementById("drawer");
 
   function openDrawer(product) {
-    const siblings = Object.values(products).filter(
-      (p) => p.ideaId === product.ideaId && p.id !== product.id
-    );
+    // Every cut of this design, including the one being shown. A design is the
+    // unit the customer chose off the shelf; the cut is a choice made inside it,
+    // so this drives a Product row up with colour and size rather than an
+    // "Also on" afterthought at the bottom.
+    const cuts = Object.values(products).filter((p) => p.ideaId === product.ideaId);
     // Versions are different designs presented as one product — the three
     // S Generations cuts. Matched on the same blank so switching version does
     // not silently switch the customer onto a women's tee.
@@ -346,6 +348,7 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
             }</p>
             ${product.blurb ? `<p class="drawer__blurb">${product.blurb}</p>` : ""}
             <div class="field" id="f-version"></div>
+            <div class="field" id="f-product"></div>
             <div class="field" id="f-color"></div>
             <div class="field" id="f-size"></div>
             <p class="drawer__price">${money(product.price)}</p>
@@ -355,7 +358,6 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
               Your colour carries over. Pick a size on their page — payment,
               printing and shipping are handled by Spreadshop.
             </p>
-            <div class="field" id="f-siblings"></div>
           </div>
         </div>
       </div>`;
@@ -393,6 +395,25 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
           },
           (v) => {
             if (v.id !== product.id) openDrawer(v);
+          }
+        );
+      }
+
+      if (cuts.length > 1) {
+        optionRow(
+          $("f-product"),
+          "Product",
+          product.label,
+          cuts,
+          (c) => {
+            const b = document.createElement("button");
+            b.className = "opt";
+            b.setAttribute("aria-pressed", String(c.id === product.id));
+            b.textContent = c.label;
+            return b;
+          },
+          (c) => {
+            if (c.id !== product.id) openDrawer(c);
           }
         );
       }
@@ -442,21 +463,6 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
           paint();
         }
       );
-    }
-
-    if (siblings.length) {
-      $("f-siblings").innerHTML = `
-        <p class="field__label"><span>Also on</span></p>
-        <div class="options"></div>`;
-      const row = $("f-siblings").querySelector(".options");
-      for (const s of siblings) {
-        const b = document.createElement("button");
-        b.className = "opt";
-        b.type = "button";
-        b.textContent = `${s.label} · ${money(s.price)}`;
-        b.addEventListener("click", () => openDrawer(s));
-        row.append(b);
-      }
     }
 
     paint();

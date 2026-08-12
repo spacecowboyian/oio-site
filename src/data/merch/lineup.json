@@ -1,16 +1,15 @@
 {
   "_comment": "The products OIO actually sells. A design is artwork; a product is that artwork on one blank we chose. `primary` is the one card that represents a design inside its category \u2014 the rest surface through 'Also on' on the product page.",
-  "_scope": "T-shirts only for now. Hoodies and long sleeves were dropped 2026-08-12: only 12 of the 31 designs ever had their product range enabled, so those categories were empty for everything else and enabling them by hand is slow, error-prone work in the Partner Area. Every design already has a tee, so a tees-only shelf is complete on day one. The dropped entries are kept below under `_parked` so restoring them is an edit, not a re-derivation.",
+  "_scope": "T-shirts only. A design is the unit of the shelf; inside it the customer picks a product (men's or women's cut), then a colour, then a size, and the price follows that choice. Both cuts should be Bella + Canvas: 175 Unisex Jersey for men's, 4067 Slim Fit Rib for women's. Fallbacks exist because 12 published designs were never given a Bella blank in the Partner Area and would otherwise vanish from the shelf entirely \u2014 see _bellaGap.",
   "default": [
     {
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "primary": true,
       "productTypeIds": [
         "175",
         "812",
         "210",
-        "1361",
         "1361"
       ]
     },
@@ -18,6 +17,7 @@
       "label": "Women's Tee",
       "category": "Tees",
       "productTypeIds": [
+        "4067",
         "347",
         "813",
         "2916"
@@ -43,7 +43,7 @@
     "5d89f20f13615160bf833e7d": {
       "_why": "Art is a black print on the Bella + Canvas blank, which has no light-ink version. Gildan Heavyweight Unisex carries an E5E5E5 print, so the design can run white on black.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "productTypeId": "1361",
           "print": "E5E5E5",
           "appearanceId": "2"
@@ -53,7 +53,7 @@
     "5d89f19b162c5f464e875bc1": {
       "_why": "Bella + Canvas has no yellow garment. Men's Premium T-Shirt stocks sun yellow and carries the black print. Relabelled because that blank is a men's cut, not a unisex one.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "productTypeId": "812",
           "print": "000000",
           "appearanceId": "1275",
@@ -70,7 +70,7 @@
     "5d89f1b51cbf3a25d5a8c6f8": {
       "_why": "Toyota Corolla KE70 \u2014 bold black/white/red graphic. Checked against real renders: true red (the shop default) buried the car outline in the garment colour. Black and white both work; black picked to bias toward dark garment / light art.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "2"
         }
       }
@@ -78,7 +78,7 @@
     "5d89f1f813615160bf83367f": {
       "_why": "Toyota Celica Cutaway \u2014 Ian's call, superseding the earlier black pick: navy.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "4"
         }
       }
@@ -86,7 +86,7 @@
     "5d89f1b52051762642221a8c": {
       "_why": "Starion Conquest \u2014 Ian's call, overriding the earlier black pick: a light shirt (white) by default.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "1"
         }
       }
@@ -94,7 +94,7 @@
     "5d89f20e20517626422245b0": {
       "_why": "AE86 Corolla Hatchback \u2014 dark charcoal gear graphic. Checked against real renders: it disappears on black, navy and the light-heather-gray default alike. The ink is dark, so it needs a light ground; white is the crispest of the light options.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "1"
         }
       }
@@ -102,7 +102,7 @@
     "5d89f1f71cbf3a25d5a8e5c1": {
       "_why": "Aschwanden Spark Plug \u2014 fine dark line-art blueprint. Checked against real renders: the detail goes muddy on black/navy/true red. Needs a light ground for the linework to stay legible.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "1"
         }
       }
@@ -110,7 +110,7 @@
     "5d89f1e06bbdbb2e6a5b4eb0": {
       "_why": "Toyota Tosco Brochure Art \u2014 Ian's call: olive by default. Blank 210 has no colour literally named \"olive\"; military green (#6E7C54) is the closest match in the same family.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "715"
         }
       }
@@ -118,7 +118,7 @@
     "5d89f20e162c5f464e8791cc": {
       "_why": "S Generations (Color Car) \u2014 red car line art. Checked against real renders: it disappears on the true-red default's sibling problem and is muted on light heather gray; it's vivid on black. Matched across all three S Generations versions for consistency.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "2"
         }
       }
@@ -126,7 +126,7 @@
     "5d89f1e1b4b8c76e392b00e9": {
       "_why": "S Generations (Gray) \u2014 same red car line art as the other two versions; same fix for the same reason.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "2"
         }
       }
@@ -134,7 +134,7 @@
     "5d89f1f71cbf3a25d5a8e59d": {
       "_why": "S Generations (Clean) \u2014 same red car line art as the other two versions; same fix for the same reason.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "2"
         }
       }
@@ -142,7 +142,7 @@
     "5d89f19b13615160bf82f7a6": {
       "_why": "Petrol Sexual \u2014 black shirt, with the piston logo re-inked to medium grey (#97A09A) and the wordmark left white. The two ink channels were black + white, which put a black logo on a black shirt; the grey is Spreadshirt's palette entry closest to a neutral medium grey (the only alternative, #8B99A2, reads blue). Changed in the Partner Area on the Bella + Canvas blank, so it's a real ink change, not a display trick.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "2"
         }
       }
@@ -150,7 +150,7 @@
     "5d89f20e162c5f464e8791ce": {
       "_why": "Save the Stick - Red Cross \u2014 Ian's call: black by default, matching the rest of the Save the Stick family.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "2"
         }
       }
@@ -158,7 +158,7 @@
     "5d89f19c6bbdbb2e6a5b1ea8": {
       "_why": "Save the Stick - Shifter \u2014 Ian asked for a white design on a black shirt, which this design cannot do: its uploaded file carries exactly one ink colour (black), confirmed in the Partner Area product editor's Design colors list. Black ink needs a light ground, so this sits on white until a white version of the artwork is uploaded.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "1"
         }
       }
@@ -166,10 +166,11 @@
     "5d89f19cf937647d8113bec7": {
       "_why": "Save The Stick 6 Speed \u2014 Ian's call: black by default, matching the rest of the Save the Stick family.",
       "swap": {
-        "Unisex Tee": {
+        "Men's Tee": {
           "appearanceId": "2"
         }
       }
     }
-  }
+  },
+  "_bellaGap": "Designs with no Bella + Canvas blank enabled, still resolving to Jerzees 210: Toyota Tosco Brochure Art, S Generations (all three), 4Runner, Toyota Corolla Levin, Save the Stick - Red Cross (6 Speed version), Toyota Corolla KE70, Toyota Celica Cutaway, Starion Conquest, AE86 Corolla Hatchback, Miata MX5 Generations. Adding 175 and 4067 to these in the Partner Area is what makes the all-Bella claim true; until then the fallback keeps them purchasable."
 }

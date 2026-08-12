@@ -1,6 +1,6 @@
 {
   "shopId": "477761",
-  "syncedAt": "2026-08-12T21:57:45.958Z",
+  "syncedAt": "2026-08-12T22:19:00.591Z",
   "hasDetails": true,
   "groupOrder": [
     "Tees",
@@ -6535,7 +6535,7 @@
       "collection": "Toyota",
       "featured": true,
       "blurb": "TEQ is \"To-yo-ta\" spelled in Katakana, one of the Japanese phonetic alphabets. It was used as the Toyota logo starting in 1936 at the time when Toyoda Automatic Loom Works Ltd. launched its first car.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -6618,7 +6618,7 @@
       }
     },
     {
-      "id": "68a55cb6b0c760220d45f885-347",
+      "id": "68a55cb6b0c760220d45f885-4067",
       "ideaId": "68a55cb6b0c760220d45f885",
       "designName": "Toyota TEQ Logo",
       "collection": "Toyota",
@@ -6629,37 +6629,31 @@
       "family": null,
       "version": null,
       "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
+      "productType": "Slim Fit Rib Women's T-Shirt",
+      "productTypeId": "4067",
+      "brand": "Bella + Canvas",
       "group": "Tees",
-      "price": 23.49,
+      "price": 25.99,
       "print": "D31818",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X38Y31D12485372W17598H17598CxD31818/views/1,width=500,height=500,appearanceId=1/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/1,width=500,height=500,appearanceId=1/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
       "appearanceIds": [
         "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
+        "624",
+        "140",
         "231",
-        "352",
-        "376",
         "1",
         "2",
-        "17",
         "4"
       ],
       "defaultAppearanceId": "1",
-      "sellableId": "AbdBMvrQ8rsD4mL55mzN-347-8",
+      "sellableId": "AbdBMvrQ8rsD4mL55mzN-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X38Y31D12485372W17598H17598CxD31818/views/1,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A2PA4306PT17X38Y31D12485372W17598H17598CxD31818/views/1,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X38Y31D12485372W17598H17598CxD31818/views/2,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X38Y31D12485372W17598H17598CxD31818/views/3,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X38Y31D12485372W17598H17598CxD31818/views/4,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/1,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/1,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/2,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/3,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/4,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/12,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -6667,112 +6661,49 @@
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "2": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "4": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "17": [
+        "140": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "231": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "386": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "792": [
+        "624": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ]
       }
     },
@@ -7080,7 +7011,7 @@
       }
     },
     {
-      "id": "5d89f19b162c5f464e875bc1-347",
+      "id": "5d89f19b162c5f464e875bc1-4067",
       "ideaId": "5d89f19b162c5f464e875bc1",
       "designName": "Datsun Honey Bee",
       "collection": "Datsun & Friends",
@@ -7091,37 +7022,31 @@
       "family": null,
       "version": null,
       "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
+      "productType": "Slim Fit Rib Women's T-Shirt",
+      "productTypeId": "4067",
+      "brand": "Bella + Canvas",
       "group": "Tees",
-      "price": 23.49,
+      "price": 25.99,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y28D12753733W17598H18864Cx000000/views/1,width=500,height=500,appearanceId=231.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/1,width=500,height=500,appearanceId=231.jpg",
       "appearanceIds": [
         "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
+        "624",
+        "140",
         "231",
-        "352",
-        "376",
         "1",
         "2",
-        "17",
         "4"
       ],
       "defaultAppearanceId": "231",
-      "sellableId": "N0Qw57VA9XcVmand5r0p-347-8",
+      "sellableId": "N0Qw57VA9XcVmand5r0p-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y28D12753733W17598H18864Cx000000/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A231PA4306PT17X38Y28D12753733W17598H18864Cx000000/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y28D12753733W17598H18864Cx000000/views/2,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y28D12753733W17598H18864Cx000000/views/3,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y28D12753733W17598H18864Cx000000/views/4,width=650,height=650,appearanceId=386.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/1,width=650,height=650,appearanceId=386.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/1,width=650,height=650,appearanceId=386.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/2,width=650,height=650,appearanceId=386.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/3,width=650,height=650,appearanceId=386.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/4,width=650,height=650,appearanceId=386.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/12,width=650,height=650,appearanceId=386.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -7129,112 +7054,49 @@
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "2": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "4": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "17": [
+        "140": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "231": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "386": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "792": [
+        "624": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ]
       }
     },
@@ -7245,7 +7107,7 @@
       "collection": "Garage Gospel",
       "featured": false,
       "blurb": "Manual transmissions are dying. Help save the world from flappy paddles and slushboxes. SAVE THE STICK!",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -7438,7 +7300,7 @@
       }
     },
     {
-      "id": "5d89f20f13615160bf833e7d-347",
+      "id": "5d89f20f13615160bf833e7d-4067",
       "ideaId": "5d89f20f13615160bf833e7d",
       "designName": "Save the Stick - Bones",
       "collection": "Garage Gospel",
@@ -7449,37 +7311,31 @@
       "family": null,
       "version": null,
       "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
+      "productType": "Slim Fit Rib Women's T-Shirt",
+      "productTypeId": "4067",
+      "brand": "Bella + Canvas",
       "group": "Tees",
-      "price": 23.49,
+      "price": 25.99,
       "print": "E5E5E5",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A376PA4306PT17X41Y13D12575548W17006H25000CxE5E5E5/views/1,width=500,height=500,appearanceId=376/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/1,width=500,height=500,appearanceId=2/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
       "appearanceIds": [
         "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
+        "624",
+        "140",
         "231",
-        "352",
-        "376",
         "1",
         "2",
-        "17",
         "4"
       ],
-      "defaultAppearanceId": "376",
-      "sellableId": "dYdZMoqqVQIDJL0kvG3j-347-8",
+      "defaultAppearanceId": "2",
+      "sellableId": "dYdZMoqqVQIDJL0kvG3j-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A376PA4306PT17X41Y13D12575548W17006H25000CxE5E5E5/views/1,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A376PA4306PT17X41Y13D12575548W17006H25000CxE5E5E5/views/1,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A376PA4306PT17X41Y13D12575548W17006H25000CxE5E5E5/views/2,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A376PA4306PT17X41Y13D12575548W17006H25000CxE5E5E5/views/3,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A376PA4306PT17X41Y13D12575548W17006H25000CxE5E5E5/views/4,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/1,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/1,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/2,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/3,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/4,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/12,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -7487,112 +7343,49 @@
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "2": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "4": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "17": [
+        "140": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "231": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "386": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "792": [
+        "624": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ]
       }
     },
@@ -7603,7 +7396,7 @@
       "collection": "Mazda",
       "featured": false,
       "blurb": "It really is always the answer. Track Day Car? Miata. Beginner autocross car? Miata. Great fun daily driver? Miata. You simply can't go wrong with the car.. or this design. 2 Color vector design.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -7686,7 +7479,7 @@
       }
     },
     {
-      "id": "68a55cb6b868b07c0575ef83-347",
+      "id": "68a55cb6b868b07c0575ef83-4067",
       "ideaId": "68a55cb6b868b07c0575ef83",
       "designName": "Miata is always the answer",
       "collection": "Mazda",
@@ -7697,37 +7490,31 @@
       "family": null,
       "version": null,
       "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
+      "productType": "Slim Fit Rib Women's T-Shirt",
+      "productTypeId": "4067",
+      "brand": "Bella + Canvas",
       "group": "Tees",
-      "price": 23.49,
+      "price": 25.99,
       "print": "5B0B20",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X1Y28D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/1,width=500,height=500,appearanceId=1/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/1,width=500,height=500,appearanceId=1/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
       "appearanceIds": [
         "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
+        "624",
+        "140",
         "231",
-        "352",
-        "376",
         "1",
         "2",
-        "17",
         "4"
       ],
       "defaultAppearanceId": "1",
-      "sellableId": "XNMe1gk379C513ZgmlA8-347-8",
+      "sellableId": "XNMe1gk379C513ZgmlA8-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X1Y28D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A2PA4306PT17X1Y28D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X1Y28D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/2,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X1Y28D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/3,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X1Y28D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/4,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/2,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/3,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/4,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/12,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -7735,112 +7522,49 @@
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "2": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "4": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "17": [
+        "140": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "231": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "386": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "792": [
+        "624": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ]
       }
     },
@@ -7851,7 +7575,7 @@
       "collection": "Datsun & Friends",
       "featured": false,
       "blurb": "The Datsun 1600 PL510 first hit the streets in 1968. In just a short few years it would stake its claim to road and street racing glory.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -7934,7 +7658,7 @@
       }
     },
     {
-      "id": "5d89f19b1cbf3a25d5a8b50e-347",
+      "id": "5d89f19b1cbf3a25d5a8b50e-4067",
       "ideaId": "5d89f19b1cbf3a25d5a8b50e",
       "designName": "Datsun 510",
       "collection": "Datsun & Friends",
@@ -7945,37 +7669,31 @@
       "family": null,
       "version": null,
       "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
+      "productType": "Slim Fit Rib Women's T-Shirt",
+      "productTypeId": "4067",
+      "brand": "Bella + Canvas",
       "group": "Tees",
-      "price": 23.49,
+      "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1259PA4306PT17X38Y26D12609557W17598H19516/views/1,width=500,height=500,appearanceId=1259/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/1,width=500,height=500,appearanceId=140/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
       "appearanceIds": [
         "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
+        "624",
+        "140",
         "231",
-        "352",
-        "376",
         "1",
         "2",
-        "17",
         "4"
       ],
-      "defaultAppearanceId": "1259",
-      "sellableId": "bBYp4Dq1ozu53rLZq2O1-347-8",
+      "defaultAppearanceId": "140",
+      "sellableId": "bBYp4Dq1ozu53rLZq2O1-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1259PA4306PT17X38Y26D12609557W17598H19516/views/1,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A1259PA4306PT17X38Y26D12609557W17598H19516/views/1,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1259PA4306PT17X38Y26D12609557W17598H19516/views/2,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1259PA4306PT17X38Y26D12609557W17598H19516/views/3,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1259PA4306PT17X38Y26D12609557W17598H19516/views/4,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/1,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/1,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/2,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/3,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/4,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/12,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -7983,112 +7701,49 @@
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "2": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "4": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "17": [
+        "140": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "231": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "386": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "792": [
+        "624": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ]
       }
     },
@@ -8099,7 +7754,7 @@
       "collection": "Mazda",
       "featured": false,
       "blurb": "It turns out that Tony Stark's top secret generator was just a Mazda Wankel Rotary. Who knew? YOU DID! You'll always know when Iron Man is coming when you hear that familiar brap, brap, brap.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -8182,7 +7837,7 @@
       }
     },
     {
-      "id": "68a55cb6b868b07c0575ef91-347",
+      "id": "68a55cb6b868b07c0575ef91-4067",
       "ideaId": "68a55cb6b868b07c0575ef91",
       "designName": "Mazda Rotary - Iron Man",
       "collection": "Mazda",
@@ -8193,37 +7848,31 @@
       "family": null,
       "version": null,
       "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
+      "productType": "Slim Fit Rib Women's T-Shirt",
+      "productTypeId": "4067",
+      "brand": "Bella + Canvas",
       "group": "Tees",
-      "price": 23.49,
+      "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X38Y28D1000026474W17598H17240/views/1,width=500,height=500,appearanceId=2/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y29D1000026474W17777H17414/views/1,width=500,height=500,appearanceId=2/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
       "appearanceIds": [
         "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
+        "624",
+        "140",
         "231",
-        "352",
-        "376",
         "1",
         "2",
-        "17",
         "4"
       ],
       "defaultAppearanceId": "2",
-      "sellableId": "DqOk3mQJnYfN5vlOqZB8-347-8",
+      "sellableId": "DqOk3mQJnYfN5vlOqZB8-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X38Y28D1000026474W17598H17240/views/1,width=650,height=650,appearanceId=386/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A2PA4306PT17X38Y28D1000026474W17598H17240/views/1,width=650,height=650,appearanceId=386/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X38Y28D1000026474W17598H17240/views/2,width=650,height=650,appearanceId=386/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X38Y28D1000026474W17598H17240/views/3,width=650,height=650,appearanceId=386/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X38Y28D1000026474W17598H17240/views/4,width=650,height=650,appearanceId=386/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y29D1000026474W17777H17414/views/1,width=650,height=650,appearanceId=386/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X38Y29D1000026474W17777H17414/views/1,width=650,height=650,appearanceId=386/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y29D1000026474W17777H17414/views/2,width=650,height=650,appearanceId=386/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y29D1000026474W17777H17414/views/3,width=650,height=650,appearanceId=386/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y29D1000026474W17777H17414/views/4,width=650,height=650,appearanceId=386/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y29D1000026474W17777H17414/views/12,width=650,height=650,appearanceId=386/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -8231,112 +7880,49 @@
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "2": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "4": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "17": [
+        "140": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "231": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "386": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "792": [
+        "624": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ]
       }
     },
@@ -8347,7 +7933,7 @@
       "collection": "Volvo",
       "featured": false,
       "blurb": "So sayeth Hewy Lewis and so it shall be.. It's hip to be square. Volvo drivers have known this for years and now they can show their brick driving pride.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -8430,7 +8016,7 @@
       }
     },
     {
-      "id": "5d89f1ce162c5f464e8776be-347",
+      "id": "5d89f1ce162c5f464e8776be-4067",
       "ideaId": "5d89f1ce162c5f464e8776be",
       "designName": "Volvo Brick Driver",
       "collection": "Volvo",
@@ -8441,37 +8027,31 @@
       "family": null,
       "version": null,
       "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
+      "productType": "Slim Fit Rib Women's T-Shirt",
+      "productTypeId": "4067",
+      "brand": "Bella + Canvas",
       "group": "Tees",
-      "price": 23.49,
+      "price": 25.99,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y30D104998024W17598H17971Cx000000/views/1,width=500,height=500,appearanceId=231/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/1,width=500,height=500,appearanceId=231/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
       "appearanceIds": [
         "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
+        "624",
+        "140",
         "231",
-        "352",
-        "376",
         "1",
         "2",
-        "17",
         "4"
       ],
       "defaultAppearanceId": "231",
-      "sellableId": "bBYp4BavB7Uemo7Gy05o-347-8",
+      "sellableId": "bBYp4BavB7Uemo7Gy05o-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y30D104998024W17598H17971Cx000000/views/1,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A231PA4306PT17X38Y30D104998024W17598H17971Cx000000/views/1,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y30D104998024W17598H17971Cx000000/views/2,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y30D104998024W17598H17971Cx000000/views/3,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y30D104998024W17598H17971Cx000000/views/4,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/1,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/1,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/2,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/3,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/4,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/12,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -8479,112 +8059,49 @@
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "2": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "4": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "17": [
+        "140": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "231": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "386": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "792": [
+        "624": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ]
       }
     },
@@ -8595,7 +8112,7 @@
       "collection": "Garage Gospel",
       "featured": false,
       "blurb": "For too long the tyranny of the sequential gearbox has threatened to take from us, the driving community, our rights and freedoms. Save driving, save the stick!",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": "Save the Stick - Red Cross",
       "version": "5 Speed",
@@ -8678,7 +8195,7 @@
       }
     },
     {
-      "id": "5d89f20e162c5f464e8791ce-347",
+      "id": "5d89f20e162c5f464e8791ce-4067",
       "ideaId": "5d89f20e162c5f464e8791ce",
       "designName": "Save the Stick - Red Cross",
       "collection": "Garage Gospel",
@@ -8689,37 +8206,31 @@
       "family": "Save the Stick - Red Cross",
       "version": "5 Speed",
       "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
+      "productType": "Slim Fit Rib Women's T-Shirt",
+      "productTypeId": "4067",
+      "brand": "Bella + Canvas",
       "group": "Tees",
-      "price": 23.49,
+      "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y31D103632851W17598H17598/views/1,width=500,height=500,appearanceId=231/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/1,width=500,height=500,appearanceId=231/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
       "appearanceIds": [
         "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
+        "624",
+        "140",
         "231",
-        "352",
-        "376",
         "1",
         "2",
-        "17",
         "4"
       ],
       "defaultAppearanceId": "231",
-      "sellableId": "ZbJ9kNG7RQCX1L8RM8YY-347-8",
+      "sellableId": "ZbJ9kNG7RQCX1L8RM8YY-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y31D103632851W17598H17598/views/1,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A231PA4306PT17X38Y31D103632851W17598H17598/views/1,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y31D103632851W17598H17598/views/2,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y31D103632851W17598H17598/views/3,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A231PA4306PT17X38Y31D103632851W17598H17598/views/4,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/1,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/1,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/2,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/3,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/4,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/12,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -8727,112 +8238,49 @@
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "2": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "4": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "17": [
+        "140": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "231": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "386": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "792": [
+        "624": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ]
       }
     },
@@ -8843,7 +8291,7 @@
       "collection": "Garage Gospel",
       "featured": false,
       "blurb": "You bleed 5W-30... and it stains your clothes. This is for you. You sweat 91 Octane... and everyone can smell it. This is for you. You've always been a Petrolsexual.. now show everyone.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -8926,7 +8374,7 @@
       }
     },
     {
-      "id": "5d89f19b13615160bf82f7a6-347",
+      "id": "5d89f19b13615160bf82f7a6-4067",
       "ideaId": "5d89f19b13615160bf82f7a6",
       "designName": "Petrol Sexual",
       "collection": "Garage Gospel",
@@ -8937,37 +8385,31 @@
       "family": null,
       "version": null,
       "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
+      "productType": "Slim Fit Rib Women's T-Shirt",
+      "productTypeId": "4067",
+      "brand": "Bella + Canvas",
       "group": "Tees",
-      "price": 23.49,
+      "price": 25.99,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1368PA4306PT17X1Y44D12473483W25000H11234Cx000000%3AxE5E5E5/views/1,width=500,height=500,appearanceId=1/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/1,width=500,height=500,appearanceId=1/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
       "appearanceIds": [
         "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
+        "624",
+        "140",
         "231",
-        "352",
-        "376",
         "1",
         "2",
-        "17",
         "4"
       ],
       "defaultAppearanceId": "1",
-      "sellableId": "92qGnkaA8as1qR0Q3wJ9-347-8",
+      "sellableId": "92qGnkaA8as1qR0Q3wJ9-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1368PA4306PT17X1Y44D12473483W25000H11234Cx000000%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A1368PA4306PT17X1Y44D12473483W25000H11234Cx000000%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1368PA4306PT17X1Y44D12473483W25000H11234Cx000000%3AxE5E5E5/views/2,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1368PA4306PT17X1Y44D12473483W25000H11234Cx000000%3AxE5E5E5/views/3,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1368PA4306PT17X1Y44D12473483W25000H11234Cx000000%3AxE5E5E5/views/4,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/2,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/3,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/4,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/12,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -8975,112 +8417,49 @@
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "2": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "4": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "17": [
+        "140": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "231": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "386": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "792": [
+        "624": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ]
       }
     },
@@ -9091,7 +8470,7 @@
       "collection": "Fleet",
       "featured": false,
       "blurb": "The unsung hero of the 80s, the AE86 chassis Corolla GT-S Trueno/Levin is a true classic. Its light weight and rear wheel drive have made it great for road racing, autocross, rally and drifting.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -9174,7 +8553,7 @@
       }
     },
     {
-      "id": "5d89f20e2051762642224541-347",
+      "id": "5d89f20e2051762642224541-4067",
       "ideaId": "5d89f20e2051762642224541",
       "designName": "AE86 Corolla Coupe",
       "collection": "Fleet",
@@ -9185,37 +8564,31 @@
       "family": null,
       "version": null,
       "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
+      "productType": "Slim Fit Rib Women's T-Shirt",
+      "productTypeId": "4067",
+      "brand": "Bella + Canvas",
       "group": "Tees",
-      "price": 23.49,
+      "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1259PA4306PT17X61Y13D12614318W12912H25000/views/1,width=500,height=500,appearanceId=1259/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/1,width=500,height=500,appearanceId=1/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
       "appearanceIds": [
         "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
+        "624",
+        "140",
         "231",
-        "352",
-        "376",
         "1",
         "2",
-        "17",
         "4"
       ],
-      "defaultAppearanceId": "1259",
-      "sellableId": "ZbJ9kNGxE1t9Rxy57l1Q-347-8",
+      "defaultAppearanceId": "1",
+      "sellableId": "ZbJ9kNGxE1t9Rxy57l1Q-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1259PA4306PT17X61Y13D12614318W12912H25000/views/1,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A1259PA4306PT17X61Y13D12614318W12912H25000/views/1,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1259PA4306PT17X61Y13D12614318W12912H25000/views/2,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1259PA4306PT17X61Y13D12614318W12912H25000/views/3,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1259PA4306PT17X61Y13D12614318W12912H25000/views/4,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/1,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/1,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/2,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/3,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/4,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/12,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -9223,112 +8596,49 @@
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "2": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "4": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "17": [
+        "140": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "231": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "386": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "792": [
+        "624": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ]
       }
     },
@@ -9339,7 +8649,7 @@
       "collection": "Garage Gospel",
       "featured": false,
       "blurb": "Don't we all? Even a simple wheel change can get your warranty swiped out from under you these days. Mostly the reason why I will never buy another new car... but I digress.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -9422,7 +8732,7 @@
       }
     },
     {
-      "id": "68a55cb63f6bcc7d6db21930-347",
+      "id": "68a55cb63f6bcc7d6db21930-4067",
       "ideaId": "68a55cb63f6bcc7d6db21930",
       "designName": "I Void Car Warranties",
       "collection": "Garage Gospel",
@@ -9433,37 +8743,31 @@
       "family": null,
       "version": null,
       "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
+      "productType": "Slim Fit Rib Women's T-Shirt",
+      "productTypeId": "4067",
+      "brand": "Bella + Canvas",
       "group": "Tees",
-      "price": 23.49,
+      "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X1Y53D12672949W25000H6162/views/1,width=500,height=500,appearanceId=2/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/1,width=500,height=500,appearanceId=2/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
       "appearanceIds": [
         "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
+        "624",
+        "140",
         "231",
-        "352",
-        "376",
         "1",
         "2",
-        "17",
         "4"
       ],
       "defaultAppearanceId": "2",
-      "sellableId": "YDEAYglXZ4s9Q7NBkelV-347-8",
+      "sellableId": "YDEAYglXZ4s9Q7NBkelV-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X1Y53D12672949W25000H6162/views/1,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A2PA4306PT17X1Y53D12672949W25000H6162/views/1,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X1Y53D12672949W25000H6162/views/2,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X1Y53D12672949W25000H6162/views/3,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A2PA4306PT17X1Y53D12672949W25000H6162/views/4,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/1,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/1,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/2,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/3,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/4,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/12,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -9471,112 +8775,49 @@
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "2": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
         "4": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "17": [
+        "140": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "231": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ],
         "386": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
+          "6"
         ],
-        "792": [
+        "624": [
           "2",
           "3",
           "4",
           "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
+          "6"
         ]
       }
     },
@@ -9587,7 +8828,7 @@
       "collection": "Save the Stick",
       "featured": false,
       "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -9835,7 +9076,7 @@
       "collection": "Toyota",
       "featured": false,
       "blurb": "Before becoming Toyota Racing Development, TRD was known as Toyota Sports Corner, or TOSCO. TOSCO was established in Yokohama and built Toyota's first performance engines for the Celica and Corolla.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -10083,7 +9324,7 @@
       "collection": "Fleet",
       "featured": false,
       "blurb": "",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -10167,7 +9408,7 @@
       "collection": "Toyota",
       "featured": false,
       "blurb": "",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -10482,7 +9723,7 @@
       "collection": "Toyota",
       "featured": false,
       "blurb": "",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -10797,7 +10038,7 @@
       "collection": "Garage Gospel",
       "featured": false,
       "blurb": "",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": "Save the Stick - Red Cross",
       "version": "6 Speed",
@@ -11112,7 +10353,7 @@
       "collection": "Toyota",
       "featured": false,
       "blurb": "One word, tossable. That pretty much sums up the experience of driving a KE70. The early 80s was a good time for Toyota .",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -11427,7 +10668,7 @@
       "collection": "Datsun & Friends",
       "featured": false,
       "blurb": "Light, low, high compression, high revs. Same principles of great sports cars.. made 40 years apart. The S800 and S2000 stand as the benchmarks of Japanese sports cars.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": "S Generations",
       "version": "Color Car",
@@ -11742,7 +10983,7 @@
       "collection": "Fleet",
       "featured": false,
       "blurb": "This particular graphic comes from a JDM Celica brochure for the 1600GT with a 2TG motor.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -12057,7 +11298,7 @@
       "collection": "Datsun & Friends",
       "featured": false,
       "blurb": "",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -12372,7 +11613,7 @@
       "collection": "Toyota",
       "featured": false,
       "blurb": "The unsung hero of the 80s, the AE86 chassis Corolla GT-S Trueno/Levin is a true classic. Its light weight and rear wheel drive have made it great for road racing, autocross, rally and drifting.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -12687,7 +11928,7 @@
       "collection": "Mazda",
       "featured": false,
       "blurb": "",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -13002,7 +12243,7 @@
       "collection": "Fleet",
       "featured": false,
       "blurb": "This shirt features several parts from an early 70s Toyota Tosco brochure for TA22 Celica 1600GT road and rally racing parts",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": null,
       "version": null,
@@ -13317,7 +12558,7 @@
       "collection": "Datsun & Friends",
       "featured": false,
       "blurb": "",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": "S Generations",
       "version": "Gray",
@@ -13632,7 +12873,7 @@
       "collection": "Datsun & Friends",
       "featured": false,
       "blurb": "The same as our other s800/s2000 design but without the crusty stuff at the bottom so it can be placed low on a shirt.",
-      "label": "Unisex Tee",
+      "label": "Men's Tee",
       "category": "Tees",
       "family": "S Generations",
       "version": "Clean",
