@@ -24,9 +24,12 @@ const shelf = products.filter((p) => p.primary);
 const categories = [...new Set(shelf.map((p) => p.category))];
 const landing = categories[0];
 
-// Garage Gospel is the house line — OIO's own jokes rather than someone else's
-// badge — so it leads the shelf instead of sorting in alphabetically.
-const LEAD_COLLECTION = "Garage Gospel";
+// Collections that get their own section, in shelf order, ahead of everything
+// else. Garage Gospel leads because it's the house line — OIO's own jokes
+// rather than someone else's badge. Fleet follows: the cars OIO actually runs.
+// Anything not named here falls into "Everything Else" rather than needing to
+// be listed, so adding a section is one entry plus the collection on a design.
+const FEATURED_COLLECTIONS = ["Garage Gospel", "Fleet"];
 const collections = [...new Set(shelf.map((p) => p.collection))];
 
 const colorCount = (p) => p.appearanceIds.length;
@@ -46,14 +49,22 @@ const card = (p) => ({
 // anyone whose JS never arrives.
 const sections = categories.flatMap((category) => {
   const inCategory = shelf.filter((p) => p.category === category);
-  const lead = inCategory.filter((p) => p.collection === LEAD_COLLECTION);
-  const rest = inCategory.filter((p) => p.collection !== LEAD_COLLECTION);
+
+  const featured = FEATURED_COLLECTIONS.map((name) => ({
+    category,
+    title: name,
+    items: inCategory.filter((p) => p.collection === name),
+  })).filter((section) => section.items.length);
+
+  // A design belongs to exactly one section: anything claimed by a featured
+  // collection is excluded here rather than repeated further down the shelf.
+  const rest = inCategory.filter((p) => !FEATURED_COLLECTIONS.includes(p.collection));
 
   return [
-    lead.length && { category, title: LEAD_COLLECTION, items: lead },
+    ...featured,
     rest.length && {
       category,
-      title: lead.length ? "Everything Else" : null,
+      title: featured.length ? "Everything Else" : null,
       items: rest,
     },
   ].filter(Boolean);

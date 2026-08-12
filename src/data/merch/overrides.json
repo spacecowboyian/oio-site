@@ -48,7 +48,7 @@
     "sourceName": "AE86 Corolla Coupe",
     "name": "AE86 Corolla Coupe",
     "blurb": "The unsung hero of the 80s, the AE86 chassis Corolla GT-S Trueno/Levin is a true classic. Its light weight and rear wheel drive have made it great for road racing, autocross, rally and drifting.",
-    "collection": "Toyota",
+    "collection": "Fleet",
     "published": true,
     "featured": false,
     "_variants": 122
@@ -132,7 +132,7 @@
     "sourceName": "Toyota Tosco Brochure Art",
     "name": "Toyota Tosco Brochure Art",
     "blurb": "This shirt features several parts from an early 70s Toyota Tosco brochure for TA22 Celica 1600GT road and rally racing parts",
-    "collection": "Toyota",
+    "collection": "Fleet",
     "published": true,
     "featured": false,
     "_variants": 1
@@ -192,7 +192,7 @@
     "sourceName": "Corolla FX16",
     "name": "Corolla FX16",
     "blurb": "",
-    "collection": "Toyota",
+    "collection": "Fleet",
     "published": true,
     "featured": false,
     "_variants": 1
@@ -252,7 +252,7 @@
     "sourceName": "Toyota Celica Cutaway",
     "name": "Toyota Celica Cutaway",
     "blurb": "This particular graphic comes from a JDM Celica brochure for the 1600GT with a 2TG motor.",
-    "collection": "Toyota",
+    "collection": "Fleet",
     "published": true,
     "featured": false,
     "_variants": 1
