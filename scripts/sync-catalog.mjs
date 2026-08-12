@@ -343,8 +343,16 @@ for (const design of designs.filter((d) => d.published)) {
     // range enabled each sit on whichever tee they were uploaded onto (210 or
     // 812) while the full-range twelve carry 175; demanding one exact blank
     // would exclude two thirds of the catalogue over a distinction the customer
-    // cannot see. A single `productTypeId` still means exactly that blank.
-    const candidates = entry.productTypeIds ?? [entry.productTypeId];
+    // cannot see. A single `productTypeId` still means exactly that blank —
+    // and a `productTypeId` from a `byDesign.swap` must win over the default
+    // entry's `productTypeIds` list, or the swap is silently ignored. That
+    // exact bug shipped once already: Datsun Honey Bee's swap to blank 812 (for
+    // the sun-yellow appearance Bella + Canvas doesn't offer) was overridden by
+    // the array's own "175" candidate, which happened to also carry the design
+    // in black ink — so the design silently resolved onto 175 and then applied
+    // the swap's appearanceId (a sun-yellow id that only exists on 812) to it,
+    // producing a defaultAppearanceId with no matching colour at all.
+    const candidates = entry.productTypeId ? [entry.productTypeId] : entry.productTypeIds ?? [];
     let variant;
     for (const productTypeId of candidates) {
       variant = design.variants.find(
@@ -366,8 +374,13 @@ for (const design of designs.filter((d) => d.published)) {
       rules.garment,
       rules.appearanceIds
     );
+    // A forced appearanceId is only trusted if it actually exists on the
+    // resolved variant — otherwise the same silent-mismatch bug as above,
+    // just from the other direction (right blank, stale/wrong colour id).
     const defaultAppearanceId =
-      entry.appearanceId ?? pickAppearance({ ...variant, appearanceIds }, appearanceMeta);
+      entry.appearanceId && appearanceIds.includes(entry.appearanceId)
+        ? entry.appearanceId
+        : pickAppearance({ ...variant, appearanceIds }, appearanceMeta);
     products.push({
       // From the RESOLVED variant, never the entry: an entry using a
       // `productTypeIds` preference list has no single productTypeId, which

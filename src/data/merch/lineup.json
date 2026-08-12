@@ -76,18 +76,18 @@
       }
     },
     "5d89f1f813615160bf83367f": {
-      "_why": "Toyota Celica Cutaway \u2014 thin red line-art outline. Checked against real renders: it reads on white, but goes dim on black/navy and nearly vanishes on the true-red default. The ink itself is dark, so it needs a light ground; there is no dark-garment option that works.",
+      "_why": "Toyota Celica Cutaway \u2014 Ian's call, overriding the earlier white pick: black by default.",
       "swap": {
         "Unisex Tee": {
-          "appearanceId": "1"
+          "appearanceId": "2"
         }
       }
     },
     "5d89f1b52051762642221a8c": {
-      "_why": "Starion Conquest \u2014 pale outline sketch. Checked against real renders: it disappears on the light-heather-gray default and on true red, and reads best on black.",
+      "_why": "Starion Conquest \u2014 Ian's call, overriding the earlier black pick: a light shirt (white) by default.",
       "swap": {
         "Unisex Tee": {
-          "appearanceId": "2"
+          "appearanceId": "1"
         }
       }
     },
@@ -108,10 +108,10 @@
       }
     },
     "5d89f1e06bbdbb2e6a5b4eb0": {
-      "_why": "Toyota Tosco Brochure Art \u2014 dark line art with a red badge. Checked against real renders: black/navy hide the linework and the light-heather-gray default washes it out. White is the only ground that keeps both the line art and the red badge readable.",
+      "_why": "Toyota Tosco Brochure Art \u2014 Ian's call: olive by default. Blank 210 has no colour literally named \"olive\"; military green (#6E7C54) is the closest match in the same family.",
       "swap": {
         "Unisex Tee": {
-          "appearanceId": "1"
+          "appearanceId": "715"
         }
       }
     },
@@ -133,6 +133,38 @@
     },
     "5d89f1f71cbf3a25d5a8e59d": {
       "_why": "S Generations (Clean) \u2014 same red car line art as the other two versions; same fix for the same reason.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "2"
+        }
+      }
+    },
+    "5d89f19b13615160bf82f7a6": {
+      "_why": "Petrol Sexual \u2014 Ian's call: black by default, matching the rest of Garage Gospel.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "2"
+        }
+      }
+    },
+    "5d89f20e162c5f464e8791ce": {
+      "_why": "Save the Stick - Red Cross \u2014 Ian's call: black by default, matching the rest of the Save the Stick family.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "2"
+        }
+      }
+    },
+    "5d89f19c6bbdbb2e6a5b1ea8": {
+      "_why": "Save the Stick - Shifter \u2014 Ian's call: black by default, matching the rest of the Save the Stick family.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "2"
+        }
+      }
+    },
+    "5d89f19cf937647d8113bec7": {
+      "_why": "Save The Stick 6 Speed \u2014 Ian's call: black by default, matching the rest of the Save the Stick family.",
       "swap": {
         "Unisex Tee": {
           "appearanceId": "2"

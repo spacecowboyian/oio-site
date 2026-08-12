@@ -181,7 +181,7 @@
     "name": "That's What Speed Do",
     "blurb": "Gore, Dyson, Escobar, Cain. We've got the need... the need... for speed.",
     "collection": "Garage Gospel",
-    "published": true,
+    "published": false,
     "featured": false,
     "_variants": 1
   },
@@ -283,7 +283,7 @@
     "name": "Aschwanden Spark Plug",
     "blurb": "Peter Aschwanden was best known for illustrating John Muir\u2019s How to Keep Your Volkswagen Alive: A Manual of Step-by-Step Procedures for the Compleat Idiot.",
     "collection": "Garage Gospel",
-    "published": true,
+    "published": false,
     "featured": false,
     "_variants": 1
   }

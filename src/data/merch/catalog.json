@@ -1,6 +1,6 @@
 {
   "shopId": "477761",
-  "syncedAt": "2026-08-12T20:55:59.871Z",
+  "syncedAt": "2026-08-12T21:30:44.025Z",
   "hasDetails": true,
   "groupOrder": [
     "Tees",
@@ -6777,7 +6777,7 @@
       }
     },
     {
-      "id": "5d89f19b162c5f464e875bc1-175",
+      "id": "5d89f19b162c5f464e875bc1-812",
       "ideaId": "5d89f19b162c5f464e875bc1",
       "designName": "Datsun Honey Bee",
       "collection": "Datsun & Friends",
@@ -6788,80 +6788,294 @@
       "family": null,
       "version": null,
       "primary": true,
-      "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
-      "productTypeId": "175",
-      "brand": "Bella + Canvas",
+      "productType": "Men's Premium T-Shirt",
+      "productTypeId": "812",
+      "brand": "SPREAD",
       "group": "Tees",
-      "price": 26.49,
+      "price": 26.99,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X43Y37D12753733W19999H21438Cx000000/views/1,width=500,height=500,appearanceId=1275.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/1,width=500,height=500,appearanceId=1275.jpg",
       "appearanceIds": [
-        "154",
+        "388",
+        "648",
+        "812",
+        "823",
+        "1247",
+        "1251",
+        "1252",
+        "1254",
+        "1256",
+        "1264",
+        "1265",
+        "1269",
+        "1270",
+        "1271",
+        "1272",
+        "1274",
+        "1275",
+        "1277",
+        "92",
         "231",
+        "317",
+        "328",
+        "366",
         "1",
-        "36",
         "2",
-        "5",
-        "4"
+        "39"
       ],
       "defaultAppearanceId": "1275",
-      "sellableId": "N0Qw57VA9XcVmand5r0p-175-7",
+      "sellableId": "N0Qw57VA9XcVmand5r0p-812-7",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X43Y37D12753733W19999H21438Cx000000/views/1,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A154PA4927PT17X43Y37D12753733W19999H21438Cx000000/views/1,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X43Y37D12753733W19999H21438Cx000000/views/2,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X43Y37D12753733W19999H21438Cx000000/views/3,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X43Y37D12753733W19999H21438Cx000000/views/4,width=650,height=650,appearanceId=154.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/1,width=650,height=650,appearanceId=388.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/1,width=650,height=650,appearanceId=388.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/2,width=650,height=650,appearanceId=388.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/3,width=650,height=650,appearanceId=388.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/4,width=650,height=650,appearanceId=388.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/12,width=650,height=650,appearanceId=388.jpg"
       ],
       "sizesByAppearance": {
         "1": [
+          "1",
           "2",
           "3",
           "4",
           "5",
           "6",
-          "38"
+          "38",
+          "94",
+          "102"
         ],
         "2": [
+          "1",
           "2",
           "3",
           "4",
           "5",
           "6",
-          "38"
+          "38",
+          "94",
+          "102"
         ],
-        "4": [
+        "39": [
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "92": [
           "2",
           "3",
           "4",
           "5",
           "6",
-          "38"
-        ],
-        "5": [
-          "2",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "36": [
-          "2",
-          "3",
-          "4",
-          "6"
-        ],
-        "154": [
-          "2",
-          "3",
-          "5",
-          "38"
+          "38",
+          "102"
         ],
         "231": [
+          "2",
+          "3",
+          "4",
+          "6",
+          "94",
+          "102"
+        ],
+        "317": [
+          "2",
+          "4",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "328": [
+          "2",
+          "3",
+          "6",
+          "94"
+        ],
+        "366": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "388": [
+          "2",
+          "3",
+          "4",
+          "94"
+        ],
+        "648": [
+          "4",
+          "5",
+          "6",
+          "94",
+          "102"
+        ],
+        "812": [
+          "2",
+          "3",
+          "6",
+          "102"
+        ],
+        "823": [
+          "2",
           "3",
           "5",
           "6",
-          "38"
+          "38",
+          "94",
+          "102"
+        ],
+        "1247": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "1251": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "1252": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "1254": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "1256": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "1264": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "1265": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "1269": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "1270": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "1271": [
+          "1",
+          "2",
+          "4",
+          "94",
+          "102"
+        ],
+        "1272": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "1274": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "1275": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ],
+        "1277": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
         ]
       }
     },
@@ -8392,7 +8606,7 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X22Y30D103632851W24218H24218/views/1,width=500,height=500,appearanceId=1/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X22Y30D103632851W24218H24218/views/1,width=500,height=500,appearanceId=2/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
       "appearanceIds": [
         "154",
         "231",
@@ -8402,7 +8616,7 @@
         "5",
         "4"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "2",
       "sellableId": "ZbJ9kNG7RQCX1L8RM8YY-175-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X22Y30D103632851W24218H24218/views/1,width=650,height=650,appearanceId=154/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
@@ -8640,7 +8854,7 @@
       "group": "Tees",
       "price": 26.49,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12070Cx000000%3AxFFFFFF/views/1,width=500,height=500,appearanceId=1/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12070Cx000000%3AxFFFFFF/views/1,width=500,height=500,appearanceId=2/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
       "appearanceIds": [
         "154",
         "231",
@@ -8650,7 +8864,7 @@
         "5",
         "4"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "2",
       "sellableId": "92qGnkaA8as1qR0Q3wJ9-175-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12070Cx000000%3AxFFFFFF/views/1,width=650,height=650,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
@@ -9384,7 +9598,7 @@
       "group": "Tees",
       "price": 26.49,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y38D1000566431W19999H19999Cx000000/views/1,width=500,height=500,appearanceId=1/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y38D1000566431W19999H19999Cx000000/views/1,width=500,height=500,appearanceId=2/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
       "appearanceIds": [
         "154",
         "231",
@@ -9394,7 +9608,7 @@
         "5",
         "4"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "2",
       "sellableId": "jwenrD12z7TV9G2M09ny-175-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y38D1000566431W19999H19999Cx000000/views/1,width=650,height=650,appearanceId=154/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
@@ -9746,254 +9960,6 @@
         "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/2,width=650,height=650,appearanceId=386/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
         "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/3,width=650,height=650,appearanceId=386/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
         "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/4,width=650,height=650,appearanceId=386/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg"
-      ],
-      "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "17": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "792": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ]
-      }
-    },
-    {
-      "id": "5d89f1cd13615160bf831625-175",
-      "ideaId": "5d89f1cd13615160bf831625",
-      "designName": "That's What Speed Do",
-      "collection": "Garage Gospel",
-      "featured": false,
-      "blurb": "Gore, Dyson, Escobar, Cain. We've got the need... the need... for speed.",
-      "label": "Unisex Tee",
-      "category": "Tees",
-      "family": null,
-      "version": null,
-      "primary": true,
-      "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
-      "productTypeId": "175",
-      "brand": "Bella + Canvas",
-      "group": "Tees",
-      "price": 26.49,
-      "print": "E5E5E5",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y35D1001336271W25000H22306CxE5E5E5/views/1,width=500,height=500,appearanceId=2/gore-dyson-escobar-cain-weve-got-the-need-the-need-for-speed.jpg",
-      "appearanceIds": [
-        "154",
-        "231",
-        "1",
-        "36",
-        "2",
-        "5",
-        "4"
-      ],
-      "defaultAppearanceId": "2",
-      "sellableId": "rAdMbAdweQuwXJar0pG8-175-7",
-      "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y35D1001336271W25000H22306CxE5E5E5/views/1,width=650,height=650,appearanceId=154/gore-dyson-escobar-cain-weve-got-the-need-the-need-for-speed.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X18Y35D1001336271W25000H22306CxE5E5E5/views/1,width=650,height=650,appearanceId=154/gore-dyson-escobar-cain-weve-got-the-need-the-need-for-speed.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y35D1001336271W25000H22306CxE5E5E5/views/2,width=650,height=650,appearanceId=154/gore-dyson-escobar-cain-weve-got-the-need-the-need-for-speed.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y35D1001336271W25000H22306CxE5E5E5/views/3,width=650,height=650,appearanceId=154/gore-dyson-escobar-cain-weve-got-the-need-the-need-for-speed.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y35D1001336271W25000H22306CxE5E5E5/views/4,width=650,height=650,appearanceId=154/gore-dyson-escobar-cain-weve-got-the-need-the-need-for-speed.jpg"
-      ],
-      "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "5": [
-          "2",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "36": [
-          "2",
-          "3",
-          "4",
-          "6"
-        ],
-        "154": [
-          "2",
-          "3",
-          "5",
-          "38"
-        ],
-        "231": [
-          "3",
-          "5",
-          "6",
-          "38"
-        ]
-      }
-    },
-    {
-      "id": "5d89f1cd13615160bf831625-347",
-      "ideaId": "5d89f1cd13615160bf831625",
-      "designName": "That's What Speed Do",
-      "collection": "Garage Gospel",
-      "featured": false,
-      "blurb": "Gore, Dyson, Escobar, Cain. We've got the need... the need... for speed.",
-      "label": "Women's Tee",
-      "category": "Tees",
-      "family": null,
-      "version": null,
-      "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
-      "group": "Tees",
-      "price": 23.49,
-      "print": "E5E5E5",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y42D1001336271W17598H15701CxE5E5E5/views/1,width=500,height=500,appearanceId=2/gore-dyson-escobar-cain-weve-got-the-need-the-need-for-speed.jpg",
-      "appearanceIds": [
-        "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
-        "231",
-        "352",
-        "376",
-        "1",
-        "2",
-        "17",
-        "4"
-      ],
-      "defaultAppearanceId": "2",
-      "sellableId": "rAdMbAdweQuwXJar0pG8-347-8",
-      "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y42D1001336271W17598H15701CxE5E5E5/views/1,width=650,height=650,appearanceId=386/gore-dyson-escobar-cain-weve-got-the-need-the-need-for-speed.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A1PA4306PT17X38Y42D1001336271W17598H15701CxE5E5E5/views/1,width=650,height=650,appearanceId=386/gore-dyson-escobar-cain-weve-got-the-need-the-need-for-speed.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y42D1001336271W17598H15701CxE5E5E5/views/2,width=650,height=650,appearanceId=386/gore-dyson-escobar-cain-weve-got-the-need-the-need-for-speed.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y42D1001336271W17598H15701CxE5E5E5/views/3,width=650,height=650,appearanceId=386/gore-dyson-escobar-cain-weve-got-the-need-the-need-for-speed.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y42D1001336271W17598H15701CxE5E5E5/views/4,width=650,height=650,appearanceId=386/gore-dyson-escobar-cain-weve-got-the-need-the-need-for-speed.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -10842,7 +10808,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A1PA4301PT17X46Y21D12622848W23876H23876/views/1,width=500,height=500,appearanceId=1.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A1PA4301PT17X46Y21D12622848W23876H23876/views/1,width=500,height=500,appearanceId=2.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -10874,7 +10840,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "2",
       "sellableId": "Bqymx2nbeMiO8DaY25n3-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A1PA4301PT17X46Y21D12622848W23876H23876/views/1,width=650,height=650,appearanceId=386.jpg",
@@ -11787,7 +11753,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A295PA4301PT17X14Y17D12610695W30886H20145/views/1,width=500,height=500,appearanceId=1/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A295PA4301PT17X14Y17D12610695W30886H20145/views/1,width=500,height=500,appearanceId=2/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -11819,7 +11785,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "2",
       "sellableId": "4w8MB0jRovu9ARa54GLw-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A295PA4301PT17X14Y17D12610695W30886H20145/views/1,width=650,height=650,appearanceId=386/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
@@ -12102,7 +12068,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X22Y40D12697291W30369H21865/views/1,width=500,height=500,appearanceId=2.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X22Y40D12697291W30369H21865/views/1,width=500,height=500,appearanceId=1.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -12134,7 +12100,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "2",
+      "defaultAppearanceId": "1",
       "sellableId": "xrdR7gpAy2ILYAzeoryp-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X22Y40D12697291W30369H21865/views/1,width=650,height=650,appearanceId=386.jpg",
@@ -13030,321 +12996,6 @@
       }
     },
     {
-      "id": "5d89f1f71cbf3a25d5a8e5c1-210",
-      "ideaId": "5d89f1f71cbf3a25d5a8e5c1",
-      "designName": "Aschwanden Spark Plug",
-      "collection": "Garage Gospel",
-      "featured": false,
-      "blurb": "Peter Aschwanden was best known for illustrating John Muir’s How to Keep Your Volkswagen Alive: A Manual of Step-by-Step Procedures for the Compleat Idiot.",
-      "label": "Unisex Tee",
-      "category": "Tees",
-      "family": null,
-      "version": null,
-      "primary": true,
-      "productType": "Men's T-Shirt",
-      "productTypeId": "210",
-      "brand": "Jerzees",
-      "group": "Tees",
-      "price": 23.49,
-      "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A697PA4301PT17X39Y36D1005894620W25374H10149/views/1,width=500,height=500,appearanceId=1/peter-aschwanden-was-best-known-for-illustrating-john-muirs-how-to-keep-your-volkswagen-alive-a-manual-of-step-by-step-procedures-for-the-compleat-i.jpg",
-      "appearanceIds": [
-        "386",
-        "438",
-        "504",
-        "591",
-        "697",
-        "715",
-        "940",
-        "1281",
-        "1368",
-        "1370",
-        "1466",
-        "1587",
-        "95",
-        "120",
-        "134",
-        "196",
-        "228",
-        "231",
-        "258",
-        "259",
-        "295",
-        "351",
-        "1",
-        "22",
-        "2",
-        "4",
-        "33",
-        "63",
-        "69"
-      ],
-      "defaultAppearanceId": "1",
-      "sellableId": "5a5x1wyqp1sElnQpNLdl-210-7",
-      "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T210A697PA4301PT17X39Y36D1005894620W25374H10149/views/1,width=650,height=650,appearanceId=386/peter-aschwanden-was-best-known-for-illustrating-john-muirs-how-to-keep-your-volkswagen-alive-a-manual-of-step-by-step-procedures-for-the-compleat-i.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T210A697PA4301PT17X39Y36D1005894620W25374H10149/views/1,width=650,height=650,appearanceId=386/peter-aschwanden-was-best-known-for-illustrating-john-muirs-how-to-keep-your-volkswagen-alive-a-manual-of-step-by-step-procedures-for-the-compleat-i.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T210A697PA4301PT17X39Y36D1005894620W25374H10149/views/2,width=650,height=650,appearanceId=386/peter-aschwanden-was-best-known-for-illustrating-john-muirs-how-to-keep-your-volkswagen-alive-a-manual-of-step-by-step-procedures-for-the-compleat-i.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T210A697PA4301PT17X39Y36D1005894620W25374H10149/views/3,width=650,height=650,appearanceId=386/peter-aschwanden-was-best-known-for-illustrating-john-muirs-how-to-keep-your-volkswagen-alive-a-manual-of-step-by-step-procedures-for-the-compleat-i.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T210A697PA4301PT17X39Y36D1005894620W25374H10149/views/4,width=650,height=650,appearanceId=386/peter-aschwanden-was-best-known-for-illustrating-john-muirs-how-to-keep-your-volkswagen-alive-a-manual-of-step-by-step-procedures-for-the-compleat-i.jpg"
-      ],
-      "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "22": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "33": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "63": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "69": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "95": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94"
-        ],
-        "120": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "196": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "228": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "258": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "295": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "351": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "438": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "504": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "591": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "697": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "715": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "940": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1281": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1370": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1587": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ]
-      }
-    },
-    {
       "id": "5d89f1e06bbdbb2e6a5b4eb0-210",
       "ideaId": "5d89f1e06bbdbb2e6a5b4eb0",
       "designName": "Toyota Tosco Brochure Art",
@@ -13362,7 +13013,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X33Y20D12610689W26734H29397/views/1,width=500,height=500,appearanceId=1/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X33Y20D12610689W26734H29397/views/1,width=500,height=500,appearanceId=715/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -13394,7 +13045,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "715",
       "sellableId": "gnLY3nln2dsR9yXw1142-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X33Y20D12610689W26734H29397/views/1,width=650,height=650,appearanceId=386/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
@@ -15239,7 +14890,7 @@
       "name": "That's What Speed Do",
       "blurb": "Gore, Dyson, Escobar, Cain. We've got the need... the need... for speed.",
       "collection": "Garage Gospel",
-      "published": true,
+      "published": false,
       "featured": false,
       "group": null,
       "version": null,
@@ -15958,7 +15609,7 @@
       "name": "Aschwanden Spark Plug",
       "blurb": "Peter Aschwanden was best known for illustrating John Muir’s How to Keep Your Volkswagen Alive: A Manual of Step-by-Step Procedures for the Compleat Idiot.",
       "collection": "Garage Gospel",
-      "published": true,
+      "published": false,
       "featured": false,
       "group": null,
       "version": null,
