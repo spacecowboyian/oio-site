@@ -91,7 +91,7 @@
   },
   "5d89f20e162c5f464e8791ce": {
     "sourceName": "Save the Stick - Red Cross - 5 Speed",
-    "name": "Save the Stick - Red Cross - 5 Speed",
+    "name": "Save the Stick - Red Cross",
     "blurb": "For too long the tyranny of the sequential gearbox has threatened to take from us, the driving community, our rights and freedoms. Save driving, save the stick!",
     "collection": "Garage Gospel",
     "published": true,
@@ -112,13 +112,13 @@
     "name": "Petrol Sexual",
     "blurb": "You bleed 5W-30... and it stains your clothes. This shirt is for you. You sweat 91 Octane... and everyone can smell it. This shirt is for you. \"Piston\" by Proletkult Graphik, from The Noun Project",
     "collection": "Garage Gospel",
-    "published": true,
+    "published": false,
     "featured": false,
     "_variants": 2
   },
   "5d89f19c6bbdbb2e6a5b1ea8": {
     "sourceName": "Save the Stick - Shift Pattern",
-    "name": "Save the Stick - Shift Pattern",
+    "name": "Save the Stick - Shifter",
     "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
     "collection": "Garage Gospel",
     "published": true,

@@ -1,6 +1,6 @@
 {
   "shopId": "477761",
-  "syncedAt": "2026-08-12T20:28:49.034Z",
+  "syncedAt": "2026-08-12T20:55:59.871Z",
   "hasDetails": true,
   "groupOrder": [
     "Tees",
@@ -8377,7 +8377,7 @@
     {
       "id": "5d89f20e162c5f464e8791ce-175",
       "ideaId": "5d89f20e162c5f464e8791ce",
-      "designName": "Save the Stick - Red Cross - 5 Speed",
+      "designName": "Save the Stick - Red Cross",
       "collection": "Garage Gospel",
       "featured": false,
       "blurb": "For too long the tyranny of the sequential gearbox has threatened to take from us, the driving community, our rights and freedoms. Save driving, save the stick!",
@@ -8466,7 +8466,7 @@
     {
       "id": "5d89f20e162c5f464e8791ce-347",
       "ideaId": "5d89f20e162c5f464e8791ce",
-      "designName": "Save the Stick - Red Cross - 5 Speed",
+      "designName": "Save the Stick - Red Cross",
       "collection": "Garage Gospel",
       "featured": false,
       "blurb": "For too long the tyranny of the sequential gearbox has threatened to take from us, the driving community, our rights and freedoms. Save driving, save the stick!",
@@ -9369,7 +9369,7 @@
     {
       "id": "5d89f19c6bbdbb2e6a5b1ea8-175",
       "ideaId": "5d89f19c6bbdbb2e6a5b1ea8",
-      "designName": "Save the Stick - Shift Pattern",
+      "designName": "Save the Stick - Shifter",
       "collection": "Garage Gospel",
       "featured": false,
       "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
@@ -9458,7 +9458,7 @@
     {
       "id": "5d89f19c6bbdbb2e6a5b1ea8-347",
       "ideaId": "5d89f19c6bbdbb2e6a5b1ea8",
-      "designName": "Save the Stick - Shift Pattern",
+      "designName": "Save the Stick - Shifter",
       "collection": "Garage Gospel",
       "featured": false,
       "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
@@ -10185,254 +10185,6 @@
       ],
       "sizesByAppearance": {
         "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ]
-      }
-    },
-    {
-      "id": "5d89f1f8f937647d8113f389-175",
-      "ideaId": "5d89f1f8f937647d8113f389",
-      "designName": "Petrol Sexual",
-      "collection": "Garage Gospel",
-      "featured": false,
-      "blurb": "You bleed 5W-30... and it stains your clothes. This shirt is for you. You sweat 91 Octane... and everyone can smell it. This shirt is for you. \"Piston\" by Proletkult Graphik, from The Noun Project",
-      "label": "Unisex Tee",
-      "category": "Tees",
-      "family": null,
-      "version": null,
-      "primary": true,
-      "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
-      "productTypeId": "175",
-      "brand": "Bella + Canvas",
-      "group": "Tees",
-      "price": 26.49,
-      "print": "0D5B5E",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y53D12573501W25000H13485Cx0D5B5E%3AxE5E5E5/views/1,width=500,height=500,appearanceId=1/you-bleed-5w-30-and-it-stains-your-clothes-this-shirt-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-shirt-is-for-you-piston.jpg",
-      "appearanceIds": [
-        "154",
-        "231",
-        "1",
-        "36",
-        "2",
-        "5",
-        "4"
-      ],
-      "defaultAppearanceId": "1",
-      "sellableId": "JkpXG1JQynsyAZaGljmw-175-7",
-      "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y53D12573501W25000H13485Cx0D5B5E%3AxE5E5E5/views/1,width=650,height=650,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-shirt-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-shirt-is-for-you-piston.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X18Y53D12573501W25000H13485Cx0D5B5E%3AxE5E5E5/views/1,width=650,height=650,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-shirt-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-shirt-is-for-you-piston.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y53D12573501W25000H13485Cx0D5B5E%3AxE5E5E5/views/2,width=650,height=650,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-shirt-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-shirt-is-for-you-piston.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y53D12573501W25000H13485Cx0D5B5E%3AxE5E5E5/views/3,width=650,height=650,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-shirt-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-shirt-is-for-you-piston.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y53D12573501W25000H13485Cx0D5B5E%3AxE5E5E5/views/4,width=650,height=650,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-shirt-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-shirt-is-for-you-piston.jpg"
-      ],
-      "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "5": [
-          "2",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "36": [
-          "2",
-          "3",
-          "4",
-          "6"
-        ],
-        "154": [
-          "2",
-          "3",
-          "5",
-          "38"
-        ],
-        "231": [
-          "3",
-          "5",
-          "6",
-          "38"
-        ]
-      }
-    },
-    {
-      "id": "5d89f1f8f937647d8113f389-347",
-      "ideaId": "5d89f1f8f937647d8113f389",
-      "designName": "Petrol Sexual",
-      "collection": "Garage Gospel",
-      "featured": false,
-      "blurb": "You bleed 5W-30... and it stains your clothes. This shirt is for you. You sweat 91 Octane... and everyone can smell it. This shirt is for you. \"Piston\" by Proletkult Graphik, from The Noun Project",
-      "label": "Women's Tee",
-      "category": "Tees",
-      "family": null,
-      "version": null,
-      "primary": false,
-      "productType": "Women's T-Shirt",
-      "productTypeId": "347",
-      "brand": "Gildan",
-      "group": "Tees",
-      "price": 23.49,
-      "print": "0D5B5E",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y73D12573501W17598H9492Cx0D5B5E%3AxE5E5E5/views/1,width=500,height=500,appearanceId=1/you-bleed-5w-30-and-it-stains-your-clothes-this-shirt-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-shirt-is-for-you-piston.jpg",
-      "appearanceIds": [
-        "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
-        "231",
-        "352",
-        "376",
-        "1",
-        "2",
-        "17",
-        "4"
-      ],
-      "defaultAppearanceId": "1",
-      "sellableId": "JkpXG1JQynsyAZaGljmw-347-8",
-      "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y73D12573501W17598H9492Cx0D5B5E%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-shirt-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-shirt-is-for-you-piston.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A1PA4306PT17X38Y73D12573501W17598H9492Cx0D5B5E%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-shirt-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-shirt-is-for-you-piston.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y73D12573501W17598H9492Cx0D5B5E%3AxE5E5E5/views/2,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-shirt-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-shirt-is-for-you-piston.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y73D12573501W17598H9492Cx0D5B5E%3AxE5E5E5/views/3,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-shirt-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-shirt-is-for-you-piston.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y73D12573501W17598H9492Cx0D5B5E%3AxE5E5E5/views/4,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-shirt-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-shirt-is-for-you-piston.jpg"
-      ],
-      "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "17": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "792": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
           "2",
           "3",
           "4",
@@ -11405,7 +11157,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A196PA4301PT17X69Y0D12609902W22764H39955/views/1,width=500,height=500,appearanceId=196/one-word-tossable-that-pretty-much-sums-up-the-experience-of-driving-a-ke70-the-early-80s-was-a-good-time-for-toyota.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A196PA4301PT17X69Y0D12609902W22764H39955/views/1,width=500,height=500,appearanceId=2/one-word-tossable-that-pretty-much-sums-up-the-experience-of-driving-a-ke70-the-early-80s-was-a-good-time-for-toyota.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -11437,7 +11189,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "196",
+      "defaultAppearanceId": "2",
       "sellableId": "Bqymx2o7OxIr07b2qVO4-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A196PA4301PT17X69Y0D12609902W22764H39955/views/1,width=650,height=650,appearanceId=386/one-word-tossable-that-pretty-much-sums-up-the-experience-of-driving-a-ke70-the-early-80s-was-a-good-time-for-toyota.jpg",
@@ -11720,7 +11472,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A95PA4301PT17X7Y152D12686118W32368H24729/views/1,width=500,height=500,appearanceId=95/light-low-high-compression-high-revs-same-principles-of-great-sports-cars-made-40-years-apart-the-s800-and-s2000-stand-as-the-benchmarks-of-jap.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A95PA4301PT17X7Y152D12686118W32368H24729/views/1,width=500,height=500,appearanceId=2/light-low-high-compression-high-revs-same-principles-of-great-sports-cars-made-40-years-apart-the-s800-and-s2000-stand-as-the-benchmarks-of-jap.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -11752,7 +11504,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "95",
+      "defaultAppearanceId": "2",
       "sellableId": "prd48NoGvQCGRXOY4Opb-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A95PA4301PT17X7Y152D12686118W32368H24729/views/1,width=650,height=650,appearanceId=386/light-low-high-compression-high-revs-same-principles-of-great-sports-cars-made-40-years-apart-the-s800-and-s2000-stand-as-the-benchmarks-of-jap.jpg",
@@ -12035,7 +11787,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A295PA4301PT17X14Y17D12610695W30886H20145/views/1,width=500,height=500,appearanceId=295/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A295PA4301PT17X14Y17D12610695W30886H20145/views/1,width=500,height=500,appearanceId=1/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -12067,7 +11819,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "295",
+      "defaultAppearanceId": "1",
       "sellableId": "4w8MB0jRovu9ARa54GLw-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A295PA4301PT17X14Y17D12610695W30886H20145/views/1,width=650,height=650,appearanceId=386/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
@@ -12350,7 +12102,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X22Y40D12697291W30369H21865/views/1,width=500,height=500,appearanceId=351.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X22Y40D12697291W30369H21865/views/1,width=500,height=500,appearanceId=2.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -12382,7 +12134,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "351",
+      "defaultAppearanceId": "2",
       "sellableId": "xrdR7gpAy2ILYAzeoryp-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X22Y40D12697291W30369H21865/views/1,width=650,height=650,appearanceId=386.jpg",
@@ -12665,7 +12417,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X65Y0D12614325W20367H39955/views/1,width=500,height=500,appearanceId=351/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X65Y0D12614325W20367H39955/views/1,width=500,height=500,appearanceId=1/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -12697,7 +12449,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "351",
+      "defaultAppearanceId": "1",
       "sellableId": "aZamzVlGx7ImnVX2B38d-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X65Y0D12614325W20367H39955/views/1,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
@@ -13295,7 +13047,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A697PA4301PT17X39Y36D1005894620W25374H10149/views/1,width=500,height=500,appearanceId=697/peter-aschwanden-was-best-known-for-illustrating-john-muirs-how-to-keep-your-volkswagen-alive-a-manual-of-step-by-step-procedures-for-the-compleat-i.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A697PA4301PT17X39Y36D1005894620W25374H10149/views/1,width=500,height=500,appearanceId=1/peter-aschwanden-was-best-known-for-illustrating-john-muirs-how-to-keep-your-volkswagen-alive-a-manual-of-step-by-step-procedures-for-the-compleat-i.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -13327,7 +13079,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "697",
+      "defaultAppearanceId": "1",
       "sellableId": "5a5x1wyqp1sElnQpNLdl-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A697PA4301PT17X39Y36D1005894620W25374H10149/views/1,width=650,height=650,appearanceId=386/peter-aschwanden-was-best-known-for-illustrating-john-muirs-how-to-keep-your-volkswagen-alive-a-manual-of-step-by-step-procedures-for-the-compleat-i.jpg",
@@ -13610,7 +13362,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X33Y20D12610689W26734H29397/views/1,width=500,height=500,appearanceId=351/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X33Y20D12610689W26734H29397/views/1,width=500,height=500,appearanceId=1/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -13642,7 +13394,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "351",
+      "defaultAppearanceId": "1",
       "sellableId": "gnLY3nln2dsR9yXw1142-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X33Y20D12610689W26734H29397/views/1,width=650,height=650,appearanceId=386/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
@@ -13925,7 +13677,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A196PA4301PT17X14Y108D104819826W31385H29180/views/1,width=500,height=500,appearanceId=196.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A196PA4301PT17X14Y108D104819826W31385H29180/views/1,width=500,height=500,appearanceId=2.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -13957,7 +13709,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "196",
+      "defaultAppearanceId": "2",
       "sellableId": "8yl2Xy2Yx7igr1Z29Nqy-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A196PA4301PT17X14Y108D104819826W31385H29180/views/1,width=650,height=650,appearanceId=386.jpg",
@@ -14240,7 +13992,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X36Y173D104819913W29514H22688/views/1,width=500,height=500,appearanceId=351/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X36Y173D104819913W29514H22688/views/1,width=500,height=500,appearanceId=2/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -14272,7 +14024,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "351",
+      "defaultAppearanceId": "2",
       "sellableId": "OwDabL2Y9bse8ZB2woVv-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A351PA4301PT17X36Y173D104819913W29514H22688/views/1,width=650,height=650,appearanceId=386/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
@@ -15213,7 +14965,7 @@
         ],
         "defaultAppearanceId": "1258"
       },
-      "name": "Save the Stick - Red Cross - 5 Speed",
+      "name": "Save the Stick - Red Cross",
       "blurb": "For too long the tyranny of the sequential gearbox has threatened to take from us, the driving community, our rights and freedoms. Save driving, save the stick!",
       "collection": "Garage Gospel",
       "published": true,
@@ -15388,7 +15140,7 @@
         ],
         "defaultAppearanceId": "1"
       },
-      "name": "Save the Stick - Shift Pattern",
+      "name": "Save the Stick - Shifter",
       "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
       "collection": "Garage Gospel",
       "published": true,
@@ -15582,7 +15334,7 @@
       "name": "Petrol Sexual",
       "blurb": "You bleed 5W-30... and it stains your clothes. This shirt is for you. You sweat 91 Octane... and everyone can smell it. This shirt is for you. \"Piston\" by Proletkult Graphik, from The Noun Project",
       "collection": "Garage Gospel",
-      "published": true,
+      "published": false,
       "featured": false,
       "group": null,
       "version": null,

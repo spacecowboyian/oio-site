@@ -1,6 +1,4 @@
 ---
-import CornerLabel from "./CornerLabel.astro";
-
 interface Props {
   product: {
     id: string;
@@ -25,7 +23,11 @@ const highRes = product.image?.replace(/width=\d+,height=\d+/, "width=1000,heigh
     <img src={highRes} alt={`${product.designName} ${product.label}`} loading="lazy" />
   </span>
   <span class="card__name">{product.designName}</span>
-  <CornerLabel fact={product.label} subFact={product.brand} />
+  {/* Blank and brand ("Unisex Tee · Bella + Canvas") used to run here as a
+      corner-label on every card. Per Ian: drop it from the thumbnail — it's
+      shelf clutter, not a decision a shopper makes from the grid. It still
+      appears as plain text in the drawer's description, on the product that
+      actually carries it. */}
   <span class="card__meta">
     <span>{product.colorCount} {product.colorCount === 1 ? "color" : "colors"}</span>
     <span class="card__price">${product.price.toFixed(2)}</span>

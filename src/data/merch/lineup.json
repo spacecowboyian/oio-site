@@ -66,6 +66,78 @@
       "appearanceIds": [
         "2"
       ]
+    },
+    "5d89f1b51cbf3a25d5a8c6f8": {
+      "_why": "Toyota Corolla KE70 \u2014 bold black/white/red graphic. Checked against real renders: true red (the shop default) buried the car outline in the garment colour. Black and white both work; black picked to bias toward dark garment / light art.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "2"
+        }
+      }
+    },
+    "5d89f1f813615160bf83367f": {
+      "_why": "Toyota Celica Cutaway \u2014 thin red line-art outline. Checked against real renders: it reads on white, but goes dim on black/navy and nearly vanishes on the true-red default. The ink itself is dark, so it needs a light ground; there is no dark-garment option that works.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "1"
+        }
+      }
+    },
+    "5d89f1b52051762642221a8c": {
+      "_why": "Starion Conquest \u2014 pale outline sketch. Checked against real renders: it disappears on the light-heather-gray default and on true red, and reads best on black.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "2"
+        }
+      }
+    },
+    "5d89f20e20517626422245b0": {
+      "_why": "AE86 Corolla Hatchback \u2014 dark charcoal gear graphic. Checked against real renders: it disappears on black, navy and the light-heather-gray default alike. The ink is dark, so it needs a light ground; white is the crispest of the light options.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "1"
+        }
+      }
+    },
+    "5d89f1f71cbf3a25d5a8e5c1": {
+      "_why": "Aschwanden Spark Plug \u2014 fine dark line-art blueprint. Checked against real renders: the detail goes muddy on black/navy/true red. Needs a light ground for the linework to stay legible.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "1"
+        }
+      }
+    },
+    "5d89f1e06bbdbb2e6a5b4eb0": {
+      "_why": "Toyota Tosco Brochure Art \u2014 dark line art with a red badge. Checked against real renders: black/navy hide the linework and the light-heather-gray default washes it out. White is the only ground that keeps both the line art and the red badge readable.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "1"
+        }
+      }
+    },
+    "5d89f20e162c5f464e8791cc": {
+      "_why": "S Generations (Color Car) \u2014 red car line art. Checked against real renders: it disappears on the true-red default's sibling problem and is muted on light heather gray; it's vivid on black. Matched across all three S Generations versions for consistency.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "2"
+        }
+      }
+    },
+    "5d89f1e1b4b8c76e392b00e9": {
+      "_why": "S Generations (Gray) \u2014 same red car line art as the other two versions; same fix for the same reason.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "2"
+        }
+      }
+    },
+    "5d89f1f71cbf3a25d5a8e59d": {
+      "_why": "S Generations (Clean) \u2014 same red car line art as the other two versions; same fix for the same reason.",
+      "swap": {
+        "Unisex Tee": {
+          "appearanceId": "2"
+        }
+      }
     }
   }
 }

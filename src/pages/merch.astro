@@ -326,10 +326,13 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
           <div class="drawer__stage"><img id="stage-img" alt="${product.designName}" /></div>
           <div>
             <h2>${product.designName}</h2>
-            <p class="corner-label drawer__type">
-              <span class="corner-label__box">${product.label}</span>
-              ${product.brand ? `<span class="corner-label__plain">${product.brand}</span>` : ""}
-            </p>
+            ${/* Blank and brand as a plain sentence rather than the corner-label
+                badge — this is the one place that information lives now that
+                it's off every thumbnail, so it reads as a description, not
+                shelf chrome. */ ""}
+            <p class="drawer__type">${product.label}${
+              product.brand ? ` · ${product.brand}` : ""
+            }</p>
             ${product.blurb ? `<p class="drawer__blurb">${product.blurb}</p>` : ""}
             <div class="field" id="f-version"></div>
             <div class="field" id="f-color"></div>
@@ -701,6 +704,11 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
 
   .drawer__type {
     margin-top: 0.75rem;
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--apex-steel-light);
   }
 
   .drawer__blurb {
