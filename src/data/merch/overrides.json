@@ -112,7 +112,7 @@
     "name": "Petrol Sexual",
     "blurb": "You bleed 5W-30... and it stains your clothes. This shirt is for you. You sweat 91 Octane... and everyone can smell it. This shirt is for you. \"Piston\" by Proletkult Graphik, from The Noun Project",
     "collection": "Garage Gospel",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 2
   },
@@ -120,8 +120,8 @@
     "sourceName": "Save the Stick - Shift Pattern",
     "name": "Save the Stick - Shift Pattern",
     "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
-    "collection": "Save the Stick",
-    "published": false,
+    "collection": "Garage Gospel",
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -130,7 +130,7 @@
     "name": "Toyota Tosco Brochure Art",
     "blurb": "This shirt features several parts from an early 70s Toyota Tosco brochure for TA22 Celica 1600GT road and rally racing parts",
     "collection": "Toyota",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -139,7 +139,7 @@
     "name": "S Generations Gray",
     "blurb": "",
     "collection": "Datsun & Friends",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -148,7 +148,7 @@
     "name": "S Generations Clean",
     "blurb": "The same as our other s800/s2000 design but without the crusty stuff at the bottom so it can be placed low on a shirt.",
     "collection": "Datsun & Friends",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -157,7 +157,7 @@
     "name": "WRC Gravel Ahead",
     "blurb": "",
     "collection": "Garage Gospel",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -166,7 +166,7 @@
     "name": "Toyota Tosco Logo",
     "blurb": "Before becoming Toyota Racing Development, TRD was known as Toyota Sports Corner, or TOSCO. TOSCO was established in Yokohama and built Toyota's first performance engines for the Celica and Corolla.",
     "collection": "Toyota",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -175,7 +175,7 @@
     "name": "That's What Speed Do",
     "blurb": "Gore, Dyson, Escobar, Cain. We've got the need... the need... for speed.",
     "collection": "Garage Gospel",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -184,7 +184,7 @@
     "name": "Corolla FX16",
     "blurb": "",
     "collection": "Toyota",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -193,7 +193,7 @@
     "name": "4Runner",
     "blurb": "",
     "collection": "Toyota",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -202,7 +202,7 @@
     "name": "Toyota Corolla Levin",
     "blurb": "",
     "collection": "Toyota",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -210,8 +210,8 @@
     "sourceName": "Save The Stick 6 Speed",
     "name": "Save The Stick 6 Speed",
     "blurb": "",
-    "collection": "Save the Stick",
-    "published": false,
+    "collection": "Garage Gospel",
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -220,7 +220,7 @@
     "name": "Toyota Corolla KE70",
     "blurb": "One word, tossable. That pretty much sums up the experience of driving a KE70. The early 80s was a good time for Toyota .",
     "collection": "Toyota",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -229,7 +229,7 @@
     "name": "S Generations - Color Car",
     "blurb": "Light, low, high compression, high revs. Same principles of great sports cars.. made 40 years apart. The S800 and S2000 stand as the benchmarks of Japanese sports cars.",
     "collection": "Datsun & Friends",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -238,7 +238,7 @@
     "name": "Toyota Celica Cutaway",
     "blurb": "This particular graphic comes from a JDM Celica brochure for the 1600GT with a 2TG motor.",
     "collection": "Toyota",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -247,7 +247,7 @@
     "name": "Starion Conquest",
     "blurb": "",
     "collection": "Datsun & Friends",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -256,7 +256,7 @@
     "name": "AE86 Corolla Hatchback",
     "blurb": "The unsung hero of the 80s, the AE86 chassis Corolla GT-S Trueno/Levin is a true classic. Its light weight and rear wheel drive have made it great for road racing, autocross, rally and drifting.",
     "collection": "Toyota",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -265,7 +265,7 @@
     "name": "Miata MX5 Generations",
     "blurb": "",
     "collection": "Mazda",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   },
@@ -274,7 +274,7 @@
     "name": "Aschwanden Spark Plug",
     "blurb": "Peter Aschwanden was best known for illustrating John Muir\u2019s How to Keep Your Volkswagen Alive: A Manual of Step-by-Step Procedures for the Compleat Idiot.",
     "collection": "Garage Gospel",
-    "published": false,
+    "published": true,
     "featured": false,
     "_variants": 1
   }

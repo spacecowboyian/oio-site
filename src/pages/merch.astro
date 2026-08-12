@@ -105,7 +105,10 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
   </header>
 
   <div class="merch-filters" id="filters">
-    <div class="rail">
+    {/* A rail with one option is decoration, not navigation. While the lineup
+        is tees-only there is nothing to switch between, so the Shop rail
+        appears again by itself when a second category returns. */}
+    <div class="rail" hidden={categories.length < 2}>
       <span class="rail__label">Shop</span>
       {
         categories.map((category) => (

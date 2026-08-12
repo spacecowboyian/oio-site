@@ -145,6 +145,50 @@ const GROUP_ORDER = [
   "Other",
 ];
 
+/**
+ * Relative luminance, 0 (black) to 1 (white), for a #rrggbb hex.
+ * Rec. 709 coefficients — good enough to answer "is this light or dark".
+ */
+function luminance(hex) {
+  const n = parseInt(hex.replace("#", ""), 16);
+  const [r, g, b] = [(n >> 16) & 255, (n >> 8) & 255, n & 255].map((c) => c / 255);
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+
+/**
+ * The colourway a card should lead with.
+ *
+ * Ink colour is fixed per sellable, so a white-ink design on Spreadshop's
+ * default white tee is a blank shirt on the shelf — which is exactly what
+ * "That's What Speed Do" and the Save the Stick prints looked like. The shop's
+ * own default is respected whenever it actually contrasts; only when it fails
+ * does this reach for the available colourway furthest from the ink.
+ *
+ * Designs whose art has no single ink colour (full-colour photos and the like)
+ * carry no `Cx` token, and those are left entirely alone — there is no one
+ * colour to contrast against and guessing would be worse than the default.
+ */
+const MIN_CONTRAST = 0.32;
+
+function pickAppearance(variant, appearances) {
+  const fallback = variant.defaultAppearanceId;
+  if (!variant.print) return fallback;
+
+  const inkLum = luminance(variant.print);
+  const options = variant.appearanceIds
+    .map((id) => ({ id, color: appearances[id]?.color }))
+    .filter((a) => a.color);
+  if (!options.length) return fallback;
+
+  const current = options.find((a) => a.id === fallback);
+  if (current && Math.abs(luminance(current.color) - inkLum) >= MIN_CONTRAST) return fallback;
+
+  const best = options.reduce((a, b) =>
+    Math.abs(luminance(b.color) - inkLum) > Math.abs(luminance(a.color) - inkLum) ? b : a
+  );
+  return best.id;
+}
+
 // The grid thumbnail is the design's audition, so lead with the best-selling
 // form it comes in — cheapest tee if there is one, else the earliest group that
 // exists. Falling back to plain cheapest would put a 5-pack of buttons on the
@@ -240,19 +284,30 @@ for (const design of designs.filter((d) => d.published)) {
     .map((e) => ({ ...e, ...(rules.swap?.[e.label] ?? {}) }));
 
   for (const entry of entries) {
-    const variant = design.variants.find(
-      (v) =>
-        v.productTypeId === entry.productTypeId &&
-        (!entry.print || v.print === entry.print)
-    );
+    // `productTypeIds` is a preference list, tried in order — the first blank
+    // the design actually carries wins. The 19 designs that never had a product
+    // range enabled each sit on whichever tee they were uploaded onto (210 or
+    // 812) while the full-range twelve carry 175; demanding one exact blank
+    // would exclude two thirds of the catalogue over a distinction the customer
+    // cannot see. A single `productTypeId` still means exactly that blank.
+    const candidates = entry.productTypeIds ?? [entry.productTypeId];
+    let variant;
+    for (const productTypeId of candidates) {
+      variant = design.variants.find(
+        (v) => v.productTypeId === productTypeId && (!entry.print || v.print === entry.print)
+      );
+      if (variant) break;
+    }
     if (!variant) {
       missing.push(
         `${design.name} — ${entry.label}` +
-          (entry.print ? ` (no ${entry.print} print on type ${entry.productTypeId})` : "")
+          (entry.print ? ` (no ${entry.print} print on ${candidates.join("/")})` : "")
       );
       continue;
     }
-    const defaultAppearanceId = entry.appearanceId ?? variant.defaultAppearanceId;
+    const defaultAppearanceId =
+      entry.appearanceId ??
+      pickAppearance(variant, productTypes[variant.productTypeId]?.appearances ?? {});
     products.push({
       id: `${design.ideaId}-${entry.productTypeId}`,
       ideaId: design.ideaId,
