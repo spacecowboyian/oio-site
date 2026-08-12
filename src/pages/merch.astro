@@ -74,6 +74,11 @@ const drawerData = Object.fromEntries(
       brand: p.brand,
       price: p.price,
       image: p.image,
+      // Both needed to hand the customer's selection to Spreadshop — see
+      // shopLink below. `sellableId` is what pins the ink colour, so it is the
+      // one that matters for the designs whose lineup entry swaps the blank.
+      productTypeId: p.productTypeId,
+      sellableId: p.sellableId,
       appearances: p.appearanceIds
         .map((id) => ({ id, ...catalog.productTypes[p.productTypeId]?.appearances[id] }))
         .filter((a) => a.name),
@@ -183,11 +188,29 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
 
   // Spreadshop resolves any slug and redirects to the canonical one, so a
   // readable guess is enough — the ideaId is what addresses the product.
-  const shopLink = (p) =>
-    `${SHOP_URL}/${p.designName
+  //
+  // The query string is Spreadshop's own: its colourway links use exactly
+  // `?productType=&sellable=&appearance=`, so the customer lands on the blank
+  // and the colour they picked here rather than on the shop's defaults.
+  // `sellable` is the important one — it pins the ink colour, which is fixed
+  // per sellable and is why some designs swap blanks in the lineup.
+  //
+  // Size is deliberately absent: Spreadshop has no size parameter, so that
+  // choice is still made on their page. The size picker here reports what the
+  // chosen colour actually stocks, which is information the customer cannot
+  // get until they have already left.
+  const shopLink = (p, appearanceId) => {
+    const slug = p.designName
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "+")
-      .replace(/^\+|\+$/g, "")}-A${p.ideaId}`;
+      .replace(/^\+|\+$/g, "");
+    const query = new URLSearchParams({
+      productType: p.productTypeId,
+      sellable: p.sellableId,
+      appearance: appearanceId,
+    });
+    return `${SHOP_URL}/${slug}-A${p.ideaId}?${query}`;
+  };
 
   // Preview images encode the colourway in the path, so recolouring is a string
   // swap rather than another round trip.
@@ -298,10 +321,11 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
             <div class="field" id="f-color"></div>
             <div class="field" id="f-size"></div>
             <p class="drawer__price">${money(product.price)}</p>
-            <a class="drawer__cta" href="${shopLink(product)}" target="_blank"
+            <a class="drawer__cta" id="cta" target="_blank"
                rel="noopener">Buy on Spreadshop</a>
             <p class="drawer__note">
-              Payment, printing and shipping are handled by Spreadshop.
+              Your colour carries over. Pick a size on their page — payment,
+              printing and shipping are handled by Spreadshop.
             </p>
             <div class="field" id="f-siblings"></div>
           </div>
@@ -328,6 +352,7 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     function paint() {
       const current = product.appearances.find((a) => a.id === state.appearanceId);
       $("stage-img").src = recolor(product.image, state.appearanceId);
+      $("cta").href = shopLink(product, state.appearanceId);
 
       optionRow(
         $("f-color"),
@@ -355,8 +380,8 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
 
       optionRow(
         $("f-size"),
-        "Size",
-        sizes.find((s) => s.id === state.sizeId)?.name ?? "Pick at checkout",
+        "Sizes in this color",
+        sizes.find((s) => s.id === state.sizeId)?.name ?? `${sizes.length} available`,
         sizes,
         (s) => {
           const b = document.createElement("button");
