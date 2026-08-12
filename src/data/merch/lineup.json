@@ -1,24 +1,44 @@
 {
-  "_comment": "The products OIO actually sells. A design is artwork; a product is that artwork on one blank we chose. `primary` is the one card that represents a design inside its category — the rest surface through 'Also on' on the product page.",
+  "_comment": "The products OIO actually sells. A design is artwork; a product is that artwork on one blank we chose. `primary` is the one card that represents a design inside its category \u2014 the rest surface through 'Also on' on the product page.",
   "_scope": "T-shirts only for now. Hoodies and long sleeves were dropped 2026-08-12: only 12 of the 31 designs ever had their product range enabled, so those categories were empty for everything else and enabling them by hand is slow, error-prone work in the Partner Area. Every design already has a tee, so a tees-only shelf is complete on day one. The dropped entries are kept below under `_parked` so restoring them is an edit, not a re-derivation.",
   "default": [
     {
       "label": "Unisex Tee",
       "category": "Tees",
       "primary": true,
-      "productTypeIds": ["175", "812", "210", "1361", "1361"]
+      "productTypeIds": [
+        "175",
+        "812",
+        "210",
+        "1361",
+        "1361"
+      ]
     },
     {
       "label": "Women's Tee",
       "category": "Tees",
-      "productTypeIds": ["347", "813", "2916"]
+      "productTypeIds": [
+        "347",
+        "813",
+        "2916"
+      ]
     }
   ],
   "_parked": [
-    { "productTypeId": "1359", "label": "Hoodie", "category": "Hoodies", "primary": true },
-    { "productTypeId": "875", "label": "Long Sleeve", "category": "Long Sleeve", "primary": true }
+    {
+      "productTypeId": "1359",
+      "label": "Hoodie",
+      "category": "Hoodies",
+      "primary": true
+    },
+    {
+      "productTypeId": "875",
+      "label": "Long Sleeve",
+      "category": "Long Sleeve",
+      "primary": true
+    }
   ],
-  "_productTypeIdsNote": "A list, tried in order, first one the design actually carries wins. A single `productTypeId` still works and means exactly that blank. The list exists because the 19 designs that were never given a product range each sit on whichever tee they were uploaded onto — 210 or 812 — while the twelve full-range designs carry 175. Demanding one specific blank would have excluded two thirds of the catalogue for no customer-visible reason: they are all unisex tees.",
+  "_productTypeIdsNote": "A list, tried in order, first one the design actually carries wins. A single `productTypeId` still works and means exactly that blank. The list exists because the 19 designs that were never given a product range each sit on whichever tee they were uploaded onto \u2014 210 or 812 \u2014 while the twelve full-range designs carry 175. Demanding one specific blank would have excluded two thirds of the catalogue for no customer-visible reason: they are all unisex tees.",
   "byDesign": {
     "5d89f20f13615160bf833e7d": {
       "_why": "Art is a black print on the Bella + Canvas blank, which has no light-ink version. Gildan Heavyweight Unisex carries an E5E5E5 print, so the design can run white on black.",
@@ -40,6 +60,12 @@
           "label": "Premium Tee"
         }
       }
+    },
+    "5d89f1b5f937647d8113d138": {
+      "_why": "Light line art with a dark red 'FX16' wordmark, and no single ink token for the contrast rule to measure. Checked against real renders: red drowns the wordmark, navy and olive muddy it, olive also washes out the outline. Black is the only colourway that carries both parts.",
+      "appearanceIds": [
+        "2"
+      ]
     }
   }
 }

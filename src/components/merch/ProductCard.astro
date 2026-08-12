@@ -27,7 +27,7 @@ const highRes = product.image?.replace(/width=\d+,height=\d+/, "width=1000,heigh
   <span class="card__name">{product.designName}</span>
   <CornerLabel fact={product.label} subFact={product.brand} />
   <span class="card__meta">
-    <span>{product.colorCount} colors</span>
+    <span>{product.colorCount} {product.colorCount === 1 ? "color" : "colors"}</span>
     <span class="card__price">${product.price.toFixed(2)}</span>
   </span>
 </button>

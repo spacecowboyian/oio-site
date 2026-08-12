@@ -1,6 +1,6 @@
 {
   "shopId": "477761",
-  "syncedAt": "2026-08-12T20:15:09.974Z",
+  "syncedAt": "2026-08-12T20:28:49.034Z",
   "hasDetails": true,
   "groupOrder": [
     "Tees",
@@ -6529,7 +6529,7 @@
   },
   "products": [
     {
-      "id": "68a55cb6b0c760220d45f885-undefined",
+      "id": "68a55cb6b0c760220d45f885-175",
       "ideaId": "68a55cb6b0c760220d45f885",
       "designName": "Toyota TEQ Logo",
       "collection": "Toyota",
@@ -6537,6 +6537,8 @@
       "blurb": "TEQ is \"To-yo-ta\" spelled in Katakana, one of the Japanese phonetic alphabets. It was used as the Toyota logo starting in 1936 at the time when Toyoda Automatic Loom Works Ltd. launched its first car.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -6616,7 +6618,7 @@
       }
     },
     {
-      "id": "68a55cb6b0c760220d45f885-undefined",
+      "id": "68a55cb6b0c760220d45f885-347",
       "ideaId": "68a55cb6b0c760220d45f885",
       "designName": "Toyota TEQ Logo",
       "collection": "Toyota",
@@ -6624,6 +6626,8 @@
       "blurb": "TEQ is \"To-yo-ta\" spelled in Katakana, one of the Japanese phonetic alphabets. It was used as the Toyota logo starting in 1936 at the time when Toyoda Automatic Loom Works Ltd. launched its first car.",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -6773,7 +6777,7 @@
       }
     },
     {
-      "id": "5d89f19b162c5f464e875bc1-812",
+      "id": "5d89f19b162c5f464e875bc1-175",
       "ideaId": "5d89f19b162c5f464e875bc1",
       "designName": "Datsun Honey Bee",
       "collection": "Datsun & Friends",
@@ -6781,6 +6785,8 @@
       "blurb": "",
       "label": "Premium Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -6860,7 +6866,7 @@
       }
     },
     {
-      "id": "5d89f19b162c5f464e875bc1-undefined",
+      "id": "5d89f19b162c5f464e875bc1-347",
       "ideaId": "5d89f19b162c5f464e875bc1",
       "designName": "Datsun Honey Bee",
       "collection": "Datsun & Friends",
@@ -6868,6 +6874,8 @@
       "blurb": "",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -7025,6 +7033,8 @@
       "blurb": "Manual transmissions are dying. Help save the world from flappy paddles and slushboxes. SAVE THE STICK!",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Heavyweight Unisex T-Shirt by Gildan",
       "productTypeId": "1361",
@@ -7214,7 +7224,7 @@
       }
     },
     {
-      "id": "5d89f20f13615160bf833e7d-undefined",
+      "id": "5d89f20f13615160bf833e7d-347",
       "ideaId": "5d89f20f13615160bf833e7d",
       "designName": "Save the Stick - Bones",
       "collection": "Garage Gospel",
@@ -7222,6 +7232,8 @@
       "blurb": "Manual transmissions are dying. Help save the world from flappy paddles and slushboxes. SAVE THE STICK!",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -7371,7 +7383,7 @@
       }
     },
     {
-      "id": "68a55cb6b868b07c0575ef83-undefined",
+      "id": "68a55cb6b868b07c0575ef83-175",
       "ideaId": "68a55cb6b868b07c0575ef83",
       "designName": "Miata is always the answer",
       "collection": "Mazda",
@@ -7379,6 +7391,8 @@
       "blurb": "It really is always the answer. Track Day Car? Miata. Beginner autocross car? Miata. Great fun daily driver? Miata. You simply can't go wrong with the car.. or this design. 2 Color vector design.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -7458,7 +7472,7 @@
       }
     },
     {
-      "id": "68a55cb6b868b07c0575ef83-undefined",
+      "id": "68a55cb6b868b07c0575ef83-347",
       "ideaId": "68a55cb6b868b07c0575ef83",
       "designName": "Miata is always the answer",
       "collection": "Mazda",
@@ -7466,6 +7480,8 @@
       "blurb": "It really is always the answer. Track Day Car? Miata. Beginner autocross car? Miata. Great fun daily driver? Miata. You simply can't go wrong with the car.. or this design. 2 Color vector design.",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -7615,7 +7631,7 @@
       }
     },
     {
-      "id": "5d89f19b1cbf3a25d5a8b50e-undefined",
+      "id": "5d89f19b1cbf3a25d5a8b50e-175",
       "ideaId": "5d89f19b1cbf3a25d5a8b50e",
       "designName": "Datsun 510",
       "collection": "Datsun & Friends",
@@ -7623,6 +7639,8 @@
       "blurb": "The Datsun 1600 PL510 first hit the streets in 1968. In just a short few years it would stake its claim to road and street racing glory.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -7702,7 +7720,7 @@
       }
     },
     {
-      "id": "5d89f19b1cbf3a25d5a8b50e-undefined",
+      "id": "5d89f19b1cbf3a25d5a8b50e-347",
       "ideaId": "5d89f19b1cbf3a25d5a8b50e",
       "designName": "Datsun 510",
       "collection": "Datsun & Friends",
@@ -7710,6 +7728,8 @@
       "blurb": "The Datsun 1600 PL510 first hit the streets in 1968. In just a short few years it would stake its claim to road and street racing glory.",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -7859,7 +7879,7 @@
       }
     },
     {
-      "id": "68a55cb6b868b07c0575ef91-undefined",
+      "id": "68a55cb6b868b07c0575ef91-175",
       "ideaId": "68a55cb6b868b07c0575ef91",
       "designName": "Mazda Rotary - Iron Man",
       "collection": "Mazda",
@@ -7867,6 +7887,8 @@
       "blurb": "It turns out that Tony Stark's top secret generator was just a Mazda Wankel Rotary. Who knew? YOU DID! You'll always know when Iron Man is coming when you hear that familiar brap, brap, brap.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -7946,7 +7968,7 @@
       }
     },
     {
-      "id": "68a55cb6b868b07c0575ef91-undefined",
+      "id": "68a55cb6b868b07c0575ef91-347",
       "ideaId": "68a55cb6b868b07c0575ef91",
       "designName": "Mazda Rotary - Iron Man",
       "collection": "Mazda",
@@ -7954,6 +7976,8 @@
       "blurb": "It turns out that Tony Stark's top secret generator was just a Mazda Wankel Rotary. Who knew? YOU DID! You'll always know when Iron Man is coming when you hear that familiar brap, brap, brap.",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -8103,7 +8127,7 @@
       }
     },
     {
-      "id": "5d89f1ce162c5f464e8776be-undefined",
+      "id": "5d89f1ce162c5f464e8776be-175",
       "ideaId": "5d89f1ce162c5f464e8776be",
       "designName": "Volvo Brick Driver",
       "collection": "Volvo",
@@ -8111,6 +8135,8 @@
       "blurb": "So sayeth Hewy Lewis and so it shall be.. It's hip to be square. Volvo drivers have known this for years and now they can show their brick driving pride.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -8190,7 +8216,7 @@
       }
     },
     {
-      "id": "5d89f1ce162c5f464e8776be-undefined",
+      "id": "5d89f1ce162c5f464e8776be-347",
       "ideaId": "5d89f1ce162c5f464e8776be",
       "designName": "Volvo Brick Driver",
       "collection": "Volvo",
@@ -8198,6 +8224,8 @@
       "blurb": "So sayeth Hewy Lewis and so it shall be.. It's hip to be square. Volvo drivers have known this for years and now they can show their brick driving pride.",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -8347,7 +8375,7 @@
       }
     },
     {
-      "id": "5d89f20e162c5f464e8791ce-undefined",
+      "id": "5d89f20e162c5f464e8791ce-175",
       "ideaId": "5d89f20e162c5f464e8791ce",
       "designName": "Save the Stick - Red Cross - 5 Speed",
       "collection": "Garage Gospel",
@@ -8355,6 +8383,8 @@
       "blurb": "For too long the tyranny of the sequential gearbox has threatened to take from us, the driving community, our rights and freedoms. Save driving, save the stick!",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -8434,7 +8464,7 @@
       }
     },
     {
-      "id": "5d89f20e162c5f464e8791ce-undefined",
+      "id": "5d89f20e162c5f464e8791ce-347",
       "ideaId": "5d89f20e162c5f464e8791ce",
       "designName": "Save the Stick - Red Cross - 5 Speed",
       "collection": "Garage Gospel",
@@ -8442,6 +8472,8 @@
       "blurb": "For too long the tyranny of the sequential gearbox has threatened to take from us, the driving community, our rights and freedoms. Save driving, save the stick!",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -8591,7 +8623,7 @@
       }
     },
     {
-      "id": "5d89f19b13615160bf82f7a6-undefined",
+      "id": "5d89f19b13615160bf82f7a6-175",
       "ideaId": "5d89f19b13615160bf82f7a6",
       "designName": "Petrol Sexual",
       "collection": "Garage Gospel",
@@ -8599,6 +8631,8 @@
       "blurb": "You bleed 5W-30... and it stains your clothes. This is for you. You sweat 91 Octane... and everyone can smell it. This is for you. You've always been a Petrolsexual.. now show everyone.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -8678,7 +8712,7 @@
       }
     },
     {
-      "id": "5d89f19b13615160bf82f7a6-undefined",
+      "id": "5d89f19b13615160bf82f7a6-347",
       "ideaId": "5d89f19b13615160bf82f7a6",
       "designName": "Petrol Sexual",
       "collection": "Garage Gospel",
@@ -8686,6 +8720,8 @@
       "blurb": "You bleed 5W-30... and it stains your clothes. This is for you. You sweat 91 Octane... and everyone can smell it. This is for you. You've always been a Petrolsexual.. now show everyone.",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -8835,7 +8871,7 @@
       }
     },
     {
-      "id": "5d89f20e2051762642224541-undefined",
+      "id": "5d89f20e2051762642224541-175",
       "ideaId": "5d89f20e2051762642224541",
       "designName": "AE86 Corolla Coupe",
       "collection": "Toyota",
@@ -8843,6 +8879,8 @@
       "blurb": "The unsung hero of the 80s, the AE86 chassis Corolla GT-S Trueno/Levin is a true classic. Its light weight and rear wheel drive have made it great for road racing, autocross, rally and drifting.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -8922,7 +8960,7 @@
       }
     },
     {
-      "id": "5d89f20e2051762642224541-undefined",
+      "id": "5d89f20e2051762642224541-347",
       "ideaId": "5d89f20e2051762642224541",
       "designName": "AE86 Corolla Coupe",
       "collection": "Toyota",
@@ -8930,6 +8968,8 @@
       "blurb": "The unsung hero of the 80s, the AE86 chassis Corolla GT-S Trueno/Levin is a true classic. Its light weight and rear wheel drive have made it great for road racing, autocross, rally and drifting.",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -9079,7 +9119,7 @@
       }
     },
     {
-      "id": "68a55cb63f6bcc7d6db21930-undefined",
+      "id": "68a55cb63f6bcc7d6db21930-175",
       "ideaId": "68a55cb63f6bcc7d6db21930",
       "designName": "I Void Car Warranties",
       "collection": "Garage Gospel",
@@ -9087,6 +9127,8 @@
       "blurb": "Don't we all? Even a simple wheel change can get your warranty swiped out from under you these days. Mostly the reason why I will never buy another new car... but I digress.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -9166,7 +9208,7 @@
       }
     },
     {
-      "id": "68a55cb63f6bcc7d6db21930-undefined",
+      "id": "68a55cb63f6bcc7d6db21930-347",
       "ideaId": "68a55cb63f6bcc7d6db21930",
       "designName": "I Void Car Warranties",
       "collection": "Garage Gospel",
@@ -9174,6 +9216,8 @@
       "blurb": "Don't we all? Even a simple wheel change can get your warranty swiped out from under you these days. Mostly the reason why I will never buy another new car... but I digress.",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -9323,7 +9367,7 @@
       }
     },
     {
-      "id": "5d89f19c6bbdbb2e6a5b1ea8-undefined",
+      "id": "5d89f19c6bbdbb2e6a5b1ea8-175",
       "ideaId": "5d89f19c6bbdbb2e6a5b1ea8",
       "designName": "Save the Stick - Shift Pattern",
       "collection": "Garage Gospel",
@@ -9331,6 +9375,8 @@
       "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -9410,7 +9456,7 @@
       }
     },
     {
-      "id": "5d89f19c6bbdbb2e6a5b1ea8-undefined",
+      "id": "5d89f19c6bbdbb2e6a5b1ea8-347",
       "ideaId": "5d89f19c6bbdbb2e6a5b1ea8",
       "designName": "Save the Stick - Shift Pattern",
       "collection": "Garage Gospel",
@@ -9418,6 +9464,8 @@
       "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -9567,7 +9615,7 @@
       }
     },
     {
-      "id": "5d89f1cd205176264222294a-undefined",
+      "id": "5d89f1cd205176264222294a-175",
       "ideaId": "5d89f1cd205176264222294a",
       "designName": "Toyota Tosco Logo",
       "collection": "Toyota",
@@ -9575,6 +9623,8 @@
       "blurb": "Before becoming Toyota Racing Development, TRD was known as Toyota Sports Corner, or TOSCO. TOSCO was established in Yokohama and built Toyota's first performance engines for the Celica and Corolla.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -9654,7 +9704,7 @@
       }
     },
     {
-      "id": "5d89f1cd205176264222294a-undefined",
+      "id": "5d89f1cd205176264222294a-347",
       "ideaId": "5d89f1cd205176264222294a",
       "designName": "Toyota Tosco Logo",
       "collection": "Toyota",
@@ -9662,6 +9712,8 @@
       "blurb": "Before becoming Toyota Racing Development, TRD was known as Toyota Sports Corner, or TOSCO. TOSCO was established in Yokohama and built Toyota's first performance engines for the Celica and Corolla.",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -9811,7 +9863,7 @@
       }
     },
     {
-      "id": "5d89f1cd13615160bf831625-undefined",
+      "id": "5d89f1cd13615160bf831625-175",
       "ideaId": "5d89f1cd13615160bf831625",
       "designName": "That's What Speed Do",
       "collection": "Garage Gospel",
@@ -9819,6 +9871,8 @@
       "blurb": "Gore, Dyson, Escobar, Cain. We've got the need... the need... for speed.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -9898,7 +9952,7 @@
       }
     },
     {
-      "id": "5d89f1cd13615160bf831625-undefined",
+      "id": "5d89f1cd13615160bf831625-347",
       "ideaId": "5d89f1cd13615160bf831625",
       "designName": "That's What Speed Do",
       "collection": "Garage Gospel",
@@ -9906,6 +9960,8 @@
       "blurb": "Gore, Dyson, Escobar, Cain. We've got the need... the need... for speed.",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -10055,7 +10111,7 @@
       }
     },
     {
-      "id": "5d89f1b5f937647d8113d138-undefined",
+      "id": "5d89f1b5f937647d8113d138-175",
       "ideaId": "5d89f1b5f937647d8113d138",
       "designName": "Corolla FX16",
       "collection": "Toyota",
@@ -10063,6 +10119,8 @@
       "blurb": "",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -10070,34 +10128,20 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/1,width=500,height=500,appearanceId=1.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/1,width=500,height=500,appearanceId=2.jpg",
       "appearanceIds": [
-        "154",
-        "231",
-        "1",
-        "36",
-        "2",
-        "5",
-        "4"
+        "2"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "2",
       "sellableId": "Dp573R2kyNsJXelyRr8y-175-7",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/1,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/1,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/2,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/3,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/4,width=650,height=650,appearanceId=154.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/1,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/1,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/2,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/3,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/4,width=650,height=650,appearanceId=2.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "2": [
           "2",
           "3",
@@ -10105,44 +10149,11 @@
           "5",
           "6",
           "38"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "5": [
-          "2",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "36": [
-          "2",
-          "3",
-          "4",
-          "6"
-        ],
-        "154": [
-          "2",
-          "3",
-          "5",
-          "38"
-        ],
-        "231": [
-          "3",
-          "5",
-          "6",
-          "38"
         ]
       }
     },
     {
-      "id": "5d89f1b5f937647d8113d138-undefined",
+      "id": "5d89f1b5f937647d8113d138-347",
       "ideaId": "5d89f1b5f937647d8113d138",
       "designName": "Corolla FX16",
       "collection": "Toyota",
@@ -10150,6 +10161,8 @@
       "blurb": "",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -10157,138 +10170,21 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/1,width=500,height=500,appearanceId=1.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/1,width=500,height=500,appearanceId=2.jpg",
       "appearanceIds": [
-        "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
-        "231",
-        "352",
-        "376",
-        "1",
-        "2",
-        "17",
-        "4"
+        "2"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "2",
       "sellableId": "Dp573R2kyNsJXelyRr8y-347-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/2,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/3,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/4,width=650,height=650,appearanceId=386.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/1,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/1,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/2,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/3,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/4,width=650,height=650,appearanceId=2.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "17": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "792": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
           "2",
           "3",
           "4",
@@ -10299,7 +10195,7 @@
       }
     },
     {
-      "id": "5d89f1f8f937647d8113f389-undefined",
+      "id": "5d89f1f8f937647d8113f389-175",
       "ideaId": "5d89f1f8f937647d8113f389",
       "designName": "Petrol Sexual",
       "collection": "Garage Gospel",
@@ -10307,6 +10203,8 @@
       "blurb": "You bleed 5W-30... and it stains your clothes. This shirt is for you. You sweat 91 Octane... and everyone can smell it. This shirt is for you. \"Piston\" by Proletkult Graphik, from The Noun Project",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -10386,7 +10284,7 @@
       }
     },
     {
-      "id": "5d89f1f8f937647d8113f389-undefined",
+      "id": "5d89f1f8f937647d8113f389-347",
       "ideaId": "5d89f1f8f937647d8113f389",
       "designName": "Petrol Sexual",
       "collection": "Garage Gospel",
@@ -10394,6 +10292,8 @@
       "blurb": "You bleed 5W-30... and it stains your clothes. This shirt is for you. You sweat 91 Octane... and everyone can smell it. This shirt is for you. \"Piston\" by Proletkult Graphik, from The Noun Project",
       "label": "Women's Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -10543,7 +10443,7 @@
       }
     },
     {
-      "id": "5d89f19b2051762642220aea-undefined",
+      "id": "5d89f19b2051762642220aea-210",
       "ideaId": "5d89f19b2051762642220aea",
       "designName": "4Runner",
       "collection": "Toyota",
@@ -10551,6 +10451,8 @@
       "blurb": "",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
@@ -10856,7 +10758,7 @@
       }
     },
     {
-      "id": "5d89f20e20517626422245b4-undefined",
+      "id": "5d89f20e20517626422245b4-210",
       "ideaId": "5d89f20e20517626422245b4",
       "designName": "Toyota Corolla Levin",
       "collection": "Toyota",
@@ -10864,6 +10766,8 @@
       "blurb": "",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
@@ -11169,7 +11073,7 @@
       }
     },
     {
-      "id": "5d89f19cf937647d8113bec7-undefined",
+      "id": "5d89f19cf937647d8113bec7-210",
       "ideaId": "5d89f19cf937647d8113bec7",
       "designName": "Save The Stick 6 Speed",
       "collection": "Garage Gospel",
@@ -11177,6 +11081,8 @@
       "blurb": "",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
@@ -11482,7 +11388,7 @@
       }
     },
     {
-      "id": "5d89f1b51cbf3a25d5a8c6f8-undefined",
+      "id": "5d89f1b51cbf3a25d5a8c6f8-210",
       "ideaId": "5d89f1b51cbf3a25d5a8c6f8",
       "designName": "Toyota Corolla KE70",
       "collection": "Toyota",
@@ -11490,6 +11396,8 @@
       "blurb": "One word, tossable. That pretty much sums up the experience of driving a KE70. The early 80s was a good time for Toyota .",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
@@ -11795,15 +11703,17 @@
       }
     },
     {
-      "id": "5d89f20e162c5f464e8791cc-undefined",
+      "id": "5d89f20e162c5f464e8791cc-210",
       "ideaId": "5d89f20e162c5f464e8791cc",
-      "designName": "S Generations - Color Car",
+      "designName": "S Generations",
       "collection": "Datsun & Friends",
       "featured": false,
       "blurb": "Light, low, high compression, high revs. Same principles of great sports cars.. made 40 years apart. The S800 and S2000 stand as the benchmarks of Japanese sports cars.",
       "label": "Unisex Tee",
       "category": "Tees",
-      "primary": true,
+      "family": "S Generations",
+      "version": "Color Car",
+      "primary": false,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
       "brand": "Jerzees",
@@ -12108,7 +12018,7 @@
       }
     },
     {
-      "id": "5d89f1f813615160bf83367f-undefined",
+      "id": "5d89f1f813615160bf83367f-210",
       "ideaId": "5d89f1f813615160bf83367f",
       "designName": "Toyota Celica Cutaway",
       "collection": "Toyota",
@@ -12116,6 +12026,8 @@
       "blurb": "This particular graphic comes from a JDM Celica brochure for the 1600GT with a 2TG motor.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
@@ -12421,7 +12333,7 @@
       }
     },
     {
-      "id": "5d89f1b52051762642221a8c-undefined",
+      "id": "5d89f1b52051762642221a8c-210",
       "ideaId": "5d89f1b52051762642221a8c",
       "designName": "Starion Conquest",
       "collection": "Datsun & Friends",
@@ -12429,6 +12341,8 @@
       "blurb": "",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
@@ -12734,7 +12648,7 @@
       }
     },
     {
-      "id": "5d89f20e20517626422245b0-undefined",
+      "id": "5d89f20e20517626422245b0-210",
       "ideaId": "5d89f20e20517626422245b0",
       "designName": "AE86 Corolla Hatchback",
       "collection": "Toyota",
@@ -12742,6 +12656,8 @@
       "blurb": "The unsung hero of the 80s, the AE86 chassis Corolla GT-S Trueno/Levin is a true classic. Its light weight and rear wheel drive have made it great for road racing, autocross, rally and drifting.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
@@ -13047,7 +12963,7 @@
       }
     },
     {
-      "id": "5d89f20eb4b8c76e392b13dc-undefined",
+      "id": "5d89f20eb4b8c76e392b13dc-210",
       "ideaId": "5d89f20eb4b8c76e392b13dc",
       "designName": "Miata MX5 Generations",
       "collection": "Mazda",
@@ -13055,6 +12971,8 @@
       "blurb": "",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
@@ -13360,7 +13278,7 @@
       }
     },
     {
-      "id": "5d89f1f71cbf3a25d5a8e5c1-undefined",
+      "id": "5d89f1f71cbf3a25d5a8e5c1-210",
       "ideaId": "5d89f1f71cbf3a25d5a8e5c1",
       "designName": "Aschwanden Spark Plug",
       "collection": "Garage Gospel",
@@ -13368,6 +13286,8 @@
       "blurb": "Peter Aschwanden was best known for illustrating John Muir’s How to Keep Your Volkswagen Alive: A Manual of Step-by-Step Procedures for the Compleat Idiot.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
@@ -13673,7 +13593,7 @@
       }
     },
     {
-      "id": "5d89f1e06bbdbb2e6a5b4eb0-undefined",
+      "id": "5d89f1e06bbdbb2e6a5b4eb0-210",
       "ideaId": "5d89f1e06bbdbb2e6a5b4eb0",
       "designName": "Toyota Tosco Brochure Art",
       "collection": "Toyota",
@@ -13681,6 +13601,8 @@
       "blurb": "This shirt features several parts from an early 70s Toyota Tosco brochure for TA22 Celica 1600GT road and rally racing parts",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
@@ -13986,15 +13908,17 @@
       }
     },
     {
-      "id": "5d89f1e1b4b8c76e392b00e9-undefined",
+      "id": "5d89f1e1b4b8c76e392b00e9-210",
       "ideaId": "5d89f1e1b4b8c76e392b00e9",
-      "designName": "S Generations Gray",
+      "designName": "S Generations",
       "collection": "Datsun & Friends",
       "featured": false,
       "blurb": "",
       "label": "Unisex Tee",
       "category": "Tees",
-      "primary": true,
+      "family": "S Generations",
+      "version": "Gray",
+      "primary": false,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
       "brand": "Jerzees",
@@ -14299,14 +14223,16 @@
       }
     },
     {
-      "id": "5d89f1f71cbf3a25d5a8e59d-undefined",
+      "id": "5d89f1f71cbf3a25d5a8e59d-210",
       "ideaId": "5d89f1f71cbf3a25d5a8e59d",
-      "designName": "S Generations Clean",
+      "designName": "S Generations",
       "collection": "Datsun & Friends",
       "featured": false,
       "blurb": "The same as our other s800/s2000 design but without the crusty stuff at the bottom so it can be placed low on a shirt.",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": "S Generations",
+      "version": "Clean",
       "primary": true,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
@@ -14612,7 +14538,7 @@
       }
     },
     {
-      "id": "5d89f1e16bbdbb2e6a5b4f2a-undefined",
+      "id": "5d89f1e16bbdbb2e6a5b4f2a-210",
       "ideaId": "5d89f1e16bbdbb2e6a5b4f2a",
       "designName": "WRC Gravel Ahead",
       "collection": "Garage Gospel",
@@ -14620,6 +14546,8 @@
       "blurb": "",
       "label": "Unisex Tee",
       "category": "Tees",
+      "family": null,
+      "version": null,
       "primary": true,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
@@ -14966,7 +14894,10 @@
       "blurb": "TEQ is \"To-yo-ta\" spelled in Katakana, one of the Japanese phonetic alphabets. It was used as the Toyota logo starting in 1936 at the time when Toyoda Automatic Loom Works Ltd. launched its first car.",
       "collection": "Toyota",
       "published": true,
-      "featured": true
+      "featured": true,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f19b162c5f464e875bc1",
@@ -15000,7 +14931,10 @@
       "blurb": "",
       "collection": "Datsun & Friends",
       "published": true,
-      "featured": true
+      "featured": true,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f20f13615160bf833e7d",
@@ -15041,7 +14975,10 @@
       "blurb": "Manual transmissions are dying. Help save the world from flappy paddles and slushboxes. SAVE THE STICK!",
       "collection": "Garage Gospel",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "68a55cb6b868b07c0575ef83",
@@ -15080,7 +15017,10 @@
       "blurb": "It really is always the answer. Track Day Car? Miata. Beginner autocross car? Miata. Great fun daily driver? Miata. You simply can't go wrong with the car.. or this design. 2 Color vector design.",
       "collection": "Mazda",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f19b1cbf3a25d5a8b50e",
@@ -15117,7 +15057,10 @@
       "blurb": "The Datsun 1600 PL510 first hit the streets in 1968. In just a short few years it would stake its claim to road and street racing glory.",
       "collection": "Datsun & Friends",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "68a55cb6b868b07c0575ef91",
@@ -15156,7 +15099,10 @@
       "blurb": "It turns out that Tony Stark's top secret generator was just a Mazda Wankel Rotary. Who knew? YOU DID! You'll always know when Iron Man is coming when you hear that familiar brap, brap, brap.",
       "collection": "Mazda",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f1ce162c5f464e8776be",
@@ -15190,7 +15136,10 @@
       "blurb": "So sayeth Hewy Lewis and so it shall be.. It's hip to be square. Volvo drivers have known this for years and now they can show their brick driving pride.",
       "collection": "Volvo",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f19a13615160bf82f7a2",
@@ -15224,7 +15173,10 @@
       "blurb": "Lucky Smells is our life. Lucky Smells is our home.",
       "collection": "Garage Gospel",
       "published": false,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f20e162c5f464e8791ce",
@@ -15265,7 +15217,10 @@
       "blurb": "For too long the tyranny of the sequential gearbox has threatened to take from us, the driving community, our rights and freedoms. Save driving, save the stick!",
       "collection": "Garage Gospel",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f19b13615160bf82f7a6",
@@ -15307,7 +15262,10 @@
       "blurb": "You bleed 5W-30... and it stains your clothes. This is for you. You sweat 91 Octane... and everyone can smell it. This is for you. You've always been a Petrolsexual.. now show everyone.",
       "collection": "Garage Gospel",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f20e2051762642224541",
@@ -15344,7 +15302,10 @@
       "blurb": "The unsung hero of the 80s, the AE86 chassis Corolla GT-S Trueno/Levin is a true classic. Its light weight and rear wheel drive have made it great for road racing, autocross, rally and drifting.",
       "collection": "Toyota",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "68a55cb63f6bcc7d6db21930",
@@ -15384,7 +15345,10 @@
       "blurb": "Don't we all? Even a simple wheel change can get your warranty swiped out from under you these days. Mostly the reason why I will never buy another new car... but I digress.",
       "collection": "Garage Gospel",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f19c6bbdbb2e6a5b1ea8",
@@ -15428,7 +15392,10 @@
       "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
       "collection": "Garage Gospel",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f1cd205176264222294a",
@@ -15475,7 +15442,10 @@
       "blurb": "Before becoming Toyota Racing Development, TRD was known as Toyota Sports Corner, or TOSCO. TOSCO was established in Yokohama and built Toyota's first performance engines for the Celica and Corolla.",
       "collection": "Toyota",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f1cd13615160bf831625",
@@ -15518,7 +15488,10 @@
       "blurb": "Gore, Dyson, Escobar, Cain. We've got the need... the need... for speed.",
       "collection": "Garage Gospel",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f1b5f937647d8113d138",
@@ -15562,7 +15535,10 @@
       "blurb": "",
       "collection": "Toyota",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f1f8f937647d8113f389",
@@ -15607,7 +15583,10 @@
       "blurb": "You bleed 5W-30... and it stains your clothes. This shirt is for you. You sweat 91 Octane... and everyone can smell it. This shirt is for you. \"Piston\" by Proletkult Graphik, from The Noun Project",
       "collection": "Garage Gospel",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f19b2051762642220aea",
@@ -15665,7 +15644,10 @@
       "blurb": "",
       "collection": "Toyota",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f20e20517626422245b4",
@@ -15726,7 +15708,10 @@
       "blurb": "",
       "collection": "Toyota",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f19cf937647d8113bec7",
@@ -15784,7 +15769,10 @@
       "blurb": "",
       "collection": "Garage Gospel",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f1b51cbf3a25d5a8c6f8",
@@ -15844,7 +15832,10 @@
       "blurb": "One word, tossable. That pretty much sums up the experience of driving a KE70. The early 80s was a good time for Toyota .",
       "collection": "Toyota",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f20e162c5f464e8791cc",
@@ -15899,11 +15890,14 @@
         ],
         "defaultAppearanceId": "95"
       },
-      "name": "S Generations - Color Car",
+      "name": "S Generations",
       "blurb": "Light, low, high compression, high revs. Same principles of great sports cars.. made 40 years apart. The S800 and S2000 stand as the benchmarks of Japanese sports cars.",
       "collection": "Datsun & Friends",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": "S Generations",
+      "version": "Color Car",
+      "groupLead": false
     },
     {
       "ideaId": "5d89f1f813615160bf83367f",
@@ -15964,7 +15958,10 @@
       "blurb": "This particular graphic comes from a JDM Celica brochure for the 1600GT with a 2TG motor.",
       "collection": "Toyota",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f1b52051762642221a8c",
@@ -16022,7 +16019,10 @@
       "blurb": "",
       "collection": "Datsun & Friends",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f20e20517626422245b0",
@@ -16084,7 +16084,10 @@
       "blurb": "The unsung hero of the 80s, the AE86 chassis Corolla GT-S Trueno/Levin is a true classic. Its light weight and rear wheel drive have made it great for road racing, autocross, rally and drifting.",
       "collection": "Toyota",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f20eb4b8c76e392b13dc",
@@ -16143,7 +16146,10 @@
       "blurb": "",
       "collection": "Mazda",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f1f71cbf3a25d5a8e5c1",
@@ -16201,7 +16207,10 @@
       "blurb": "Peter Aschwanden was best known for illustrating John Muir’s How to Keep Your Volkswagen Alive: A Manual of Step-by-Step Procedures for the Compleat Idiot.",
       "collection": "Garage Gospel",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f1e06bbdbb2e6a5b4eb0",
@@ -16261,7 +16270,10 @@
       "blurb": "This shirt features several parts from an early 70s Toyota Tosco brochure for TA22 Celica 1600GT road and rally racing parts",
       "collection": "Toyota",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     },
     {
       "ideaId": "5d89f1e1b4b8c76e392b00e9",
@@ -16315,11 +16327,14 @@
         ],
         "defaultAppearanceId": "196"
       },
-      "name": "S Generations Gray",
+      "name": "S Generations",
       "blurb": "",
       "collection": "Datsun & Friends",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": "S Generations",
+      "version": "Gray",
+      "groupLead": false
     },
     {
       "ideaId": "5d89f1f71cbf3a25d5a8e59d",
@@ -16374,11 +16389,14 @@
         ],
         "defaultAppearanceId": "351"
       },
-      "name": "S Generations Clean",
+      "name": "S Generations",
       "blurb": "The same as our other s800/s2000 design but without the crusty stuff at the bottom so it can be placed low on a shirt.",
       "collection": "Datsun & Friends",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": "S Generations",
+      "version": "Clean",
+      "groupLead": true
     },
     {
       "ideaId": "5d89f1e16bbdbb2e6a5b4f2a",
@@ -16440,7 +16458,10 @@
       "blurb": "",
       "collection": "Garage Gospel",
       "published": true,
-      "featured": false
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
     }
   ]
 }

@@ -79,6 +79,8 @@ const drawerData = Object.fromEntries(
       // one that matters for the designs whose lineup entry swaps the blank.
       productTypeId: p.productTypeId,
       sellableId: p.sellableId,
+      family: p.family,
+      version: p.version,
       appearances: p.appearanceIds
         .map((id) => ({ id, ...catalog.productTypes[p.productTypeId]?.appearances[id] }))
         .filter((a) => a.name),
@@ -303,6 +305,14 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     const siblings = Object.values(products).filter(
       (p) => p.ideaId === product.ideaId && p.id !== product.id
     );
+    // Versions are different designs presented as one product — the three
+    // S Generations cuts. Matched on the same blank so switching version does
+    // not silently switch the customer onto a women's tee.
+    const versions = product.family
+      ? Object.values(products).filter(
+          (p) => p.family === product.family && p.label === product.label
+        )
+      : [];
     const state = { appearanceId: product.appearances[0]?.id, sizeId: null };
 
     drawer.innerHTML = `
@@ -321,6 +331,7 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
               ${product.brand ? `<span class="corner-label__plain">${product.brand}</span>` : ""}
             </p>
             ${product.blurb ? `<p class="drawer__blurb">${product.blurb}</p>` : ""}
+            <div class="field" id="f-version"></div>
             <div class="field" id="f-color"></div>
             <div class="field" id="f-size"></div>
             <p class="drawer__price">${money(product.price)}</p>
@@ -353,6 +364,25 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     }
 
     function paint() {
+      if (versions.length > 1) {
+        optionRow(
+          $("f-version"),
+          "Version",
+          product.version,
+          versions,
+          (v) => {
+            const b = document.createElement("button");
+            b.className = "opt";
+            b.setAttribute("aria-pressed", String(v.id === product.id));
+            b.textContent = v.version;
+            return b;
+          },
+          (v) => {
+            if (v.id !== product.id) openDrawer(v);
+          }
+        );
+      }
+
       const current = product.appearances.find((a) => a.id === state.appearanceId);
       $("stage-img").src = recolor(product.image, state.appearanceId);
       $("cta").href = shopLink(product, state.appearanceId);

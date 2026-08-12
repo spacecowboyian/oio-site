@@ -136,21 +136,27 @@
   },
   "5d89f1e1b4b8c76e392b00e9": {
     "sourceName": "S Generations Gray",
-    "name": "S Generations Gray",
+    "name": "S Generations",
     "blurb": "",
     "collection": "Datsun & Friends",
     "published": true,
     "featured": false,
-    "_variants": 1
+    "_variants": 1,
+    "group": "S Generations",
+    "version": "Gray",
+    "groupLead": false
   },
   "5d89f1f71cbf3a25d5a8e59d": {
     "sourceName": "S Generations Clean",
-    "name": "S Generations Clean",
+    "name": "S Generations",
     "blurb": "The same as our other s800/s2000 design but without the crusty stuff at the bottom so it can be placed low on a shirt.",
     "collection": "Datsun & Friends",
     "published": true,
     "featured": false,
-    "_variants": 1
+    "_variants": 1,
+    "group": "S Generations",
+    "version": "Clean",
+    "groupLead": true
   },
   "5d89f1e16bbdbb2e6a5b4f2a": {
     "sourceName": "WRC Gravel Ahead",
@@ -226,12 +232,15 @@
   },
   "5d89f20e162c5f464e8791cc": {
     "sourceName": "S Generations - Color Car",
-    "name": "S Generations - Color Car",
+    "name": "S Generations",
     "blurb": "Light, low, high compression, high revs. Same principles of great sports cars.. made 40 years apart. The S800 and S2000 stand as the benchmarks of Japanese sports cars.",
     "collection": "Datsun & Friends",
     "published": true,
     "featured": false,
-    "_variants": 1
+    "_variants": 1,
+    "group": "S Generations",
+    "version": "Color Car",
+    "groupLead": false
   },
   "5d89f1f813615160bf83367f": {
     "sourceName": "Toyota Celica Cutaway",

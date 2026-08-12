@@ -171,7 +171,13 @@ function luminance(hex) {
 const MIN_CONTRAST = 0.32;
 
 function pickAppearance(variant, appearances) {
-  const fallback = variant.defaultAppearanceId;
+  // The shop's default is only a candidate if it survived any garment
+  // restriction — otherwise a design limited to dark shirts would still lead
+  // with the white one it was told not to offer.
+  const offered = variant.appearanceIds;
+  const fallback = offered.includes(variant.defaultAppearanceId)
+    ? variant.defaultAppearanceId
+    : offered[0];
   if (!variant.print) return fallback;
 
   const inkLum = luminance(variant.print);
@@ -187,6 +193,46 @@ function pickAppearance(variant, appearances) {
     Math.abs(luminance(b.color) - inkLum) > Math.abs(luminance(a.color) - inkLum) ? b : a
   );
   return best.id;
+}
+
+/**
+ * Restrict which garment colours a design is offered on.
+ *
+ * The contrast rule below picks a sensible default *when the ink colour is
+ * known*, but a design whose art has no single `Cx` token — line work, anything
+ * multi-colour — carries no ink colour to measure, so nothing can be inferred.
+ * Corolla FX16 is the case in point: fine light line art that vanishes on white
+ * and reads beautifully on black, with no token to prove it either way.
+ *
+ * `garment: "dark" | "light"` in byDesign states it by hand for those. This
+ * governs what the OIO storefront offers and which colourway the Spreadshop
+ * link carries; the customer can still switch colour once they are on
+ * Spreadshop, which is Spreadshop's page and not ours to restrict.
+ */
+const GARMENT_MAX_LUM = { dark: 0.35 };
+const GARMENT_MIN_LUM = { light: 0.6 };
+
+function restrictAppearances(variant, appearances, garment, only) {
+  // An explicit list wins over the luminance rule. Some art needs a specific
+  // colourway rather than a category of them: Corolla FX16 is light line work
+  // with a dark red "FX16" wordmark, so it needs a garment that carries BOTH —
+  // red drowns the wordmark, navy and olive muddy it, and only black holds the
+  // two. That is a judgement from looking at the renders, not something
+  // luminance can express.
+  if (only?.length) {
+    const kept = variant.appearanceIds.filter((id) => only.includes(id));
+    if (kept.length) return kept;
+  }
+  if (!garment) return variant.appearanceIds;
+  const kept = variant.appearanceIds.filter((id) => {
+    const color = appearances[id]?.color;
+    if (!color) return false;
+    const lum = luminance(color);
+    if (garment === "dark") return lum <= GARMENT_MAX_LUM.dark;
+    if (garment === "light") return lum >= GARMENT_MIN_LUM.light;
+    return true;
+  });
+  return kept.length ? kept : variant.appearanceIds;
 }
 
 // The grid thumbnail is the design's audition, so lead with the best-selling
@@ -220,6 +266,14 @@ function applyOverrides(design, overrides) {
     collection: o.collection ?? "Uncategorized",
     published: o.published === true,
     featured: o.featured === true,
+    /* Several designs that are variations on one idea — the three S Generations
+       cuts, say — belong on the shelf as a single card with a version switcher,
+       not as three near-identical neighbours. `group` names the set, `version`
+       names this cut within it, and `groupLead` marks the one whose card
+       represents the set. */
+    group: o.group ?? null,
+    version: o.version ?? null,
+    groupLead: o.groupLead === true,
   };
 }
 
@@ -305,11 +359,21 @@ for (const design of designs.filter((d) => d.published)) {
       );
       continue;
     }
+    const appearanceMeta = productTypes[variant.productTypeId]?.appearances ?? {};
+    const appearanceIds = restrictAppearances(
+      variant,
+      appearanceMeta,
+      rules.garment,
+      rules.appearanceIds
+    );
     const defaultAppearanceId =
-      entry.appearanceId ??
-      pickAppearance(variant, productTypes[variant.productTypeId]?.appearances ?? {});
+      entry.appearanceId ?? pickAppearance({ ...variant, appearanceIds }, appearanceMeta);
     products.push({
-      id: `${design.ideaId}-${entry.productTypeId}`,
+      // From the RESOLVED variant, never the entry: an entry using a
+      // `productTypeIds` preference list has no single productTypeId, which
+      // made every such product `<ideaId>-undefined` and collided the two tees
+      // of a design into one map key — silently dropping one of them.
+      id: `${design.ideaId}-${variant.productTypeId}`,
       ideaId: design.ideaId,
       designName: design.name,
       collection: design.collection,
@@ -317,7 +381,11 @@ for (const design of designs.filter((d) => d.published)) {
       blurb: design.blurb,
       label: entry.label,
       category: entry.category,
-      primary: entry.primary === true,
+      family: design.group,
+      version: design.version,
+      // A grouped design only earns a card if it leads its group; the rest are
+      // reachable as versions from that card.
+      primary: entry.primary === true && (!design.group || design.groupLead),
       productType: variant.productType,
       productTypeId: variant.productTypeId,
       brand: productTypes[variant.productTypeId]?.brand ?? null,
@@ -327,7 +395,7 @@ for (const design of designs.filter((d) => d.published)) {
       // Card art must show the colourway the lineup picked, not whatever
       // Spreadshop defaults to. Appearance is encoded in the image path.
       image: variant.image?.replace(/appearanceId=\d+/, `appearanceId=${defaultAppearanceId}`),
-      appearanceIds: variant.appearanceIds,
+      appearanceIds,
       defaultAppearanceId,
       sellableId: variant.sellableId,
     });
