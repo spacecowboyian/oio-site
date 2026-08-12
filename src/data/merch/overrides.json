@@ -123,7 +123,7 @@
     "sourceName": "Save the Stick - Shift Pattern",
     "name": "Save the Stick - Shifter",
     "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
-    "collection": "Garage Gospel",
+    "collection": "Save the Stick",
     "published": true,
     "featured": false,
     "_variants": 1
@@ -166,7 +166,7 @@
     "name": "WRC Gravel Ahead",
     "blurb": "",
     "collection": "Garage Gospel",
-    "published": true,
+    "published": false,
     "featured": false,
     "_variants": 1
   },

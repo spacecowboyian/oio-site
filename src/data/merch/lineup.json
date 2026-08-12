@@ -76,10 +76,10 @@
       }
     },
     "5d89f1f813615160bf83367f": {
-      "_why": "Toyota Celica Cutaway \u2014 Ian's call, overriding the earlier white pick: black by default.",
+      "_why": "Toyota Celica Cutaway \u2014 Ian's call, superseding the earlier black pick: navy.",
       "swap": {
         "Unisex Tee": {
-          "appearanceId": "2"
+          "appearanceId": "4"
         }
       }
     },
@@ -156,10 +156,10 @@
       }
     },
     "5d89f19c6bbdbb2e6a5b1ea8": {
-      "_why": "Save the Stick - Shifter \u2014 Ian's call: black by default, matching the rest of the Save the Stick family.",
+      "_why": "Save the Stick - Shifter \u2014 Ian asked for a white design on a black shirt, which this design cannot do: its uploaded file carries exactly one ink colour (black), confirmed in the Partner Area product editor's Design colors list. Black ink needs a light ground, so this sits on white until a white version of the artwork is uploaded.",
       "swap": {
         "Unisex Tee": {
-          "appearanceId": "2"
+          "appearanceId": "1"
         }
       }
     },

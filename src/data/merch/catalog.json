@@ -1,6 +1,6 @@
 {
   "shopId": "477761",
-  "syncedAt": "2026-08-12T21:35:10.209Z",
+  "syncedAt": "2026-08-12T21:42:17.371Z",
   "hasDetails": true,
   "groupOrder": [
     "Tees",
@@ -9584,7 +9584,7 @@
       "id": "5d89f19c6bbdbb2e6a5b1ea8-175",
       "ideaId": "5d89f19c6bbdbb2e6a5b1ea8",
       "designName": "Save the Stick - Shifter",
-      "collection": "Garage Gospel",
+      "collection": "Save the Stick",
       "featured": false,
       "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
       "label": "Unisex Tee",
@@ -9598,7 +9598,7 @@
       "group": "Tees",
       "price": 26.49,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y38D1000566431W19999H19999Cx000000/views/1,width=500,height=500,appearanceId=2/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y38D1000566431W19999H19999Cx000000/views/1,width=500,height=500,appearanceId=1/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
       "appearanceIds": [
         "154",
         "231",
@@ -9608,7 +9608,7 @@
         "5",
         "4"
       ],
-      "defaultAppearanceId": "2",
+      "defaultAppearanceId": "1",
       "sellableId": "jwenrD12z7TV9G2M09ny-175-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y38D1000566431W19999H19999Cx000000/views/1,width=650,height=650,appearanceId=154/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
@@ -9673,7 +9673,7 @@
       "id": "5d89f19c6bbdbb2e6a5b1ea8-347",
       "ideaId": "5d89f19c6bbdbb2e6a5b1ea8",
       "designName": "Save the Stick - Shifter",
-      "collection": "Garage Gospel",
+      "collection": "Save the Stick",
       "featured": false,
       "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
       "label": "Women's Tee",
@@ -11753,7 +11753,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A295PA4301PT17X14Y17D12610695W30886H20145/views/1,width=500,height=500,appearanceId=2/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A295PA4301PT17X14Y17D12610695W30886H20145/views/1,width=500,height=500,appearanceId=4/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
       "appearanceIds": [
         "386",
         "438",
@@ -11785,7 +11785,7 @@
         "63",
         "69"
       ],
-      "defaultAppearanceId": "2",
+      "defaultAppearanceId": "4",
       "sellableId": "4w8MB0jRovu9ARa54GLw-210-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T210A295PA4301PT17X14Y17D12610695W30886H20145/views/1,width=650,height=650,appearanceId=386/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
@@ -13939,321 +13939,6 @@
           "38"
         ]
       }
-    },
-    {
-      "id": "5d89f1e16bbdbb2e6a5b4f2a-210",
-      "ideaId": "5d89f1e16bbdbb2e6a5b4f2a",
-      "designName": "WRC Gravel Ahead",
-      "collection": "Garage Gospel",
-      "featured": false,
-      "blurb": "",
-      "label": "Unisex Tee",
-      "category": "Tees",
-      "family": null,
-      "version": null,
-      "primary": true,
-      "productType": "Men's T-Shirt",
-      "productTypeId": "210",
-      "brand": "Jerzees",
-      "group": "Tees",
-      "price": 23.49,
-      "print": "FFD202",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T210A2PA4301PT17X107Y25D104998549W12024H31004CxFFD202/views/1,width=500,height=500,appearanceId=2.jpg",
-      "appearanceIds": [
-        "386",
-        "438",
-        "504",
-        "591",
-        "697",
-        "715",
-        "940",
-        "1281",
-        "1368",
-        "1370",
-        "1466",
-        "1587",
-        "95",
-        "120",
-        "134",
-        "196",
-        "228",
-        "231",
-        "258",
-        "259",
-        "295",
-        "351",
-        "1",
-        "22",
-        "2",
-        "4",
-        "33",
-        "63",
-        "69"
-      ],
-      "defaultAppearanceId": "2",
-      "sellableId": "nOdaROaMmMCxd3My99jZ-210-7",
-      "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T210A2PA4301PT17X107Y25D104998549W12024H31004CxFFD202/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T210A2PA4301PT17X107Y25D104998549W12024H31004CxFFD202/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T210A2PA4301PT17X107Y25D104998549W12024H31004CxFFD202/views/2,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T210A2PA4301PT17X107Y25D104998549W12024H31004CxFFD202/views/3,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T210A2PA4301PT17X107Y25D104998549W12024H31004CxFFD202/views/4,width=650,height=650,appearanceId=386.jpg"
-      ],
-      "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "22": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "33": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "63": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "69": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "95": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94"
-        ],
-        "120": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "196": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "228": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "258": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "295": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "351": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "438": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "504": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "591": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "697": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "715": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "940": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1281": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1370": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1587": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ]
-      }
     }
   ],
   "designs": [
@@ -14793,7 +14478,7 @@
       },
       "name": "Save the Stick - Shifter",
       "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",
-      "collection": "Garage Gospel",
+      "collection": "Save the Stick",
       "published": true,
       "featured": false,
       "group": null,
@@ -15860,7 +15545,7 @@
       "name": "WRC Gravel Ahead",
       "blurb": "",
       "collection": "Garage Gospel",
-      "published": true,
+      "published": false,
       "featured": false,
       "group": null,
       "version": null,
