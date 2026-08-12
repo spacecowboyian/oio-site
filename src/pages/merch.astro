@@ -573,13 +573,16 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     opacity: 0.6;
   }
 
+  /* No table rules. The 1px gap over a Steel Dark ground used to draw a
+     hairline grid between cards; that job moved onto each product frame's own
+     border, so the grid just spaces them now and the page ground shows through.
+     Cards keep their Surface 2 fill, so they still read as panels without being
+     boxed into a table. */
   .merch-grid {
     display: grid;
     /* A bare rem minimum cannot shrink when the user raises their text size. */
     grid-template-columns: repeat(auto-fill, minmax(min(17rem, 100%), 1fr));
     gap: 1px;
-    background: var(--apex-steel-dark);
-    border-bottom: 1px solid var(--apex-steel-dark);
   }
 
   .merch-grid > [data-collection] {
@@ -678,15 +681,15 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     }
   }
 
-  /* Same light-grey product ground as the cards — the drawer shows the same
-     shirt on the same neutral, so switching colourway doesn't also switch the
-     backdrop out from under it. */
+  /* Same product ground as the cards — the drawer shows the same shirt on the
+     same neutral, so switching colourway doesn't also switch the backdrop out
+     from under it. */
   .drawer__stage {
     position: sticky;
     top: 4rem;
     align-self: start;
     aspect-ratio: 1;
-    background: #e5e5e5;
+    background: var(--apex-surface);
     border: 1px solid var(--apex-steel-dark);
   }
 

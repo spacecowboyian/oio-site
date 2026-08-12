@@ -55,19 +55,18 @@ const highRes = product.image?.replace(/width=\d+,height=\d+/, "width=1000,heigh
     background: var(--apex-surface);
   }
 
-  /* A light-grey product ground rather than the black one the elevation rules
-     default to. The shelf carries both black and white shirts side by side, and
-     on black neither read: a black tee vanished into the frame entirely while a
-     white one blew out against it. Apex's own gray100 (#E5E5E5) is the neutral
-     both sit on — light enough to silhouette a dark shirt, dark enough that a
-     white shirt still has an edge. Deliberately from the token file rather than
-     an invented hex: the guide has no light surface token, so gray100 is the
-     one documented light value in the system. */
+  /* The product ground matches the page ground rather than contrasting with it,
+     so a shirt reads as sitting on the site rather than in a lightbox. A dark
+     shirt would disappear into it on its own, which is what the hairline is
+     for: the frame keeps its own edge, and the grid drops the table rules that
+     used to supply one. Border colour is the same Steel Dark the grid lines
+     were, so the shelf keeps its structure without drawing a table. */
   .card__frame {
     position: relative;
     display: block;
     aspect-ratio: 1;
-    background: #e5e5e5;
+    background: var(--apex-surface);
+    border: 1px solid var(--apex-steel-dark);
     overflow: hidden;
   }
 
