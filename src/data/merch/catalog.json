@@ -1,6 +1,6 @@
 {
   "shopId": "477761",
-  "syncedAt": "2026-08-12T21:30:44.025Z",
+  "syncedAt": "2026-08-12T21:35:10.209Z",
   "hasDetails": true,
   "groupOrder": [
     "Tees",
@@ -8597,8 +8597,8 @@
       "blurb": "For too long the tyranny of the sequential gearbox has threatened to take from us, the driving community, our rights and freedoms. Save driving, save the stick!",
       "label": "Unisex Tee",
       "category": "Tees",
-      "family": null,
-      "version": null,
+      "family": "Save the Stick - Red Cross",
+      "version": "5 Speed",
       "primary": true,
       "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
       "productTypeId": "175",
@@ -8686,8 +8686,8 @@
       "blurb": "For too long the tyranny of the sequential gearbox has threatened to take from us, the driving community, our rights and freedoms. Save driving, save the stick!",
       "label": "Women's Tee",
       "category": "Tees",
-      "family": null,
-      "version": null,
+      "family": "Save the Stick - Red Cross",
+      "version": "5 Speed",
       "primary": false,
       "productType": "Women's T-Shirt",
       "productTypeId": "347",
@@ -8854,7 +8854,7 @@
       "group": "Tees",
       "price": 26.49,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12070Cx000000%3AxFFFFFF/views/1,width=500,height=500,appearanceId=2/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12070Cx000000%3AxFFFFFF/views/1,width=500,height=500,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
       "appearanceIds": [
         "154",
         "231",
@@ -8864,7 +8864,7 @@
         "5",
         "4"
       ],
-      "defaultAppearanceId": "2",
+      "defaultAppearanceId": "154",
       "sellableId": "92qGnkaA8as1qR0Q3wJ9-175-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12070Cx000000%3AxFFFFFF/views/1,width=650,height=650,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
@@ -10793,15 +10793,15 @@
     {
       "id": "5d89f19cf937647d8113bec7-210",
       "ideaId": "5d89f19cf937647d8113bec7",
-      "designName": "Save The Stick 6 Speed",
+      "designName": "Save the Stick - Red Cross",
       "collection": "Garage Gospel",
       "featured": false,
       "blurb": "",
       "label": "Unisex Tee",
       "category": "Tees",
-      "family": null,
-      "version": null,
-      "primary": true,
+      "family": "Save the Stick - Red Cross",
+      "version": "6 Speed",
+      "primary": false,
       "productType": "Men's T-Shirt",
       "productTypeId": "210",
       "brand": "Jerzees",
@@ -14621,9 +14621,9 @@
       "collection": "Garage Gospel",
       "published": true,
       "featured": false,
-      "group": null,
-      "version": null,
-      "groupLead": false
+      "group": "Save the Stick - Red Cross",
+      "version": "5 Speed",
+      "groupLead": true
     },
     {
       "ideaId": "5d89f19b13615160bf82f7a6",
@@ -15168,13 +15168,13 @@
         ],
         "defaultAppearanceId": "1"
       },
-      "name": "Save The Stick 6 Speed",
+      "name": "Save the Stick - Red Cross",
       "blurb": "",
       "collection": "Garage Gospel",
       "published": true,
       "featured": false,
-      "group": null,
-      "version": null,
+      "group": "Save the Stick - Red Cross",
+      "version": "6 Speed",
       "groupLead": false
     },
     {

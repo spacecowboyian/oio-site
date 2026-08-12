@@ -678,12 +678,15 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     }
   }
 
+  /* Same light-grey product ground as the cards — the drawer shows the same
+     shirt on the same neutral, so switching colourway doesn't also switch the
+     backdrop out from under it. */
   .drawer__stage {
     position: sticky;
     top: 4rem;
     align-self: start;
     aspect-ratio: 1;
-    background: var(--apex-black);
+    background: #e5e5e5;
     border: 1px solid var(--apex-steel-dark);
   }
 

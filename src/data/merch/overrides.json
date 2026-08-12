@@ -96,7 +96,10 @@
     "collection": "Garage Gospel",
     "published": true,
     "featured": false,
-    "_variants": 122
+    "_variants": 122,
+    "group": "Save the Stick - Red Cross",
+    "version": "5 Speed",
+    "groupLead": true
   },
   "68a55cb63f6bcc7d6db21930": {
     "sourceName": "I Void Car Warranties",
@@ -214,12 +217,15 @@
   },
   "5d89f19cf937647d8113bec7": {
     "sourceName": "Save The Stick 6 Speed",
-    "name": "Save The Stick 6 Speed",
+    "name": "Save the Stick - Red Cross",
     "blurb": "",
     "collection": "Garage Gospel",
     "published": true,
     "featured": false,
-    "_variants": 1
+    "_variants": 1,
+    "group": "Save the Stick - Red Cross",
+    "version": "6 Speed",
+    "groupLead": false
   },
   "5d89f1b51cbf3a25d5a8c6f8": {
     "sourceName": "Toyota Corolla KE70",
