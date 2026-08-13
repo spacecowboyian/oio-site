@@ -8,8 +8,6 @@
       "primary": true,
       "productTypeIds": [
         "175",
-        "812",
-        "210",
         "1361"
       ]
     },
@@ -18,9 +16,7 @@
       "category": "Tees",
       "productTypeIds": [
         "4067",
-        "347",
-        "813",
-        "2916"
+        "347"
       ]
     }
   ],
@@ -172,5 +168,5 @@
       }
     }
   },
-  "_bellaGap": "Designs with no Bella + Canvas blank enabled, still resolving to Jerzees 210: Toyota Tosco Brochure Art, S Generations (all three), 4Runner, Toyota Corolla Levin, Save the Stick - Red Cross (6 Speed version), Toyota Corolla KE70, Toyota Celica Cutaway, Starion Conquest, AE86 Corolla Hatchback, Miata MX5 Generations. Adding 175 and 4067 to these in the Partner Area is what makes the all-Bella claim true; until then the fallback keeps them purchasable."
+  "_bellaGap": "Closed for the twelve designs that used to carry only Jerzees 210 — all of them now have Bella 175 and 4067 enabled in the Partner Area. Three published designs still have no women's Bella blank and fall back to 347 (Women's Premium T-Shirt): Save the Stick - Shift Pattern, Toyota Tosco Logo, Corolla FX16. They can't be fixed with the product template, because applying a template REPLACES the selection and would wipe the Cx ink token their men's product carries (black on Shift Pattern, two-channel on the others); 4067 has to be added by hand from the All products grid, then re-inked."
 }
