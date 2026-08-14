@@ -316,6 +316,25 @@ for (const s of sellables) {
   });
 }
 
+// Spreadshirt renders its mockups on white studio paper. The card crops into
+// the shoulder at ~1.9x, so the garment never quite reaches the corners and
+// that white leaks out under the sleeve — a bright wedge on a dark frame,
+// which reads as a rendering bug rather than a product shot. The image server
+// takes a backgroundColor, so ask it for our own ground and the shirt lands on
+// a continuous surface at any crop.
+//
+// Baking a colour rather than requesting a transparent .png is a deliberate
+// trade: the png is a real alpha channel and would survive a re-theme, but it
+// weighs 573KB against 38KB for the jpg, and a shelf is 26 images. The site is
+// dark-only, so the theme risk is cheap and the bytes are not. Keep in sync
+// with --apex-surface; the frame behind the image uses the same token.
+const FRAME_BG = "161412";
+
+const frameImage = (url, appearanceId) =>
+  url
+    ?.replace(/appearanceId=\d+/, `appearanceId=${appearanceId}`)
+    .replace(/(,width=\d+,height=\d+)/, `$1,backgroundColor=${FRAME_BG}`);
+
 const designs = [...byIdea.values()]
   .map((d) =>
     applyOverrides({ ...d, catalogSize: d.variants.length, hero: pickHero(d.variants) }, overrides)
@@ -407,7 +426,7 @@ for (const design of designs.filter((d) => d.published)) {
       print: variant.print,
       // Card art must show the colourway the lineup picked, not whatever
       // Spreadshop defaults to. Appearance is encoded in the image path.
-      image: variant.image?.replace(/appearanceId=\d+/, `appearanceId=${defaultAppearanceId}`),
+      image: frameImage(variant.image, defaultAppearanceId),
       appearanceIds,
       defaultAppearanceId,
       sellableId: variant.sellableId,
