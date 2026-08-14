@@ -56,17 +56,16 @@ const highRes = product.image?.replace(/width=\d+,height=\d+/, "width=1000,heigh
   }
 
   /* The product ground matches the page ground rather than contrasting with it,
-     so a shirt reads as sitting on the site rather than in a lightbox. A dark
-     shirt would disappear into it on its own, which is what the hairline is
-     for: the frame keeps its own edge, and the grid drops the table rules that
-     used to supply one. Border colour is the same Steel Dark the grid lines
-     were, so the shelf keeps its structure without drawing a table. */
+     so a shirt reads as sitting on the site rather than in a lightbox. It used
+     to carry a Steel Dark hairline, from when the mockups still had their white
+     studio paper and the frame needed an edge of its own. Now that the shot is
+     rendered on Surface, the step down from the card's Surface 2 is the edge —
+     a line on top of that just draws a box around a box. */
   .card__frame {
     position: relative;
     display: block;
     aspect-ratio: 1;
     background: var(--apex-surface);
-    border: 1px solid var(--apex-steel-dark);
     overflow: hidden;
   }
 
