@@ -494,8 +494,28 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
      tokens live in src/styles/apex.css. Square corners, one accent spent on the
      payoff, flat elevation, measured contrast roles. */
 
+  /* One measure for the whole page. The padding formula centres content inside
+     a fixed measure while leaving every element full-bleed, so section rules
+     and the sticky filter bar still span edge to edge and the shelf never
+     turns into a boxed-in column floating on the ground. Below the measure it
+     collapses to a plain gutter, which is what makes the phone layout stop
+     running off the right edge.
+
+     80rem is picked off the grid, not taste: cards floor at 17rem, so the
+     content box fits four tracks with the gutters and leaves no orphan column
+     the way a 1440px viewport did. */
+  .merch-head,
+  .merch-filters,
+  #sections > section,
+  .state,
+  .merch-foot {
+    padding-inline: max(1.5rem, (100% - 80rem) / 2);
+  }
+
   .merch-head {
-    padding: 4rem 1.5rem 3rem;
+    padding-block: 4rem 3rem;
+    /* No side rules here — Ian's call. The hero opens straight onto the black
+       ground; only the bottom edge is drawn, to hand off to the filter bar. */
     border-bottom: 1px solid var(--apex-steel-dark);
   }
 
@@ -529,7 +549,7 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
+    padding-block: 0.75rem;
     background: var(--apex-surface);
     border-bottom: 1px solid var(--apex-steel-dark);
   }
@@ -847,7 +867,7 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
 
   .state,
   .merch-foot {
-    padding: 3rem 1.5rem;
+    padding-block: 3rem;
     font-family: var(--apex-font-mono);
     font-size: var(--apex-caption);
     line-height: 1.9;
