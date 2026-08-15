@@ -1,29 +1,886 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProductCard from "../components/merch/ProductCard.astro";
+import SectionHead from "../components/merch/SectionHead.astro";
+import catalog from "../data/merch/catalog.json";
+
+/**
+ * The store is generated at build time from src/data/merch/catalog.json, which
+ * `node scripts/sync-catalog.mjs --details` writes from the Spreadshirt Public
+ * Shop API. The API key is never in the browser and never in the bundle.
+ *
+ * A design is artwork; a product is that artwork on one blank we chose to sell.
+ * Spreadshop lists 120+ printable blanks per design — merchandising all of them
+ * reads as a catalogue dump. The short list we actually sell is
+ * src/data/merch/lineup.json; what is published is src/data/merch/overrides.json.
+ */
+
+const products = catalog.products;
+
+// The grid is a shelf, not an inventory: one card per design per category. The
+// other cuts of the same design surface through "Also on" in the drawer.
+const shelf = products.filter((p) => p.primary);
+
+const categories = [...new Set(shelf.map((p) => p.category))];
+const landing = categories[0];
+
+// Collections that get their own section, in shelf order, ahead of everything
+// else. Garage Gospel leads because it's the house line — OIO's own jokes
+// rather than someone else's badge. Fleet follows: the cars OIO actually runs.
+// Anything not named here falls into "Everything Else" rather than needing to
+// be listed, so adding a section is one entry plus the collection on a design.
+const FEATURED_COLLECTIONS = ["Garage Gospel", "Fleet"];
+const collections = [...new Set(shelf.map((p) => p.collection))];
+
+const colorCount = (p) => p.appearanceIds.length;
+
+const card = (p) => ({
+  id: p.id,
+  designName: p.designName,
+  label: p.label,
+  brand: p.brand,
+  price: p.price,
+  image: p.image,
+  colorCount: colorCount(p),
+});
+
+// Every category is rendered, then the client shows one at a time. Static HTML
+// for the whole shelf means the products are in the page for crawlers and for
+// anyone whose JS never arrives.
+const sections = categories.flatMap((category) => {
+  const inCategory = shelf.filter((p) => p.category === category);
+
+  const featured = FEATURED_COLLECTIONS.map((name) => ({
+    category,
+    title: name,
+    items: inCategory.filter((p) => p.collection === name),
+  })).filter((section) => section.items.length);
+
+  // A design belongs to exactly one section: anything claimed by a featured
+  // collection is excluded here rather than repeated further down the shelf.
+  const rest = inCategory.filter((p) => !FEATURED_COLLECTIONS.includes(p.collection));
+
+  return [
+    ...featured,
+    rest.length && {
+      category,
+      title: featured.length ? "Everything Else" : null,
+      items: rest,
+    },
+  ].filter(Boolean);
+});
+
+// The drawer needs colours, sizes and sibling products per item; the cards do
+// not. Ship one JSON island rather than data attributes on every card.
+const drawerData = Object.fromEntries(
+  products.map((p) => [
+    p.id,
+    {
+      id: p.id,
+      ideaId: p.ideaId,
+      designName: p.designName,
+      collection: p.collection,
+      blurb: p.blurb,
+      label: p.label,
+      brand: p.brand,
+      price: p.price,
+      image: p.image,
+      // Both needed to hand the customer's selection to Spreadshop — see
+      // shopLink below. `sellableId` is what pins the ink colour, so it is the
+      // one that matters for the designs whose lineup entry swaps the blank.
+      productTypeId: p.productTypeId,
+      sellableId: p.sellableId,
+      family: p.family,
+      version: p.version,
+      appearances: p.appearanceIds
+        .map((id) => ({ id, ...catalog.productTypes[p.productTypeId]?.appearances[id] }))
+        .filter((a) => a.name),
+      sizeNames: catalog.productTypes[p.productTypeId]?.sizes ?? {},
+      sizesByAppearance: p.sizesByAppearance ?? null,
+    },
+  ])
+);
+
+const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
 ---
 
 <BaseLayout
   title="Merch - OIO Racing"
-  description="Official OIO Racing merchandise and gear."
+  description="OIO Racing merch. Printed on demand and shipped by Spreadshop."
 >
-  <section class="py-16">
-    <div class="container mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Merch</h1>
-      <p class="text-xl text-zinc-400 mb-12">Official OIO Racing gear</p>
+  <header class="merch-head">
+    <!-- Two-tier headline: white setup, solid accent punchline. -->
+    <h1>Wear your<br /><span>Scripture</span></h1>
+    <p>
+      Build, race, break, repeat. Printed on demand and shipped by Spreadshop, so
+      nothing is just taking up space in the shop. Well. Nothing that isn't a car.
+    </p>
+  </header>
 
-      <!-- Ecwid Store Embed Placeholder -->
-      <div class="max-w-6xl mx-auto">
-        <div class="bg-zinc-900 rounded-lg p-12 border border-zinc-800 text-center">
-          <h2 class="text-2xl font-semibold mb-4">Store Coming Soon</h2>
-          <p class="text-zinc-400 mb-6">
-            We're setting up our merch store with Ecwid.
-            Check back soon for t-shirts, stickers, and more OIO Racing gear.
-          </p>
-          <div id="ecwid-store">
-            <!-- Ecwid store widget will be embedded here -->
+  <div class="merch-filters" id="filters">
+    {/* A rail with one option is decoration, not navigation. While the lineup
+        is tees-only there is nothing to switch between, so the Shop rail
+        appears again by itself when a second category returns. */}
+    <div class="rail" hidden={categories.length < 2}>
+      <span class="rail__label">Shop</span>
+      {
+        categories.map((category) => (
+          <button
+            class="chip"
+            data-filter="category"
+            data-value={category}
+            aria-pressed={category === landing}
+            type="button"
+          >
+            {category}
+            <span class="chip__count">
+              {shelf.filter((p) => p.category === category).length}
+            </span>
+          </button>
+        ))
+      }
+    </div>
+    <div class="rail">
+      <span class="rail__label">Design</span>
+      <button class="chip" data-filter="collection" data-value="All" aria-pressed="true" type="button">
+        All<span class="chip__count">{shelf.filter((p) => p.category === landing).length}</span>
+      </button>
+      {
+        collections.map((collection) => (
+          <button class="chip" data-filter="collection" data-value={collection} aria-pressed="false" type="button">
+            {collection}
+            <span class="chip__count" data-count-for={collection}>
+              {shelf.filter((p) => p.category === landing && p.collection === collection).length}
+            </span>
+          </button>
+        ))
+      }
+    </div>
+  </div>
+
+  <div id="sections">
+    {
+      sections.map((section, i) => (
+        <section data-category={section.category} hidden={section.category !== landing}>
+          {section.title && (
+            <SectionHead
+              seq={i + 1}
+              title={section.title}
+              meta={`${section.items.length} designs`}
+            />
+          )}
+          <div class="merch-grid">
+            {section.items.map((p) => (
+              <div data-collection={p.collection}>
+                <ProductCard product={card(p)} />
+              </div>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </div>
+
+  <p class="state" id="state" hidden>Nothing here yet.</p>
+
+  <div class="drawer" id="drawer" hidden></div>
+
+  <footer class="merch-foot">
+    <p>{products.length} products · synced {syncedAt}</p>
+    <p>
+      Fulfilment, payment and shipping handled by Spreadshop. Checkout opens on
+      their storefront.
+    </p>
+  </footer>
+
+  <script type="application/json" id="merch-data" set:html={JSON.stringify(drawerData)} />
+</BaseLayout>
+
+<script>
+  const SHOP_URL = "https://oioracing.myspreadshop.com";
+  const products = JSON.parse(document.getElementById("merch-data").textContent);
+
+  const money = (n) => `$${n.toFixed(2)}`;
+
+  // Spreadshop resolves any slug and redirects to the canonical one, so a
+  // readable guess is enough — the ideaId is what addresses the product.
+  //
+  // The query string is Spreadshop's own: its colourway links use exactly
+  // `?productType=&sellable=&appearance=`, so the customer lands on the blank
+  // and the colour they picked here rather than on the shop's defaults.
+  // `sellable` is the important one — it pins the ink colour, which is fixed
+  // per sellable and is why some designs swap blanks in the lineup.
+  //
+  // Size is deliberately absent: Spreadshop has no size parameter, so that
+  // choice is still made on their page. The size picker here reports what the
+  // chosen colour actually stocks, which is information the customer cannot
+  // get until they have already left.
+  const shopLink = (p, appearanceId) => {
+    const slug = p.designName
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "+")
+      .replace(/^\+|\+$/g, "");
+    const query = new URLSearchParams({
+      productType: p.productTypeId,
+      sellable: p.sellableId,
+      appearance: appearanceId,
+    });
+    return `${SHOP_URL}/${slug}-A${p.ideaId}?${query}`;
+  };
+
+  // Preview images encode the colourway in the path, so recolouring is a string
+  // swap rather than another round trip.
+  const recolor = (url, appearanceId) =>
+    url ? url.replace(/appearanceId=\d+/, `appearanceId=${appearanceId}`) : url;
+
+  // Sizes depend on the chosen colour: the same blank stocks different size runs
+  // per colourway, so a single list would offer sizes nobody can buy.
+  const sizesFor = (p, appearanceId) => {
+    const ids = p.sizesByAppearance?.[appearanceId] ?? Object.keys(p.sizeNames);
+    const order = Object.keys(p.sizeNames);
+    return ids
+      .map((id) => ({ id, name: p.sizeNames[id] ?? id }))
+      .sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
+  };
+
+  /* ---------- filters ---------- */
+
+  const sections = document.getElementById("sections");
+  const state = document.getElementById("state");
+  let activeCategory = document.querySelector('[data-filter="category"][aria-pressed="true"]')
+    ?.dataset.value;
+  let activeCollection = "All";
+
+  function applyFilters() {
+    let visible = 0;
+
+    for (const section of sections.querySelectorAll("section")) {
+      const inCategory = section.dataset.category === activeCategory;
+      let shown = 0;
+
+      for (const cell of section.querySelectorAll("[data-collection]")) {
+        const match =
+          inCategory &&
+          (activeCollection === "All" || cell.dataset.collection === activeCollection);
+        cell.hidden = !match;
+        if (match) shown++;
+      }
+
+      section.hidden = !inCategory || shown === 0;
+      visible += shown;
+    }
+
+    for (const chip of document.querySelectorAll('[data-filter="category"]')) {
+      chip.setAttribute("aria-pressed", String(chip.dataset.value === activeCategory));
+    }
+    for (const chip of document.querySelectorAll('[data-filter="collection"]')) {
+      chip.setAttribute("aria-pressed", String(chip.dataset.value === activeCollection));
+    }
+
+    // Counts are per category, so they move when the category does.
+    for (const count of document.querySelectorAll("[data-count-for]")) {
+      const collection = count.dataset.countFor;
+      const n = [...sections.querySelectorAll("[data-collection]")].filter(
+        (cell) =>
+          cell.closest("section").dataset.category === activeCategory &&
+          cell.dataset.collection === collection
+      ).length;
+      count.textContent = String(n);
+      count.closest(".chip").hidden = n === 0;
+    }
+
+    state.hidden = visible > 0;
+  }
+
+  document.getElementById("filters").addEventListener("click", (e) => {
+    const chip = e.target.closest(".chip");
+    if (!chip) return;
+
+    if (chip.dataset.filter === "category") {
+      activeCategory = chip.dataset.value;
+      activeCollection = "All";
+    } else {
+      // Clicking the active chip clears it rather than being a dead click.
+      activeCollection = activeCollection === chip.dataset.value ? "All" : chip.dataset.value;
+    }
+    applyFilters();
+  });
+
+  applyFilters();
+
+  /* ---------- drawer ---------- */
+
+  const drawer = document.getElementById("drawer");
+
+  function openDrawer(product) {
+    // Every cut of this design, including the one being shown. A design is the
+    // unit the customer chose off the shelf; the cut is a choice made inside it,
+    // so this drives a Product row up with colour and size rather than an
+    // "Also on" afterthought at the bottom.
+    const cuts = Object.values(products).filter((p) => p.ideaId === product.ideaId);
+    // Versions are different designs presented as one product — the three
+    // S Generations cuts. Matched on the same blank so switching version does
+    // not silently switch the customer onto a women's tee.
+    const versions = product.family
+      ? Object.values(products).filter(
+          (p) => p.family === product.family && p.label === product.label
+        )
+      : [];
+    const state = { appearanceId: product.appearances[0]?.id, sizeId: null };
+
+    drawer.innerHTML = `
+      <div class="drawer__panel" role="dialog" aria-modal="true"
+           aria-label="${product.designName} ${product.label}">
+        <div class="drawer__bar">
+          <span>${product.collection}</span>
+          <button class="drawer__close" aria-label="Close" type="button">&#10005;</button>
+        </div>
+        <div class="drawer__body">
+          <div class="drawer__stage"><img id="stage-img" alt="${product.designName}" /></div>
+          <div>
+            <h2>${product.designName}</h2>
+            ${/* Blank and brand as a plain sentence rather than the corner-label
+                badge — this is the one place that information lives now that
+                it's off every thumbnail, so it reads as a description, not
+                shelf chrome. */ ""}
+            <p class="drawer__type">${product.label}${
+              product.brand ? ` · ${product.brand}` : ""
+            }</p>
+            ${product.blurb ? `<p class="drawer__blurb">${product.blurb}</p>` : ""}
+            <div class="field" id="f-version"></div>
+            <div class="field" id="f-product"></div>
+            <div class="field" id="f-color"></div>
+            <div class="field" id="f-size"></div>
+            <p class="drawer__price">${money(product.price)}</p>
+            <a class="drawer__cta" id="cta" target="_blank"
+               rel="noopener">Buy on Spreadshop</a>
+            <p class="drawer__note">
+              Your colour carries over. Pick a size on their page — payment,
+              printing and shipping are handled by Spreadshop.
+            </p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-</BaseLayout>
+      </div>`;
+    drawer.hidden = false;
+    document.body.style.overflow = "hidden";
+
+    const $ = (id) => drawer.querySelector(`#${id}`);
+
+    function optionRow(target, label, value, items, render, onPick) {
+      target.innerHTML = `
+        <p class="field__label"><span>${label}</span><span class="field__value">${value}</span></p>
+        <div class="options"></div>`;
+      const row = target.querySelector(".options");
+      for (const item of items) {
+        const btn = render(item);
+        btn.type = "button";
+        btn.addEventListener("click", () => onPick(item));
+        row.append(btn);
+      }
+    }
+
+    function paint() {
+      if (versions.length > 1) {
+        optionRow(
+          $("f-version"),
+          "Version",
+          product.version,
+          versions,
+          (v) => {
+            const b = document.createElement("button");
+            b.className = "opt";
+            b.setAttribute("aria-pressed", String(v.id === product.id));
+            b.textContent = v.version;
+            return b;
+          },
+          (v) => {
+            if (v.id !== product.id) openDrawer(v);
+          }
+        );
+      }
+
+      if (cuts.length > 1) {
+        optionRow(
+          $("f-product"),
+          "Product",
+          product.label,
+          cuts,
+          (c) => {
+            const b = document.createElement("button");
+            b.className = "opt";
+            b.setAttribute("aria-pressed", String(c.id === product.id));
+            b.textContent = c.label;
+            return b;
+          },
+          (c) => {
+            if (c.id !== product.id) openDrawer(c);
+          }
+        );
+      }
+
+      const current = product.appearances.find((a) => a.id === state.appearanceId);
+      $("stage-img").src = recolor(product.image, state.appearanceId);
+      $("cta").href = shopLink(product, state.appearanceId);
+
+      optionRow(
+        $("f-color"),
+        "Color",
+        current?.name ?? "—",
+        product.appearances,
+        (a) => {
+          const b = document.createElement("button");
+          b.className = "swatch";
+          b.style.background = a.color ?? "#333";
+          b.title = a.name;
+          b.setAttribute("aria-label", a.name);
+          b.setAttribute("aria-pressed", String(a.id === state.appearanceId));
+          return b;
+        },
+        (a) => {
+          state.appearanceId = a.id;
+          paint();
+        }
+      );
+
+      // A size picked under one colour may not exist under the next.
+      const sizes = sizesFor(product, state.appearanceId);
+      if (!sizes.some((s) => s.id === state.sizeId)) state.sizeId = null;
+
+      optionRow(
+        $("f-size"),
+        "Sizes in this color",
+        sizes.find((s) => s.id === state.sizeId)?.name ?? `${sizes.length} available`,
+        sizes,
+        (s) => {
+          const b = document.createElement("button");
+          b.className = "opt";
+          b.setAttribute("aria-pressed", String(s.id === state.sizeId));
+          b.textContent = s.name;
+          return b;
+        },
+        (s) => {
+          state.sizeId = s.id;
+          paint();
+        }
+      );
+    }
+
+    paint();
+    drawer.querySelector(".drawer__close").addEventListener("click", closeDrawer);
+  }
+
+  function closeDrawer() {
+    drawer.hidden = true;
+    drawer.innerHTML = "";
+    document.body.style.overflow = "";
+  }
+
+  sections.addEventListener("click", (e) => {
+    const card = e.target.closest(".card");
+    if (card) openDrawer(products[card.dataset.productId]);
+  });
+
+  drawer.addEventListener("click", (e) => {
+    if (e.target === drawer) closeDrawer();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !drawer.hidden) closeDrawer();
+  });
+</script>
+
+<style is:global>
+  /* Apex, hard application. Authority is oio-apex/packages/tokens/tokens.json;
+     tokens live in src/styles/apex.css. Square corners, one accent spent on the
+     payoff, flat elevation, measured contrast roles. */
+
+  /* One measure for the whole page. The padding formula centres content inside
+     a fixed measure while leaving every element full-bleed, so section rules
+     and the sticky filter bar still span edge to edge and the shelf never
+     turns into a boxed-in column floating on the ground. Below the measure it
+     collapses to a plain gutter, which is what makes the phone layout stop
+     running off the right edge.
+
+     80rem is picked off the grid, not taste: cards floor at 17rem, so the
+     content box fits four tracks with the gutters and leaves no orphan column
+     the way a 1440px viewport did. */
+  .merch-head,
+  .merch-filters,
+  #sections > section,
+  .state,
+  .merch-foot {
+    padding-inline: max(1.5rem, (100% - 80rem) / 2);
+  }
+
+  .merch-head {
+    padding-block: 4rem 3rem;
+    /* No side rules here — Ian's call. The hero opens straight onto the black
+       ground; only the bottom edge is drawn, to hand off to the filter bar. */
+    border-bottom: 1px solid var(--apex-steel-dark);
+  }
+
+  /* Clamped between two named steps, never between invented values. Tracking is
+     positive — tightening pulls back toward the condensed look the hero
+     decision rejected. */
+  .merch-head h1 {
+    font-family: var(--apex-font-lead);
+    font-size: clamp(var(--apex-h3), 7vw, var(--apex-h1));
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 1.04;
+    text-wrap: balance;
+  }
+
+  .merch-head h1 span {
+    color: var(--apex-spark);
+  }
+
+  .merch-head p {
+    max-width: 46ch;
+    margin-top: 1.25rem;
+    color: var(--apex-steel-light);
+  }
+
+  .merch-filters {
+    position: sticky;
+    top: 4.25rem;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-block: 0.75rem;
+    background: var(--apex-surface);
+    border-bottom: 1px solid var(--apex-steel-dark);
+  }
+
+  .rail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .rail::-webkit-scrollbar {
+    display: none;
+  }
+
+  .rail__label {
+    flex: none;
+    width: 5.5rem;
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--apex-steel-light);
+  }
+
+  /* Navigation, not payoff — so the selected state is a white box in the
+     corner-label idiom rather than an accent chip. */
+  .chip {
+    flex: none;
+    min-height: 2.75rem;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: 1px solid var(--apex-steel-dark);
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--apex-steel-light);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .chip:hover {
+    color: var(--apex-white);
+    border-color: var(--apex-steel-light);
+  }
+
+  .chip[aria-pressed="true"] {
+    background: var(--apex-white);
+    border-color: var(--apex-white);
+    color: var(--apex-black);
+  }
+
+  .chip__count {
+    margin-left: 0.5rem;
+    opacity: 0.6;
+  }
+
+  /* No table rules. The 1px gap over a Steel Dark ground used to draw a
+     hairline grid between cards; that job moved onto each product frame's own
+     border, so the grid just spaces them now and the page ground shows through.
+     Cards keep their Surface 2 fill, so they still read as panels without being
+     boxed into a table. */
+  .merch-grid {
+    display: grid;
+    /* A bare rem minimum cannot shrink when the user raises their text size. */
+    grid-template-columns: repeat(auto-fill, minmax(min(17rem, 100%), 1fr));
+    gap: 1px;
+  }
+
+  .merch-grid > [data-collection] {
+    display: flex;
+  }
+
+  .merch-grid > [data-collection] > .card {
+    flex: 1;
+  }
+
+  /* Corner label also used inside the client-rendered drawer. */
+  .corner-label {
+    display: flex;
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .corner-label__box {
+    padding: 0.32em 0.55em;
+    background: var(--apex-white);
+    color: var(--apex-black);
+  }
+
+  .corner-label__plain {
+    padding: 0.32em 0.55em;
+    color: var(--apex-steel-light);
+  }
+
+  .drawer {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    display: grid;
+    place-items: end center;
+    background: rgb(0 0 0 / 0.8);
+  }
+
+  .drawer[hidden] {
+    display: none;
+  }
+
+  .drawer__panel {
+    width: min(100%, 1100px);
+    max-height: 92vh;
+    overflow-y: auto;
+    background: var(--apex-surface-2);
+    border: 1px solid var(--apex-steel-dark);
+    border-bottom: none;
+  }
+
+  .drawer__bar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--apex-surface-2);
+    border-bottom: 1px solid var(--apex-steel-dark);
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--apex-steel-light);
+  }
+
+  .drawer__close {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: var(--apex-steel-light);
+    font-family: var(--apex-font-mono);
+    cursor: pointer;
+  }
+
+  .drawer__close:hover {
+    color: var(--apex-white);
+  }
+
+  .drawer__body {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  @media (max-width: 54rem) {
+    .drawer__body {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  /* Same product ground as the cards — the drawer shows the same shirt on the
+     same neutral, so switching colourway doesn't also switch the backdrop out
+     from under it. */
+  .drawer__stage {
+    position: sticky;
+    top: 4rem;
+    align-self: start;
+    aspect-ratio: 1;
+    background: var(--apex-surface);
+    border: 1px solid var(--apex-steel-dark);
+  }
+
+  .drawer__stage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .drawer h2 {
+    font-family: var(--apex-font-lead);
+    font-size: clamp(var(--apex-h4), 4vw, var(--apex-h3));
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 1.04;
+  }
+
+  .drawer__type {
+    margin-top: 0.75rem;
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--apex-steel-light);
+  }
+
+  .drawer__blurb {
+    margin-top: 1rem;
+    color: var(--apex-steel-light);
+  }
+
+  .field {
+    margin-top: 1.5rem;
+  }
+
+  .field__label {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--apex-steel-light);
+  }
+
+  .field__value {
+    color: var(--apex-white);
+  }
+
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .opt {
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+    background: none;
+    border: 1px solid var(--apex-steel-dark);
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    color: var(--apex-steel-light);
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .opt:hover {
+    color: var(--apex-white);
+    border-color: var(--apex-steel-light);
+  }
+
+  .opt[aria-pressed="true"] {
+    background: var(--apex-white);
+    border-color: var(--apex-white);
+    color: var(--apex-black);
+  }
+
+  /* Square, per the shape rule — the circle system is brand marks, not swatches. */
+  .swatch {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--apex-steel-dark);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    cursor: pointer;
+    transition: outline-color 0.15s ease;
+  }
+
+  .swatch:hover {
+    outline-color: var(--apex-steel-light);
+  }
+
+  .swatch[aria-pressed="true"] {
+    outline-color: var(--apex-white);
+  }
+
+  .drawer__price {
+    margin-top: 2rem;
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-h3);
+    font-variant-numeric: tabular-nums;
+    color: var(--apex-spark);
+  }
+
+  /* The buy is the payoff, so it carries the accent as a fill. Black text on
+     Spark — white fails contrast on it. */
+  .drawer__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--apex-spark);
+    color: var(--apex-black);
+    font-family: var(--apex-font-lead);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    transition: background 0.15s ease;
+  }
+
+  .drawer__cta:hover {
+    background: var(--apex-spark-700);
+  }
+
+  .drawer__note {
+    margin-top: 1rem;
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    line-height: 1.7;
+    color: var(--apex-steel-light);
+  }
+
+  .state,
+  .merch-foot {
+    padding-block: 3rem;
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    line-height: 1.9;
+    color: var(--apex-steel-light);
+  }
+
+  .state {
+    text-align: center;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .merch-foot {
+    border-top: 1px solid var(--apex-steel-dark);
+  }
+</style>

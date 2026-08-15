@@ -1,0 +1,77 @@
+/* =========================================================
+   Apex — OIO Racing design system
+
+   Authority is oio-apex/packages/tokens/tokens.json. Values here are copied,
+   never re-derived; nothing downstream should invent a colour, type step or
+   spacing value.
+
+   Exposed twice on purpose: as `--apex-*` custom properties for hand-written
+   component CSS, and through Tailwind's `@theme` so utility classes
+   (`bg-surface`, `text-spark`, `border-line`) resolve to the same values. The
+   site currently uses Tailwind's zinc palette, which is not Apex; these tokens
+   are what it should migrate onto.
+   ========================================================= */
+
+:root {
+  /* Grounds — Apex is a dark brand and commits to it. There is no light
+     ground; adding one means adding tokens upstream, not guessing a hex. */
+  --apex-surface: #161412;
+  --apex-surface-2: #1e1b18;
+  --apex-black: #000000;
+
+  /* Neutrals — roles are measured (color.contrast), not nominal */
+  --apex-white: #ffffff; /* 18.37:1 on Surface */
+  --apex-steel-light: #9a9083; /* 5.85:1 — body text, labels, eyebrows */
+  --apex-steel: #6b6355; /* 3.10:1 — 24px+ only, never on Surface 2 */
+  --apex-steel-dark: #3a342c; /* 1.49:1 — hairlines only, never text */
+
+  /* Mood cores — pick ONE per piece, never both as co-headlines */
+  --apex-spark: #f5c200; /* payoff, victory */
+  --apex-spark-700: #9f7e00;
+  --apex-grit: #d2301e; /* struggle, mechanical — large text only */
+
+  /* Support — not mood picks */
+  --apex-rust: #e07020; /* vintage/patina only */
+  --apex-flag: #4c9f45; /* confirmation/pricing signal only */
+
+  /* Type — Helvetica does the lifting at every size. Condensed Black and
+     SignPainter stay in their lanes and are never the display face. */
+  --apex-font-lead: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --apex-font-mono: "SF Mono", Menlo, Consolas, monospace;
+
+  /* Scale — named steps. Fluid sizes clamp BETWEEN two steps rather than
+     inventing values in between. */
+  --apex-caption: 0.75rem;
+  --apex-body: 1rem;
+  --apex-h6: 1.125rem;
+  --apex-h5: 1.375rem;
+  --apex-h4: 1.75rem;
+  --apex-h3: 2.25rem;
+  --apex-h2: 2.875rem;
+  --apex-h1: 3.625rem;
+}
+
+@theme {
+  --color-surface: #161412;
+  --color-surface-2: #1e1b18;
+  --color-steel-light: #9a9083;
+  --color-steel: #6b6355;
+  --color-line: #3a342c;
+  --color-spark: #f5c200;
+  --color-spark-700: #9f7e00;
+  --color-grit: #d2301e;
+
+  --font-lead: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "SF Mono", Menlo, Consolas, monospace;
+
+  /* The Never Round A Corner Rule: square everywhere. The circle system
+     (badges, rank circles, connector marks) is the one exception and is
+     always fully round — use `rounded-full`, never a partial radius. */
+  --radius-none: 0;
+}
+
+/* The Never Italic Rule — weight and colour carry emphasis. Backstop, since
+   markdown and pasted copy reintroduce slants constantly. */
+:where(i, em, cite, address) {
+  font-style: normal;
+}

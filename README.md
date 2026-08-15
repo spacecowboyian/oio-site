@@ -1,6 +1,6 @@
 # OIO Racing Website
 
-A lightweight, content-driven website for outsideinsideoutside.com / oioracing.com built with Astro 5.
+A lightweight, content-driven website for outsideinsideoutside.com / oioracing.com built with Astro 6.
 
 ## Features
 
@@ -8,15 +8,15 @@ A lightweight, content-driven website for outsideinsideoutside.com / oioracing.c
 - **SEO optimized** with OpenGraph, Twitter Cards, and sitemap
 - **Responsive design** with mobile-first approach
 - **Fast performance** using Astro's static site generation
-- **Merch integration** ready for Ecwid
+- **Merch store** generated from the Spreadshirt Public Shop API at build time
 - **Sponsor visibility** with dedicated pages and CTAs
 
 ## Tech Stack
 
-- **Framework:** Astro 5
+- **Framework:** Astro 6
 - **Styling:** Tailwind CSS 4
 - **APIs:** YouTube Data API v3, Instagram Basic Display API
-- **E-commerce:** Ecwid by Lightspeed (planned)
+- **E-commerce:** Spreadshop / Spreadshirt Public Shop API
 - **Hosting:** Vercel or Netlify (recommended)
 
 ## Quick Start
@@ -116,23 +116,44 @@ export default defineConfig({
 └── astro.config.mjs
 ```
 
-## Adding Ecwid Merch Store
+## Merch store
 
-1. Sign up at [Ecwid](https://www.ecwid.com/)
-2. Get your Store ID
-3. Edit `src/pages/merch.astro`
-4. Add Ecwid embed code:
+The store is generated at build time from the Spreadshirt Public Shop API
+(Spreadshop `477761`). Spreadshirt stays the backend for product data, cart,
+checkout, production and shipping; this site is the brand and browsing layer.
 
-```astro
-<div id="my-store-12345678"></div>
-<script 
-  data-cfasync="false" 
-  type="text/javascript" 
-  src="https://app.ecwid.com/script.js?12345678&data_platform=code"
-></script>
+```bash
+pnpm sync:merch     # rewrites src/data/merch/catalog.json
 ```
 
-Replace `12345678` with your actual Store ID.
+Needs `SPREADSHIRT_API_KEY` in `.env` (see `.env.example`). The key is read only
+by the sync script at build time and never reaches the browser or the bundle.
+
+### How it is curated
+
+| File | What it decides |
+|---|---|
+| `src/data/merch/lineup.json` | The products OIO sells — one design on one blank |
+| `src/data/merch/overrides.json` | Which designs are published, and their OIO name, blurb and collection |
+| `src/data/merch/catalog.json` | Generated. Do not hand-edit |
+
+Spreadshop lists 120+ printable blanks per design. Merchandising all of them
+reads as a catalogue dump, so the lineup is a short curated list; everything
+else stays purchasable on Spreadshop but is not surfaced here. Designs default
+to unpublished, and overrides are keyed by `ideaId` so a rename in the Partner
+Area cannot reshuffle the storefront.
+
+### Two things that will bite you
+
+- **Ink colour is fixed per sellable**, encoded as `CxRRGGBB` in `vpKey`. Garment
+  colour is selectable; print colour is not. "White design on a black shirt" is a
+  different blank, not a colour pick — use `lineup.byDesign[ideaId].swap`.
+- **Size runs vary per colourway.** The same blank stocks different sizes in
+  different colours, so the sync stores a `sizesByAppearance` matrix and the
+  product page re-derives sizes whenever the colour changes.
+
+Checkout hands off to Spreadshop via `<slug>-A<ideaId>` deep links; any slug
+resolves and redirects to the canonical one.
 
 ## Deployment
 
