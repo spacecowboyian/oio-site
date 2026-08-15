@@ -12,7 +12,7 @@ export default defineConfig({
   // same reason: with a custom domain set, Pages refuses to answer on github.io.
   // Revert both before merging anything to master.
   site: 'https://spacecowboyian.github.io',
-  base: '/oio-site',
+  base: '/oio-site/',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]
