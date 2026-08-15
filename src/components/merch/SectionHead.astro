@@ -27,7 +27,10 @@ const { seq, title, meta } = Astro.props;
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 3rem 1.5rem 0.75rem;
+    /* Inline gutter comes from the page shell, which centres this on the same
+       measure as the grid below it. A rule running wider than the cards it
+       introduces would read as a different column. */
+    padding-block: 3rem 0.75rem;
     border-bottom: 1px solid var(--apex-steel-dark);
   }
 
