@@ -1,6 +1,6 @@
 {
   "shopId": "477761",
-  "syncedAt": "2026-08-14T14:39:26.746Z",
+  "syncedAt": "2026-08-15T22:52:29.566Z",
   "hasDetails": true,
   "groupOrder": [
     "Tees",
@@ -6546,11 +6546,10 @@
       "group": "Tees",
       "price": 26.49,
       "print": "FFFFFF",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A5PA4927PT17X36Y37D12485372W21449H21449CxFFFFFF/views/1,width=500,height=500,backgroundColor=161412,appearanceId=5/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A5PA4927PT17X36Y37D12485372W21449H21449CxFFFFFF/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=5/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
       "appearanceIds": [
         "154",
         "231",
-        "1",
         "36",
         "2",
         "5",
@@ -6566,14 +6565,6 @@
         "https://image.spreadshirtmedia.com/image-server/v1/products/T175A5PA4927PT17X36Y37D12485372W21449H21449CxFFFFFF/views/4,width=650,height=650,appearanceId=154/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "2": [
           "2",
           "3",
@@ -6606,7 +6597,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -6635,33 +6625,23 @@
       "group": "Tees",
       "price": 25.99,
       "print": "D31818",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
         "231",
-        "1",
         "2",
         "4"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "231",
       "sellableId": "AbdBMvrQ8rsD4mL55mzN-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/1,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/1,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/2,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/3,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/4,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/12,width=650,height=650,appearanceId=386/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/1,width=650,height=650,appearanceId=231/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/1,width=650,height=650,appearanceId=231/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/2,width=650,height=650,appearanceId=231/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/3,width=650,height=650,appearanceId=231/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/4,width=650,height=650,appearanceId=231/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y32D12485372W17777H17777CxD31818/views/12,width=650,height=650,appearanceId=231/teq-is-to-yo-ta-spelled-in-katakana-one-of-the-japanese-phonetic-alphabets-it-was-used-as-the-toyota-logo-starting-in-1936-at-the-time-when-toyoda.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "2": [
           "2",
           "3",
@@ -6676,27 +6656,7 @@
           "5",
           "6"
         ],
-        "140": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -6723,34 +6683,21 @@
       "group": "Tees",
       "price": 26.99,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1275.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=1275.jpg",
       "appearanceIds": [
         "388",
-        "648",
-        "812",
-        "823",
         "1247",
         "1251",
         "1252",
         "1254",
-        "1256",
-        "1264",
         "1265",
-        "1269",
-        "1270",
         "1271",
         "1272",
-        "1274",
         "1275",
         "1277",
         "92",
         "231",
-        "317",
-        "328",
-        "366",
-        "1",
-        "2",
-        "39"
+        "1"
       ],
       "defaultAppearanceId": "1275",
       "sellableId": "N0Qw57VA9XcVmand5r0p-812-7",
@@ -6774,23 +6721,6 @@
           "94",
           "102"
         ],
-        "2": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "39": [
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
         "92": [
           "2",
           "3",
@@ -6808,56 +6738,10 @@
           "94",
           "102"
         ],
-        "317": [
-          "2",
-          "4",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "328": [
-          "2",
-          "3",
-          "6",
-          "94"
-        ],
-        "366": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
         "388": [
           "2",
           "3",
           "94"
-        ],
-        "648": [
-          "5",
-          "6",
-          "94",
-          "102"
-        ],
-        "812": [
-          "2",
-          "3",
-          "6",
-          "102"
-        ],
-        "823": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
         ],
         "1247": [
           "1",
@@ -6903,56 +6787,12 @@
           "94",
           "102"
         ],
-        "1256": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "1264": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
         "1265": [
           "1",
           "2",
           "3",
           "4",
           "5"
-        ],
-        "1269": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "1270": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
         ],
         "1271": [
           "1",
@@ -6962,17 +6802,6 @@
           "102"
         ],
         "1272": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "1274": [
           "1",
           "2",
           "3",
@@ -7025,68 +6854,30 @@
       "group": "Tees",
       "price": 25.99,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
         "231",
-        "1",
-        "2",
-        "4"
+        "1"
       ],
       "defaultAppearanceId": "231",
       "sellableId": "N0Qw57VA9XcVmand5r0p-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/2,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/3,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/4,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/12,width=650,height=650,appearanceId=386.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/1,width=650,height=650,appearanceId=231.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/1,width=650,height=650,appearanceId=231.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/2,width=650,height=650,appearanceId=231.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/3,width=650,height=650,appearanceId=231.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/4,width=650,height=650,appearanceId=231.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y29D12753733W17777H19056Cx000000/views/12,width=650,height=650,appearanceId=231.jpg"
       ],
       "sizesByAppearance": {
         "1": [
           "2",
-          "4",
-          "5",
-          "6"
-        ],
-        "2": [
-          "2",
           "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "140": [
-          "2",
           "4",
           "5",
           "6"
         ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -7113,21 +6904,13 @@
       "group": "Tees",
       "price": 24.99,
       "print": "E5E5E5",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T1361A2PA5219PT17X88Y45D12575548W17006H25000CxE5E5E5/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T1361A2PA5219PT17X88Y45D12575548W17006H25000CxE5E5E5/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
       "appearanceIds": [
         "626",
         "793",
         "1023",
-        "1179",
-        "1380",
-        "1382",
-        "140",
         "164",
-        "193",
-        "231",
-        "257",
         "348",
-        "1",
         "2",
         "5",
         "17",
@@ -7143,16 +6926,6 @@
         "https://image.spreadshirtmedia.com/image-server/v1/products/T1361A2PA5219PT17X88Y45D12575548W17006H25000CxE5E5E5/views/4,width=650,height=650,appearanceId=626/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
         "2": [
           "2",
           "3",
@@ -7192,40 +6965,7 @@
           "38",
           "94"
         ],
-        "140": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "164": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "193": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38",
-          "94",
-          "102"
-        ],
-        "257": [
           "2",
           "3",
           "4",
@@ -7267,30 +7007,6 @@
           "5",
           "6",
           "38"
-        ],
-        "1179": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1380": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1382": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
         ]
       }
     },
@@ -7312,68 +7028,22 @@
       "group": "Tees",
       "price": 25.99,
       "print": "E5E5E5",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
-        "231",
-        "1",
-        "2",
-        "4"
+        "2"
       ],
       "defaultAppearanceId": "2",
       "sellableId": "dYdZMoqqVQIDJL0kvG3j-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/1,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/1,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/2,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/3,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/4,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/12,width=650,height=650,appearanceId=386/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/1,width=650,height=650,appearanceId=2/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/1,width=650,height=650,appearanceId=2/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/2,width=650,height=650,appearanceId=2/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/3,width=650,height=650,appearanceId=2/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/4,width=650,height=650,appearanceId=2/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X42Y14D12575548W17006H25000CxE5E5E5/views/12,width=650,height=650,appearanceId=2/manual-transmissions-are-dying-help-save-the-world-from-flappy-paddles-and-slushboxes-save-the-stick.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "140": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
-        "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -7400,11 +7070,8 @@
       "group": "Tees",
       "price": 26.49,
       "print": "FFFFFF",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X3Y37D12503467W27994H21177CxFFFFFF%3Ax000000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=36/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X3Y37D12503467W27994H21177CxFFFFFF%3Ax000000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=36/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
       "appearanceIds": [
-        "154",
-        "231",
-        "1",
         "36",
         "2",
         "5",
@@ -7413,21 +7080,13 @@
       "defaultAppearanceId": "36",
       "sellableId": "XNMe1gk379C513ZgmlA8-175-7",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X3Y37D12503467W27994H21177CxFFFFFF%3Ax000000/views/1,width=650,height=650,appearanceId=154/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A36PA4927PT17X3Y37D12503467W27994H21177CxFFFFFF%3Ax000000/views/1,width=650,height=650,appearanceId=154/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X3Y37D12503467W27994H21177CxFFFFFF%3Ax000000/views/2,width=650,height=650,appearanceId=154/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X3Y37D12503467W27994H21177CxFFFFFF%3Ax000000/views/3,width=650,height=650,appearanceId=154/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X3Y37D12503467W27994H21177CxFFFFFF%3Ax000000/views/4,width=650,height=650,appearanceId=154/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X3Y37D12503467W27994H21177CxFFFFFF%3Ax000000/views/1,width=650,height=650,appearanceId=36/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A36PA4927PT17X3Y37D12503467W27994H21177CxFFFFFF%3Ax000000/views/1,width=650,height=650,appearanceId=36/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X3Y37D12503467W27994H21177CxFFFFFF%3Ax000000/views/2,width=650,height=650,appearanceId=36/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X3Y37D12503467W27994H21177CxFFFFFF%3Ax000000/views/3,width=650,height=650,appearanceId=36/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X3Y37D12503467W27994H21177CxFFFFFF%3Ax000000/views/4,width=650,height=650,appearanceId=36/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "2": [
           "2",
           "3",
@@ -7456,18 +7115,6 @@
           "3",
           "4",
           "6"
-        ],
-        "154": [
-          "2",
-          "3",
-          "5",
-          "38"
-        ],
-        "231": [
-          "3",
-          "5",
-          "6",
-          "38"
         ]
       }
     },
@@ -7489,33 +7136,22 @@
       "group": "Tees",
       "price": 25.99,
       "print": "5B0B20",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
-        "231",
-        "1",
         "2",
         "4"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "2",
       "sellableId": "XNMe1gk379C513ZgmlA8-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/2,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/3,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/4,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/12,width=650,height=650,appearanceId=386/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/1,width=650,height=650,appearanceId=2/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/1,width=650,height=650,appearanceId=2/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/2,width=650,height=650,appearanceId=2/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/3,width=650,height=650,appearanceId=2/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/4,width=650,height=650,appearanceId=2/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y29D12503467W25000H18912Cx5B0B20%3AxE5E5E5/views/12,width=650,height=650,appearanceId=2/it-really-is-always-the-answer-track-day-car-miata-beginner-autocross-car-miata-great-fun-daily-driver-miata-you-simply-cant-go-wrong-with-the.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "2": [
           "2",
           "3",
@@ -7524,33 +7160,6 @@
           "6"
         ],
         "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "140": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
-        "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -7577,15 +7186,12 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X0Y11D12609557W28570H31682/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X0Y11D12609557W28570H31682/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=1/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
       "appearanceIds": [
         "154",
         "231",
         "1",
-        "36",
-        "2",
-        "5",
-        "4"
+        "2"
       ],
       "defaultAppearanceId": "1",
       "sellableId": "bBYp4Dq1ozu53rLZq2O1-175-7",
@@ -7613,31 +7219,9 @@
           "6",
           "38"
         ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "5": [
-          "2",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "36": [
-          "2",
-          "3",
-          "4",
-          "6"
-        ],
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -7666,29 +7250,26 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/1,width=500,height=500,backgroundColor=161412,appearanceId=140/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
         "231",
         "1",
-        "2",
-        "4"
+        "2"
       ],
-      "defaultAppearanceId": "140",
+      "defaultAppearanceId": "231",
       "sellableId": "bBYp4Dq1ozu53rLZq2O1-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/1,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/1,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/2,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/3,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/4,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/12,width=650,height=650,appearanceId=386/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/1,width=650,height=650,appearanceId=231/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/1,width=650,height=650,appearanceId=231/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/2,width=650,height=650,appearanceId=231/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/3,width=650,height=650,appearanceId=231/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/4,width=650,height=650,appearanceId=231/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A140PA5059PT32X38Y27D12609557W17777H19713/views/12,width=650,height=650,appearanceId=231/the-datsun-1600-pl510-first-hit-the-streets-in-1968-in-just-a-short-few-years-it-would-stake-its-claim-to-road-and-street-racing-glory.jpg"
       ],
       "sizesByAppearance": {
         "1": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -7700,34 +7281,7 @@
           "5",
           "6"
         ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "140": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -7754,7 +7308,7 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X40Y37D1000026474W20476H20058/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X40Y37D1000026474W20476H20058/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
       "appearanceIds": [
         "154",
         "231",
@@ -7814,7 +7368,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -7843,7 +7396,7 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y29D1000026474W17777H17414/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X38Y29D1000026474W17777H17414/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/it-turns-out-that-tony-starks-top-secret-generator-was-just-a-mazda-wankel-rotary-who-knew-you-did-youll-always-know-when-iron-man-is-coming-when.jpg",
       "appearanceIds": [
         "386",
         "624",
@@ -7866,6 +7419,7 @@
       "sizesByAppearance": {
         "1": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -7886,6 +7440,7 @@
         ],
         "140": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -7931,11 +7486,10 @@
       "group": "Tees",
       "price": 26.49,
       "print": "EAE44B",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X51Y44D104998024W18396H18786CxEAE44B/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X51Y44D104998024W18396H18786CxEAE44B/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
       "appearanceIds": [
         "154",
         "231",
-        "1",
         "36",
         "2",
         "5",
@@ -7951,14 +7505,6 @@
         "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X51Y44D104998024W18396H18786CxEAE44B/views/4,width=650,height=650,appearanceId=154/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "2": [
           "2",
           "3",
@@ -7991,7 +7537,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -8020,33 +7565,23 @@
       "group": "Tees",
       "price": 25.99,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
         "231",
-        "1",
         "2",
         "4"
       ],
       "defaultAppearanceId": "231",
       "sellableId": "bBYp4BavB7Uemo7Gy05o-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/1,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/1,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/2,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/3,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/4,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/12,width=650,height=650,appearanceId=386/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/1,width=650,height=650,appearanceId=231/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/1,width=650,height=650,appearanceId=231/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/2,width=650,height=650,appearanceId=231/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/3,width=650,height=650,appearanceId=231/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/4,width=650,height=650,appearanceId=231/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y31D104998024W17777H18153Cx000000/views/12,width=650,height=650,appearanceId=231/so-sayeth-hewy-lewis-and-so-it-shall-be-its-hip-to-be-square-volvo-drivers-have-known-this-for-years-and-now-they-can-show-their-brick-driving-pri.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "2": [
           "2",
           "3",
@@ -8061,27 +7596,7 @@
           "5",
           "6"
         ],
-        "140": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -8108,14 +7623,13 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X22Y30D103632851W24218H24218/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X22Y30D103632851W24218H24218/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
       "appearanceIds": [
         "154",
         "231",
         "1",
         "36",
         "2",
-        "5",
         "4"
       ],
       "defaultAppearanceId": "2",
@@ -8152,13 +7666,6 @@
           "6",
           "38"
         ],
-        "5": [
-          "2",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "36": [
           "2",
           "3",
@@ -8168,7 +7675,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -8197,11 +7703,8 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
         "231",
         "1",
         "2",
@@ -8210,16 +7713,17 @@
       "defaultAppearanceId": "231",
       "sellableId": "ZbJ9kNG7RQCX1L8RM8YY-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/1,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/1,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/2,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/3,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/4,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/12,width=650,height=650,appearanceId=386/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/1,width=650,height=650,appearanceId=231/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/1,width=650,height=650,appearanceId=231/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/2,width=650,height=650,appearanceId=231/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/3,width=650,height=650,appearanceId=231/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/4,width=650,height=650,appearanceId=231/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X38Y32D103632851W17777H17777/views/12,width=650,height=650,appearanceId=231/for-too-long-the-tyranny-of-the-sequential-gearbox-has-threatened-to-take-from-us-the-driving-community-our-rights-and-freedoms-save-driving-save.jpg"
       ],
       "sizesByAppearance": {
         "1": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -8238,27 +7742,7 @@
           "5",
           "6"
         ],
-        "140": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -8285,11 +7769,8 @@
       "group": "Tees",
       "price": 26.49,
       "print": "97A09A",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12069Cx97A09A%3AxFFFFFF/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12069Cx97A09A%3AxFFFFFF/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
       "appearanceIds": [
-        "154",
-        "231",
-        "1",
         "36",
         "2",
         "5",
@@ -8298,21 +7779,13 @@
       "defaultAppearanceId": "2",
       "sellableId": "92qGnkaA8as1qR0Q3wJ9-175-7",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12069Cx97A09A%3AxFFFFFF/views/1,width=650,height=650,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A36PA4927PT17X9Y62D12473483W26858H12069Cx97A09A%3AxFFFFFF/views/1,width=650,height=650,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12069Cx97A09A%3AxFFFFFF/views/2,width=650,height=650,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12069Cx97A09A%3AxFFFFFF/views/3,width=650,height=650,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12069Cx97A09A%3AxFFFFFF/views/4,width=650,height=650,appearanceId=154/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12069Cx97A09A%3AxFFFFFF/views/1,width=650,height=650,appearanceId=36/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A36PA4927PT17X9Y62D12473483W26858H12069Cx97A09A%3AxFFFFFF/views/1,width=650,height=650,appearanceId=36/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12069Cx97A09A%3AxFFFFFF/views/2,width=650,height=650,appearanceId=36/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12069Cx97A09A%3AxFFFFFF/views/3,width=650,height=650,appearanceId=36/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A36PA4927PT17X9Y62D12473483W26858H12069Cx97A09A%3AxFFFFFF/views/4,width=650,height=650,appearanceId=36/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "2": [
           "2",
           "3",
@@ -8341,18 +7814,6 @@
           "3",
           "4",
           "6"
-        ],
-        "154": [
-          "2",
-          "3",
-          "5",
-          "38"
-        ],
-        "231": [
-          "3",
-          "5",
-          "6",
-          "38"
         ]
       }
     },
@@ -8374,33 +7835,22 @@
       "group": "Tees",
       "price": 25.99,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=4/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
-        "231",
-        "1",
         "2",
         "4"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "4",
       "sellableId": "92qGnkaA8as1qR0Q3wJ9-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/1,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/2,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/3,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/4,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/12,width=650,height=650,appearanceId=386/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/1,width=650,height=650,appearanceId=2/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/1,width=650,height=650,appearanceId=2/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/2,width=650,height=650,appearanceId=2/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/3,width=650,height=650,appearanceId=2/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/4,width=650,height=650,appearanceId=2/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A4PA5059PT32X2Y45D12473483W25000H11234Cx000000%3AxE5E5E5/views/12,width=650,height=650,appearanceId=2/you-bleed-5w-30-and-it-stains-your-clothes-this-is-for-you-you-sweat-91-octane-and-everyone-can-smell-it-this-is-for-you-youve-always-been.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "2": [
           "2",
           "3",
@@ -8409,33 +7859,6 @@
           "6"
         ],
         "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "140": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
-        "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -8462,15 +7885,11 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X49Y0D12614318W18677H36162/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X49Y0D12614318W18677H36162/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=1/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
       "appearanceIds": [
         "154",
         "231",
-        "1",
-        "36",
-        "2",
-        "5",
-        "4"
+        "1"
       ],
       "defaultAppearanceId": "1",
       "sellableId": "ZbJ9kNGxE1t9Rxy57l1Q-175-7",
@@ -8490,39 +7909,9 @@
           "6",
           "38"
         ],
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "5": [
-          "2",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "36": [
-          "2",
-          "3",
-          "4",
-          "6"
-        ],
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -8551,68 +7940,30 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=1/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
         "231",
-        "1",
-        "2",
-        "4"
+        "1"
       ],
       "defaultAppearanceId": "1",
       "sellableId": "ZbJ9kNGxE1t9Rxy57l1Q-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/1,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/1,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/2,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/3,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/4,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/12,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/1,width=650,height=650,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/1,width=650,height=650,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/2,width=650,height=650,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/3,width=650,height=650,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/4,width=650,height=650,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A1PA5059PT32X62Y14D12614318W12912H25000/views/12,width=650,height=650,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg"
       ],
       "sizesByAppearance": {
         "1": [
           "2",
-          "4",
-          "5",
-          "6"
-        ],
-        "2": [
-          "2",
           "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "140": [
-          "2",
           "4",
           "5",
           "6"
         ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -8639,11 +7990,10 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
       "appearanceIds": [
         "154",
         "231",
-        "1",
         "36",
         "2",
         "5",
@@ -8659,14 +8009,6 @@
         "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/4,width=650,height=650,appearanceId=154/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "2": [
           "2",
           "3",
@@ -8699,7 +8041,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -8728,33 +8069,23 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
         "231",
-        "1",
         "2",
         "4"
       ],
       "defaultAppearanceId": "2",
       "sellableId": "YDEAYglXZ4s9Q7NBkelV-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/1,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/1,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/2,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/3,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/4,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/12,width=650,height=650,appearanceId=386/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/1,width=650,height=650,appearanceId=231/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/1,width=650,height=650,appearanceId=231/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/2,width=650,height=650,appearanceId=231/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/3,width=650,height=650,appearanceId=231/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/4,width=650,height=650,appearanceId=231/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X2Y55D12672949W25000H6162/views/12,width=650,height=650,appearanceId=231/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "2": [
           "2",
           "3",
@@ -8769,27 +8100,7 @@
           "5",
           "6"
         ],
-        "140": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -8816,15 +8127,13 @@
       "group": "Tees",
       "price": 26.49,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y38D1000566431W19999H19999Cx000000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y38D1000566431W19999H19999Cx000000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=1/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
       "appearanceIds": [
         "154",
         "231",
         "1",
         "36",
-        "2",
-        "5",
-        "4"
+        "5"
       ],
       "defaultAppearanceId": "1",
       "sellableId": "jwenrD12z7TV9G2M09ny-175-7",
@@ -8837,22 +8146,6 @@
       ],
       "sizesByAppearance": {
         "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "4": [
           "2",
           "3",
           "4",
@@ -8876,7 +8169,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -8905,31 +8197,19 @@
       "group": "Tees",
       "price": 23.49,
       "print": "000000",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X37Y31D1000566431W17833H17833Cx000000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X37Y31D1000566431W17833H17833Cx000000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=1/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
       "appearanceIds": [
-        "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
         "231",
-        "352",
-        "376",
-        "1",
-        "2",
-        "17",
-        "4"
+        "1"
       ],
       "defaultAppearanceId": "1",
       "sellableId": "jwenrD12z7TV9G2M09ny-347-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X37Y31D1000566431W17833H17833Cx000000/views/1,width=650,height=650,appearanceId=386/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A1PA4306PT17X37Y31D1000566431W17833H17833Cx000000/views/1,width=650,height=650,appearanceId=386/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X37Y31D1000566431W17833H17833Cx000000/views/2,width=650,height=650,appearanceId=386/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X37Y31D1000566431W17833H17833Cx000000/views/3,width=650,height=650,appearanceId=386/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X37Y31D1000566431W17833H17833Cx000000/views/4,width=650,height=650,appearanceId=386/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X37Y31D1000566431W17833H17833Cx000000/views/1,width=650,height=650,appearanceId=231/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A1PA4306PT17X37Y31D1000566431W17833H17833Cx000000/views/1,width=650,height=650,appearanceId=231/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X37Y31D1000566431W17833H17833Cx000000/views/2,width=650,height=650,appearanceId=231/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X37Y31D1000566431W17833H17833Cx000000/views/3,width=650,height=650,appearanceId=231/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X37Y31D1000566431W17833H17833Cx000000/views/4,width=650,height=650,appearanceId=231/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg"
       ],
       "sizesByAppearance": {
         "1": [
@@ -8940,103 +8220,7 @@
           "6",
           "38"
         ],
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "17": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "792": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
           "2",
           "3",
           "4",
@@ -9064,17 +8248,16 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y47D12610661W25000H18250/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y47D12610661W25000H18250/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=154/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
       "appearanceIds": [
         "154",
         "231",
-        "1",
         "36",
         "2",
         "5",
         "4"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "154",
       "sellableId": "VRD3ZRDzBVFMoe24r3ba-175-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y47D12610661W25000H18250/views/1,width=650,height=650,appearanceId=154/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
@@ -9084,14 +8267,6 @@
         "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X18Y47D12610661W25000H18250/views/4,width=650,height=650,appearanceId=154/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "2": [
           "2",
           "3",
@@ -9124,7 +8299,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -9153,41 +8327,22 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
       "appearanceIds": [
-        "386",
-        "792",
-        "1259",
-        "1368",
-        "1391",
-        "1466",
-        "134",
         "231",
-        "352",
-        "376",
-        "1",
         "2",
-        "17",
         "4"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "231",
       "sellableId": "VRD3ZRDzBVFMoe24r3ba-347-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/1,width=650,height=650,appearanceId=386/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/1,width=650,height=650,appearanceId=386/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/2,width=650,height=650,appearanceId=386/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/3,width=650,height=650,appearanceId=386/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/4,width=650,height=650,appearanceId=386/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/1,width=650,height=650,appearanceId=231/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/1,width=650,height=650,appearanceId=231/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/2,width=650,height=650,appearanceId=231/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/3,width=650,height=650,appearanceId=231/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y56D12610661W17598H12846/views/4,width=650,height=650,appearanceId=231/before-becoming-toyota-racing-development-trd-was-known-as-toyota-sports-corner-or-tosco-tosco-was-established-in-yokohama-and-built-toyotas-first.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "2": [
           "2",
           "3",
@@ -9204,87 +8359,7 @@
           "6",
           "38"
         ],
-        "17": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "134": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "352": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "376": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "792": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1259": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1368": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1391": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "1466": [
           "2",
           "3",
           "4",
@@ -9312,7 +8387,7 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A1PA4927PT17X43Y36D1020959371W19999H20265/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2.jpg",
       "appearanceIds": [
         "2"
       ],
@@ -9354,7 +8429,7 @@
       "group": "Tees",
       "price": 23.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T347A1PA4306PT17X38Y31D1020959371W17598H17833/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2.jpg",
       "appearanceIds": [
         "2"
       ],
@@ -9396,11 +8471,8 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X0Y4D12485367W28570H35712/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X0Y4D12485367W28570H35712/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2.jpg",
       "appearanceIds": [
-        "154",
-        "231",
-        "1",
         "36",
         "2",
         "5",
@@ -9409,21 +8481,13 @@
       "defaultAppearanceId": "2",
       "sellableId": "JkpXGlVL5NsZGm1Y31d3-175-7",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X0Y4D12485367W28570H35712/views/1,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A2PA4927PT17X0Y4D12485367W28570H35712/views/1,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X0Y4D12485367W28570H35712/views/2,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X0Y4D12485367W28570H35712/views/3,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X0Y4D12485367W28570H35712/views/4,width=650,height=650,appearanceId=154.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X0Y4D12485367W28570H35712/views/1,width=650,height=650,appearanceId=36.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A2PA4927PT17X0Y4D12485367W28570H35712/views/1,width=650,height=650,appearanceId=36.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X0Y4D12485367W28570H35712/views/2,width=650,height=650,appearanceId=36.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X0Y4D12485367W28570H35712/views/3,width=650,height=650,appearanceId=36.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X0Y4D12485367W28570H35712/views/4,width=650,height=650,appearanceId=36.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "2": [
           "2",
           "3",
@@ -9452,18 +8516,6 @@
           "3",
           "4",
           "6"
-        ],
-        "154": [
-          "2",
-          "3",
-          "5",
-          "38"
-        ],
-        "231": [
-          "3",
-          "5",
-          "6",
-          "38"
         ]
       }
     },
@@ -9485,33 +8537,22 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
-        "231",
-        "1",
         "2",
         "4"
       ],
       "defaultAppearanceId": "2",
       "sellableId": "JkpXGlVL5NsZGm1Y31d3-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/2,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/3,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/4,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/12,width=650,height=650,appearanceId=386.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/1,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/1,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/2,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/3,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/4,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A2PA5059PT32X27Y14D12485367W20000H25000/views/12,width=650,height=650,appearanceId=2.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "2": [
           "2",
           "3",
@@ -9520,33 +8561,6 @@
           "6"
         ],
         "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "140": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
-        "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -9573,7 +8587,7 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X0Y42D104820845W28570H14984/views/1,width=500,height=500,backgroundColor=161412,appearanceId=154.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X0Y42D104820845W28570H14984/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=154.jpg",
       "appearanceIds": [
         "154",
         "231",
@@ -9633,7 +8647,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -9662,7 +8675,7 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y33D104820845W25000H13112/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y33D104820845W25000H13112/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231.jpg",
       "appearanceIds": [
         "386",
         "624",
@@ -9685,6 +8698,7 @@
       "sizesByAppearance": {
         "1": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -9705,6 +8719,7 @@
         ],
         "140": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -9750,7 +8765,7 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X43Y38D12622848W19999H19999/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X43Y38D12622848W19999H19999/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2.jpg",
       "appearanceIds": [
         "154",
         "231",
@@ -9810,7 +8825,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -9839,7 +8853,7 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X61Y33D12622848W13112H13112/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X61Y33D12622848W13112H13112/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231.jpg",
       "appearanceIds": [
         "386",
         "624",
@@ -9862,6 +8876,7 @@
       "sizesByAppearance": {
         "1": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -9882,6 +8897,7 @@
         ],
         "140": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -9927,7 +8943,7 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X72Y28D12609902W14243H25000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2/one-word-tossable-that-pretty-much-sums-up-the-experience-of-driving-a-ke70-the-early-80s-was-a-good-time-for-toyota.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X72Y28D12609902W14243H25000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/one-word-tossable-that-pretty-much-sums-up-the-experience-of-driving-a-ke70-the-early-80s-was-a-good-time-for-toyota.jpg",
       "appearanceIds": [
         "154",
         "231",
@@ -9987,7 +9003,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -10016,7 +9031,7 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X90Y33D12609902W7470H13112/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231/one-word-tossable-that-pretty-much-sums-up-the-experience-of-driving-a-ke70-the-early-80s-was-a-good-time-for-toyota.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X90Y33D12609902W7470H13112/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231/one-word-tossable-that-pretty-much-sums-up-the-experience-of-driving-a-ke70-the-early-80s-was-a-good-time-for-toyota.jpg",
       "appearanceIds": [
         "386",
         "624",
@@ -10039,6 +9054,7 @@
       "sizesByAppearance": {
         "1": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -10059,6 +9075,7 @@
         ],
         "140": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -10104,7 +9121,7 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y42D12686118W25000H19100/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2/light-low-high-compression-high-revs-same-principles-of-great-sports-cars-made-40-years-apart-the-s800-and-s2000-stand-as-the-benchmarks-of-jap.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y42D12686118W25000H19100/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/light-low-high-compression-high-revs-same-principles-of-great-sports-cars-made-40-years-apart-the-s800-and-s2000-stand-as-the-benchmarks-of-jap.jpg",
       "appearanceIds": [
         "154",
         "231",
@@ -10164,7 +9181,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -10193,7 +9209,7 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y3D12686118W25000H19100/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231/light-low-high-compression-high-revs-same-principles-of-great-sports-cars-made-40-years-apart-the-s800-and-s2000-stand-as-the-benchmarks-of-jap.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y3D12686118W25000H19100/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231/light-low-high-compression-high-revs-same-principles-of-great-sports-cars-made-40-years-apart-the-s800-and-s2000-stand-as-the-benchmarks-of-jap.jpg",
       "appearanceIds": [
         "386",
         "624",
@@ -10216,6 +9232,7 @@
       "sizesByAppearance": {
         "1": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -10236,6 +9253,7 @@
         ],
         "140": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -10281,11 +9299,8 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y35D12610695W25000H16306/views/1,width=500,height=500,backgroundColor=161412,appearanceId=4/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y35D12610695W25000H16306/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=4/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
       "appearanceIds": [
-        "154",
-        "231",
-        "1",
         "36",
         "2",
         "5",
@@ -10294,21 +9309,13 @@
       "defaultAppearanceId": "4",
       "sellableId": "4w8MB0jRovu9ARa54GLw-175-7",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y35D12610695W25000H16306/views/1,width=650,height=650,appearanceId=154/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A154PA4927PT17X18Y35D12610695W25000H16306/views/1,width=650,height=650,appearanceId=154/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y35D12610695W25000H16306/views/2,width=650,height=650,appearanceId=154/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y35D12610695W25000H16306/views/3,width=650,height=650,appearanceId=154/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y35D12610695W25000H16306/views/4,width=650,height=650,appearanceId=154/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y35D12610695W25000H16306/views/1,width=650,height=650,appearanceId=36/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A154PA4927PT17X18Y35D12610695W25000H16306/views/1,width=650,height=650,appearanceId=36/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y35D12610695W25000H16306/views/2,width=650,height=650,appearanceId=36/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y35D12610695W25000H16306/views/3,width=650,height=650,appearanceId=36/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y35D12610695W25000H16306/views/4,width=650,height=650,appearanceId=36/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "2": [
           "2",
           "3",
@@ -10337,18 +9344,6 @@
           "3",
           "4",
           "6"
-        ],
-        "154": [
-          "2",
-          "3",
-          "5",
-          "38"
-        ],
-        "231": [
-          "3",
-          "5",
-          "6",
-          "38"
         ]
       }
     },
@@ -10370,33 +9365,22 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
-        "231",
-        "1",
         "2",
         "4"
       ],
-      "defaultAppearanceId": "231",
+      "defaultAppearanceId": "2",
       "sellableId": "4w8MB0jRovu9ARa54GLw-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/1,width=650,height=650,appearanceId=386/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/1,width=650,height=650,appearanceId=386/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/2,width=650,height=650,appearanceId=386/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/3,width=650,height=650,appearanceId=386/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/4,width=650,height=650,appearanceId=386/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/12,width=650,height=650,appearanceId=386/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/1,width=650,height=650,appearanceId=2/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/1,width=650,height=650,appearanceId=2/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/2,width=650,height=650,appearanceId=2/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/3,width=650,height=650,appearanceId=2/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/4,width=650,height=650,appearanceId=2/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y17D12610695W25000H16306/views/12,width=650,height=650,appearanceId=2/this-particular-graphic-comes-from-a-jdm-celica-brochure-for-the-1600gt-with-a-2tg-motor.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "2": [
           "2",
           "3",
@@ -10405,33 +9389,6 @@
           "6"
         ],
         "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "140": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
-        "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -10458,15 +9415,11 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y24D12697291W25000H18000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y24D12697291W25000H18000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=1.jpg",
       "appearanceIds": [
         "154",
         "231",
-        "1",
-        "36",
-        "2",
-        "5",
-        "4"
+        "1"
       ],
       "defaultAppearanceId": "1",
       "sellableId": "xrdR7gpAy2ILYAzeoryp-175-7",
@@ -10486,39 +9439,9 @@
           "6",
           "38"
         ],
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "5": [
-          "2",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "36": [
-          "2",
-          "3",
-          "4",
-          "6"
-        ],
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -10547,68 +9470,30 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
         "231",
-        "1",
-        "2",
-        "4"
+        "1"
       ],
       "defaultAppearanceId": "231",
       "sellableId": "xrdR7gpAy2ILYAzeoryp-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/2,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/3,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/4,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/12,width=650,height=650,appearanceId=386.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/1,width=650,height=650,appearanceId=231.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/1,width=650,height=650,appearanceId=231.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/2,width=650,height=650,appearanceId=231.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/3,width=650,height=650,appearanceId=231.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/4,width=650,height=650,appearanceId=231.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y9D12697291W25000H18000/views/12,width=650,height=650,appearanceId=231.jpg"
       ],
       "sizesByAppearance": {
         "1": [
           "2",
-          "4",
-          "5",
-          "6"
-        ],
-        "2": [
-          "2",
           "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "140": [
-          "2",
           "4",
           "5",
           "6"
         ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -10635,15 +9520,11 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X79Y28D12614325W12743H25000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=1/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X79Y28D12614325W12743H25000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=1/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
       "appearanceIds": [
         "154",
         "231",
-        "1",
-        "36",
-        "2",
-        "5",
-        "4"
+        "1"
       ],
       "defaultAppearanceId": "1",
       "sellableId": "aZamzVlGx7ImnVX2B38d-175-7",
@@ -10663,39 +9544,9 @@
           "6",
           "38"
         ],
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "5": [
-          "2",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "36": [
-          "2",
-          "3",
-          "4",
-          "6"
-        ],
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -10724,68 +9575,30 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
         "231",
-        "1",
-        "2",
-        "4"
+        "1"
       ],
       "defaultAppearanceId": "231",
       "sellableId": "aZamzVlGx7ImnVX2B38d-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/1,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/1,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/2,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/3,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/4,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/12,width=650,height=650,appearanceId=386/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/1,width=650,height=650,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/1,width=650,height=650,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/2,width=650,height=650,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/3,width=650,height=650,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/4,width=650,height=650,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X94Y33D12614325W6683H13112/views/12,width=650,height=650,appearanceId=231/the-unsung-hero-of-the-80s-the-ae86-chassis-corolla-gt-s-truenolevin-is-a-true-classic-its-light-weight-and-rear-wheel-drive-have-made-it-great-for.jpg"
       ],
       "sizesByAppearance": {
         "1": [
           "2",
-          "4",
-          "5",
-          "6"
-        ],
-        "2": [
-          "2",
           "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "140": [
-          "2",
           "4",
           "5",
           "6"
         ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -10812,34 +9625,23 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X44Y28D1000026558W19737H25000/views/1,width=500,height=500,backgroundColor=161412,appearanceId=154.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X44Y28D1000026558W19737H25000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2.jpg",
       "appearanceIds": [
-        "154",
-        "231",
-        "1",
         "36",
         "2",
         "5",
         "4"
       ],
-      "defaultAppearanceId": "154",
+      "defaultAppearanceId": "2",
       "sellableId": "1nGzpXRAmDiaQY7dbw2m-175-7",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X44Y28D1000026558W19737H25000/views/1,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A154PA4927PT17X44Y28D1000026558W19737H25000/views/1,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X44Y28D1000026558W19737H25000/views/2,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X44Y28D1000026558W19737H25000/views/3,width=650,height=650,appearanceId=154.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X44Y28D1000026558W19737H25000/views/4,width=650,height=650,appearanceId=154.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X44Y28D1000026558W19737H25000/views/1,width=650,height=650,appearanceId=36.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A154PA4927PT17X44Y28D1000026558W19737H25000/views/1,width=650,height=650,appearanceId=36.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X44Y28D1000026558W19737H25000/views/2,width=650,height=650,appearanceId=36.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X44Y28D1000026558W19737H25000/views/3,width=650,height=650,appearanceId=36.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X44Y28D1000026558W19737H25000/views/4,width=650,height=650,appearanceId=36.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "2": [
           "2",
           "3",
@@ -10868,18 +9670,6 @@
           "3",
           "4",
           "6"
-        ],
-        "154": [
-          "2",
-          "3",
-          "5",
-          "38"
-        ],
-        "231": [
-          "3",
-          "5",
-          "6",
-          "38"
         ]
       }
     },
@@ -10901,33 +9691,22 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
-        "231",
-        "1",
         "2",
         "4"
       ],
-      "defaultAppearanceId": "231",
+      "defaultAppearanceId": "2",
       "sellableId": "1nGzpXRAmDiaQY7dbw2m-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/1,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/2,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/3,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/4,width=650,height=650,appearanceId=386.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/12,width=650,height=650,appearanceId=386.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/1,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/1,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/2,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/3,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/4,width=650,height=650,appearanceId=2.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X75Y33D1000026558W10351H13112/views/12,width=650,height=650,appearanceId=2.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "2": [
           "2",
           "3",
@@ -10936,33 +9715,6 @@
           "6"
         ],
         "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "140": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
-        "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -10989,17 +9741,14 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X43Y35D12610689W19998H21990/views/1,width=500,height=500,backgroundColor=161412,appearanceId=154/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X43Y35D12610689W19998H21990/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=36/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
       "appearanceIds": [
         "154",
         "231",
         "1",
-        "36",
-        "2",
-        "5",
-        "4"
+        "36"
       ],
-      "defaultAppearanceId": "154",
+      "defaultAppearanceId": "36",
       "sellableId": "gnLY3nln2dsR9yXw1142-175-7",
       "images": [
         "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X43Y35D12610689W19998H21990/views/1,width=650,height=650,appearanceId=154/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
@@ -11017,29 +9766,6 @@
           "6",
           "38"
         ],
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "5": [
-          "2",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
         "36": [
           "2",
           "3",
@@ -11049,7 +9775,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -11078,68 +9803,30 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
         "231",
-        "1",
-        "2",
-        "4"
+        "1"
       ],
       "defaultAppearanceId": "231",
       "sellableId": "gnLY3nln2dsR9yXw1142-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/1,width=650,height=650,appearanceId=386/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/1,width=650,height=650,appearanceId=386/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/2,width=650,height=650,appearanceId=386/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/3,width=650,height=650,appearanceId=386/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/4,width=650,height=650,appearanceId=386/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/12,width=650,height=650,appearanceId=386/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/1,width=650,height=650,appearanceId=231/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/1,width=650,height=650,appearanceId=231/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/2,width=650,height=650,appearanceId=231/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/3,width=650,height=650,appearanceId=231/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/4,width=650,height=650,appearanceId=231/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X67Y33D12610689W11924H13112/views/12,width=650,height=650,appearanceId=231/this-shirt-features-several-parts-from-an-early-70s-toyota-tosco-brochure-for-ta22-celica-1600gt-road-and-rally-racing-parts.jpg"
       ],
       "sizesByAppearance": {
         "1": [
           "2",
-          "4",
-          "5",
-          "6"
-        ],
-        "2": [
-          "2",
           "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "140": [
-          "2",
           "4",
           "5",
           "6"
         ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",
@@ -11166,7 +9853,7 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X43Y45D104819826W19999H18594/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X43Y45D104819826W19999H18594/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2.jpg",
       "appearanceIds": [
         "154",
         "231",
@@ -11226,7 +9913,6 @@
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -11255,7 +9941,7 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y0D104819826W25000H23243/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y0D104819826W25000H23243/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231.jpg",
       "appearanceIds": [
         "386",
         "624",
@@ -11278,6 +9964,7 @@
       "sizesByAppearance": {
         "1": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -11298,6 +9985,7 @@
         ],
         "140": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -11343,14 +10031,12 @@
       "group": "Tees",
       "price": 26.49,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y42D104819913W25000H19218/views/1,width=500,height=500,backgroundColor=161412,appearanceId=2/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A154PA4927PT17X18Y42D104819913W25000H19218/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
       "appearanceIds": [
         "154",
         "231",
         "1",
-        "36",
         "2",
-        "5",
         "4"
       ],
       "defaultAppearanceId": "2",
@@ -11387,23 +10073,9 @@
           "6",
           "38"
         ],
-        "5": [
-          "2",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "36": [
-          "2",
-          "3",
-          "4",
-          "6"
-        ],
         "154": [
           "2",
           "3",
-          "5",
           "38"
         ],
         "231": [
@@ -11432,11 +10104,8 @@
       "group": "Tees",
       "price": 25.99,
       "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/1,width=500,height=500,backgroundColor=161412,appearanceId=231/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=231/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
       "appearanceIds": [
-        "386",
-        "624",
-        "140",
         "231",
         "1",
         "2",
@@ -11445,16 +10114,17 @@
       "defaultAppearanceId": "231",
       "sellableId": "OwDabL2Y9bse8ZB2woVv-4067-8",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/1,width=650,height=650,appearanceId=386/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/1,width=650,height=650,appearanceId=386/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/2,width=650,height=650,appearanceId=386/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/3,width=650,height=650,appearanceId=386/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/4,width=650,height=650,appearanceId=386/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/12,width=650,height=650,appearanceId=386/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/1,width=650,height=650,appearanceId=231/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/1,width=650,height=650,appearanceId=231/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/2,width=650,height=650,appearanceId=231/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/3,width=650,height=650,appearanceId=231/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/4,width=650,height=650,appearanceId=231/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T4067A231PA5059PT32X2Y2D104819913W25000H19218/views/12,width=650,height=650,appearanceId=231/the-same-as-our-other-s800s2000-design-but-without-the-crusty-stuff-at-the-bottom-so-it-can-be-placed-low-on-a-shirt.jpg"
       ],
       "sizesByAppearance": {
         "1": [
           "2",
+          "3",
           "4",
           "5",
           "6"
@@ -11473,27 +10143,7 @@
           "5",
           "6"
         ],
-        "140": [
-          "2",
-          "4",
-          "5",
-          "6"
-        ],
         "231": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "386": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
-        ],
-        "624": [
           "2",
           "3",
           "4",

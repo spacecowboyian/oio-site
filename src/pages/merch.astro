@@ -92,6 +92,11 @@ const drawerData = Object.fromEntries(
       sellableId: p.sellableId,
       family: p.family,
       version: p.version,
+      // The colourway the lineup picked. The card art is rendered in it, so the
+      // drawer has to open on it too — without this the panel fell back to
+      // whichever appearance happened to sort first and contradicted the
+      // thumbnail the customer just clicked.
+      defaultAppearanceId: p.defaultAppearanceId,
       appearances: p.appearanceIds
         .map((id) => ({ id, ...catalog.productTypes[p.productTypeId]?.appearances[id] }))
         .filter((a) => a.name),
@@ -326,7 +331,12 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
           (p) => p.family === product.family && p.label === product.label
         )
       : [];
-    const state = { appearanceId: product.appearances[0]?.id, sizeId: null };
+    // Open on the colourway the card was rendered in. Falls back to the first
+    // available one only if that colourway is not in this product's list.
+    const opening =
+      product.appearances.find((a) => a.id === product.defaultAppearanceId) ??
+      product.appearances[0];
+    const state = { appearanceId: opening?.id, sizeId: null };
 
     drawer.innerHTML = `
       <div class="drawer__panel" role="dialog" aria-modal="true"
@@ -494,6 +504,17 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
      tokens live in src/styles/apex.css. Square corners, one accent spent on the
      payoff, flat elevation, measured contrast roles. */
 
+  /* The single ground everything floats on — Tailwind zinc-950, which is what
+     BaseLayout paints on <body>. Apex's Surface (#161412) is a step lighter and
+     was being used for the shelf's panels and bars; per Ian the whole page
+     collapses to one colour, so nothing reads as a container. Anything that
+     needs to *be* the ground references this rather than repainting it, and
+     FRAME_BG in scripts/sync-catalog.mjs bakes the same value into the mockups
+     so the studio background disappears into it. */
+  :root {
+    --merch-ground: #09090b;
+  }
+
   /* One measure for the whole page. The padding formula centres content inside
      a fixed measure while leaving every element full-bleed, so section rules
      and the sticky filter bar still span edge to edge and the shelf never
@@ -550,7 +571,10 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     flex-direction: column;
     gap: 0.5rem;
     padding-block: 0.75rem;
-    background: var(--apex-surface);
+    /* Opaque so shelf content passing under the sticky bar is covered, but the
+       same ground as everything else — a lighter bar would be the one band on
+       the page still reading as a surface. */
+    background: var(--merch-ground);
     border-bottom: 1px solid var(--apex-steel-dark);
   }
 
@@ -610,16 +634,19 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     opacity: 0.6;
   }
 
-  /* No table rules. The 1px gap over a Steel Dark ground used to draw a
-     hairline grid between cards; that job moved onto each product frame's own
-     border, so the grid just spaces them now and the page ground shows through.
-     Cards keep their Surface 2 fill, so they still read as panels without being
-     boxed into a table. */
+  /* The gap is the only thing separating one product from the next now that
+     cards have no fill and no border. At 1px — sized back when it drew a
+     hairline between panels — neighbouring shirts would nearly touch, so it
+     opens up to real space. Row gap runs larger than column gap because a
+     card's own title and price sit directly beneath its art, and that block
+     needs to group with the shirt above it rather than the one below. */
   .merch-grid {
     display: grid;
     /* A bare rem minimum cannot shrink when the user raises their text size. */
     grid-template-columns: repeat(auto-fill, minmax(min(17rem, 100%), 1fr));
-    gap: 1px;
+    column-gap: 1.5rem;
+    row-gap: 3rem;
+    padding-block: 1.5rem;
   }
 
   .merch-grid > [data-collection] {
@@ -651,12 +678,17 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     color: var(--apex-steel-light);
   }
 
+  /* Centred dialog, not a bottom sheet. It docked to the bottom edge before,
+     which on a tall desktop window left the panel sitting low with a field of
+     scrim above it. Padding keeps it off the viewport edges at every size, so
+     the centring holds instead of the panel growing into the gap. */
   .drawer {
     position: fixed;
     inset: 0;
     z-index: 30;
     display: grid;
-    place-items: end center;
+    place-items: center;
+    padding: 1.5rem;
     background: rgb(0 0 0 / 0.8);
   }
 
@@ -666,11 +698,14 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
 
   .drawer__panel {
     width: min(100%, 1100px);
-    max-height: 92vh;
+    /* Bounded by the scrim's own padding rather than a bare vh, so the panel
+       never runs under the viewport edge on short windows. */
+    max-height: 100%;
     overflow-y: auto;
     background: var(--apex-surface-2);
+    /* All four edges drawn now — the bottom one used to be dropped because the
+       panel sat flush against the bottom of the screen. */
     border: 1px solid var(--apex-steel-dark);
-    border-bottom: none;
   }
 
   .drawer__bar {

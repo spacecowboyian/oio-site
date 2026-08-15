@@ -35,37 +35,44 @@ const highRes = product.image?.replace(/width=\d+,height=\d+/, "width=1000,heigh
 </button>
 
 <style>
-  /* A raised panel on the ground: Surface 2 with a Steel Dark hairline, square
-     corners, no shadow — depth is surface steps, not elevation tricks. */
+  /* Not a panel. The card was a Surface 2 block on a Surface ground — one step
+     up, square, no shadow. Per Ian: everything floats on the single darkest
+     ground instead, so the fill comes off entirely and the shirt is the only
+     thing on the page with a shape. What used to be the card's inset padding
+     goes too: with no fill to inset from, padding only pushed the title away
+     from the art it labels. Separation is the grid gap now, not a box. */
   .card {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    padding: 1rem;
-    background: var(--apex-surface-2);
+    background: none;
     color: var(--apex-white);
     text-align: left;
     border: none;
     cursor: pointer;
-    transition: background 0.2s ease;
   }
 
-  .card:hover {
-    background: var(--apex-surface);
-  }
+  /* Hover was a fill change, which a fill-less card cannot do. The push into
+     the print carries it alone — it is the same gesture, just without the box
+     lighting up behind it. */
 
-  /* The product ground matches the page ground rather than contrasting with it,
-     so a shirt reads as sitting on the site rather than in a lightbox. It used
-     to carry a Steel Dark hairline, from when the mockups still had their white
-     studio paper and the frame needed an edge of its own. Now that the shot is
-     rendered on Surface, the step down from the card's Surface 2 is the edge —
-     a line on top of that just draws a box around a box. */
+  /* The frame is now the same colour as everything else — the page ground, the
+     card that used to sit on it, and the studio background baked into the
+     mockup itself by the image server. Three surfaces that were a step apart
+     collapse to one, so the garment reads as floating rather than framed.
+     Ground colour is Tailwind zinc-950, what BaseLayout paints on <body>;
+     keep FRAME_BG in scripts/sync-catalog.mjs matching it. */
   .card__frame {
     position: relative;
     display: block;
     aspect-ratio: 1;
-    background: var(--apex-surface);
+    background: var(--merch-ground);
+    /* Same Steel Dark hairline as the rule under each title, so the frame edge
+       and the meta rule read as one system rather than two weights. It came off
+       when the frame still had a Surface step to define it; with every surface
+       collapsed to one ground, a dark shirt has no edge at all without this. */
+    border: 1px solid var(--apex-steel-dark);
     overflow: hidden;
   }
 
@@ -119,7 +126,6 @@ const highRes = product.image?.replace(/width=\d+,height=\d+/, "width=1000,heigh
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .card,
     .card__frame img {
       transition: none;
     }
