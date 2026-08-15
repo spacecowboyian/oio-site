@@ -1,6 +1,6 @@
 {
-  "_comment": "The products OIO actually sells. A design is artwork; a product is that artwork on one blank we chose. `primary` is the one card that represents a design inside its category \u2014 the rest surface through 'Also on' on the product page.",
-  "_scope": "T-shirts only. A design is the unit of the shelf; inside it the customer picks a product (men's or women's cut), then a colour, then a size, and the price follows that choice. Both cuts should be Bella + Canvas: 175 Unisex Jersey for men's, 4067 Slim Fit Rib for women's. Fallbacks exist because 12 published designs were never given a Bella blank in the Partner Area and would otherwise vanish from the shelf entirely \u2014 see _bellaGap.",
+  "_comment": "The products OIO actually sells. A design is artwork; a product is that artwork on one blank we chose. `primary` is the one card that represents a design inside its category — the rest surface through 'Also on' on the product page.",
+  "_scope": "T-shirts only. A design is the unit of the shelf; inside it the customer picks a product (men's or women's cut), then a colour, then a size, and the price follows that choice. Both cuts should be Bella + Canvas: 175 Unisex Jersey for men's, 4067 Slim Fit Rib for women's. Fallbacks exist because 12 published designs were never given a Bella blank in the Partner Area and would otherwise vanish from the shelf entirely — see _bellaGap.",
   "default": [
     {
       "label": "Men's Tee",
@@ -34,20 +34,31 @@
       "primary": true
     }
   ],
-  "_productTypeIdsNote": "A list, tried in order, first one the design actually carries wins. A single `productTypeId` still works and means exactly that blank. The list exists because the 19 designs that were never given a product range each sit on whichever tee they were uploaded onto \u2014 210 or 812 \u2014 while the twelve full-range designs carry 175. Demanding one specific blank would have excluded two thirds of the catalogue for no customer-visible reason: they are all unisex tees.",
+  "_productTypeIdsNote": "A list, tried in order, first one the design actually carries wins. A single `productTypeId` still works and means exactly that blank. The list exists because the 19 designs that were never given a product range each sit on whichever tee they were uploaded onto — 210 or 812 — while the twelve full-range designs carry 175. Demanding one specific blank would have excluded two thirds of the catalogue for no customer-visible reason: they are all unisex tees.",
   "byDesign": {
     "5d89f20f13615160bf833e7d": {
-      "_why": "Art is a black print on the Bella + Canvas blank, which has no light-ink version. Gildan Heavyweight Unisex carries an E5E5E5 print, so the design can run white on black.",
+      "_why": "Save the Stick - Bones — white ink, so it inverts the usual rule: only grounds dark enough to carry it survive. Sand, natural, prairie dust, orchid, light pink, light blue, heather gray and white all left the bones as a ghost.",
       "swap": {
         "Men's Tee": {
           "productTypeId": "1361",
           "print": "E5E5E5",
           "appearanceId": "2"
         }
-      }
+      },
+      "appearanceIds": [
+        "626",
+        "793",
+        "1023",
+        "164",
+        "348",
+        "2",
+        "5",
+        "17",
+        "33"
+      ]
     },
     "5d89f19b162c5f464e875bc1": {
-      "_why": "Bella + Canvas has no yellow garment. Men's Premium T-Shirt stocks sun yellow and carries the black print. Relabelled because that blank is a men's cut, not a unisex one.",
+      "_why": "Datsun Honey Bee — 26 colourways on the Premium blank, printed in solid black. Halved to the light and mid grounds the ink can sit on; every dark one (charcoal, burgundy, the navies, khaki, royal, black) swallowed the badge whole. Duplicate sun yellow and red entries dropped with them.",
       "swap": {
         "Men's Tee": {
           "productTypeId": "812",
@@ -55,7 +66,22 @@
           "appearanceId": "1275",
           "label": "Premium Tee"
         }
-      }
+      },
+      "appearanceIds": [
+        "1275",
+        "1",
+        "231",
+        "1254",
+        "1247",
+        "1252",
+        "1251",
+        "388",
+        "92",
+        "1272",
+        "1265",
+        "1277",
+        "1271"
+      ]
     },
     "5d89f1b5f937647d8113d138": {
       "_why": "Light line art with a dark red 'FX16' wordmark, and no single ink token for the contrast rule to measure. Checked against real renders: red drowns the wordmark, navy and olive muddy it, olive also washes out the outline. Black is the only colourway that carries both parts.",
@@ -64,7 +90,7 @@
       ]
     },
     "5d89f1b51cbf3a25d5a8c6f8": {
-      "_why": "Toyota Corolla KE70 \u2014 bold black/white/red graphic. Checked against real renders: true red (the shop default) buried the car outline in the garment colour. Black and white both work; black picked to bias toward dark garment / light art.",
+      "_why": "Toyota Corolla KE70 — black/white/red graphic carrying its own contrast; all seven read.",
       "swap": {
         "Men's Tee": {
           "appearanceId": "2"
@@ -72,31 +98,47 @@
       }
     },
     "5d89f1f813615160bf83367f": {
-      "_why": "Toyota Celica Cutaway \u2014 Ian's call, superseding the earlier black pick: navy.",
+      "_why": "Toyota Celica Cutaway — white cutaway linework. Ian's call is navy; white, slate and heather gray are dropped because fine white lines need a dark ground to exist at all.",
       "swap": {
         "Men's Tee": {
           "appearanceId": "4"
         }
-      }
+      },
+      "appearanceIds": [
+        "36",
+        "2",
+        "5",
+        "4"
+      ]
     },
     "5d89f1b52051762642221a8c": {
-      "_why": "Starion Conquest \u2014 Ian's call, overriding the earlier black pick: a light shirt (white) by default.",
+      "_why": "Starion Conquest — pale grey car, very low ink density. Ian's call is a light shirt, and the renders agree: on olive, black, red and navy there is essentially nothing on the garment.",
       "swap": {
         "Men's Tee": {
           "appearanceId": "1"
         }
-      }
+      },
+      "appearanceIds": [
+        "154",
+        "231",
+        "1"
+      ]
     },
     "5d89f20e20517626422245b0": {
-      "_why": "AE86 Corolla Hatchback \u2014 dark charcoal gear graphic. Checked against real renders: it disappears on black, navy and the light-heather-gray default alike. The ink is dark, so it needs a light ground; white is the crispest of the light options.",
+      "_why": "AE86 Corolla Hatchback — dark charcoal gear graphic; same restriction as the Coupe for the same reason.",
       "swap": {
         "Men's Tee": {
           "appearanceId": "1"
         }
-      }
+      },
+      "appearanceIds": [
+        "154",
+        "231",
+        "1"
+      ]
     },
     "5d89f1f71cbf3a25d5a8e5c1": {
-      "_why": "Aschwanden Spark Plug \u2014 fine dark line-art blueprint. Checked against real renders: the detail goes muddy on black/navy/true red. Needs a light ground for the linework to stay legible.",
+      "_why": "Aschwanden Spark Plug — fine dark line-art blueprint. Checked against real renders: the detail goes muddy on black/navy/true red. Needs a light ground for the linework to stay legible.",
       "swap": {
         "Men's Tee": {
           "appearanceId": "1"
@@ -104,15 +146,21 @@
       }
     },
     "5d89f1e06bbdbb2e6a5b4eb0": {
-      "_why": "Toyota Tosco Brochure Art \u2014 Ian's call: olive by default. Blank 210 has no colour literally named \"olive\"; military green (#6E7C54) is the closest match in the same family.",
+      "_why": "Toyota Tosco Brochure Art — fine dark linework with a red badge; it needs a light-to-mid ground and dies on black, red and navy. Ian's call is olive, and the id is now 36: the earlier 715 (military green) does not exist on the Bella blank, so the default was silently falling back to slate.",
       "swap": {
         "Men's Tee": {
-          "appearanceId": "715"
+          "appearanceId": "36"
         }
-      }
+      },
+      "appearanceIds": [
+        "154",
+        "231",
+        "1",
+        "36"
+      ]
     },
     "5d89f20e162c5f464e8791cc": {
-      "_why": "S Generations (Color Car) \u2014 red car line art. Checked against real renders: it disappears on the true-red default's sibling problem and is muted on light heather gray; it's vivid on black. Matched across all three S Generations versions for consistency.",
+      "_why": "S Generations (Color Car) — red car line art. Checked against real renders: it disappears on the true-red default's sibling problem and is muted on light heather gray; it's vivid on black. Matched across all three S Generations versions for consistency.",
       "swap": {
         "Men's Tee": {
           "appearanceId": "2"
@@ -120,7 +168,7 @@
       }
     },
     "5d89f1e1b4b8c76e392b00e9": {
-      "_why": "S Generations (Gray) \u2014 same red car line art as the other two versions; same fix for the same reason.",
+      "_why": "S Generations (Gray) — same red car line art as the other two versions; same fix for the same reason.",
       "swap": {
         "Men's Tee": {
           "appearanceId": "2"
@@ -128,45 +176,173 @@
       }
     },
     "5d89f1f71cbf3a25d5a8e59d": {
-      "_why": "S Generations (Clean) \u2014 same red car line art as the other two versions; same fix for the same reason.",
+      "_why": "S Generations — red car art. Red garment eats it and olive muddies it; the rest carry it.",
       "swap": {
         "Men's Tee": {
           "appearanceId": "2"
         }
-      }
+      },
+      "appearanceIds": [
+        "154",
+        "231",
+        "1",
+        "2",
+        "4"
+      ]
     },
     "5d89f19b13615160bf82f7a6": {
-      "_why": "Petrol Sexual \u2014 black shirt, with the piston logo re-inked to medium grey (#97A09A) and the wordmark left white. The two ink channels were black + white, which put a black logo on a black shirt; the grey is Spreadshirt's palette entry closest to a neutral medium grey (the only alternative, #8B99A2, reads blue). Changed in the Partner Area on the Bella + Canvas blank, so it's a real ink change, not a display trick.",
+      "_why": "Petrol Sexual — grey piston with a white wordmark. The wordmark disappears on white and is unreadable on both light greys.",
       "swap": {
         "Men's Tee": {
           "appearanceId": "2"
         }
-      }
+      },
+      "appearanceIds": [
+        "36",
+        "2",
+        "5",
+        "4"
+      ]
     },
     "5d89f20e162c5f464e8791ce": {
-      "_why": "Save the Stick - Red Cross \u2014 Ian's call: black by default, matching the rest of the Save the Stick family.",
+      "_why": "Save the Stick - Red Cross — the cross is red, so a red garment erases the shape it depends on.",
       "swap": {
         "Men's Tee": {
           "appearanceId": "2"
         }
-      }
+      },
+      "appearanceIds": [
+        "154",
+        "231",
+        "1",
+        "36",
+        "2",
+        "4"
+      ]
     },
     "5d89f19c6bbdbb2e6a5b1ea8": {
-      "_why": "Save the Stick - Shifter \u2014 Ian asked for a white design on a black shirt, which this design cannot do: its uploaded file carries exactly one ink colour (black), confirmed in the Partner Area product editor's Design colors list. Black ink needs a light ground, so this sits on white until a white version of the artwork is uploaded.",
+      "_why": "Save the Stick - Shifter — single black ink (confirmed in the Partner Area). Black and navy are the two grounds it cannot survive.",
       "swap": {
         "Men's Tee": {
           "appearanceId": "1"
         }
-      }
+      },
+      "appearanceIds": [
+        "154",
+        "231",
+        "1",
+        "36",
+        "5"
+      ]
     },
     "5d89f19cf937647d8113bec7": {
-      "_why": "Save The Stick 6 Speed \u2014 Ian's call: black by default, matching the rest of the Save the Stick family.",
+      "_why": "Save The Stick 6 Speed — Ian's call: black by default, matching the rest of the Save the Stick family.",
       "swap": {
         "Men's Tee": {
           "appearanceId": "2"
         }
       }
+    },
+    "68a55cb6b0c760220d45f885": {
+      "_why": "Toyota TEQ Logo — white ringed logo. Drops white only: the ring and the mark both vanish into it.",
+      "appearanceIds": [
+        "154",
+        "231",
+        "36",
+        "2",
+        "5",
+        "4"
+      ]
+    },
+    "68a55cb6b868b07c0575ef83": {
+      "_why": "Miata is always the answer — white car art. Gone from white (invisible) and from both light greys, where the body reads as a smudge rather than a car.",
+      "appearanceIds": [
+        "36",
+        "2",
+        "5",
+        "4"
+      ]
+    },
+    "5d89f19b1cbf3a25d5a8b50e": {
+      "_why": "Datsun 510 — white frame around a dark car. The frame survives anywhere; the car does not. Olive, red and navy keep the border and lose the subject.",
+      "appearanceIds": [
+        "154",
+        "231",
+        "1",
+        "2"
+      ]
+    },
+    "5d89f1ce162c5f464e8776be": {
+      "_why": "Volvo Brick Driver — yellow badge. Only white goes: yellow on white is the one pairing with no edge.",
+      "appearanceIds": [
+        "154",
+        "231",
+        "36",
+        "2",
+        "5",
+        "4"
+      ]
+    },
+    "5d89f20e2051762642224541": {
+      "_why": "AE86 Corolla Coupe — dark halftone art. Needs a light ground; olive, black, red and navy all bury it.",
+      "appearanceIds": [
+        "154",
+        "231",
+        "1"
+      ]
+    },
+    "68a55cb63f6bcc7d6db21930": {
+      "_why": "I Void Car Warranties — white lettering, so white is the only failure.",
+      "appearanceIds": [
+        "154",
+        "231",
+        "36",
+        "2",
+        "5",
+        "4"
+      ]
+    },
+    "5d89f1cd205176264222294a": {
+      "_why": "Toyota Tosco Logo — white badge with a red panel. On a white shirt the badge loses its outline and the red floats unattached.",
+      "appearanceIds": [
+        "154",
+        "231",
+        "36",
+        "2",
+        "5",
+        "4"
+      ]
+    },
+    "5d89f19b2051762642220aea": {
+      "_why": "4Runner — white art. Invisible on white, weak on both light greys.",
+      "appearanceIds": [
+        "36",
+        "2",
+        "5",
+        "4"
+      ]
+    },
+    "5d89f20eb4b8c76e392b13dc": {
+      "_why": "Miata MX5 Generations — white art on a dark ground. Default moves to black: the old slate pick is one of the greys the art washes out on.",
+      "appearanceIds": [
+        "36",
+        "2",
+        "5",
+        "4"
+      ],
+      "swap": {
+        "Men's Tee": {
+          "appearanceId": "2"
+        }
+      }
+    },
+    "68a55cb6b868b07c0575ef91": {
+      "_why": "Mazda Rotary - Iron Man — full-colour badge with its own yellow border; it holds on all seven."
+    },
+    "5d89f20e20517626422245b4": {
+      "_why": "Toyota Corolla Levin — full-colour art with its own outlines; nothing to cull."
     }
   },
-  "_bellaGap": "Closed for the twelve designs that used to carry only Jerzees 210 — all of them now have Bella 175 and 4067 enabled in the Partner Area. Three published designs still have no women's Bella blank and fall back to 347 (Women's Premium T-Shirt): Save the Stick - Shift Pattern, Toyota Tosco Logo, Corolla FX16. They can't be fixed with the product template, because applying a template REPLACES the selection and would wipe the Cx ink token their men's product carries (black on Shift Pattern, two-channel on the others); 4067 has to be added by hand from the All products grid, then re-inked."
+  "_bellaGap": "Closed for the twelve designs that used to carry only Jerzees 210 — all of them now have Bella 175 and 4067 enabled in the Partner Area. Three published designs still have no women's Bella blank and fall back to 347 (Women's Premium T-Shirt): Save the Stick - Shift Pattern, Toyota Tosco Logo, Corolla FX16. They can't be fixed with the product template, because applying a template REPLACES the selection and would wipe the Cx ink token their men's product carries (black on Shift Pattern, two-channel on the others); 4067 has to be added by hand from the All products grid, then re-inked.",
+  "_curation": "Colourways are curated per design from the actual renders, not from colour names: every published design was rendered in every colourway it carries and reviewed as a contact sheet. `appearanceIds` is the allowlist that survives that review. The rule is whether the print still reads on the garment — dark ink needs a light ground, white ink needs a dark one, and art whose subject is one flat colour dies on a garment of that colour."
 }

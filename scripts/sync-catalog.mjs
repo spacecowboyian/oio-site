@@ -327,8 +327,9 @@ for (const s of sellables) {
 // trade: the png is a real alpha channel and would survive a re-theme, but it
 // weighs 573KB against 38KB for the jpg, and a shelf is 26 images. The site is
 // dark-only, so the theme risk is cheap and the bytes are not. Keep in sync
-// with --apex-surface; the frame behind the image uses the same token.
-const FRAME_BG = "161412";
+// with --merch-ground in merch.astro — that is the single colour the whole
+// shelf floats on, and a mismatch here puts every shirt in a visible box.
+const FRAME_BG = "09090b";
 
 const frameImage = (url, appearanceId) =>
   url
