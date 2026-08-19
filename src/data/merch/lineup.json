@@ -1,22 +1,14 @@
 {
   "_comment": "The products OIO actually sells. A design is artwork; a product is that artwork on one blank we chose. `primary` is the one card that represents a design inside its category — the rest surface through 'Also on' on the product page.",
-  "_scope": "T-shirts only. A design is the unit of the shelf; inside it the customer picks a product (men's or women's cut), then a colour, then a size, and the price follows that choice. Both cuts should be Bella + Canvas: 175 Unisex Jersey for men's, 4067 Slim Fit Rib for women's. Fallbacks exist because 12 published designs were never given a Bella blank in the Partner Area and would otherwise vanish from the shelf entirely — see _bellaGap.",
+  "_scope": "T-shirts only, one product per design: a single Bella + Canvas Unisex Jersey (175) tee, chosen for its tall, well-cut, non-boxy fit. The customer picks colour then size inside the design. Bella comes in exactly seven colours (white, black, navy, red, olive, slate, heather gray) and the blank carries no others — the fuller palettes on Spreadshirt belong to boxy or men's-cut shirts, so the seven are the price of the good cut and the line accepts them. Two designs step off Bella by necessity: Save the Stick - Bones prints white and needs the Gildan Heavyweight (1361) for a light ink, and Datsun Honey Bee needs sun yellow and runs on the Premium cut (812 men's / 813 women's). Honey Bee is also the only design with a second cut; everything else is the one unisex tee.",
   "default": [
     {
-      "label": "Men's Tee",
+      "label": "Unisex Tee",
       "category": "Tees",
       "primary": true,
       "productTypeIds": [
         "175",
         "1361"
-      ]
-    },
-    {
-      "label": "Women's Tee",
-      "category": "Tees",
-      "productTypeIds": [
-        "4067",
-        "347"
       ]
     }
   ],
@@ -34,12 +26,11 @@
       "primary": true
     }
   ],
-  "_productTypeIdsNote": "A list, tried in order, first one the design actually carries wins. A single `productTypeId` still works and means exactly that blank. The list exists because the 19 designs that were never given a product range each sit on whichever tee they were uploaded onto — 210 or 812 — while the twelve full-range designs carry 175. Demanding one specific blank would have excluded two thirds of the catalogue for no customer-visible reason: they are all unisex tees.",
   "byDesign": {
     "5d89f20f13615160bf833e7d": {
       "_why": "Save the Stick - Bones — Ian's call: black only. The white ink reads on plenty of grounds, but this one is a black shirt.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "productTypeId": "1361",
           "print": "E5E5E5",
           "appearanceId": "2"
@@ -50,17 +41,29 @@
       ]
     },
     "5d89f19b162c5f464e875bc1": {
-      "_why": "Datsun Honey Bee — Ian's call: sun yellow only. The other 25 colourways are off the shelf.",
+      "_why": "Datsun Honey Bee — the one design that can't be Bella: its badge is designed for a sun-yellow ground and no unisex blank carries yellow. Stays on the Premium cut, sold as a men's (812) and women's (813) pair, both sun yellow. A tank was considered and dropped — no tank on Spreadshirt comes in yellow, and the badge dies on any other ground.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "productTypeId": "812",
           "print": "000000",
           "appearanceId": "1275",
-          "label": "Premium Tee"
+          "label": "Men's Tee"
         }
       },
       "appearanceIds": [
         "1275"
+      ],
+      "add": [
+        {
+          "label": "Women's Tee",
+          "category": "Tees",
+          "productTypeId": "813",
+          "print": "000000",
+          "appearanceId": "1275",
+          "appearanceIds": [
+            "1275"
+          ]
+        }
       ]
     },
     "5d89f1b5f937647d8113d138": {
@@ -72,7 +75,7 @@
     "5d89f1b51cbf3a25d5a8c6f8": {
       "_why": "Toyota Corolla KE70 — Ian approved all seven; brown and yellow are wanted and are not yet enabled on the Bella blank.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "2"
         }
       }
@@ -80,7 +83,7 @@
     "5d89f1f813615160bf83367f": {
       "_why": "Toyota Celica Cutaway — Ian confirmed the current set is right: olive, black, red, navy on navy.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "4"
         }
       },
@@ -94,7 +97,7 @@
     "5d89f1b52051762642221a8c": {
       "_why": "Starion Conquest — Ian's call: slate out, leaving heather gray and white.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "1"
         }
       },
@@ -106,7 +109,7 @@
     "5d89f20e20517626422245b0": {
       "_why": "AE86 Corolla Hatchback — matches the Coupe, per Ian: slate, heather gray, white, red.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "1"
         }
       },
@@ -120,7 +123,7 @@
     "5d89f1f71cbf3a25d5a8e5c1": {
       "_why": "Aschwanden Spark Plug — fine dark line-art blueprint. Checked against real renders: the detail goes muddy on black/navy/true red. Needs a light ground for the linework to stay legible.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "1"
         }
       }
@@ -128,7 +131,7 @@
     "5d89f1e06bbdbb2e6a5b4eb0": {
       "_why": "Toyota Tosco Brochure Art — Ian's call: no white, navy back in. Olive stays the default.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "36"
         }
       },
@@ -142,7 +145,7 @@
     "5d89f20e162c5f464e8791cc": {
       "_why": "S Generations (Color Car) — red car line art. Checked against real renders: it disappears on the true-red default's sibling problem and is muted on light heather gray; it's vivid on black. Matched across all three S Generations versions for consistency.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "2"
         }
       }
@@ -150,7 +153,7 @@
     "5d89f1e1b4b8c76e392b00e9": {
       "_why": "S Generations (Gray) — same red car line art as the other two versions; same fix for the same reason.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "2"
         }
       }
@@ -158,7 +161,7 @@
     "5d89f1f71cbf3a25d5a8e59d": {
       "_why": "S Generations — Ian's call: any colour, so the full range is back with black as the default. Yellow and orange are wanted and are not yet enabled on the Bella blank.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "2"
         }
       },
@@ -175,7 +178,7 @@
     "5d89f19b13615160bf82f7a6": {
       "_why": "Petrol Sexual — Ian's call: olive, black, red, navy on black by default. Same set as I Void Car Warranties.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "2"
         }
       },
@@ -189,7 +192,7 @@
     "5d89f20e162c5f464e8791ce": {
       "_why": "Save the Stick - Red Cross — Ian's call: white, olive, black, navy. Red is out because the cross is red; the greys are out by choice.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "2"
         }
       },
@@ -203,7 +206,7 @@
     "5d89f19c6bbdbb2e6a5b1ea8": {
       "_why": "Save the Stick - Shifter — stays off black, per Ian. Yellow and orange are wanted and are not yet enabled on the Bella blank.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "1"
         }
       },
@@ -218,7 +221,7 @@
     "5d89f19cf937647d8113bec7": {
       "_why": "Save The Stick 6 Speed — Ian's call: black by default, matching the rest of the Save the Stick family.",
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "2"
         }
       }
@@ -232,7 +235,7 @@
         "4"
       ],
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "5"
         }
       }
@@ -258,7 +261,7 @@
         "4"
       ],
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "1"
         }
       }
@@ -271,7 +274,7 @@
         "4"
       ],
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "2"
         }
       }
@@ -285,7 +288,7 @@
         "5"
       ],
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "1"
         }
       }
@@ -299,7 +302,7 @@
         "4"
       ],
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "2"
         }
       }
@@ -313,7 +316,7 @@
         "4"
       ],
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "2"
         }
       }
@@ -336,7 +339,7 @@
         "4"
       ],
       "swap": {
-        "Men's Tee": {
+        "Unisex Tee": {
           "appearanceId": "2"
         }
       }
@@ -348,33 +351,5 @@
       "_why": "Toyota Corolla Levin — Ian approved all seven; brown and yellow are wanted and are not yet enabled on the Bella blank."
     }
   },
-  "_bellaGap": "Closed for the twelve designs that used to carry only Jerzees 210 — all of them now have Bella 175 and 4067 enabled in the Partner Area. Three published designs still have no women's Bella blank and fall back to 347 (Women's Premium T-Shirt): Save the Stick - Shift Pattern, Toyota Tosco Logo, Corolla FX16. They can't be fixed with the product template, because applying a template REPLACES the selection and would wipe the Cx ink token their men's product carries (black on Shift Pattern, two-channel on the others); 4067 has to be added by hand from the All products grid, then re-inked.",
-  "_curation": "Colourways are Ian's call, design by design, made against rendered contact sheets rather than colour names. `appearanceIds` is the allowlist; anything not listed is off the shelf. Where a design wants a colour the blank does not carry (yellow, orange, brown, royal blue, bright green on Bella 175), that garment colour has to be enabled in the Partner Area first — the shop currently exposes only white, black, navy, red, olive, slate and heather gray on that blank. See _wanted.",
-  "_wanted": {
-    "note": "Garment colours Ian asked for that the Bella 175 blank does not currently offer in this shop. Each needs enabling in the Partner Area per design before it can be allowlisted here.",
-    "yellow": [
-      "Datsun 510",
-      "S Generations",
-      "Toyota TEQ Logo",
-      "Toyota Tosco Logo",
-      "Save the Stick - Shifter",
-      "Toyota Corolla KE70",
-      "Toyota Corolla Levin"
-    ],
-    "orange": [
-      "S Generations",
-      "Miata is always the answer",
-      "Save the Stick - Shifter"
-    ],
-    "brown": [
-      "Toyota Corolla KE70",
-      "Toyota Corolla Levin"
-    ],
-    "royal blue": [
-      "Miata is always the answer"
-    ],
-    "bright green": [
-      "Datsun 510"
-    ]
-  }
+  "_curation": "Colourways are Ian's call design by design, made against rendered contact sheets. `appearanceIds` on a byDesign entry is the allowlist of garment colours that survive; anything not listed is off the shelf. All ids are real Bella colours except Honey Bee's, which are the Premium blank's sun yellow."
 }
