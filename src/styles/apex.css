@@ -1,9 +1,9 @@
 /* =========================================================
    Apex — OIO Racing design system
 
-   Authority is oio-apex/packages/tokens/tokens.json. Values here are copied,
-   never re-derived; nothing downstream should invent a colour, type step or
-   spacing value.
+   GENERATED FILE — do not edit by hand.
+   Source: oio-apex/packages/tokens/tokens.json
+   Regenerate: npm run tokens:sync    Verify: npm run tokens:check
 
    Exposed twice on purpose: as `--apex-*` custom properties for hand-written
    component CSS, and through Tailwind's `@theme` so utility classes

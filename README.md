@@ -155,6 +155,24 @@ Area cannot reshuffle the storefront.
 Checkout hands off to Spreadshop via `<slug>-A<ideaId>` deep links; any slug
 resolves and redirects to the canonical one.
 
+## Brand tokens
+
+`src/styles/apex.css` is **generated** from the Apex brand tokens that live in
+the sibling repo [`spacecowboyian/oio-apex`](https://github.com/spacecowboyian/oio-apex)
+(`packages/tokens/tokens.json`) — the single authority for OIO colour, type
+scale and shape. Do not hand-edit the CSS; change the token upstream and
+regenerate:
+
+```bash
+npm run tokens:sync    # rewrite src/styles/apex.css from oio-apex
+npm run tokens:check   # exit 1 if it has drifted from upstream
+```
+
+The sync expects `oio-apex` cloned beside this repo; set `OIO_APEX` to point
+elsewhere. The generated CSS is committed on purpose — the Pages deploy builds
+from a checkout of this repo alone and never sees oio-apex, so only the sync
+needs the tokens repo, not the build.
+
 ## Deployment
 
 ### Vercel (Recommended)
