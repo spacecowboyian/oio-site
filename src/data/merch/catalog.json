@@ -1,6 +1,6 @@
 {
   "shopId": "477761",
-  "syncedAt": "2026-08-19T04:57:02.106Z",
+  "syncedAt": "2026-08-19T05:09:08.959Z",
   "hasDetails": true,
   "groupOrder": [
     "Tees",
@@ -7343,6 +7343,97 @@
       }
     },
     {
+      "id": "5d89f19b162c5f464e875bc1-812",
+      "ideaId": "5d89f19b162c5f464e875bc1",
+      "designName": "Datsun Honey Bee",
+      "collection": "Datsun & Friends",
+      "featured": true,
+      "blurb": "",
+      "label": "Men's Tee",
+      "category": "Tees",
+      "family": null,
+      "version": null,
+      "primary": true,
+      "productType": "Men's Premium T-Shirt",
+      "productTypeId": "812",
+      "brand": "SPREAD",
+      "group": "Tees",
+      "price": 24.99,
+      "print": "000000",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=1275.jpg",
+      "appearanceIds": [
+        "1275"
+      ],
+      "defaultAppearanceId": "1275",
+      "sellableId": "N0Qw57VA9XcVmand5r0p-812-7",
+      "images": [
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/1,width=650,height=650,appearanceId=1275.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/1,width=650,height=650,appearanceId=1275.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/2,width=650,height=650,appearanceId=1275.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/3,width=650,height=650,appearanceId=1275.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/4,width=650,height=650,appearanceId=1275.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/12,width=650,height=650,appearanceId=1275.jpg"
+      ],
+      "sizesByAppearance": {
+        "1275": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94",
+          "102"
+        ]
+      }
+    },
+    {
+      "id": "5d89f19b162c5f464e875bc1-813",
+      "ideaId": "5d89f19b162c5f464e875bc1",
+      "designName": "Datsun Honey Bee",
+      "collection": "Datsun & Friends",
+      "featured": true,
+      "blurb": "",
+      "label": "Women's Tee",
+      "category": "Tees",
+      "family": null,
+      "version": null,
+      "primary": false,
+      "productType": "Women's Premium T-Shirt",
+      "productTypeId": "813",
+      "brand": "SPREAD",
+      "group": "Tees",
+      "price": 24.99,
+      "print": "000000",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T813A1250PA4249PT17X42Y48D12753733W19482H20884Cx000000/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=1275.jpg",
+      "appearanceIds": [
+        "1275"
+      ],
+      "defaultAppearanceId": "1275",
+      "sellableId": "N0Qw57VA9XcVmand5r0p-813-8",
+      "images": [
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T813A1250PA4249PT17X42Y48D12753733W19482H20884Cx000000/views/1,width=650,height=650,appearanceId=1275.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T813A1250PA4249PT17X42Y48D12753733W19482H20884Cx000000/views/1,width=650,height=650,appearanceId=1275.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T813A1250PA4249PT17X42Y48D12753733W19482H20884Cx000000/views/2,width=650,height=650,appearanceId=1275.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T813A1250PA4249PT17X42Y48D12753733W19482H20884Cx000000/views/3,width=650,height=650,appearanceId=1275.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T813A1250PA4249PT17X42Y48D12753733W19482H20884Cx000000/views/4,width=650,height=650,appearanceId=1275.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T813A1250PA4249PT17X42Y48D12753733W19482H20884Cx000000/views/12,width=650,height=650,appearanceId=1275.jpg"
+      ],
+      "sizesByAppearance": {
+        "1275": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38",
+          "94"
+        ]
+      }
+    },
+    {
       "id": "5d89f20e20517626422245b4-175",
       "ideaId": "5d89f20e20517626422245b4",
       "designName": "Toyota Corolla Levin",
@@ -8952,6 +9043,64 @@
       "groupLead": false
     },
     {
+      "ideaId": "5d89f19b162c5f464e875bc1",
+      "sourceName": "Datsun Honey Bee",
+      "sourceDescription": "",
+      "tags": [
+        "bee",
+        "honey",
+        "beer tent"
+      ],
+      "mainDesignId": "12753733",
+      "catalogSize": 3,
+      "hero": {
+        "sellableId": "N0Qw57VA9XcVmand5r0p-812-7",
+        "productTypeId": "812",
+        "productType": "Men's Premium T-Shirt",
+        "group": "Tees",
+        "print": "000000",
+        "price": 24.99,
+        "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A1247PA4267PT17X56Y45D12753733W23321H25000Cx000000/views/1,width=500,height=500,appearanceId=1247.jpg",
+        "appearanceIds": [
+          "388",
+          "648",
+          "812",
+          "823",
+          "1247",
+          "1251",
+          "1252",
+          "1254",
+          "1256",
+          "1264",
+          "1265",
+          "1269",
+          "1270",
+          "1271",
+          "1272",
+          "1274",
+          "1275",
+          "1277",
+          "92",
+          "231",
+          "317",
+          "328",
+          "366",
+          "1",
+          "2",
+          "39"
+        ],
+        "defaultAppearanceId": "1247"
+      },
+      "name": "Datsun Honey Bee",
+      "blurb": "",
+      "collection": "Datsun & Friends",
+      "published": true,
+      "featured": true,
+      "group": null,
+      "version": null,
+      "groupLead": false
+    },
+    {
       "ideaId": "5d89f20e20517626422245b4",
       "sourceName": "Toyota Corolla Levin",
       "sourceDescription": "",
@@ -9396,39 +9545,6 @@
       "group": "S Generations",
       "version": "Clean",
       "groupLead": true
-    },
-    {
-      "ideaId": "5d89f19b162c5f464e875bc1",
-      "sourceName": "Datsun Honey Bee",
-      "sourceDescription": "",
-      "tags": [
-        "bee",
-        "honey",
-        "beer tent"
-      ],
-      "mainDesignId": "12753733",
-      "catalogSize": 1,
-      "hero": {
-        "sellableId": "N0Qw57VA9XcVmand5r0p-691-7",
-        "productTypeId": "691",
-        "productType": "Unisex Tri-Blend T-Shirt",
-        "group": "Tees",
-        "print": "EAE44B",
-        "price": 28.49,
-        "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T691A228PA3867PT17X46Y38D12753733W21335H22871CxEAE44B/views/1,width=500,height=500,appearanceId=228.jpg",
-        "appearanceIds": [
-          "228"
-        ],
-        "defaultAppearanceId": "228"
-      },
-      "name": "Datsun Honey Bee",
-      "blurb": "",
-      "collection": "Datsun & Friends",
-      "published": true,
-      "featured": true,
-      "group": null,
-      "version": null,
-      "groupLead": false
     },
     {
       "ideaId": "5d89f1f71cbf3a25d5a8e5c1",
