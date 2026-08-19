@@ -1,6 +1,6 @@
 {
   "shopId": "477761",
-  "syncedAt": "2026-08-19T05:25:08.449Z",
+  "syncedAt": "2026-08-19T13:56:09.492Z",
   "hasDetails": true,
   "groupOrder": [
     "Tees",
@@ -367,10 +367,6 @@
         "154": {
           "name": "slate",
           "color": "#949299"
-        },
-        "231": {
-          "name": "heather gray",
-          "color": "#CBCBCB"
         }
       }
     },
@@ -1160,18 +1156,6 @@
           "name": "black",
           "color": "#000000"
         },
-        "4": {
-          "name": "navy",
-          "color": "#00224C"
-        },
-        "17": {
-          "name": "royal blue",
-          "color": "#3450B5"
-        },
-        "164": {
-          "name": "deep heather",
-          "color": "#5A5A5A"
-        },
         "231": {
           "name": "heather gray",
           "color": "#CBCBCB"
@@ -1179,10 +1163,6 @@
         "345": {
           "name": "red",
           "color": "#B70111"
-        },
-        "590": {
-          "name": "mauve",
-          "color": "#EAC5C7"
         }
       }
     },
@@ -2503,41 +2483,6 @@
         }
       }
     },
-    "1358": {
-      "id": "1358",
-      "name": "Gildan Ultra Cotton Ladies T-Shirt",
-      "category": "Gildan Ultra Cotton Ladies T-Shirt",
-      "brand": "Gildan",
-      "sizes": {
-        "2": "S",
-        "3": "M",
-        "4": "L",
-        "5": "XL",
-        "6": "2XL"
-      },
-      "appearances": {
-        "1": {
-          "name": "white",
-          "color": "#FFFFFF"
-        },
-        "17": {
-          "name": "royal blue",
-          "color": "#3450B5"
-        },
-        "164": {
-          "name": "deep heather",
-          "color": "#5A5A5A"
-        },
-        "231": {
-          "name": "heather gray",
-          "color": "#CBCBCB"
-        },
-        "348": {
-          "name": "navy",
-          "color": "#353D56"
-        }
-      }
-    },
     "1359": {
       "id": "1359",
       "name": "Heavyweight Unisex Hoodie by Gildan",
@@ -2857,10 +2802,6 @@
           "name": "white",
           "color": "#FFFFFF"
         },
-        "2": {
-          "name": "black",
-          "color": "#000000"
-        },
         "231": {
           "name": "heather gray",
           "color": "#CBCBCB"
@@ -2868,10 +2809,6 @@
         "370": {
           "name": "royal blue",
           "color": "#3068B4"
-        },
-        "938": {
-          "name": "french navy",
-          "color": "#1F2B3A"
         }
       }
     },
@@ -3048,14 +2985,6 @@
         "2": {
           "name": "black",
           "color": "#000000"
-        },
-        "4": {
-          "name": "navy",
-          "color": "#00224C"
-        },
-        "821": {
-          "name": "red",
-          "color": "#BB3345"
         }
       }
     },
@@ -3075,25 +3004,6 @@
         "37": {
           "name": "silver",
           "color": "#B9B9B9"
-        }
-      }
-    },
-    "1454": {
-      "id": "1454",
-      "name": "Unisex Stars & Stripes T-Shirt",
-      "category": "Stars & Stripes T-Shirt",
-      "brand": "Live & Tell by L.A.T.",
-      "sizes": {
-        "2": "S",
-        "3": "M",
-        "4": "L",
-        "5": "XL",
-        "6": "2XL"
-      },
-      "appearances": {
-        "1": {
-          "name": "white",
-          "color": "#FFFFFF"
         }
       }
     },
@@ -3513,10 +3423,6 @@
         "38": "3XL"
       },
       "appearances": {
-        "2": {
-          "name": "black",
-          "color": "#000000"
-        },
         "231": {
           "name": "heather gray",
           "color": "#CBCBCB"
@@ -3576,22 +3482,6 @@
         "38": "3XL"
       },
       "appearances": {
-        "741": {
-          "name": "burgundy",
-          "color": "#761F32"
-        },
-        "742": {
-          "name": "anthracite",
-          "color": "#5F5F5F"
-        },
-        "938": {
-          "name": "french navy",
-          "color": "#1F2B3A"
-        },
-        "947": {
-          "name": "natural raw",
-          "color": "#EFE9D7"
-        },
         "1035": {
           "name": "latte",
           "color": "#D2AD83"
@@ -3936,10 +3826,6 @@
         "196": {
           "name": "red",
           "color": "#D41C28"
-        },
-        "876": {
-          "name": "Natural",
-          "color": "#EEE9DA"
         }
       }
     },
@@ -4065,25 +3951,6 @@
         }
       }
     },
-    "2428": {
-      "id": "2428",
-      "name": "Large Crossbody Hip Bag ",
-      "category": "",
-      "brand": "Port Authority",
-      "sizes": {
-        "29": "One Size"
-      },
-      "appearances": {
-        "580": {
-          "name": "blue",
-          "color": "#165185"
-        },
-        "638": {
-          "name": "charcoal gray",
-          "color": "#444849"
-        }
-      }
-    },
     "2432": {
       "id": "2432",
       "name": "Women's Hi-Lo Tee",
@@ -4163,17 +4030,9 @@
           "name": "white",
           "color": "#FFFFFF"
         },
-        "938": {
-          "name": "french navy",
-          "color": "#1F2B3A"
-        },
         "947": {
           "name": "natural raw",
           "color": "#EFE9D7"
-        },
-        "1476": {
-          "name": "cool heather grey",
-          "color": "#EDEDED"
         }
       }
     },
@@ -4536,37 +4395,6 @@
         }
       }
     },
-    "2916": {
-      "id": "2916",
-      "name": "Stanley/Stella Serena Women’s Relaxed Organic T-Shirt",
-      "category": "",
-      "brand": "Stanley Stella",
-      "sizes": {
-        "2": "S",
-        "3": "M",
-        "4": "L",
-        "5": "XL",
-        "6": "2XL"
-      },
-      "appearances": {
-        "2": {
-          "name": "black",
-          "color": "#000000"
-        },
-        "938": {
-          "name": "french navy",
-          "color": "#1F2B3A"
-        },
-        "988": {
-          "name": "pale pink",
-          "color": "#F4CED4"
-        },
-        "1480": {
-          "name": "blue soul",
-          "color": "#A9C6E1"
-        }
-      }
-    },
     "2917": {
       "id": "2917",
       "name": "Washed Women´s Muscle Tank Top",
@@ -4872,33 +4700,6 @@
         "1240": {
           "name": "light gray",
           "color": "#BFC4C8"
-        }
-      }
-    },
-    "3026": {
-      "id": "3026",
-      "name": "Unisex Adult Star Printed T-Shirt",
-      "category": "",
-      "brand": "Code V",
-      "sizes": {
-        "2": "S",
-        "3": "M",
-        "4": "L",
-        "5": "XL",
-        "6": "2XL"
-      },
-      "appearances": {
-        "1242": {
-          "name": "charcoal star ",
-          "color": "#3B3B3B"
-        },
-        "1244": {
-          "name": "red star",
-          "color": "#CF3244"
-        },
-        "1245": {
-          "name": "royal star",
-          "color": "#2F3D71"
         }
       }
     },
@@ -6792,6 +6593,72 @@
       }
     },
     {
+      "id": "68a55cb63f6bcc7d6db21930-175",
+      "ideaId": "68a55cb63f6bcc7d6db21930",
+      "designName": "I Void Car Warranties",
+      "collection": "Garage Gospel",
+      "featured": false,
+      "blurb": "Don't we all? Even a simple wheel change can get your warranty swiped out from under you these days. Mostly the reason why I will never buy another new car... but I digress.",
+      "label": "Unisex Tee",
+      "category": "Tees",
+      "family": null,
+      "version": null,
+      "primary": true,
+      "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
+      "productTypeId": "175",
+      "brand": "Bella + Canvas",
+      "group": "Tees",
+      "price": 24,
+      "print": null,
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+      "appearanceIds": [
+        "36",
+        "2",
+        "5",
+        "4"
+      ],
+      "defaultAppearanceId": "2",
+      "sellableId": "YDEAYglXZ4s9Q7NBkelV-175-7",
+      "images": [
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/1,width=650,height=650,appearanceId=36/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/1,width=650,height=650,appearanceId=36/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/2,width=650,height=650,appearanceId=36/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/3,width=650,height=650,appearanceId=36/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/4,width=650,height=650,appearanceId=36/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg"
+      ],
+      "sizesByAppearance": {
+        "2": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38"
+        ],
+        "4": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "38"
+        ],
+        "5": [
+          "2",
+          "4",
+          "5",
+          "6",
+          "38"
+        ],
+        "36": [
+          "2",
+          "3",
+          "4",
+          "6"
+        ]
+      }
+    },
+    {
       "id": "5d89f1ce162c5f464e8776be-175",
       "ideaId": "5d89f1ce162c5f464e8776be",
       "designName": "Volvo Brick Driver",
@@ -7046,72 +6913,6 @@
       }
     },
     {
-      "id": "68a55cb63f6bcc7d6db21930-175",
-      "ideaId": "68a55cb63f6bcc7d6db21930",
-      "designName": "I Void Car Warranties",
-      "collection": "Garage Gospel",
-      "featured": false,
-      "blurb": "Don't we all? Even a simple wheel change can get your warranty swiped out from under you these days. Mostly the reason why I will never buy another new car... but I digress.",
-      "label": "Unisex Tee",
-      "category": "Tees",
-      "family": null,
-      "version": null,
-      "primary": true,
-      "productType": "Unisex Jersey T-Shirt by Bella + Canvas",
-      "productTypeId": "175",
-      "brand": "Bella + Canvas",
-      "group": "Tees",
-      "price": 24,
-      "print": null,
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-      "appearanceIds": [
-        "36",
-        "2",
-        "5",
-        "4"
-      ],
-      "defaultAppearanceId": "2",
-      "sellableId": "YDEAYglXZ4s9Q7NBkelV-175-7",
-      "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/1,width=650,height=650,appearanceId=36/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/1,width=650,height=650,appearanceId=36/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/2,width=650,height=650,appearanceId=36/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/3,width=650,height=650,appearanceId=36/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X8Y71D12672949W27042H6665/views/4,width=650,height=650,appearanceId=36/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg"
-      ],
-      "sizesByAppearance": {
-        "2": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "4": [
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "5": [
-          "2",
-          "4",
-          "5",
-          "6",
-          "38"
-        ],
-        "36": [
-          "2",
-          "3",
-          "4",
-          "6"
-        ]
-      }
-    },
-    {
       "id": "5d89f1cd205176264222294a-175",
       "ideaId": "5d89f1cd205176264222294a",
       "designName": "Toyota Tosco Logo",
@@ -7237,23 +7038,23 @@
       "group": "Tees",
       "price": 24,
       "print": "FFFFFF",
-      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X43Y38D1000566431W19999H19999CxFFFFFF/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=1/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+      "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X43Y38D1000566431W19999H19999CxFFFFFF/views/1,width=500,height=500,backgroundColor=09090b,appearanceId=2/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
       "appearanceIds": [
-        "1",
         "36",
+        "2",
         "5"
       ],
-      "defaultAppearanceId": "1",
+      "defaultAppearanceId": "2",
       "sellableId": "jwenrD12z7TV9G2M09ny-175-7",
       "images": [
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X43Y38D1000566431W19999H19999CxFFFFFF/views/1,width=650,height=650,appearanceId=1/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A2PA4927PT17X43Y38D1000566431W19999H19999CxFFFFFF/views/1,width=650,height=650,appearanceId=1/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X43Y38D1000566431W19999H19999CxFFFFFF/views/2,width=650,height=650,appearanceId=1/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X43Y38D1000566431W19999H19999CxFFFFFF/views/3,width=650,height=650,appearanceId=1/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
-        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X43Y38D1000566431W19999H19999CxFFFFFF/views/4,width=650,height=650,appearanceId=1/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg"
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X43Y38D1000566431W19999H19999CxFFFFFF/views/1,width=650,height=650,appearanceId=36/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A2PA4927PT17X43Y38D1000566431W19999H19999CxFFFFFF/views/1,width=650,height=650,appearanceId=36/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X43Y38D1000566431W19999H19999CxFFFFFF/views/2,width=650,height=650,appearanceId=36/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X43Y38D1000566431W19999H19999CxFFFFFF/views/3,width=650,height=650,appearanceId=36/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+        "https://image.spreadshirtmedia.com/image-server/v1/products/T175A2PA4927PT17X43Y38D1000566431W19999H19999CxFFFFFF/views/4,width=650,height=650,appearanceId=36/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg"
       ],
       "sizesByAppearance": {
-        "1": [
+        "2": [
           "2",
           "3",
           "4",
@@ -8287,7 +8088,7 @@
         "cressida"
       ],
       "mainDesignId": "12485372",
-      "catalogSize": 177,
+      "catalogSize": 172,
       "hero": {
         "sellableId": "AbdBMvrQ8rsD4mL55mzN-2940-7",
         "productTypeId": "2940",
@@ -8331,7 +8132,7 @@
         "6 speed"
       ],
       "mainDesignId": "12575548",
-      "catalogSize": 121,
+      "catalogSize": 117,
       "hero": {
         "sellableId": "dYdZMoqqVQIDJL0kvG3j-2940-7",
         "productTypeId": "2940",
@@ -8373,7 +8174,7 @@
         "mazda"
       ],
       "mainDesignId": "12503467",
-      "catalogSize": 121,
+      "catalogSize": 117,
       "hero": {
         "sellableId": "XNMe1gk379C513ZgmlA8-2940-7",
         "productTypeId": "2940",
@@ -8413,7 +8214,7 @@
         "bluebird"
       ],
       "mainDesignId": "12609557",
-      "catalogSize": 120,
+      "catalogSize": 116,
       "hero": {
         "sellableId": "bBYp4Dq1ozu53rLZq2O1-2940-7",
         "productTypeId": "2940",
@@ -8455,7 +8256,7 @@
         "mazda"
       ],
       "mainDesignId": "1000026474",
-      "catalogSize": 120,
+      "catalogSize": 116,
       "hero": {
         "sellableId": "DqOk3mQJnYfN5vlOqZB8-2940-7",
         "productTypeId": "2940",
@@ -8483,6 +8284,49 @@
       "groupLead": false
     },
     {
+      "ideaId": "68a55cb63f6bcc7d6db21930",
+      "sourceName": "I Void Car Warranties",
+      "sourceDescription": "Don't we all? Even a simple wheel change can get your warranty swiped out from under you these days. Mostly the reason why I will never buy another new car... but I digress.",
+      "tags": [
+        "driving",
+        "racing",
+        "car",
+        "drifting",
+        "surfing",
+        "turbo",
+        "autos",
+        "boost",
+        "modifying"
+      ],
+      "mainDesignId": "12672949",
+      "catalogSize": 116,
+      "hero": {
+        "sellableId": "YDEAYglXZ4s9Q7NBkelV-2940-7",
+        "productTypeId": "2940",
+        "productType": "Unisex Premium Oversized Organic T-Shirt",
+        "group": "Tees",
+        "print": null,
+        "price": 21.99,
+        "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T2940A1257PA5029PT17X60Y120D12672949W27042H6665/views/1,width=500,height=500,appearanceId=1257/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
+        "appearanceIds": [
+          "1251",
+          "1256",
+          "1257",
+          "1258",
+          "1269"
+        ],
+        "defaultAppearanceId": "1257"
+      },
+      "name": "I Void Car Warranties",
+      "blurb": "Don't we all? Even a simple wheel change can get your warranty swiped out from under you these days. Mostly the reason why I will never buy another new car... but I digress.",
+      "collection": "Garage Gospel",
+      "published": true,
+      "featured": false,
+      "group": null,
+      "version": null,
+      "groupLead": false
+    },
+    {
       "ideaId": "5d89f1ce162c5f464e8776be",
       "sourceName": "Volvo Brick Driver",
       "sourceDescription": "So sayeth Hewy Lewis and so it shall be.. It's hip to be square. Volvo drivers have known this for years and now they can show their brick driving pride.",
@@ -8492,7 +8336,7 @@
         "brick"
       ],
       "mainDesignId": "104998024",
-      "catalogSize": 120,
+      "catalogSize": 116,
       "hero": {
         "sellableId": "bBYp4BavB7Uemo7Gy05o-2940-7",
         "productTypeId": "2940",
@@ -8529,7 +8373,7 @@
         "Sir"
       ],
       "mainDesignId": "1009866229",
-      "catalogSize": 120,
+      "catalogSize": 116,
       "hero": {
         "sellableId": "vrd2mgp5bLu2y94vQMB3-2940-7",
         "productTypeId": "2940",
@@ -8573,7 +8417,7 @@
         "tank"
       ],
       "mainDesignId": "103632851",
-      "catalogSize": 120,
+      "catalogSize": 116,
       "hero": {
         "sellableId": "ZbJ9kNG7RQCX1L8RM8YY-2940-7",
         "productTypeId": "2940",
@@ -8618,7 +8462,7 @@
         "petrolhead"
       ],
       "mainDesignId": "12473483",
-      "catalogSize": 120,
+      "catalogSize": 116,
       "hero": {
         "sellableId": "92qGnkaA8as1qR0Q3wJ9-2940-7",
         "productTypeId": "2940",
@@ -8658,7 +8502,7 @@
         "ae86"
       ],
       "mainDesignId": "12614318",
-      "catalogSize": 120,
+      "catalogSize": 116,
       "hero": {
         "sellableId": "ZbJ9kNGxE1t9Rxy57l1Q-2940-7",
         "productTypeId": "2940",
@@ -8679,49 +8523,6 @@
       "name": "AE86 Corolla Coupe",
       "blurb": "The unsung hero of the 80s, the AE86 chassis Corolla GT-S Trueno/Levin is a true classic. Its light weight and rear wheel drive have made it great for road racing, autocross, rally and drifting.",
       "collection": "Fleet",
-      "published": true,
-      "featured": false,
-      "group": null,
-      "version": null,
-      "groupLead": false
-    },
-    {
-      "ideaId": "68a55cb63f6bcc7d6db21930",
-      "sourceName": "I Void Car Warranties",
-      "sourceDescription": "Don't we all? Even a simple wheel change can get your warranty swiped out from under you these days. Mostly the reason why I will never buy another new car... but I digress.",
-      "tags": [
-        "driving",
-        "racing",
-        "car",
-        "drifting",
-        "surfing",
-        "turbo",
-        "autos",
-        "boost",
-        "modifying"
-      ],
-      "mainDesignId": "12672949",
-      "catalogSize": 119,
-      "hero": {
-        "sellableId": "YDEAYglXZ4s9Q7NBkelV-2940-7",
-        "productTypeId": "2940",
-        "productType": "Unisex Premium Oversized Organic T-Shirt",
-        "group": "Tees",
-        "print": null,
-        "price": 21.99,
-        "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T2940A1257PA5029PT17X60Y120D12672949W27042H6665/views/1,width=500,height=500,appearanceId=1257/dont-we-all-even-a-simple-wheel-change-can-get-your-warranty-swiped-out-from-under-you-these-days-mostly-the-reason-why-i-will-never-buy-another-ne.jpg",
-        "appearanceIds": [
-          "1251",
-          "1256",
-          "1257",
-          "1258",
-          "1269"
-        ],
-        "defaultAppearanceId": "1257"
-      },
-      "name": "I Void Car Warranties",
-      "blurb": "Don't we all? Even a simple wheel change can get your warranty swiped out from under you these days. Mostly the reason why I will never buy another new car... but I digress.",
-      "collection": "Garage Gospel",
       "published": true,
       "featured": false,
       "group": null,
@@ -8950,7 +8751,7 @@
         "group": "Tees",
         "print": "FFFFFF",
         "price": 24,
-        "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A823PA4267PT17X53Y10D1000566431W23900H23900CxFFFFFF/views/1,width=500,height=500,appearanceId=823/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
+        "image": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A2PA4267PT17X53Y10D1000566431W23900H23900CxFFFFFF/views/1,width=500,height=500,appearanceId=2/before-the-manual-transmission-goes-the-way-of-the-dodo-show-your-support-for-real-driving.jpg",
         "appearanceIds": [
           "648",
           "823",
@@ -8970,7 +8771,7 @@
           "1277",
           "2"
         ],
-        "defaultAppearanceId": "823"
+        "defaultAppearanceId": "2"
       },
       "name": "Save the Stick - Shifter",
       "blurb": "Before the manual transmission goes the way of the dodo.. show your support for real driving.",

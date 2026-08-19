@@ -204,16 +204,14 @@
       ]
     },
     "5d89f19c6bbdbb2e6a5b1ea8": {
-      "_why": "Save the Stick - Shifter — stays off black, per Ian. Yellow and orange are wanted and are not yet enabled on the Bella blank.",
+      "_why": "Save the Stick - Shifter — the logo prints WHITE (the earlier 'single black ink' note was wrong; the render is unambiguous). Its Bella sellable offers only olive, black and red, and white ink reads on all three. Default is black to match the rest of the Save the Stick family. The old default pinned appearance 1 (white) — a colour the sellable does not even carry — so the card was rendering a blank white shirt, which is the bug Ian flagged.",
       "swap": {
         "Unisex Tee": {
-          "appearanceId": "1"
+          "appearanceId": "2"
         }
       },
       "appearanceIds": [
-        "154",
-        "231",
-        "1",
+        "2",
         "36",
         "5"
       ]
