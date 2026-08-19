@@ -115,10 +115,10 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
 >
   <header class="merch-head">
     <!-- Two-tier headline: white setup, solid accent punchline. -->
-    <h1>Wear your<br /><span>Scripture</span></h1>
+    <h1>Wear the<br /><span>Scripture</span></h1>
     <p>
-      Build, race, break, repeat. Printed on demand and shipped by Spreadshop, so
-      nothing is just taking up space in the shop. Well. Nothing that isn't a car.
+      High-quality shirts, printed on demand. Nothing's taking up space in the
+      shop that isn't a battered old Toyota.
     </p>
   </header>
 
@@ -146,7 +146,6 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
       }
     </div>
     <div class="rail">
-      <span class="rail__label">Design</span>
       <button class="chip" data-filter="collection" data-value="All" aria-pressed="true" type="button">
         All<span class="chip__count">{shelf.filter((p) => p.category === landing).length}</span>
       </button>
@@ -204,6 +203,17 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
 <script>
   const SHOP_URL = "https://oioracing.myspreadshop.com";
   const products = JSON.parse(document.getElementById("merch-data").textContent);
+
+  // The site nav is sticky; the filter bar sticks directly beneath it. Measure
+  // the nav's real height into --header-h so the two butt together at every
+  // breakpoint instead of leaving the fixed-rem gap they had before.
+  const nav = document.querySelector("nav");
+  if (nav) {
+    const setHeaderH = () =>
+      document.documentElement.style.setProperty("--header-h", `${nav.offsetHeight}px`);
+    setHeaderH();
+    addEventListener("resize", setHeaderH);
+  }
 
   const money = (n) => `$${n.toFixed(2)}`;
 
@@ -705,7 +715,10 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
 
   .merch-filters {
     position: sticky;
-    top: 4.25rem;
+    /* Butt against the bottom of the sticky site nav. Its height is measured at
+       runtime into --header-h (see script) because the nav's height shifts with
+       the breakpoint; a fixed rem left a gap under it. */
+    top: var(--header-h, 4rem);
     z-index: 10;
     display: flex;
     flex-direction: column;
