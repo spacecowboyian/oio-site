@@ -10,7 +10,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "sync:merch": "node scripts/sync-catalog.mjs --details"
+    "sync:merch": "node scripts/sync-catalog.mjs --details",
+    "tokens:sync": "node scripts/sync-apex-tokens.mjs",
+    "tokens:check": "node scripts/sync-apex-tokens.mjs --check"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",

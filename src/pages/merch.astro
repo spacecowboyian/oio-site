@@ -676,7 +676,6 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
      content box fits four tracks with the gutters and leaves no orphan column
      the way a 1440px viewport did. */
   .merch-head,
-  .merch-filters,
   #sections > section,
   .state,
   .merch-foot {
@@ -707,7 +706,12 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     position: absolute;
     inset: 0;
     z-index: -2;
-    background: var(--hero-img) center 42% / cover no-repeat;
+    /* Separate properties rather than the shorthand — a url() inside a custom
+       property can trip the background shorthand in some engines. */
+    background-image: var(--hero-img);
+    background-position: center 42%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .merch-head::after {
@@ -767,10 +771,15 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     border-bottom: 1px solid var(--apex-steel-dark);
   }
 
+  /* The chip rail scrolls full-bleed: the bar itself spans edge to edge and the
+     gutter lives here as inline padding, so the first chip lines up with the
+     hero text and section headings while the rest scroll all the way to the
+     screen edge instead of being clipped inside a centred, padded box. */
   .rail {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    padding-inline: max(1.5rem, (100% - 80rem) / 2);
     overflow-x: auto;
     scrollbar-width: none;
   }
