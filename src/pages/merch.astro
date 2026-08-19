@@ -113,7 +113,7 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
   title="Merch - OIO Racing"
   description="OIO Racing merch. Printed on demand and shipped by Spreadshop."
 >
-  <header class="merch-head">
+  <header class="merch-head" style={`--hero-img: url("${import.meta.env.BASE_URL}hero-mgb.jpg")`}>
     <!-- Two-tier headline: white setup, solid accent punchline. -->
     <h1>Wear the<br /><span>Scripture</span></h1>
     <p>
@@ -683,11 +683,47 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     padding-inline: max(1.5rem, (100% - 80rem) / 2);
   }
 
+  /* Hero now sits over a full-bleed action shot — the MGB throwing gravel on
+     the rallycross course. Text is bottom-left over a scrim dark enough to
+     hold white type without hiding the car. The image URL carries the site's
+     base path (set as --hero-img in the markup) so it resolves under both the
+     preview and production bases. */
   .merch-head {
-    padding-block: 4rem 3rem;
-    /* No side rules here — Ian's call. The hero opens straight onto the black
-       ground; only the bottom edge is drawn, to hand off to the filter bar. */
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: clamp(360px, 54vh, 540px);
+    padding-block: 3rem 2.5rem;
+    overflow: hidden;
+    /* No side rules here — Ian's call. Only the bottom edge is drawn, to hand
+       off to the filter bar. */
     border-bottom: 1px solid var(--apex-steel-dark);
+  }
+
+  .merch-head::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background: var(--hero-img) center 42% / cover no-repeat;
+  }
+
+  .merch-head::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(
+        0deg,
+        rgb(9 9 11 / 0.94) 0%,
+        rgb(9 9 11 / 0.55) 26%,
+        rgb(9 9 11 / 0.1) 56%,
+        rgb(9 9 11 / 0.28) 100%
+      ),
+      linear-gradient(90deg, rgb(9 9 11 / 0.55) 0%, rgb(9 9 11 / 0.12) 46%, transparent 72%);
   }
 
   /* Clamped between two named steps, never between invented values. Tracking is
