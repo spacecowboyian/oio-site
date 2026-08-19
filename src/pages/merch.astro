@@ -320,8 +320,16 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
   // scrim/outside click handler below can dismiss it without each openDrawer
   // call stacking its own listener on the drawer element.
   let openDD = null;
+  // The full-screen takeover reads as its own page, so it gets a history entry:
+  // the phone Back gesture (and the desktop back button) closes it instead of
+  // leaving the shop. True while our pushed entry is live.
+  let drawerPushed = false;
 
   function openDrawer(product) {
+    // A fresh open from the shelf pushes history; re-rendering for a cut or
+    // version switch (drawer already visible) reuses the same entry, so Back
+    // always takes one press to leave regardless of how many cuts were tried.
+    const freshOpen = drawer.hidden;
     // Every cut of this design, including the one being shown. A design is the
     // unit the customer chose off the shelf; the cut is a choice made inside it,
     // so this drives a Product row up with colour and size rather than an
@@ -387,6 +395,10 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
       </div>`;
     drawer.hidden = false;
     document.body.style.overflow = "hidden";
+    if (freshOpen) {
+      history.pushState({ merchDrawer: true }, "");
+      drawerPushed = true;
+    }
 
     const $ = (id) => drawer.querySelector(`#${id}`);
 
@@ -538,15 +550,71 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     }
 
     paint();
-    drawer.querySelector(".drawer__close").addEventListener("click", closeDrawer);
+    drawer.querySelector(".drawer__close").addEventListener("click", dismissDrawer);
+
+    // Slide the takeover up from the bottom on a fresh open (mobile only, via
+    // CSS). Gated to fresh opens so switching cut or version doesn't re-slide
+    // the panel that's already on screen.
+    if (freshOpen) {
+      drawer.classList.add("is-opening");
+      const panel = drawer.querySelector(".drawer__panel");
+      panel.addEventListener(
+        "animationend",
+        () => drawer.classList.remove("is-opening"),
+        { once: true }
+      );
+    }
   }
 
-  function closeDrawer() {
-    drawer.hidden = true;
-    drawer.innerHTML = "";
-    document.body.style.overflow = "";
+  const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  const isPhone = matchMedia("(max-width: 40rem)");
+
+  // Tears down the DOM only. Never touches history — the popstate handler and
+  // dismissDrawer own that, so this can't recurse. On a phone it plays the
+  // slide-out first, then removes the panel once the animation ends.
+  function teardownDrawer() {
     openDD = null;
+    document.body.style.overflow = "";
+    const panel = drawer.querySelector(".drawer__panel");
+    const finish = () => {
+      drawer.classList.remove("is-closing");
+      drawer.hidden = true;
+      drawer.innerHTML = "";
+    };
+    if (panel && isPhone.matches && !reduceMotion.matches) {
+      drawer.classList.add("is-closing");
+      let done = false;
+      const once = () => {
+        if (done) return;
+        done = true;
+        finish();
+      };
+      panel.addEventListener("animationend", once, { once: true });
+      // Fallback in case animationend never fires (e.g. tab backgrounded).
+      setTimeout(once, 400);
+    } else {
+      finish();
+    }
   }
+
+  // A user closing the panel (×, scrim, Escape) goes back through history so
+  // our pushed entry is popped and the URL/history stay consistent. popstate
+  // then does the actual teardown, which is the same path the Back button hits.
+  function dismissDrawer() {
+    if (drawerPushed) {
+      drawerPushed = false;
+      history.back();
+    } else {
+      teardownDrawer();
+    }
+  }
+
+  window.addEventListener("popstate", () => {
+    if (!drawer.hidden) {
+      drawerPushed = false;
+      teardownDrawer();
+    }
+  });
 
   sections.addEventListener("click", (e) => {
     const card = e.target.closest(".card");
@@ -560,13 +628,13 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
       openDD();
       return;
     }
-    if (e.target === drawer) closeDrawer();
+    if (e.target === drawer) dismissDrawer();
   });
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       if (openDD) openDD();
-      else if (!drawer.hidden) closeDrawer();
+      else if (!drawer.hidden) dismissDrawer();
     }
   });
 </script>
@@ -796,13 +864,18 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
   }
 
   .drawer__close {
-    min-width: 2.75rem;
-    min-height: 2.75rem;
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    min-height: 3rem;
+    margin: -0.5rem -0.5rem -0.5rem auto;
     background: none;
     border: none;
     color: var(--apex-steel-light);
     font-family: var(--apex-font-mono);
+    font-size: 1.75rem;
+    line-height: 1;
     cursor: pointer;
   }
 
@@ -1139,6 +1212,63 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
 
     .drawer__cta {
       flex: 1;
+    }
+  }
+
+  /* Slide the phone takeover up from the bottom, and back down on close. The
+     scrim fades in step with it. Scoped to the phone breakpoint — the desktop
+     dialog stays instant — and skipped entirely under reduced-motion. */
+  @media (max-width: 40rem) and (prefers-reduced-motion: no-preference) {
+    @keyframes drawer-slide-in {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes drawer-slide-out {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(100%);
+      }
+    }
+
+    @keyframes drawer-scrim-in {
+      from {
+        background: rgb(0 0 0 / 0);
+      }
+      to {
+        background: rgb(0 0 0 / 0.8);
+      }
+    }
+
+    @keyframes drawer-scrim-out {
+      from {
+        background: rgb(0 0 0 / 0.8);
+      }
+      to {
+        background: rgb(0 0 0 / 0);
+      }
+    }
+
+    .drawer.is-opening {
+      animation: drawer-scrim-in 0.28s ease;
+    }
+
+    .drawer.is-opening .drawer__panel {
+      animation: drawer-slide-in 0.34s cubic-bezier(0.16, 0.84, 0.44, 1);
+    }
+
+    .drawer.is-closing {
+      animation: drawer-scrim-out 0.26s ease forwards;
+    }
+
+    .drawer.is-closing .drawer__panel {
+      animation: drawer-slide-out 0.26s ease forwards;
     }
   }
 
