@@ -316,6 +316,10 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
   /* ---------- drawer ---------- */
 
   const drawer = document.getElementById("drawer");
+  // The currently-open dropdown's close fn, or null. Module-scoped so the one
+  // scrim/outside click handler below can dismiss it without each openDrawer
+  // call stacking its own listener on the drawer element.
+  let openDD = null;
 
   function openDrawer(product) {
     // Every cut of this design, including the one being shown. A design is the
@@ -345,9 +349,13 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
           <span>${product.collection}</span>
           <button class="drawer__close" aria-label="Close" type="button">&#10005;</button>
         </div>
-        <div class="drawer__body">
+        ${/* Everything above the buy bar scrolls; the bar itself is pinned. On
+            mobile the panel is the whole screen, so the buy button, price and
+            the colour/size pickers stay reachable with a thumb no matter how
+            far down the art the customer has scrolled. */ ""}
+        <div class="drawer__scroll">
           <div class="drawer__stage"><img id="stage-img" alt="${product.designName}" /></div>
-          <div>
+          <div class="drawer__info">
             <h2>${product.designName}</h2>
             ${/* Blank and brand as a plain sentence rather than the corner-label
                 badge — this is the one place that information lives now that
@@ -359,15 +367,21 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
             ${product.blurb ? `<p class="drawer__blurb">${product.blurb}</p>` : ""}
             <div class="field" id="f-version"></div>
             <div class="field" id="f-product"></div>
-            <div class="field" id="f-color"></div>
-            <div class="field" id="f-size"></div>
-            <p class="drawer__price">${money(product.price)}</p>
+            <p class="drawer__note">
+              Your colour carries over. Pick your size on Spreadshop — payment,
+              printing and shipping are handled there.
+            </p>
+          </div>
+        </div>
+        <div class="drawer__actions">
+          <div class="drawer__pickers">
+            <div class="dd" id="f-color"></div>
+            <div class="dd" id="f-size"></div>
+          </div>
+          <div class="drawer__buy">
+            <span class="drawer__price">${money(product.price)}</span>
             <a class="drawer__cta" id="cta" target="_blank"
                rel="noopener">Buy on Spreadshop</a>
-            <p class="drawer__note">
-              Your colour carries over. Pick a size on their page — payment,
-              printing and shipping are handled by Spreadshop.
-            </p>
           </div>
         </div>
       </div>`;
@@ -387,6 +401,53 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
         btn.addEventListener("click", () => onPick(item));
         row.append(btn);
       }
+    }
+
+    // Colour and size are dropdowns rather than swatch/chip rows: they live in
+    // the pinned buy bar, where a row of swatches would either wrap or run off
+    // the edge on a phone. The trigger carries the current choice — for colour
+    // that means the actual swatch, so the picker reads as the thing it sets.
+    // Opens upward because the bar sits at the bottom of the screen.
+    function dropdown(target, { label, swatch, value, items, onPick }) {
+      target.hidden = false;
+      target.innerHTML = `
+        <button class="dd__trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+          ${swatch ? `<span class="dd__swatch" style="background:${swatch}"></span>` : ""}
+          <span class="dd__text"><span class="dd__label">${label}</span><span class="dd__value">${value}</span></span>
+          <span class="dd__caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dd__pop" role="listbox" hidden></div>`;
+      const trigger = target.querySelector(".dd__trigger");
+      const pop = target.querySelector(".dd__pop");
+      for (const it of items) {
+        const opt = document.createElement("button");
+        opt.type = "button";
+        opt.className = "dd__opt" + (it.selected ? " is-sel" : "");
+        opt.setAttribute("role", "option");
+        opt.innerHTML =
+          (it.swatch ? `<span class="dd__swatch" style="background:${it.swatch}"></span>` : "") +
+          `<span>${it.label}</span>`;
+        opt.addEventListener("click", () => {
+          close();
+          onPick(it.value);
+        });
+        pop.append(opt);
+      }
+      function close() {
+        pop.hidden = true;
+        trigger.setAttribute("aria-expanded", "false");
+        openDD = null;
+      }
+      function open() {
+        if (openDD && openDD !== close) openDD();
+        pop.hidden = false;
+        trigger.setAttribute("aria-expanded", "true");
+        openDD = close;
+      }
+      trigger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        pop.hidden ? open() : close();
+      });
     }
 
     function paint() {
@@ -432,47 +493,48 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
       $("stage-img").src = recolor(product.image, state.appearanceId);
       $("cta").href = shopLink(product, state.appearanceId);
 
-      optionRow(
-        $("f-color"),
-        "Color",
-        current?.name ?? "—",
-        product.appearances,
-        (a) => {
-          const b = document.createElement("button");
-          b.className = "swatch";
-          b.style.background = a.color ?? "#333";
-          b.title = a.name;
-          b.setAttribute("aria-label", a.name);
-          b.setAttribute("aria-pressed", String(a.id === state.appearanceId));
-          return b;
-        },
-        (a) => {
-          state.appearanceId = a.id;
-          paint();
-        }
-      );
+      // One colour is not a choice — skip the dropdown entirely rather than
+      // offer a picker with a single locked option.
+      const colorField = $("f-color");
+      if (product.appearances.length > 1) {
+        dropdown(colorField, {
+          label: "Color",
+          swatch: current?.color ?? "#333",
+          value: current?.name ?? "—",
+          items: product.appearances.map((a) => ({
+            label: a.name,
+            swatch: a.color ?? "#333",
+            selected: a.id === state.appearanceId,
+            value: a,
+          })),
+          onPick: (a) => {
+            state.appearanceId = a.id;
+            paint();
+          },
+        });
+      } else {
+        colorField.hidden = true;
+        colorField.innerHTML = "";
+      }
 
       // A size picked under one colour may not exist under the next.
       const sizes = sizesFor(product, state.appearanceId);
       if (!sizes.some((s) => s.id === state.sizeId)) state.sizeId = null;
+      const chosen = sizes.find((s) => s.id === state.sizeId);
 
-      optionRow(
-        $("f-size"),
-        "Sizes in this color",
-        sizes.find((s) => s.id === state.sizeId)?.name ?? `${sizes.length} available`,
-        sizes,
-        (s) => {
-          const b = document.createElement("button");
-          b.className = "opt";
-          b.setAttribute("aria-pressed", String(s.id === state.sizeId));
-          b.textContent = s.name;
-          return b;
-        },
-        (s) => {
+      dropdown($("f-size"), {
+        label: "Size",
+        value: chosen ? chosen.name : `${sizes.length} sizes`,
+        items: sizes.map((s) => ({
+          label: s.name,
+          selected: s.id === state.sizeId,
+          value: s,
+        })),
+        onPick: (s) => {
           state.sizeId = s.id;
           paint();
-        }
-      );
+        },
+      });
     }
 
     paint();
@@ -483,6 +545,7 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     drawer.hidden = true;
     drawer.innerHTML = "";
     document.body.style.overflow = "";
+    openDD = null;
   }
 
   sections.addEventListener("click", (e) => {
@@ -491,11 +554,20 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
   });
 
   drawer.addEventListener("click", (e) => {
+    // An open dropdown eats the first outside click; only past that does a
+    // click on the scrim close the whole panel.
+    if (openDD && !e.target.closest(".dd")) {
+      openDD();
+      return;
+    }
     if (e.target === drawer) closeDrawer();
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !drawer.hidden) closeDrawer();
+    if (e.key === "Escape") {
+      if (openDD) openDD();
+      else if (!drawer.hidden) closeDrawer();
+    }
   });
 </script>
 
@@ -678,14 +750,17 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     color: var(--apex-steel-light);
   }
 
-  /* Centred dialog, not a bottom sheet. It docked to the bottom edge before,
-     which on a tall desktop window left the panel sitting low with a field of
-     scrim above it. Padding keeps it off the viewport edges at every size, so
-     the centring holds instead of the panel growing into the gap. */
+  /* A dialog on desktop, a full-screen takeover on a phone. Three stacked
+     regions in a flex column — header bar, scrolling middle (art + copy +
+     version/cut pickers), and a buy bar pinned to the bottom. The buy bar
+     never scrolls away, so price, colour, size and the button stay under the
+     thumb however far down the art the customer has scrolled. */
   .drawer {
     position: fixed;
     inset: 0;
-    z-index: 30;
+    /* Above the site's sticky nav (z-50). As a full-screen takeover on a phone
+       the drawer has to cover the header, not slide under it. */
+    z-index: 60;
     display: grid;
     place-items: center;
     padding: 1.5rem;
@@ -697,25 +772,21 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
   }
 
   .drawer__panel {
+    display: flex;
+    flex-direction: column;
     width: min(100%, 1100px);
-    /* Bounded by the scrim's own padding rather than a bare vh, so the panel
-       never runs under the viewport edge on short windows. */
-    max-height: 100%;
-    overflow-y: auto;
+    max-height: calc(100dvh - 3rem);
     background: var(--apex-surface-2);
-    /* All four edges drawn now — the bottom one used to be dropped because the
-       panel sat flush against the bottom of the screen. */
     border: 1px solid var(--apex-steel-dark);
+    overflow: hidden;
   }
 
   .drawer__bar {
-    position: sticky;
-    top: 0;
+    flex: none;
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 0.75rem 1.25rem;
-    background: var(--apex-surface-2);
     border-bottom: 1px solid var(--apex-steel-dark);
     font-family: var(--apex-font-mono);
     font-size: var(--apex-caption);
@@ -739,15 +810,19 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     color: var(--apex-white);
   }
 
-  .drawer__body {
+  /* The only scrolling region. Art beside copy on desktop, stacked on a phone. */
+  .drawer__scroll {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     gap: 2rem;
-    padding: 2rem 1.25rem 3rem;
+    padding: 2rem 1.25rem;
   }
 
   @media (max-width: 54rem) {
-    .drawer__body {
+    .drawer__scroll {
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
@@ -757,8 +832,6 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
      same neutral, so switching colourway doesn't also switch the backdrop out
      from under it. */
   .drawer__stage {
-    position: sticky;
-    top: 4rem;
     align-self: start;
     aspect-ratio: 1;
     background: var(--apex-surface);
@@ -796,6 +869,12 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
 
   .field {
     margin-top: 1.5rem;
+  }
+
+  /* f-version and f-product stay empty for a single-cut design; collapse them
+     so they leave no phantom gap above the note. */
+  .field:empty {
+    margin: 0;
   }
 
   .field__label {
@@ -843,29 +922,35 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     color: var(--apex-black);
   }
 
-  /* Square, per the shape rule — the circle system is brand marks, not swatches. */
-  .swatch {
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid var(--apex-steel-dark);
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    cursor: pointer;
-    transition: outline-color 0.15s ease;
+  /* ---- pinned buy bar ---- */
+  .drawer__actions {
+    flex: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.85rem 1.25rem;
+    border-top: 1px solid var(--apex-steel-dark);
+    background: var(--apex-surface-2);
   }
 
-  .swatch:hover {
-    outline-color: var(--apex-steel-light);
+  .drawer__pickers {
+    display: flex;
+    gap: 0.6rem;
+    flex: 1;
+    min-width: 0;
   }
 
-  .swatch[aria-pressed="true"] {
-    outline-color: var(--apex-white);
+  .drawer__buy {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: none;
   }
 
   .drawer__price {
-    margin-top: 2rem;
     font-family: var(--apex-font-mono);
-    font-size: var(--apex-h3);
+    font-size: var(--apex-h5);
+    font-weight: 700;
     font-variant-numeric: tabular-nums;
     color: var(--apex-spark);
   }
@@ -877,14 +962,14 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
     align-items: center;
     justify-content: center;
     min-height: 3rem;
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.75rem;
     background: var(--apex-spark);
     color: var(--apex-black);
     font-family: var(--apex-font-lead);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+    white-space: nowrap;
     transition: background 0.15s ease;
   }
 
@@ -893,11 +978,168 @@ const syncedAt = new Date(catalog.syncedAt).toLocaleDateString("en-US");
   }
 
   .drawer__note {
-    margin-top: 1rem;
+    margin-top: 1.25rem;
     font-family: var(--apex-font-mono);
     font-size: var(--apex-caption);
     line-height: 1.7;
     color: var(--apex-steel-light);
+  }
+
+  /* ---- colour + size dropdowns, opening upward out of the buy bar ---- */
+  .dd {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .dd[hidden] {
+    display: none;
+  }
+
+  .dd__trigger {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.4rem 0.6rem;
+    background: var(--apex-surface);
+    border: 1px solid var(--apex-steel-dark);
+    color: var(--apex-white);
+    cursor: pointer;
+    transition: border-color 0.15s ease;
+  }
+
+  .dd__trigger:hover {
+    border-color: var(--apex-steel-light);
+  }
+
+  .dd__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+    min-width: 0;
+    line-height: 1.1;
+  }
+
+  .dd__label {
+    font-family: var(--apex-font-mono);
+    font-size: 0.625rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--apex-steel-light);
+  }
+
+  .dd__value {
+    max-width: 100%;
+    overflow: hidden;
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    color: var(--apex-white);
+    text-transform: capitalize;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .dd__caret {
+    margin-left: auto;
+    color: var(--apex-steel-light);
+    font-size: 0.7rem;
+  }
+
+  .dd__swatch {
+    flex: none;
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 1px solid var(--apex-steel-dark);
+  }
+
+  .dd__pop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(100% + 0.4rem);
+    z-index: 5;
+    max-height: 44vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background: var(--apex-surface);
+    border: 1px solid var(--apex-steel-light);
+  }
+
+  .dd__pop[hidden] {
+    display: none;
+  }
+
+  .dd__opt {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.7rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--apex-steel-dark);
+    color: var(--apex-steel-light);
+    font-family: var(--apex-font-mono);
+    font-size: var(--apex-caption);
+    text-align: left;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+  .dd__opt:last-child {
+    border-bottom: none;
+  }
+
+  .dd__opt:hover {
+    color: var(--apex-white);
+    background: var(--apex-surface-2);
+  }
+
+  .dd__opt.is-sel {
+    color: var(--apex-white);
+  }
+
+  .dd__opt.is-sel::after {
+    content: "\2713";
+    margin-left: auto;
+    color: var(--apex-spark);
+  }
+
+  /* ---- phone: the panel becomes the whole screen ---- */
+  @media (max-width: 40rem) {
+    .drawer {
+      padding: 0;
+    }
+
+    .drawer__panel {
+      width: 100%;
+      height: 100dvh;
+      max-height: none;
+      border: none;
+    }
+
+    .drawer__scroll {
+      padding: 1rem 1rem 1.5rem;
+    }
+
+    .drawer__actions {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.6rem;
+      padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
+    }
+
+    .drawer__buy {
+      justify-content: space-between;
+    }
+
+    .drawer__cta {
+      flex: 1;
+    }
   }
 
   .state,
